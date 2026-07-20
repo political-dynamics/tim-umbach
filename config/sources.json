@@ -1,0 +1,239 @@
+{
+  "user_agent": "HamburgJobRadar/0.1 (personal, low-frequency job search)",
+  "request_delay_seconds": 1.0,
+  "experimentation_jobs": {
+    "enabled": true,
+    "endpoint": "https://experimentationjobs.com/jm-ajax/get_listings/",
+    "location": "Germany",
+    "per_page": 50,
+    "retention_days": 21,
+    "daily_queries": [
+      "Data Scientist",
+      "Data Analyst",
+      "Product Analyst",
+      "Experimentation"
+    ],
+    "extra_role_terms": [
+      "cro",
+      "conversion rate optimisation",
+      "conversion rate optimization",
+      "digital optimisation",
+      "digital optimization",
+      "growth analyst"
+    ],
+    "eligible_remote_regions": [
+      "germany",
+      "deutschland",
+      "europe",
+      "european union",
+      "eu",
+      "emea",
+      "worldwide",
+      "global",
+      "anywhere"
+    ],
+    "ineligible_remote_regions": [
+      "usa",
+      "united states",
+      "canada",
+      "united kingdom",
+      "uk",
+      "poland",
+      "spain",
+      "brazil",
+      "australia",
+      "india",
+      "egypt",
+      "netherlands"
+    ]
+  },
+  "ba_jobs": {
+    "enabled": true,
+    "base_url": "https://rest.arbeitsagentur.de/jobboerse/jobsuche-service",
+    "search_path": "/pc/v4/jobs",
+    "client_id": "jobboerse-jobsuche",
+    "location": "Hamburg",
+    "professional_field": "Informatik",
+    "radius_km": 50,
+    "published_within_days": 30,
+    "size": 50,
+    "max_details": 10,
+    "retention_days": 21,
+    "daily_queries": [""],
+    "detail_candidate_pattern": "data|analytics|analyst|insight|experiment|statisti|ökonometr|econometr"
+  },
+  "sources": [
+    {
+      "company": "ABOUT YOU",
+      "enabled": false,
+      "note": "The current robots policy disallows this collector; use the daily Brave watchlist and dated snapshot.",
+      "discovery_urls": [
+        "https://corporate.aboutyou.de/en/career/jobs",
+        "https://corporate.aboutyou.de/en/career/product-tech"
+      ],
+      "link_pattern": "/en/career/jobs/",
+      "allowed_hosts": ["corporate.aboutyou.de"],
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment"],
+      "location_terms": ["hamburg", "remote", "germany"]
+    },
+    {
+      "company": "Beiersdorf",
+      "discovery_urls": [
+        "https://www.beiersdorf.com/career/your-application/job-search?city=Hamburg&count=100&language=en_US&sort=date"
+      ],
+      "link_pattern": "/career/jobs/",
+      "allowed_hosts": ["www.beiersdorf.com", "beiersdorf.com"],
+      "filter_links_by_url": false,
+      "filter_details_by_title": true,
+      "include_terms": ["data", "analytics", "analyst", "insight", "consumer intelligence", "research scientist"],
+      "location_terms": ["hamburg"]
+    },
+    {
+      "company": "Gebr. Heinemann",
+      "discovery_urls": [
+        "https://www.gebr-heinemann.com/heu/en/jobs?country=Germany",
+        "https://www.gebr-heinemann.de/jobs"
+      ],
+      "link_pattern": "/job/",
+      "allowed_hosts": ["www.gebr-heinemann.com", "www.gebr-heinemann.de", "jobs.gebr-heinemann.com"],
+      "include_terms": ["data", "analytics", "analyst", "insight", "business intelligence"],
+      "location_terms": ["hamburg", "remote", "germany"]
+    },
+    {
+      "company": "Freenet Group",
+      "discovery_urls": [
+        "https://karriere.freenet-group.de/?page=home"
+      ],
+      "detail_urls": [
+        "https://karriere.freenet-group.de/?action=view&id=ffw07hn0ky4aoj5xgd5ddf72blhte89&page=home"
+      ],
+      "link_pattern": "action=view",
+      "allowed_hosts": ["karriere.freenet-group.de"],
+      "filter_links_by_url": false,
+      "filter_details_by_title": true,
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "machine learning"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "EDEKA",
+      "discovery_urls": [
+        "https://verbund.edeka/karriere/stellenb%C3%B6rse/"
+      ],
+      "detail_urls": [
+        "https://verbund.edeka/karriere/stellenb%C3%B6rse/stelle-data-engineer-datenplattform-m-w-d-hamburg-edeka-it-stiftung-amp-co.-ohg?id=229645_171676&type=j",
+        "https://verbund.edeka/karriere/stellenb%C3%B6rse/stelle-business-analyst-m-w-d-hamburg-edeka-zentrale-stiftung-amp-co.-kg?id=232469_27993&type=j"
+      ],
+      "link_pattern": "/karriere/stellenb%C3%B6rse/stelle-",
+      "allowed_hosts": ["verbund.edeka"],
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "Fielmann",
+      "discovery_urls": [
+        "https://jobs.fielmann.com/en/job-offers"
+      ],
+      "detail_urls": [
+        "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd"
+      ],
+      "link_pattern": "/job-offers/detail/",
+      "allowed_hosts": ["jobs.fielmann.com"],
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "Tchibo",
+      "discovery_urls": [
+        "https://www.tchibo-karriere.de/hamburg"
+      ],
+      "detail_urls": [
+        "https://www.tchibo-karriere.de/jobs/58753",
+        "https://www.tchibo-karriere.de/jobs/58459",
+        "https://www.tchibo-karriere.de/jobs/58593"
+      ],
+      "link_pattern": "/jobs/",
+      "allowed_hosts": ["www.tchibo-karriere.de", "tchibo-karriere.de"],
+      "filter_links_by_url": false,
+      "filter_details_by_title": true,
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "Google",
+      "enabled": false,
+      "note": "Google Careers robots.txt disallows this collector; use the daily Brave watchlist instead.",
+      "discovery_urls": [
+        "https://www.google.com/about/careers/applications/jobs/results/?location=Germany&q=data"
+      ],
+      "link_pattern": "/about/careers/applications/jobs/results/",
+      "allowed_hosts": ["www.google.com"],
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "Adobe",
+      "discovery_urls": [
+        "https://careers.adobe.com/us/en/search-results?keywords=data&location=Germany"
+      ],
+      "link_pattern": "/us/en/job/",
+      "allowed_hosts": ["careers.adobe.com"],
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "OTTO",
+      "discovery_urls": [
+        "https://www.otto.de/jobs/de/",
+        "https://www.otto.de/jobs/de/jobsuche/"
+      ],
+      "detail_urls": [
+        "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/"
+      ],
+      "link_pattern": "/jobs/de/stellenangebote/",
+      "allowed_hosts": ["www.otto.de", "otto.de"],
+      "filter_details_by_title": true,
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence", "data & ai"],
+      "location_terms": ["hamburg", "remote", "germany"]
+    },
+    {
+      "company": "HELM AG",
+      "discovery_urls": [
+        "https://jobs.helmag.com/"
+      ],
+      "detail_urls": [
+        "https://jobs.helmag.com/job/Hamburg-%28Junior%29-Business-Intelligence-Developer-Data-Warehouse-%28mfd%29-20097/1349353155/"
+      ],
+      "link_pattern": "/job/",
+      "allowed_hosts": ["jobs.helmag.com"],
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business-intelligence", "business intelligence", "data-warehouse"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "Publicis Groupe",
+      "discovery_urls": [
+        "https://careers.publicisgroupe.com/jobs?location=Hamburg%2C%20Germany"
+      ],
+      "detail_urls": [
+        "https://careers.publicisgroupe.com/jobs/150410?lang=de-de"
+      ],
+      "link_pattern": "/jobs/",
+      "allowed_hosts": ["careers.publicisgroupe.com"],
+      "filter_links_by_url": false,
+      "filter_details_by_title": true,
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "intelligence"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "Maxingvest",
+      "enabled": false,
+      "note": "Maxingvest applications are routed through Tchibo's career center; no current dedicated data or analytics posting was found.",
+      "discovery_urls": [
+        "https://www.maxingvest.de/karriere"
+      ],
+      "link_pattern": "/karriere",
+      "allowed_hosts": ["www.maxingvest.de", "maxingvest.de"],
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence"],
+      "location_terms": ["hamburg", "remote"]
+    }
+  ]
+}
