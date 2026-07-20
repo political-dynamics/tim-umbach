@@ -1,0 +1,39 @@
+{
+  "display_name": "Tim",
+  "headline": "Data Scientist — Experimentation & Product Analytics",
+  "location": "Hamburg",
+  "search_radius_km": 40,
+  "experience_years": 8,
+  "level": "senior",
+  "salary_floor_eur": 70000,
+  "target_salary_eur": 85000,
+  "work_modes": ["Hybrid", "Remote"],
+  "target_roles": [
+    {"title": "Data Scientist", "weight": 1.0},
+    {"title": "Product Data Scientist", "weight": 1.0},
+    {"title": "Experimentation Scientist", "weight": 1.0},
+    {"title": "Senior Data Analyst", "weight": 0.95},
+    {"title": "Product Analyst", "weight": 0.9},
+    {"title": "Customer Insights", "weight": 0.78},
+    {"title": "Business Analyst", "weight": 0.65}
+  ],
+  "skills": [
+    {"name": "Experimentation", "weight": 5, "keywords": ["experimentation", "a/b test", "ab test", "experimental design", "test design"]},
+    {"name": "Causal inference", "weight": 5, "keywords": ["causal inference", "incrementality", "difference-in-differences", "instrumental variables", "quasi-experimental"]},
+    {"name": "SQL", "weight": 5, "keywords": ["sql"]},
+    {"name": "BigQuery", "weight": 5, "keywords": ["bigquery", "gbq"]},
+    {"name": "Python", "weight": 4, "keywords": ["python", "pandas", "scikit-learn"]},
+    {"name": "Statistics & econometrics", "weight": 4, "keywords": ["statistics", "statistical", "econometrics", "regression", "panel model", "time series"]},
+    {"name": "Product analytics", "weight": 4, "keywords": ["product analytics", "product data", "kpi", "metrics", "funnel"]},
+    {"name": "Stakeholder consulting", "weight": 4, "keywords": ["stakeholder", "communicate", "business partner", "cross-functional"]},
+    {"name": "GCP", "weight": 3, "keywords": ["gcp", "google cloud", "vertex ai"]},
+    {"name": "Machine learning", "weight": 3, "keywords": ["machine learning", "classification", "predictive model", "ml model"]},
+    {"name": "E-commerce", "weight": 3, "keywords": ["e-commerce", "ecommerce", "retail", "shopping"]},
+    {"name": "Data visualization", "weight": 2, "keywords": ["visualization", "visualisation", "power bi", "tableau", "looker", "dashboard"]},
+    {"name": "Data pipelines", "weight": 2, "keywords": ["data pipeline", "etl", "data engineering", "automation"]},
+    {"name": "Docker & Linux", "weight": 1, "keywords": ["docker", "linux"]}
+  ],
+  "languages": {"German": "native", "English": "C2", "French": "A2"},
+  "profile_basis": "CV supplied locally; LinkedIn public profile used as supporting context",
+  "last_reviewed": "2026-07-20"
+}

@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.vscode/
+.DS_Store
+
+# Local configuration and credentials
+.env
+.env.*
+brave_search_api_key
+docu/
+*.pem
+*.key

@@ -1,0 +1,69 @@
+name: Refresh and deploy Hamburg Job Radar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 4 * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Refresh official career sources
+        env:
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+        run: python scripts/collect_jobs.py
+
+      - name: Run collector tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Save refreshed data
+        run: |
+          git config user.name "hamburg-job-radar[bot]"
+          git config user.email "hamburg-job-radar[bot]@users.noreply.github.com"
+          git add data/jobs.json
+          if [ -f data/search_state.json ]; then git add data/search_state.json; fi
+          if [ -f data/experimentation_jobs_cache.json ]; then git add data/experimentation_jobs_cache.json; fi
+          if [ -f data/experimentation_jobs_state.json ]; then git add data/experimentation_jobs_state.json; fi
+          if [ -f data/ba_jobs_cache.json ]; then git add data/ba_jobs_cache.json; fi
+          if [ -f data/ba_jobs_state.json ]; then git add data/ba_jobs_state.json; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "refresh job radar"
+            git push
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload static dashboard
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: .
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
