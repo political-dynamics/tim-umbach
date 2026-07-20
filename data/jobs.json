@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-20T14:31:59+00:00",
+    "generated_at": "2026-07-20T15:23:43+00:00",
     "mode": "live official pages + dated snapshot coverage",
-    "job_count": 24,
+    "job_count": 25,
     "location": "Hamburg",
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2024",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987",
     "preference_excluded_count": 14,
-    "brave_search_status": "Brave skipped by command option",
+    "brave_search_status": "Brave daily budget already used (10/10); skipped",
     "experimentation_jobs_status": "Experimentation Jobs daily refresh already used; cached",
     "ba_jobs_status": "BA API daily search already used; cached",
     "errors": []
@@ -823,6 +823,36 @@
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
       "salary_confidence": "medium"
+    },
+    {
+      "title": "Global Consumer Intelligence Manager NIVEA - 2-Year Fixed-Term Contract (all genders)",
+      "company": "Beiersdorf",
+      "location": "Hamburg, Germany",
+      "work_mode": "",
+      "level": "student",
+      "url": "https://www.beiersdorf.com/career/jobs/d8910db6ddca0127dd15cb6d0b9599c4",
+      "date_posted": "",
+      "description": "Global Consumer Intelligence Manager NIVEA - 2-Year Fixed-Term Contract (all genders) Apply now Job Details Contract Type: Unlimited / Full-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks Develop market research plans that address key business priorities, aligned to business strategy Actively consult with the category teams to ensure the innovation pipeline is rooted in consumer trends and insights Conception, steering and quality control of market research projects independently; consulting internal stakeholders in the interpretation and evaluation of research results Translate data & insights into concrete, actionable and business-oriented recommendations that drive impactful business decisions Drive a consumer centric culture, building a strong sense of consumer empathy within category teams and acting as an advocate f",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "33ba1a374c43",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 18,
+      "matched_skills": [
+        "Stakeholder consulting"
+      ],
+      "fit_reasons": [
+        "Skill overlap: Stakeholder consulting",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 29000,
+      "salary_mid": 32000,
+      "salary_max": 35000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "low"
     }
   ]
 }
