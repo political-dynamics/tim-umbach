@@ -1,10 +1,4 @@
 {
-  "request_date_utc": "2026-07-20",
-  "request_count": 4,
-  "query": "(Senior Data Analyst OR Product Data Scientist OR Experimentation Scientist) (Germany OR EMEA) fully remote job",
-  "status": "success",
-  "updated_at": "2026-07-20T12:40:39+00:00",
-  "accepted_results": 0,
   "bootstrap_status": "success",
   "bootstrap_request_count": 6,
   "bootstrap_attempted_queries": [
@@ -18,17 +12,23 @@
   "bootstrap_completed_at": "2026-07-20T11:38:56+00:00",
   "bootstrap_accepted_results": 10,
   "bootstrap_error_types": [],
+  "request_date_utc": "2026-07-21",
+  "request_count": 10,
   "daily_attempted_queries": [
-    "(Data Scientist OR Product Analyst OR Experimentation OR Customer Insights) (Hamburg OR remote) (Statista OR New Work OR XING OR Bertelsmann OR RTL OR Gruner Jahr OR ZEIT OR SPIEGEL OR NDR) (hybrid OR remote)",
-    "(Data Scientist OR Senior Data Analyst OR Product Analyst OR Analytics Engineer) (Hamburg OR remote) (ABOUT YOU OR OTTO OR Beiersdorf OR Tchibo OR EDEKA OR Fielmann OR Heinemann) (hybrid OR remote)",
-    "(Data Scientist OR Data Analyst OR Analytics Engineer) (Hamburg OR remote) (MOIA OR FREE NOW OR Airbus OR Hapag-Lloyd OR HHLA OR Lufthansa Technik OR Jungheinrich) (hybrid OR remote)",
+    "(Data Scientist OR Senior Data Analyst OR Product Analyst OR Customer Insights) (Hamburg OR remote) (ABOUT YOU OR OTTO OR Beiersdorf OR Tchibo OR Maxingvest OR EDEKA OR Fielmann OR Heinemann OR Freenet) (hybrid OR remote)",
+    "(Data Scientist OR Product Analyst OR Experimentation OR Customer Insights) (Hamburg OR remote) (Statista OR New Work OR XING OR Bertelsmann OR RTL OR Gruner Jahr OR ZEIT OR SPIEGEL OR NDR OR Publicis) (hybrid OR remote)",
+    "(Data Scientist OR Data Analyst OR Product Analyst OR Business Intelligence) (Hamburg OR remote) (MOIA OR FREE NOW OR Airbus OR Hapag-Lloyd OR HHLA OR Lufthansa Technik OR Jungheinrich OR HELM OR Google OR Adobe) (hybrid OR remote)",
     "(Data Scientist OR Data Analyst OR Econometrics OR Causal Inference) (Hamburg OR remote) (DESY OR Universität Hamburg OR Stadt Hamburg OR Techniker Krankenkasse OR Eppendorf OR Berenberg) (hybrid OR mobile Arbeit OR remote)",
     "(Senior Data Scientist OR Senior Data Analyst OR Product Analytics OR Experimentation) Hamburg (hybrid OR remote) job",
     "(Data Scientist OR Product Data Scientist OR Causal Inference OR Experimentation) Germany fully remote job",
-    "(Analytics Engineer OR Product Analyst OR Customer Insights OR Marketing Data Scientist) Hamburg (hybrid OR remote) job",
+    "(Senior Data Analyst OR Product Analyst OR Customer Insights OR Marketing Data Scientist) Hamburg (hybrid OR remote) job",
     "site:experimentationjobs.com/job (Data Scientist OR Data Analyst OR Experimentation OR CRO) (Germany OR Europe OR remote)",
-    "(Data Scientist OR Product Analyst OR Experimentation) (Hamburg OR Germany remote) (Tchibo OR EDEKA OR Fielmann OR Statista OR New Work OR MOIA OR FREE NOW) job",
+    "(Data Scientist OR Product Analyst OR Experimentation OR Analytics) (Hamburg OR Germany remote) (Tchibo OR Maxingvest OR EDEKA OR Fielmann OR Freenet OR HELM OR Publicis OR Google OR Adobe OR Statista OR New Work OR MOIA OR FREE NOW) job",
     "(Senior Data Analyst OR Product Data Scientist OR Experimentation Scientist) (Germany OR EMEA) fully remote job"
   ],
+  "query": "(Senior Data Analyst OR Product Data Scientist OR Experimentation Scientist) (Germany OR EMEA) fully remote job",
+  "status": "success",
+  "updated_at": "2026-07-21T06:42:04+00:00",
+  "accepted_results": 14,
   "daily_error_types": []
 }

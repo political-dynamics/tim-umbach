@@ -1,19 +1,57 @@
 {
-  "updated_at": "2026-07-20T12:40:35+00:00",
+  "updated_at": "2026-07-21T06:41:52+00:00",
   "jobs": [
     {
-      "title": "Senior Product Data Analyst — Insurance Sales & Beratung",
+      "title": "Senior Product Data Analyst (m/w/d) – Insurance Sales & Beratung (m/w/d) – 100% Remote",
       "company": "Finanzguru",
       "location": "Germany (Remote)",
       "work_mode": "Remote",
       "level": "",
       "url": "https://experimentationjobs.com/job/finanzguru-senior-product-data-analyst-germany-remote/",
-      "date_posted": "",
-      "description": "Germany-wide 100% remote product analytics role. Own sales-funnel analysis, KPI logic, dashboards, data products, and A/B-test hypotheses for digital insurance consulting.",
+      "date_posted": "2026-06-28",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-07-20",
-      "experimentation_query_date": "2026-07-20",
-      "confirmed_by": "Experimentation Jobs listing"
+      "freshness": "Experimentation Jobs refresh 2026-07-21",
+      "experimentation_query_date": "2026-07-21"
+    },
+    {
+      "title": "Staff AI Product Analyst, Product Management",
+      "company": "Grafana Labs",
+      "location": "Germany (Remote)",
+      "work_mode": "Remote",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/grafana-staff-ai-product-analyst-germany-remote/",
+      "date_posted": "2026-07-05",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-07-21",
+      "experimentation_query_date": "2026-07-21"
+    },
+    {
+      "title": "Senior Data Analyst (m/f/d) – Shop Analytics – onsite in Hamburg or Berlin",
+      "company": "About You",
+      "location": "Hamburg or Berlin, Germany",
+      "work_mode": "Hybrid",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/about-you-senior-data-analyst-shop-analytics-germany-2/",
+      "date_posted": "2026-05-15",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-07-21",
+      "experimentation_query_date": "2026-07-21"
+    },
+    {
+      "title": "Senior Data Analyst – Shop Analytics",
+      "company": "About You",
+      "location": "Hamburg or Berlin, Germany",
+      "work_mode": "On-Site",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/about-you-senior-data-analyst-shop-analytics-germany/",
+      "date_posted": "2026-05-03",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-07-21",
+      "experimentation_query_date": "2026-07-21"
     }
   ]
 }
