@@ -12,7 +12,7 @@
   "bootstrap_completed_at": "2026-07-20T11:38:56+00:00",
   "bootstrap_accepted_results": 10,
   "bootstrap_error_types": [],
-  "request_date_utc": "2026-07-21",
+  "request_date_utc": "2026-07-22",
   "request_count": 10,
   "daily_attempted_queries": [
     "(Data Scientist OR Senior Data Analyst OR Product Analyst OR Customer Insights) (Hamburg OR remote) (ABOUT YOU OR OTTO OR Beiersdorf OR Tchibo OR Maxingvest OR EDEKA OR Fielmann OR Heinemann OR Freenet) (hybrid OR remote)",
@@ -28,7 +28,7 @@
   ],
   "query": "(Senior Data Analyst OR Product Data Scientist OR Experimentation Scientist) (Germany OR EMEA) fully remote job",
   "status": "success",
-  "updated_at": "2026-07-21T06:42:04+00:00",
-  "accepted_results": 14,
+  "updated_at": "2026-07-22T06:43:02+00:00",
+  "accepted_results": 15,
   "daily_error_types": []
 }
