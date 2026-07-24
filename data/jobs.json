@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T06:39:34+00:00",
+    "generated_at": "2026-07-24T17:20:28+00:00",
     "mode": "live official pages + dated snapshot coverage",
-    "job_count": 47,
+    "job_count": 48,
     "location": "Hamburg",
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2024",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987",
     "preference_excluded_count": 15,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 13 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (4 accepted)",
-    "ba_jobs_status": "BA API refresh: success (6 detailed)",
+    "brave_search_status": "Brave daily budget already used (10/10); skipped",
+    "experimentation_jobs_status": "Experimentation Jobs daily refresh already used; cached",
+    "ba_jobs_status": "BA API daily search already used; cached",
     "errors": [
       "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd: HTTPError: HTTP Error 404: Not Found"
     ]
@@ -22,16 +22,14 @@
       "work_mode": "Hybrid",
       "level": "senior",
       "url": "https://corporate.aboutyou.de/en/career/jobs/senior-data-scientist-search-engine-all-genders-hamburg-or-berlin-germany",
-      "date_posted": "April 2, 2026",
+      "date_posted": "",
       "description": "Build and deploy machine-learning algorithms for personalized shopping. Python, SQL, large-scale data pipelines, cloud platforms and statistical model evaluation. Recommendation, retrieval, experimentation, BigQuery and CI/CD experience are useful.",
       "salary_min": 70000,
       "salary_max": 85000,
       "salary_currency": "EUR",
       "salary_source": "Employer advertised",
       "discovery_source": "Official career page",
-      "freshness": "Brave query 2026-07-24",
-      "brave_query_date": "2026-07-24",
-      "confirmed_by": "Brave Search API",
+      "freshness": "snapshot 2026-07-20",
       "id": "52cbf71dc1e0",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -53,6 +51,43 @@
       "skill_gaps": [],
       "salary_mid": 77500,
       "salary_confidence": "high"
+    },
+    {
+      "title": "Data Analyst (f/m/d)",
+      "company": "Fielmann",
+      "location": "Hamburg, Hamburg, DE",
+      "work_mode": "Hybrid / mobile work",
+      "level": "senior",
+      "url": "https://jobs.fielmann.com/en/job-offers/detail/62357-data-analyst-fmd",
+      "date_posted": "1970-01-01",
+      "description": "At Fielmann, we are more than just colleagues - we are a team. Our team spirit makes us strong. We continue to develop through new ideas. We grow with your commitment - sometimes faster, sometimes more carefully. Together we find the right pace and set the standards of tomorrow. Our goal at Data & Analytics is to empower the whole organization to make smart decisions based on data. In this role you will work on topics relevant for the whole enterprise like profitability and support business departments in strategically important projects. Together we set the standards of tomorrow - your responsibilities Own analytical projects end-to-end from defining the business question through analysis, actionable recommendations, and implementation of analytical solutions. Partner with business stakeholders to identify relevant analytical questions, translate them into data requirements and determin",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "0403dccb83ae",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 78,
+      "matched_skills": [
+        "SQL",
+        "Python",
+        "Stakeholder consulting",
+        "Statistics & econometrics",
+        "E-commerce",
+        "Data visualization"
+      ],
+      "fit_reasons": [
+        "Role alignment: Senior Data Analyst",
+        "Skill overlap: SQL, Python, Stakeholder consulting, Statistics & econometrics",
+        "Hamburg location",
+        "Relevant e-commerce / retail domain"
+      ],
+      "skill_gaps": [],
+      "salary_min": 79000,
+      "salary_mid": 88000,
+      "salary_max": 97000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "medium"
     },
     {
       "title": "Data Scientist: 47 Jobs & Stellenangebote in Hamburg | 2. Juli 2026",
@@ -814,7 +849,7 @@
       "salary_max": 81000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
     },
     {
       "title": "(Senior) Business Analyst (w/m/d) Geschäftsmodelle und Konditionen",
@@ -980,7 +1015,7 @@
       "salary_max": 96000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1247,7 +1282,7 @@
       "level": "experienced",
       "url": "https://www.glassdoor.de/Job/hamburg-data-analyst-jobs-SRCH_IL.0,7_IC2804376_KO8,20.htm",
       "date_posted": "",
-      "description": "Freenet bietet ein umfangreiches Portfolio rund um die Themen Mobilfunk, Internet und TV-Entertainment. Online auf www.freenet-digital.de sowie in rund 520…&hellip; ... At Statista, we’re all about facts and data, for we are the world's leading business data platform.",
+      "description": "Freenet bietet ein umfangreiches Portfolio rund um die Themen Mobilfunk, Internet und TV-Entertainment. Online auf www.freenet-digital.de sowie in rund 520…… ... At Statista, we’re all about facts and data, for we are the world's leading business data platform.",
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-07-21",
       "brave_query_date": "2026-07-21",
@@ -1267,7 +1302,7 @@
       "salary_max": 85000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
     },
     {
       "title": "Data Analyst (w/m/d) in Hamburg at Hapag-Lloyd AG - Job & application – JobCheck",
@@ -1359,7 +1394,7 @@
       "salary_max": 77000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high"
     },
     {
       "title": "Data Science Remote: > 50 Jobs, Arbeit in Hamburg | Indeed",
@@ -1389,7 +1424,7 @@
       "salary_max": 77000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high"
     },
     {
       "title": "Junior Data Analyst Jobs und Stellenangebote - 2026",
@@ -1421,7 +1456,7 @@
       "salary_max": 65000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1525,7 +1560,7 @@
       "level": "intern",
       "url": "https://www.beiersdorf.com/career/jobs/d8910db6ddca0127dd15cb6d0b9599c4",
       "date_posted": "",
-      "description": "Global Consumer Intelligence Manager NIVEA - 2-Year Fixed-Term Contract (all genders) Apply now Job Details Contract Type: Unlimited / Full-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks Develop market research plans that address key business priorities, aligned to business strategy Actively consult with the category teams to ensure the innovation pipeline is rooted in consumer trends and insights Conception, steering and quality control of market research projects independently; consulting internal stakeholders in the interpretation and evaluation of research results Translate data & insights into concrete, actionable and business-oriented recommendations that drive impactful business decisions Drive a consumer centric culture, building a strong sense of consumer empathy within category teams and acting as an advocate f",
+      "description": "Global Consumer Intelligence Manager NIVEA - 2-Year Fixed-Term Contract (all genders) Apply now Job Details Contract Type: Unlimited / Full-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks Develop market research plans that address key business priorities, aligned to business strategy Actively consult with the category teams to ensure the innovation pipeline is rooted in consumer trends and insights Conception, steering and quality control of market research projects independently ; consulting internal stakeholders in the interpretation and evaluation of research results Translate data & insights into concrete, actionable and business-oriented recommendations that drive impactful business decisions Drive a consumer centric culture , building a strong sense of consumer empathy within category teams and acting as an advocate",
       "discovery_source": "Official career page",
       "freshness": "live check",
       "id": "33ba1a374c43",
