@@ -1,6 +1,15 @@
-# Tim Umbach · Hamburg Job Radar
+# Tim Umbach · Personal Website
 
-A static, personal job dashboard for Hamburg data roles. It ranks opportunities against a local profile and shows either an employer-published salary range or a transparent estimate.
+A static personal website for Tim Umbach, a Hamburg-based data scientist
+specialising in experimentation, causal inference, and product analytics.
+
+The site has three pages:
+
+- `index.html`: professional profile, experience, and areas of expertise.
+- `contact.html`: public professional contact channels.
+- `job-radar.html`: an interactive work sample that ranks Hamburg data roles
+  against a local profile and shows either an employer-published salary range
+  or a transparent estimate.
 
 ## Recommended architecture
 
@@ -33,8 +42,8 @@ python -m http.server 8000 --bind 0.0.0.0
 Because this project runs in a remote VM, open the VS Code **Ports** panel,
 forward port `8000`, and use **Open in Browser** on the forwarded address. This
 is more reliable than opening `index.html` directly because browser `fetch()`
-does not load local JSON consistently from `file://` URLs. Stop the preview
-with `Ctrl+C` in its terminal.
+does not load local JSON consistently from `file://` URLs on the Job Radar
+page. Stop the preview with `Ctrl+C` in its terminal.
 
 Try a live refresh of the official sources, Experimentation Jobs, BA, and the
 daily Brave budget:
@@ -116,7 +125,7 @@ The tests cover salary parsing, score direction, preservation of employer salary
 
 ## GitHub Pages
 
-This repository is the standalone personal deployment of the dashboard. The
+This repository is the standalone deployment of the personal website. The
 included `.github/workflows/pages.yml` refreshes and deploys it without a
 separate application server.
 

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tim Umbach’s personal Hamburg job radar with transparent salary estimates and profile-based matching.">
+    <meta name="theme-color" content="#9e4438">
+    <title>Job Radar · Tim Umbach</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#opportunities">Skip to the Job Radar</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Tim Umbach home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Tim Umbach <b>· Data Scientist</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="job-radar.html" aria-current="page">Job Radar</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="eyebrow"><span>01</span> Tim Umbach’s opportunity monitor</div>
+        <div class="radar-status"><span class="live-dot" aria-hidden="true"></span><span id="data-status">Loading snapshot…</span></div>
+        <div class="hero-grid">
+          <div>
+            <h1 id="hero-title">Tim’s next move,<br><em>ranked by evidence.</em></h1>
+            <p class="hero-copy">Hamburg data roles scored against experimentation, causal inference, Python, SQL, and product analytics experience—with salary guesses clearly labelled as guesses.</p>
+          </div>
+          <aside class="profile-summary" aria-label="Active profile">
+            <p class="overline">Tim Umbach · Active profile</p>
+            <h2 id="profile-headline">Data Scientist</h2>
+            <div class="profile-location"><span aria-hidden="true">↗</span><span id="profile-location">Hamburg · hybrid or remote</span></div>
+            <div class="profile-tags" id="profile-tags"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="metrics section-shell" aria-label="Dashboard summary">
+        <article class="metric-card accent-card">
+          <p>Strong matches</p>
+          <strong id="strong-match-count">—</strong>
+          <span>scoring 75 or higher</span>
+        </article>
+        <article class="metric-card">
+          <p>Median opportunity</p>
+          <strong id="median-salary">—</strong>
+          <span>estimated annual gross</span>
+        </article>
+        <article class="metric-card">
+          <p>Tracked companies</p>
+          <strong id="company-count">—</strong>
+          <span id="job-count-label">career pages</span>
+        </article>
+        <article class="metric-card saved-metric">
+          <p>Saved shortlist</p>
+          <strong id="saved-count">0</strong>
+          <button id="show-saved" type="button">Show saved only</button>
+        </article>
+      </section>
+
+      <section class="insight-grid section-shell" aria-label="Opportunity overview">
+        <article class="panel opportunity-map">
+          <div class="panel-heading">
+            <div>
+              <p class="overline">Fit × compensation</p>
+              <h2>Opportunity map</h2>
+            </div>
+            <p class="chart-note">Bubble size reflects salary confidence</p>
+          </div>
+          <div id="opportunity-chart" class="chart" role="img" aria-label="Scatterplot of job match score and estimated salary">
+            <div class="loading-block"></div>
+          </div>
+          <div class="chart-legend"><span><i class="legend-dot advertised"></i>Employer range</span><span><i class="legend-dot estimated"></i>Estimated</span></div>
+        </article>
+
+        <article class="panel benchmark-panel">
+          <p class="overline">Salary anchor</p>
+          <div class="benchmark-number">€74k</div>
+          <h2>Hamburg Data Scientist median</h2>
+          <p>The official 2024 median is €6,168 gross per month. Job estimates adjust this anchor for role family, level, and profile fit.</p>
+          <a href="https://web.arbeitsagentur.de/entgeltatlas/beruf/129987" target="_blank" rel="noopener noreferrer">Open Entgeltatlas <span aria-hidden="true">↗</span></a>
+          <div class="benchmark-scale" aria-label="Salary benchmark scale">
+            <span style="width: 66%"></span>
+          </div>
+          <div class="benchmark-labels"><span>€50k</span><span>€90k+</span></div>
+        </article>
+      </section>
+
+      <section id="opportunities" class="jobs-section section-shell" aria-labelledby="jobs-title">
+        <div class="section-title-row">
+          <div>
+            <div class="eyebrow"><span>02</span> Ranked opportunities</div>
+            <h2 id="jobs-title">Best company matches first.</h2>
+          </div>
+          <div class="results-tools">
+            <p id="results-label" aria-live="polite">Loading opportunities…</p>
+            <a href="https://www.arbeitsagentur.de/jobsuche/suche?angebotsart=1&amp;was=Data%20Scientist&amp;wo=Hamburg&amp;umkreis=50" target="_blank" rel="noopener noreferrer">Search BA manually <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="filters" aria-label="Job filters">
+          <label class="search-field">
+            <span class="sr-only">Search jobs</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="search-input" type="search" placeholder="Search title, company or skill">
+          </label>
+          <label>
+            <span class="sr-only">Company</span>
+            <select id="company-filter"><option value="">All companies</option></select>
+          </label>
+          <label>
+            <span class="sr-only">Minimum match score</span>
+            <select id="match-filter">
+              <option value="0">Any match</option>
+              <option value="60">60+ match</option>
+              <option value="70">70+ match</option>
+              <option value="80">80+ match</option>
+            </select>
+          </label>
+          <label class="salary-filter">
+            <span>Min. salary <b id="salary-filter-value">€60k</b></span>
+            <input id="salary-filter" type="range" min="40" max="100" step="5" value="60">
+          </label>
+          <button id="reset-filters" class="text-button" type="button">Reset</button>
+        </div>
+
+        <div id="job-list" class="job-list" aria-live="polite">
+          <div class="job-card loading-card"><div></div><div></div><div></div></div>
+          <div class="job-card loading-card"><div></div><div></div><div></div></div>
+        </div>
+      </section>
+
+      <section class="method-section section-shell" aria-labelledby="method-title">
+        <div class="eyebrow"><span>03</span> Transparent by design</div>
+        <div class="method-grid">
+          <div>
+            <h2 id="method-title">What the score<br>actually means.</h2>
+          </div>
+          <div class="method-copy">
+            <p>The match score combines role alignment (30%), CV skill overlap (40%), seniority (15%), Hamburg/remote fit (10%), and domain relevance (5%). It is a prioritization aid, not a hiring probability.</p>
+            <details>
+              <summary>How salary estimates work</summary>
+              <p>Employer-published ranges pass through unchanged. Otherwise the model starts from Bundesagentur für Arbeit medians, applies a role-family and level factor, then a small profile-fit adjustment. Estimated ranges are intentionally broad and shown with medium or low confidence.</p>
+            </details>
+            <details>
+              <summary>Where jobs come from</summary>
+              <p>The updater visits permitted official career pages, refreshes Experimentation Jobs and the community-documented BA Jobsuche endpoint once daily, and uses at most ten Brave Search requests per UTC day. Dated results remain for 21 days. Jobs with unclear, on-site, or region-restricted work models stay visible but are marked and ranked lower; weapons, defence-specific, gambling, tobacco, and adult-industry roles are excluded. Google Search, LinkedIn, and Bundesagentur web pages are not scraped.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <div>
+        <span class="brand-mark mini" aria-hidden="true"><i></i><i></i><i></i></span>
+        <strong>Tim Umbach · Data Scientist</strong>
+      </div>
+      <p><a href="index.html">About</a> · <a href="contact.html">Contact</a> · Salary estimates are not guarantees</p>
+    </footer>
+
+    <dialog id="job-dialog" class="job-dialog">
+      <button class="dialog-close" type="button" aria-label="Close details">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+  </body>
+</html>
