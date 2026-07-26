@@ -1,9 +1,9 @@
 {
-  "request_date_utc": "2026-07-25",
+  "request_date_utc": "2026-07-26",
   "request_count": 1,
-  "query": "Product Analyst",
+  "query": "Experimentation",
   "status": "success",
-  "updated_at": "2026-07-25T06:29:26+00:00",
-  "listing_count": 24,
-  "accepted_results": 5
+  "updated_at": "2026-07-26T06:49:10+00:00",
+  "listing_count": 0,
+  "accepted_results": 0
 }
