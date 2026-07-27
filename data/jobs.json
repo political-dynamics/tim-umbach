@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T06:39:34+00:00",
+    "generated_at": "2026-07-27T18:56:18+00:00",
     "mode": "live official pages + dated snapshot coverage",
-    "job_count": 47,
+    "job_count": 48,
     "location": "Hamburg",
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2024",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987",
-    "preference_excluded_count": 15,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 13 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (4 accepted)",
+    "preference_excluded_count": 17,
+    "brave_search_status": "Brave daily budget: success (10/10 requests used, 4 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: error (0 accepted)",
     "ba_jobs_status": "BA API refresh: success (6 detailed)",
     "errors": [
       "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd: HTTPError: HTTP Error 404: Not Found"
@@ -22,16 +22,14 @@
       "work_mode": "Hybrid",
       "level": "senior",
       "url": "https://corporate.aboutyou.de/en/career/jobs/senior-data-scientist-search-engine-all-genders-hamburg-or-berlin-germany",
-      "date_posted": "April 2, 2026",
+      "date_posted": "",
       "description": "Build and deploy machine-learning algorithms for personalized shopping. Python, SQL, large-scale data pipelines, cloud platforms and statistical model evaluation. Recommendation, retrieval, experimentation, BigQuery and CI/CD experience are useful.",
       "salary_min": 70000,
       "salary_max": 85000,
       "salary_currency": "EUR",
       "salary_source": "Employer advertised",
       "discovery_source": "Official career page",
-      "freshness": "Brave query 2026-07-24",
-      "brave_query_date": "2026-07-24",
-      "confirmed_by": "Brave Search API",
+      "freshness": "snapshot 2026-07-20",
       "id": "52cbf71dc1e0",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -64,8 +62,8 @@
       "date_posted": "",
       "description": "* Otto Group data.works GmbH - Als Senior Full Stack Engineer (w/m/d) Python und Vue.js entwickelst du gemeinsam mit deinem Team skalierbare Data- und AI-Produkte für verschiedene Unternehmen der Otto Group, von der ersten Idee bis zum stabilen Einsatz im produktiven Betrieb. * Umsetzung und Weiterentwicklung von Data- und AI-Produkten im produktiven Einsatz, mit Fokus auf robuste und skalierbare Systeme * Data: PostgreSQL, BigQuerymehr ... Leipzig, Berlin, Hamburg, Hannover, Düsseldorf, Köln, Hemmerde, Kessebüren, Lünern, Siddinghausen ... Als Absolvent kannst du als Data-Analyst, Data Scientist, IT-Berater oder Software-Architekt und in vielen weiteren Berufen Karriere machen.",
       "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-07-22",
-      "brave_query_date": "2026-07-22",
+      "freshness": "Brave query 2026-07-27",
+      "brave_query_date": "2026-07-27",
       "id": "ef8e98af6c83",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -86,7 +84,8 @@
       "salary_max": 91000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "high"
+      "salary_confidence": "high",
+      "confirmed_by": "Brave Search API"
     },
     {
       "title": "Data Analyst (all genders) — Supply Data Solutions",
@@ -737,8 +736,8 @@
       "date_posted": "",
       "description": "Finden Sie jetzt 83 zu besetzende Data Scientist, Nlp, Airbus Jobs in Hamburg auf Indeed.com, der weltweiten Nr. 1 der Online-Jobbörsen. (Basierend auf Total Visits weltweit, Quelle: comScore)",
       "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-07-24",
-      "brave_query_date": "2026-07-24",
+      "freshness": "Brave query 2026-07-27",
+      "brave_query_date": "2026-07-27",
       "id": "c03d9aabe786",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -814,7 +813,7 @@
       "salary_max": 81000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
     },
     {
       "title": "(Senior) Business Analyst (w/m/d) Geschäftsmodelle und Konditionen",
@@ -926,8 +925,8 @@
       "date_posted": "2026-07-23",
       "description": "Note: By applying to this position you will have an opportunity to share your preferred working location from the following: Munich, Germany; Berlin, Germany; Frankfurt am Main, Germany; Hamburg, Germany. Minimum qualifications: Bachelor's degree or equivalent practical experience. 5 years of experience in media analytics, advertising sales, digital media and marketing, consulting, or financial analysis. Preferred qualifications: Experience in translating data into business recommendations, creating and delivering appealing insights-based presentations or business cases with clear recommendations and aligned with customers objectives. Experience in data analyses and visualization (Google Sheets and Slides), scripting (Google SQL), Dashboard development (Looker Studio), and leverage AI for analytics. Advertising experience from either the advertiser, agency or other media owner side. Abil",
       "discovery_source": "BA Jobsuche endpoint — bund.dev documentation",
-      "freshness": "BA API refresh 2026-07-24",
-      "ba_query_date": "2026-07-24",
+      "freshness": "BA API refresh 2026-07-27",
+      "ba_query_date": "2026-07-27",
       "ba_reference": "17486-109061044818584262-S",
       "id": "b295562ea9a5",
       "work_mode_fit": "unclear",
@@ -980,7 +979,41 @@
       "salary_max": 96000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
+    },
+    {
+      "title": "Principal Data Strategist (m/f/d)",
+      "company": "ThoughtWorks Deutschland GmbH Standort Hamburg",
+      "location": "Hamburg, Hamburg, Deutschland",
+      "work_mode": "",
+      "level": "staff",
+      "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003449437-S",
+      "date_posted": "2026-07-27",
+      "description": "Principal data strategists at Thoughtworks are experienced consultants who work with clients to create winning data solutions that meet business goals. They play a pivotal role in developing modern data architecture approaches that directly address our clients' key business objectives. Their responsibilities span in-depth reviews of current data and technology strategy, targeted data strategy, guiding clients to unlock the full potential of data, and providing high-level roadmaps. This role entails a mix of advisory responsibilities in data strategy and governance, coupled with a solid delivery-lead role and a breadth of data and AI ecosystem expertise. This is a client-facing, builder's leadership role. You will start with a small, senior team and grow it through technical depth, delivery excellence and thought leadership, rather than inheriting a large organisation to manage. The role ",
+      "discovery_source": "BA Jobsuche endpoint — bund.dev documentation",
+      "freshness": "BA API refresh 2026-07-27",
+      "ba_query_date": "2026-07-27",
+      "ba_reference": "10001-1003449437-S",
+      "id": "e4643f22fe6a",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 47,
+      "matched_skills": [
+        "Stakeholder consulting",
+        "Machine learning"
+      ],
+      "fit_reasons": [
+        "Role alignment: Data Scientist",
+        "Skill overlap: Stakeholder consulting, Machine learning",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 78000,
+      "salary_mid": 87000,
+      "salary_max": 96000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "low"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1089,8 +1122,8 @@
       "date_posted": "2026-07-21",
       "description": "Standort: Frankfurt, Stuttgart, Hannover, Hamburg, München, Ludwigshafen, Nürnberg, Berlin Job-ID: 215783 **Deine Aufgaben** **|| Remark: The following position requires fluent German language skills** (min. level C1), both written and spoken. Als Data & AI Platform Expert w/m/d bist Du die zentrale Schnittstelle zwischen unseren Plattformen und den Applikationsteams. Mit Deinem tiefen technischen Verständnis unterstützt Du unsere Kunden und deren Applikationsteams dabei, das volle Potenzial von Data & AI auszuschöpfen. Du übernimmst folgende Aufgaben: - Du unterstützt Applikationsteams dabei, die Möglichkeiten unserer Plattform-Services optimal zu nutzen. - Du begleitest Applikationen von der ersten Idee und dem Proof of Concept bis hin zum Deployment der vollständigen Lösung. - Du integrierst KI-Komponenten in Applikationen – z. B. MCP, agentische Workflows oder API Gateways. - Du wähl",
       "discovery_source": "BA Jobsuche endpoint — bund.dev documentation",
-      "freshness": "BA API refresh 2026-07-24",
-      "ba_query_date": "2026-07-24",
+      "freshness": "BA API refresh 2026-07-27",
+      "ba_query_date": "2026-07-27",
       "ba_reference": "10001-1003417833-S",
       "id": "31d0dfb9ff8f",
       "work_mode_fit": "unclear",
@@ -1247,7 +1280,7 @@
       "level": "experienced",
       "url": "https://www.glassdoor.de/Job/hamburg-data-analyst-jobs-SRCH_IL.0,7_IC2804376_KO8,20.htm",
       "date_posted": "",
-      "description": "Freenet bietet ein umfangreiches Portfolio rund um die Themen Mobilfunk, Internet und TV-Entertainment. Online auf www.freenet-digital.de sowie in rund 520…&hellip; ... At Statista, we’re all about facts and data, for we are the world's leading business data platform.",
+      "description": "Freenet bietet ein umfangreiches Portfolio rund um die Themen Mobilfunk, Internet und TV-Entertainment. Online auf www.freenet-digital.de sowie in rund 520…… ... At Statista, we’re all about facts and data, for we are the world's leading business data platform.",
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-07-21",
       "brave_query_date": "2026-07-21",
@@ -1267,7 +1300,7 @@
       "salary_max": 85000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
     },
     {
       "title": "Data Analyst (w/m/d) in Hamburg at Hapag-Lloyd AG - Job & application – JobCheck",
@@ -1297,6 +1330,35 @@
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
       "salary_confidence": "high"
+    },
+    {
+      "title": "Data Analyst (m/w/d) - The Data School Deutschland, Hamburg - Ausbildung, Studium, Vollzeit Job in Hamburg",
+      "company": "OTTO",
+      "location": "Hamburg area",
+      "work_mode": "",
+      "level": "experienced",
+      "url": "https://www.stepstone.de/stellenangebote--Data-Analyst-m-w-d-The-Data-School-Deutschland-Hamburg-Hamburg-TIL-The-Information-Lab-Deutschland-GmbH--11479464-inline.html",
+      "date_posted": "1 week ago",
+      "description": "The Information Lab betreut Kunden wie Hapag-Lloyd // Kühne & Nagel // DZ Bank // Union Investment // Moia // Hanse Merkur // Volkswagen // Hamburg Süd // Lufthansa // Daimler // Vodafone // DAK // Deutsche Bahn // Funke Medien // OTTO // Tchibo // BCG // PWC // Sartorius // Stada // TUI und viele weitere…",
+      "discovery_source": "Brave Search API — daily request budget",
+      "freshness": "Brave query 2026-07-27",
+      "brave_query_date": "2026-07-27",
+      "id": "39a5a188450e",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 42,
+      "matched_skills": [],
+      "fit_reasons": [
+        "Role alignment: Senior Data Analyst",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 69000,
+      "salary_mid": 77000,
+      "salary_max": 85000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "medium"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1359,7 +1421,7 @@
       "salary_max": 77000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high"
     },
     {
       "title": "Data Science Remote: > 50 Jobs, Arbeit in Hamburg | Indeed",
@@ -1421,7 +1483,7 @@
       "salary_max": 65000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1513,36 +1575,6 @@
       "salary_min": 75000,
       "salary_mid": 83000,
       "salary_max": 91000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
-    },
-    {
-      "title": "Global Consumer Intelligence Manager NIVEA - 2-Year Fixed-Term Contract (all genders)",
-      "company": "Beiersdorf",
-      "location": "Hamburg, Germany",
-      "work_mode": "",
-      "level": "intern",
-      "url": "https://www.beiersdorf.com/career/jobs/d8910db6ddca0127dd15cb6d0b9599c4",
-      "date_posted": "",
-      "description": "Global Consumer Intelligence Manager NIVEA - 2-Year Fixed-Term Contract (all genders) Apply now Job Details Contract Type: Unlimited / Full-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks Develop market research plans that address key business priorities, aligned to business strategy Actively consult with the category teams to ensure the innovation pipeline is rooted in consumer trends and insights Conception, steering and quality control of market research projects independently; consulting internal stakeholders in the interpretation and evaluation of research results Translate data & insights into concrete, actionable and business-oriented recommendations that drive impactful business decisions Drive a consumer centric culture, building a strong sense of consumer empathy within category teams and acting as an advocate f",
-      "discovery_source": "Official career page",
-      "freshness": "live check",
-      "id": "33ba1a374c43",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 18,
-      "matched_skills": [
-        "Stakeholder consulting"
-      ],
-      "fit_reasons": [
-        "Skill overlap: Stakeholder consulting",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 26000,
-      "salary_mid": 29000,
-      "salary_max": 32000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
       "salary_confidence": "low"

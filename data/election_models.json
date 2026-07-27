@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-27T20:48:40+02:00",
+    "generated_at": "2026-07-27T18:53:53+00:00",
     "dawum_updated_at": "2026-07-25T18:41:26+02:00",
     "method_version": "1.0",
     "license": {
@@ -16,10 +16,13 @@
       "source_note": "Real GDP year-on-year; BA unemployment rate change in percentage points."
     },
     "candidate_search": {
-      "status": "key_unavailable",
-      "last_attempted_at": "2026-07-27T18:48:39+00:00",
-      "requests_used": 0,
-      "message": "Brave candidate search: API key unavailable; curated names retained"
+      "status": "success",
+      "last_attempted_at": "2026-07-27T18:53:44+00:00",
+      "requests_used": 7,
+      "last_successful_at": "2026-07-27T18:53:44+00:00",
+      "verified_candidates": 22,
+      "shared_daily_limit": 10,
+      "message": "Brave candidate search: success (7/7 weekly requests, 22 names verified)"
     },
     "sources": [
       {
@@ -227,10 +230,10 @@
             "party": "CDU/CSU",
             "probability": 64,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.tagesschau.de/inland/bundestagswahl/parteien/kanzlerkandidaten-bundestagswahl-100.html",
+            "source_title": "Bundestagswahl 2025: Mit diesen Kanzler- und Spitzenkandidaten treten die Parteien an",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -418,10 +421,10 @@
             "party": "CDU/CSU",
             "probability": 65,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.tagesschau.de/inland/bundestagswahl/parteien/kanzlerkandidaten-bundestagswahl-100.html",
+            "source_title": "Bundestagswahl 2025: Mit diesen Kanzler- und Spitzenkandidaten treten die Parteien an",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -610,10 +613,10 @@
             "party": "CDU",
             "probability": 41,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/agh-bvv-volksentscheid-waehler-termin-kandidaten-faq.html",
+            "source_title": "Berlin-Wahl 2026: Die wichtigsten Infos im Überblick",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Tobias Schulze",
@@ -792,10 +795,10 @@
             "party": "CDU",
             "probability": 41,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/agh-bvv-volksentscheid-waehler-termin-kandidaten-faq.html",
+            "source_title": "Berlin-Wahl 2026: Die wichtigsten Infos im Überblick",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Tobias Schulze",
@@ -984,10 +987,10 @@
             "party": "SPD",
             "probability": 27,
             "color": "#d64b4b",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.zeit.de/politik/deutschland/2026-06/manuela-schwesig-spd-spitzenkandidatin-landtagswahl-mecklenburg-vorpommern",
+            "source_title": "Landtagswahlen: SPD-Spitzenkandidaten in NRW und Mecklenburg-Vorpommern gekürt | DIE ZEIT",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           }
         ],
         "unresolved_probability": 73
@@ -1156,10 +1159,10 @@
             "party": "SPD",
             "probability": 31,
             "color": "#d64b4b",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.zeit.de/politik/deutschland/2026-06/manuela-schwesig-spd-spitzenkandidatin-landtagswahl-mecklenburg-vorpommern",
+            "source_title": "Landtagswahlen: SPD-Spitzenkandidaten in NRW und Mecklenburg-Vorpommern gekürt | DIE ZEIT",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           }
         ],
         "unresolved_probability": 69
@@ -1338,20 +1341,20 @@
             "party": "AfD",
             "probability": 33,
             "color": "#4d91c6",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://rathausnachrichten.de/landtagswahl-sachsen-anhalt-2026-termin-umfragen-kandidaten/",
+            "source_title": "Landtagswahl Sachsen-Anhalt 2026: Termin, Umfragen, Kandidaten",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Sven Schulze",
             "party": "CDU",
             "probability": 16,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.zeit.de/politik/deutschland/2026-06/spitzenkandidaten-sachsen-anhalt-landtagswahl-afd-cdu-linke-gxe",
+            "source_title": "Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidierenden in Sachsen-Anhalt | DIE ZEIT",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           }
         ],
         "unresolved_probability": 51
@@ -1520,20 +1523,20 @@
             "party": "AfD",
             "probability": 32,
             "color": "#4d91c6",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://rathausnachrichten.de/landtagswahl-sachsen-anhalt-2026-termin-umfragen-kandidaten/",
+            "source_title": "Landtagswahl Sachsen-Anhalt 2026: Termin, Umfragen, Kandidaten",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Sven Schulze",
             "party": "CDU",
             "probability": 17,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.zeit.de/politik/deutschland/2026-06/spitzenkandidaten-sachsen-anhalt-landtagswahl-afd-cdu-linke-gxe",
+            "source_title": "Landtagswahl in Sachsen-Anhalt: Das sind die Spitzenkandidierenden in Sachsen-Anhalt | DIE ZEIT",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           }
         ],
         "unresolved_probability": 51
@@ -1703,20 +1706,20 @@
             "party": "CDU",
             "probability": 86,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
+            "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Jochen Ott",
             "party": "SPD",
             "probability": 0,
             "color": "#d64b4b",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.nrwspd.de/2026/01/23/landtagswahl-2027-nrwspd-vorstand-nominiert-jochen-ott-als-spitzenkandidaten/",
+            "source_title": "Landtagswahl 2027: NRWSPD-Vorstand nominiert Jochen Ott als Spitzenkandidaten › NRWSPD",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           }
         ],
         "unresolved_probability": 14
@@ -1876,20 +1879,20 @@
             "party": "CDU",
             "probability": 86,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
+            "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Jochen Ott",
             "party": "SPD",
             "probability": 0,
             "color": "#d64b4b",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.nrwspd.de/2026/01/23/landtagswahl-2027-nrwspd-vorstand-nominiert-jochen-ott-als-spitzenkandidaten/",
+            "source_title": "Landtagswahl 2027: NRWSPD-Vorstand nominiert Jochen Ott als Spitzenkandidaten › NRWSPD",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           }
         ],
         "unresolved_probability": 14
@@ -2070,10 +2073,10 @@
             "party": "CDU",
             "probability": 67,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/landtagswahl-2027-in-sh-auf-diese-themen-setzen-die-parteien,parteiprogramme-100.html",
+            "source_title": "Landtagswahl 2027 in SH: So suchen die Parteien ihre Themen | ndr.de",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -2254,10 +2257,10 @@
             "party": "CDU",
             "probability": 71,
             "color": "#282828",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/landtagswahl-2027-in-sh-auf-diese-themen-setzen-die-parteien,parteiprogramme-100.html",
+            "source_title": "Landtagswahl 2027 in SH: So suchen die Parteien ihre Themen | ndr.de",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -2437,20 +2440,20 @@
             "party": "SPD",
             "probability": 86,
             "color": "#d64b4b",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
+            "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Katharina Fegebank",
             "party": "Grüne",
             "probability": 4,
             "color": "#62a654",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
+            "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           }
         ],
         "unresolved_probability": 10
@@ -2610,20 +2613,20 @@
             "party": "SPD",
             "probability": 86,
             "color": "#d64b4b",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
+            "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           },
           {
             "name": "Katharina Fegebank",
             "party": "Grüne",
             "probability": 4,
             "color": "#62a654",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
+            "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
+            "source_checked_at": "2026-07-27T18:53:44+00:00"
           }
         ],
         "unresolved_probability": 10
