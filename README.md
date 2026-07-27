@@ -3,13 +3,46 @@
 A static personal website for Tim Umbach, a Hamburg-based data scientist
 specialising in experimentation, causal inference, and product analytics.
 
-The site has three pages:
+The site has four pages:
 
 - `index.html`: professional profile, experience, and areas of expertise.
 - `contact.html`: public professional contact channels.
 - `job-radar.html`: an interactive work sample that ranks Hamburg data roles
   against a local profile and shows either an employer-published salary range
   or a transparent estimate.
+- `election-lab.html`: an interactive federal/state election-model showcase
+  built from DAWUM polling data, with poll-only logit and economy-enriched
+  probit specifications, coalition paths, and historical backtests.
+
+## Election model snapshot
+
+Refresh the Election Lab data from DAWUM's ODbL-licensed open JSON API:
+
+```bash
+python scripts/collect_election_models.py
+```
+
+The GitHub Pages workflow runs once a week, on Monday at 04:17 UTC. It calls
+the election collector with `--discover-candidates` first, reserving at most
+seven of the shared ten-request daily Brave budget for current candidate-name
+evidence. The Job Radar refresh then uses the remaining requests. Candidate
+names are retained as curated fallbacks when Brave does not return a matching
+source, so a search snippet can never silently invent or replace a person.
+
+For an offline or reproducible run, download the API response once and pass it
+to the collector:
+
+```bash
+python scripts/collect_election_models.py --input /path/to/dawum.json
+```
+
+The generated `data/election_models.json` is small enough for static hosting.
+The poll-only specification weights recent polls by recency and square-root
+sample size on the log-odds scale. The second specification adds a capped
+economic-vote term based on real-GDP growth and the change in the BA
+unemployment rate, then simulates on a latent-normal scale. Coalition formation
+priors are explicit and separate from parliamentary-majority probabilities.
+This is a methodological portfolio project, not voting advice.
 
 ## Recommended architecture
 
