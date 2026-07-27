@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An interactive probit and logit election-model showcase for Germany, using DAWUM polls and macroeconomic signals.">
+    <meta name="theme-color" content="#743129">
+    <title>Election Lab · Tim Umbach</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/election-models.js" defer></script>
+  </head>
+  <body class="election-page">
+    <a class="skip-link" href="#forecast">Skip to the forecast</a>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Tim Umbach home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Tim Umbach <b>· Data Scientist</b></span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="job-radar.html">Job Radar</a>
+        <a href="election-lab.html" aria-current="page">Election Lab</a>
+      </nav>
+    </header>
+
+    <main id="forecast">
+      <section class="election-hero section-shell" aria-labelledby="election-title">
+        <div class="election-hero-topline">
+          <div class="eyebrow"><span>01</span> German election modelling · case study</div>
+          <div class="radar-status"><span class="live-dot" aria-hidden="true"></span><span id="election-data-status">Loading DAWUM snapshot…</span></div>
+        </div>
+        <div class="election-hero-grid">
+          <div>
+            <h1 id="election-title">Polls estimate votes.<br><em>This models power.</em></h1>
+            <p class="hero-copy">A transparent logit/probit showcase for federal and state elections: vote uncertainty becomes seats, viable coalitions, and a probabilistic head of government.</p>
+          </div>
+          <aside class="forecast-controls" aria-label="Forecast selections">
+            <div class="control-index">Model console / 01</div>
+            <label for="election-select">Election</label>
+            <select id="election-select">
+              <option>Loading elections…</option>
+            </select>
+            <fieldset>
+              <legend>Specification</legend>
+              <div class="model-switch" id="model-switch">
+                <button type="button" data-model="poll_only" aria-pressed="true">
+                  <span>01</span> Poll-only logit
+                </button>
+                <button type="button" data-model="economy" aria-pressed="false">
+                  <span>02</span> Economy probit
+                </button>
+              </div>
+            </fieldset>
+            <p id="model-caption">Recency and sample-weighted polling on the log-odds scale.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="forecast-summary section-shell" aria-label="Forecast summary">
+        <article class="forecast-lead-card">
+          <p>Model-implied <span id="head-title">head of government</span></p>
+          <div class="leader-avatar" id="leader-initials" aria-hidden="true">—</div>
+          <h2 id="leader-name">Loading…</h2>
+          <div class="prediction-meta">
+            <span class="party-pill" id="leader-party">—</span>
+            <span><strong id="leader-probability">—</strong> lead probability</span>
+          </div>
+        </article>
+        <article class="forecast-stat-card coalition-summary-card">
+          <p>Highest formation probability</p>
+          <h2 id="top-coalition">—</h2>
+          <div id="top-coalition-parties" class="coalition-party-dots" aria-label="Coalition parties"></div>
+          <span><strong id="coalition-probability">—</strong> modeled pathway</span>
+        </article>
+        <article class="forecast-stat-card">
+          <p>Parliamentary majority</p>
+          <div class="summary-ring" id="majority-ring" style="--value:0">
+            <strong id="majority-probability">—</strong>
+          </div>
+          <span id="majority-support">— projected seat share</span>
+        </article>
+        <article class="forecast-stat-card freshness-card">
+          <p>Evidence window</p>
+          <strong id="poll-count">—</strong>
+          <span id="latest-poll">Latest poll —</span>
+          <small>DAWUM polls in the model window</small>
+        </article>
+      </section>
+
+      <section class="forecast-grid section-shell" aria-label="Vote and coalition projections">
+        <article class="election-panel vote-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="overline">Latent vote estimate</p>
+              <h2>Vote-to-seat projection</h2>
+            </div>
+            <p class="chart-note">Dots are model means; lines show the central 80% simulation interval.</p>
+          </div>
+          <div class="seat-ribbon-wrap">
+            <div class="seat-ribbon-labels">
+              <span>Projected seats</span>
+              <span id="seat-total">630 seats</span>
+            </div>
+            <div id="seat-ribbon" class="seat-ribbon" aria-label="Projected seat composition"></div>
+            <div class="majority-marker" aria-hidden="true"><i></i><span>50%</span></div>
+          </div>
+          <div id="vote-chart" class="vote-chart" role="img" aria-label="Projected party vote shares and uncertainty intervals">
+            <div class="loading-block"></div>
+          </div>
+          <div class="threshold-note"><i></i> The 5% threshold is modeled; direct mandates and overhang/leveling details are not.</div>
+        </article>
+
+        <article class="election-panel coalition-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="overline">From arithmetic to government</p>
+              <h2>Coalition paths</h2>
+            </div>
+          </div>
+          <div id="coalition-list" class="coalition-list">
+            <div class="loading-block"></div>
+          </div>
+          <p class="formation-note">Formation probability combines simulated seat majorities with an explicit compatibility prior. It is not the same as majority probability.</p>
+        </article>
+      </section>
+
+      <section class="signal-grid section-shell" aria-label="Candidate and economic signals">
+        <article class="signal-card candidate-card">
+          <div>
+            <p class="overline">Brave-checked candidate evidence</p>
+            <h2><span id="candidate-title">Chancellor</span> likelihood</h2>
+            <p class="candidate-card-note">Names are checked weekly against current web results; links show the evidence retained by the model.</p>
+          </div>
+          <div id="candidate-list" class="candidate-list"></div>
+        </article>
+        <article class="signal-card economy-card">
+          <div class="economy-card-heading">
+            <div>
+              <p class="overline">Model 02 · economic vote</p>
+              <h2>Macro overlay</h2>
+            </div>
+            <span id="economy-period">2026 projection</span>
+          </div>
+          <div class="economy-values">
+            <div><span>Real GDP Δ</span><strong id="gdp-change">—</strong></div>
+            <div><span>Unemployment Δ</span><strong id="unemployment-change">—</strong></div>
+            <div><span>BA rate</span><strong id="unemployment-rate">—</strong></div>
+          </div>
+          <div class="model-delta">
+            <span>Effect on leading candidate</span>
+            <strong id="model-delta">—</strong>
+          </div>
+          <p>Growth and labour-market change enter as a deliberately small incumbent-party correction. Polls remain the dominant signal.</p>
+        </article>
+      </section>
+
+      <section class="backtest-section section-shell" aria-labelledby="backtest-title">
+        <div class="section-title-row">
+          <div>
+            <div class="eyebrow"><span>02</span> Out-of-sample sense check</div>
+            <h2 id="backtest-title">How the models fit<br>previous elections.</h2>
+          </div>
+          <div class="backtest-summary">
+            <div><strong id="logit-mae">—</strong><span>Poll-only MAE</span></div>
+            <div><strong id="probit-mae">—</strong><span>Economy MAE</span></div>
+            <div><strong id="winner-calls">—</strong><span>Winners called</span></div>
+          </div>
+        </div>
+        <article class="backtest-panel">
+          <div class="backtest-scale" aria-hidden="true"><span>0 pp</span><span>1</span><span>2</span><span>3</span><span>4+ pp MAE</span></div>
+          <div id="backtest-chart" class="backtest-chart"></div>
+          <div class="backtest-legend"><span><i class="logit-dot"></i>Poll-only logit</span><span><i class="probit-dot"></i>Economy probit</span></div>
+        </article>
+      </section>
+
+      <section class="method-section election-method section-shell" aria-labelledby="election-method-title">
+        <div class="eyebrow"><span>03</span> Transparent by construction</div>
+        <div class="method-grid">
+          <div>
+            <h2 id="election-method-title">A model you can<br>argue with.</h2>
+          </div>
+          <div class="method-copy">
+            <p>The page separates three questions: expected vote share, the probability that a party combination clears 50% of modeled seats, and the probability that such a combination actually forms a government.</p>
+            <details open>
+              <summary>Poll-only logit</summary>
+              <p>Up to twelve recent DAWUM polls are weighted by recency and square-root sample size. Party support is simulated on the log-odds scale, keeping predicted shares inside plausible bounds.</p>
+            </details>
+            <details>
+              <summary>Economy-enriched probit</summary>
+              <p>The second specification adds a capped economic-vote term: 0.32 × real-GDP growth − 0.55 × the change in the BA unemployment rate. A latent-normal simulation translates that signal into vote and seat uncertainty.</p>
+            </details>
+            <details>
+              <summary>What “fit” means here</summary>
+              <p>Backtests freeze the polling window before nine federal and state elections and report mean absolute party-vote error. They are a compact diagnostic, not enough evidence to claim structural forecasting superiority.</p>
+            </details>
+            <details>
+              <summary>Important limits</summary>
+              <p>Candidate names are Brave-verified where a matching current source is found and otherwise remain explicitly curated fallbacks. Their probabilities are inferred from modeled coalition paths, not direct candidate polling. Formation priors encode present political compatibility and can change. Tactical voting, direct mandates, turnout shocks, campaign effects, and the full state-specific seat laws are simplified.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="source-band">
+        <div class="section-shell source-band-grid">
+          <div>
+            <p class="section-number light">04 / Sources</p>
+            <h2>Data with a<br>paper trail.</h2>
+          </div>
+          <div>
+            <p>Polling is derived from DAWUM’s ODbL-licensed open database. Economic inputs come from the German government, Destatis, and the Federal Employment Agency. Historical outcomes are checked against official election results.</p>
+            <div id="source-links" class="source-links"></div>
+            <small>This is a methodological portfolio project, not voting advice or a published election forecast.</small>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <div><span class="brand-mark mini" aria-hidden="true"><i></i><i></i><i></i></span><strong>Tim Umbach · Data Scientist</strong></div>
+      <p><a href="index.html">About</a> · <a href="job-radar.html">Job Radar</a> · <a href="contact.html">Contact</a></p>
+    </footer>
+  </body>
+</html>
