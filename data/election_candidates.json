@@ -1,10 +1,10 @@
 {
   "meta": {
-    "status": "success",
-    "last_attempted_at": "2026-07-27T18:53:44+00:00",
-    "requests_used": 7,
+    "status": "budget_exhausted",
+    "last_attempted_at": "2026-07-27T19:00:22+00:00",
+    "requests_used": 0,
     "last_successful_at": "2026-07-27T18:53:44+00:00",
-    "verified_candidates": 22,
+    "verified_candidates": 0,
     "shared_daily_limit": 10
   },
   "elections": {

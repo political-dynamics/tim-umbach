@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-27T18:53:53+00:00",
+    "generated_at": "2026-07-27T19:00:25+00:00",
     "dawum_updated_at": "2026-07-25T18:41:26+02:00",
     "method_version": "1.0",
     "license": {
@@ -16,13 +16,13 @@
       "source_note": "Real GDP year-on-year; BA unemployment rate change in percentage points."
     },
     "candidate_search": {
-      "status": "success",
-      "last_attempted_at": "2026-07-27T18:53:44+00:00",
-      "requests_used": 7,
+      "status": "budget_exhausted",
+      "last_attempted_at": "2026-07-27T19:00:22+00:00",
+      "requests_used": 0,
       "last_successful_at": "2026-07-27T18:53:44+00:00",
-      "verified_candidates": 22,
+      "verified_candidates": 0,
       "shared_daily_limit": 10,
-      "message": "Brave candidate search: success (7/7 weekly requests, 22 names verified)"
+      "message": "Brave candidate search: budget_exhausted (0/7 weekly requests, 0 names verified)"
     },
     "sources": [
       {
