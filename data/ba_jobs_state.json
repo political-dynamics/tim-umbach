@@ -1,11 +1,11 @@
 {
-  "request_date_utc": "2026-07-27",
+  "request_date_utc": "2026-08-03",
   "request_count": 1,
-  "detail_request_count": 6,
+  "detail_request_count": 4,
   "query": "Informatik",
   "status": "success",
-  "updated_at": "2026-07-27T07:49:35+00:00",
+  "updated_at": "2026-08-03T07:47:22+00:00",
   "search_result_count": 50,
-  "normalized_results": 6,
+  "normalized_results": 4,
   "detail_error_types": []
 }

@@ -12,7 +12,7 @@
   "bootstrap_completed_at": "2026-07-20T11:38:56+00:00",
   "bootstrap_accepted_results": 10,
   "bootstrap_error_types": [],
-  "request_date_utc": "2026-07-27",
+  "request_date_utc": "2026-08-03",
   "request_count": 10,
   "daily_attempted_queries": [
     "candidate:bundestag:Federal election Bundestag 2029 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU/CSU SPD AfD Grüne Linke",
@@ -28,11 +28,11 @@
   ],
   "accepted_results": 4,
   "query": "(Data Scientist OR Data Analyst OR Product Analyst OR Business Intelligence) (Hamburg OR remote) (MOIA OR FREE NOW OR Airbus OR Hapag-Lloyd OR HHLA OR Lufthansa Technik OR Jungheinrich OR HELM OR Google OR Adobe) (hybrid OR remote)",
-  "candidate_search_status": "budget_exhausted",
-  "candidate_search_updated_at": "2026-07-27T19:00:22+00:00",
-  "candidate_search_requests": 0,
-  "candidate_search_verified": 0,
+  "candidate_search_status": "success",
+  "candidate_search_updated_at": "2026-08-03T07:45:21+00:00",
+  "candidate_search_requests": 7,
+  "candidate_search_verified": 22,
   "status": "success",
-  "updated_at": "2026-07-27T18:56:18+00:00",
+  "updated_at": "2026-08-03T07:47:24+00:00",
   "daily_error_types": []
 }

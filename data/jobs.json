@@ -1,17 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-07-27T19:02:11+00:00",
+    "generated_at": "2026-08-03T07:47:24+00:00",
     "mode": "live official pages + dated snapshot coverage",
-    "job_count": 48,
+    "job_count": 51,
     "location": "Hamburg",
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2024",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987",
-    "preference_excluded_count": 17,
-    "brave_search_status": "Brave daily budget already used (10/10); skipped",
-    "experimentation_jobs_status": "Experimentation Jobs daily refresh already used; cached",
-    "ba_jobs_status": "BA API daily search already used; cached",
+    "preference_excluded_count": 16,
+    "brave_search_status": "Brave daily budget: success (10/10 requests used, 4 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (4 accepted)",
+    "ba_jobs_status": "BA API refresh: success (4 detailed)",
     "errors": [
-      "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd: HTTPError: HTTP Error 404: Not Found"
+      "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd: HTTPError: HTTP Error 404: Not Found",
+      "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/: HTTPError: HTTP Error 404: Not Found",
+      "https://careers.publicisgroupe.com/jobs/150410?lang=de-de: HTTPError: HTTP Error 502: Bad Gateway"
     ]
   },
   "jobs": [
@@ -327,6 +329,39 @@
       "confirmed_by": "Brave Search API"
     },
     {
+      "title": "Product Data Manager (w/m/d) - Hörakustik",
+      "company": "Fielmann",
+      "location": "Hamburg, Hamburg, DE",
+      "work_mode": "Hybrid / mobile work",
+      "level": "manager",
+      "url": "https://jobs.fielmann.com/en/job-offers/detail/61963-product-data-manager-wmd-hoerakustik",
+      "date_posted": "1970-01-01",
+      "description": "Das Product Information Management Team sorgt dafür, dass hochwertige, vollständige und aktuelle Produktdaten zur richtigen Zeit in den relevanten Systemen und Prozessen verfügbar sind. Gemeinsam schaffen wir damit die Grundlage für erfolgreiche Produkteinführungen, effiziente Abläufe und ein konsistentes Produkterlebnis im Bereich Hörakustik. Das erwartet dich bei uns. Deine Aufgaben. Du verantwortest die Identifikation, Pflege, Validierung und kontinuierliche Weiterentwicklung von Produktdaten im Bereich Hörakustik. Du stellst die Vollständigkeit, Konsistenz, Aktualität und Qualität von Produktstammdaten in relevanten Systemen und Prozessen sicher. Du pflegst und verwaltest Produktdaten im PIM-System Stibo STEP sowie in angebundenen Systemen, insbesondere SAP. Du unterstützt die Einführung neuer Hörsysteme, Zubehörartikel, Verbrauchsmaterialien und Services durch eine termingerechte un",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "37fb055beabc",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 61,
+      "matched_skills": [
+        "SQL",
+        "Product analytics",
+        "Data visualization"
+      ],
+      "fit_reasons": [
+        "Role alignment: Product Data Scientist",
+        "Skill overlap: SQL, Product analytics, Data visualization",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 83000,
+      "salary_mid": 92000,
+      "salary_max": 101000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "medium"
+    },
+    {
       "title": "Business Analyst Customer Management & Analytics (w/m/d)",
       "company": "Freenet Group",
       "location": "Hamburg, Germany",
@@ -437,8 +472,8 @@
       "date_posted": "2026-07-05",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-07-25",
-      "experimentation_query_date": "2026-07-25",
+      "freshness": "Experimentation Jobs refresh 2026-08-03",
+      "experimentation_query_date": "2026-08-03",
       "id": "3064026fed12",
       "work_mode_fit": "fit",
       "work_mode_note": "Remote eligibility appears compatible with Hamburg",
@@ -564,6 +599,38 @@
       "salary_confidence": "high"
     },
     {
+      "title": "56 data scientist English-speaking jobs in Hamburg",
+      "company": "Statista",
+      "location": "Hamburg area",
+      "work_mode": "",
+      "level": "experienced",
+      "url": "https://englishjobs.de/in/hamburg/data_scientist",
+      "date_posted": "",
+      "description": "data publishing infrastructure for existing and future products Build and maintain data pipelines ... Your Role Work collaboratively with our data sourcing and architecture teams to build a state-of-the-art ... that scale Statista’s content management and production Develop reliable data orchestration workflow ...",
+      "discovery_source": "Brave Search API — daily request budget",
+      "freshness": "Brave query 2026-08-03",
+      "brave_query_date": "2026-08-03",
+      "id": "dfd1ab7c1335",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 58,
+      "matched_skills": [
+        "Data pipelines"
+      ],
+      "fit_reasons": [
+        "Role alignment: Data Scientist",
+        "Skill overlap: Data pipelines",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 67000,
+      "salary_mid": 74000,
+      "salary_max": 81000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "medium"
+    },
+    {
       "title": "Senior Data Analyst (m/f/d) – Shop Analytics – onsite in Hamburg or Berlin",
       "company": "ABOUT YOU",
       "location": "Hamburg or Berlin, Germany",
@@ -573,8 +640,8 @@
       "date_posted": "2026-05-15",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-07-25",
-      "experimentation_query_date": "2026-07-25",
+      "freshness": "Experimentation Jobs refresh 2026-08-03",
+      "experimentation_query_date": "2026-08-03",
       "id": "1872207a1b4f",
       "work_mode_fit": "mismatch",
       "work_mode_note": "Appears to require regular on-site work",
@@ -605,8 +672,8 @@
       "date_posted": "2026-07-22",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-07-25",
-      "experimentation_query_date": "2026-07-25",
+      "freshness": "Experimentation Jobs refresh 2026-08-03",
+      "experimentation_query_date": "2026-08-03",
       "id": "b6ad64d0684b",
       "work_mode_fit": "mismatch",
       "work_mode_note": "Appears to require regular on-site work",
@@ -695,40 +762,6 @@
       "salary_confidence": "low"
     },
     {
-      "title": "Media Technology & Data Strategy Lead (all genders)",
-      "company": "Publicis Groupe",
-      "location": "Hamburg, Germany",
-      "work_mode": "Hybrid",
-      "level": "lead",
-      "url": "https://careers.publicisgroupe.com/jobs/150410?lang=de-de",
-      "date_posted": "2026-05-11T12:33:00+0000",
-      "description": "Unternehmensbeschreibung Publicis One Unlimited is a bespoke agency built for Beiersdorf as their global creative, media and data partner. We cover four regions (North America, Europe, Emerging Markets, and North East Asia) and serve over 120 markets. Our mission is to deliver a Global and Connected Agency model, embracing a digital-first approach fuelled by data and cutting-edge technology. Stellenbeschreibung The Media Technology & Data Strategy Lead (all genders) is responsible for defining and evolving Beiersdorf's media technology, audience and data capabilities. The role owns the strategic roadmap for media technology, connected identity, audience intelligence and data enablement ensuring global teams are equipped with the tools, processes and capabilities required for modern marketing. A key responsibility is driving the adoption, governance and evolution of GrowthOS as Beiersdorf",
-      "discovery_source": "Official career page",
-      "freshness": "live check",
-      "id": "80b9f271e45f",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 54,
-      "matched_skills": [
-        "Causal inference",
-        "Stakeholder consulting"
-      ],
-      "fit_reasons": [
-        "Role alignment: Data Scientist",
-        "Skill overlap: Causal inference, Stakeholder consulting",
-        "Hamburg location"
-      ],
-      "skill_gaps": [
-        "GA4"
-      ],
-      "salary_min": 76000,
-      "salary_mid": 84000,
-      "salary_max": 92000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
-    },
-    {
       "title": "(Senior) Data Scientist (m/f/d) - Service Configuration Intelligence in Hamburg | XING Jobs",
       "company": "New Work SE",
       "location": "Hamburg area",
@@ -768,8 +801,8 @@
       "date_posted": "",
       "description": "Finden Sie jetzt 83 zu besetzende Data Scientist, Nlp, Airbus Jobs in Hamburg auf Indeed.com, der weltweiten Nr. 1 der Online-Jobbörsen. (Basierend auf Total Visits weltweit, Quelle: comScore)",
       "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-07-27",
-      "brave_query_date": "2026-07-27",
+      "freshness": "Brave query 2026-08-03",
+      "brave_query_date": "2026-08-03",
       "id": "c03d9aabe786",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -950,14 +983,14 @@
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
       "company": "Tchibo",
-      "location": "Hamburg, Hamb, DE",
-      "work_mode": "Hybrid / mobile work",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid",
       "level": "manager",
       "url": "https://www.tchibo-karriere.de/jobs/58459",
       "date_posted": "2026-04-01",
-      "description": "Wir bleiben anders. Du auch? Tchibo ist deshalb so erfolgreich, weil wir Veränderung nachhaltig gestalten. Wir vereinen Tradition und Innovation: Mit Kreativität, Leidenschaft und Kompetenz überraschen wir unsere Kunden mit immer anderen Produktwelten und bleiben gleichzeitig unserer Kaffeetradition treu. Unterstütze uns dabei, mit Mut und Verstand die Zukunft zu gestalten! Deine Aufgaben: Du machst mit uns den Unterschied. In dieser Position steuerst du den Rollout und die Weiterentwicklung des HR Reportings mit SAP Analytics Cloud und Datasphere. Du analysierst und visualisierst alle HR-Daten entlang der Employee Journey (wie z.B. Vergütungsdaten, Daten aus Mitarbeiterbefragungen etc.), um Trends und Optimierungsmöglichkeiten für die HR-Führung und das Tchibo Management zu identifizieren. Du führst Ad-hoc-Analysen für verschiedenste Stakeholder durch, um HR-Initiativen durch quantitati",
+      "description": "Own HR reporting with SAP Analytics Cloud and Datasphere, analyze employee-journey data, deliver stakeholder analyses, and improve HR information systems. SQL and at least two years of HR or data analytics experience are requested; hybrid work is offered.",
       "discovery_source": "Official career page",
-      "freshness": "live check",
+      "freshness": "snapshot 2026-07-20",
       "id": "d95996c851c8",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -989,8 +1022,8 @@
       "date_posted": "2026-07-23",
       "description": "Note: By applying to this position you will have an opportunity to share your preferred working location from the following: Munich, Germany; Berlin, Germany; Frankfurt am Main, Germany; Hamburg, Germany. Minimum qualifications: Bachelor's degree or equivalent practical experience. 5 years of experience in media analytics, advertising sales, digital media and marketing, consulting, or financial analysis. Preferred qualifications: Experience in translating data into business recommendations, creating and delivering appealing insights-based presentations or business cases with clear recommendations and aligned with customers objectives. Experience in data analyses and visualization (Google Sheets and Slides), scripting (Google SQL), Dashboard development (Looker Studio), and leverage AI for analytics. Advertising experience from either the advertiser, agency or other media owner side. Abil",
       "discovery_source": "BA Jobsuche endpoint — bund.dev documentation",
-      "freshness": "BA API refresh 2026-07-27",
-      "ba_query_date": "2026-07-27",
+      "freshness": "BA API refresh 2026-08-03",
+      "ba_query_date": "2026-08-03",
       "ba_reference": "17486-109061044818584262-S",
       "id": "b295562ea9a5",
       "work_mode_fit": "unclear",
@@ -1046,6 +1079,40 @@
       "salary_confidence": "high"
     },
     {
+      "title": "Principal Data Strategist (m/f/d)",
+      "company": "ThoughtWorks Deutschland GmbH Standort Hamburg",
+      "location": "Hamburg, Hamburg, Deutschland",
+      "work_mode": "",
+      "level": "staff",
+      "url": "https://www.arbeitsagentur.de/jobsuche/jobdetail/10001-1003449437-S",
+      "date_posted": "2026-07-27",
+      "description": "Principal data strategists at Thoughtworks are experienced consultants who work with clients to create winning data solutions that meet business goals. They play a pivotal role in developing modern data architecture approaches that directly address our clients' key business objectives. Their responsibilities span in-depth reviews of current data and technology strategy, targeted data strategy, guiding clients to unlock the full potential of data, and providing high-level roadmaps. This role entails a mix of advisory responsibilities in data strategy and governance, coupled with a solid delivery-lead role and a breadth of data and AI ecosystem expertise. This is a client-facing, builder's leadership role. You will start with a small, senior team and grow it through technical depth, delivery excellence and thought leadership, rather than inheriting a large organisation to manage. The role ",
+      "discovery_source": "BA Jobsuche endpoint — bund.dev documentation",
+      "freshness": "BA API refresh 2026-08-03",
+      "ba_query_date": "2026-08-03",
+      "ba_reference": "10001-1003449437-S",
+      "id": "e4643f22fe6a",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 47,
+      "matched_skills": [
+        "Stakeholder consulting",
+        "Machine learning"
+      ],
+      "fit_reasons": [
+        "Role alignment: Data Scientist",
+        "Skill overlap: Stakeholder consulting, Machine learning",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 78000,
+      "salary_mid": 87000,
+      "salary_max": 96000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "low"
+    },
+    {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
       "company": "HELM AG",
       "location": "Hamburg, Germany",
@@ -1080,6 +1147,39 @@
       "salary_confidence": "medium"
     },
     {
+      "title": "Media Technology & Data Strategy Lead (all genders)",
+      "company": "Publicis Groupe",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid",
+      "level": "lead",
+      "url": "https://careers.publicisgroupe.com/jobs/150410?lang=de-de",
+      "date_posted": "2026-05-11",
+      "description": "Own media technology, audience intelligence and data strategy for a global Beiersdorf agency team. The remit includes GA4, Adobe Analytics, measurement, attribution, incrementality testing and AI-enabled insight generation. The posting explicitly states hybrid work in Hamburg.",
+      "discovery_source": "Official career page",
+      "freshness": "snapshot 2026-07-20",
+      "id": "80b9f271e45f",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 46,
+      "matched_skills": [
+        "Causal inference"
+      ],
+      "fit_reasons": [
+        "Role alignment: Data Scientist",
+        "Skill overlap: Causal inference",
+        "Hamburg location"
+      ],
+      "skill_gaps": [
+        "GA4"
+      ],
+      "salary_min": 76000,
+      "salary_mid": 84000,
+      "salary_max": 92000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "low"
+    },
+    {
       "title": "Financial Analyst (w/m/d) / Controlling",
       "company": "Fielmann",
       "location": "Hamburg, Hamburg, DE",
@@ -1102,37 +1202,6 @@
         "Role alignment: Product Analyst",
         "Skill overlap: Product analytics, Data visualization",
         "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 70000,
-      "salary_mid": 78000,
-      "salary_max": 86000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
-    },
-    {
-      "title": "Senior CRO Specialist",
-      "company": "sofatutor",
-      "location": "Germany & EMEA",
-      "work_mode": "Remote",
-      "level": "senior",
-      "url": "https://experimentationjobs.com/job/sofatutor-senior-cro-specialist-remote-emea-germany/",
-      "date_posted": "2026-05-12",
-      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
-      "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-07-22",
-      "experimentation_query_date": "2026-07-22",
-      "id": "52d204aeef0b",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Remote eligibility appears compatible with Hamburg",
-      "match_score": 46,
-      "matched_skills": [
-        "Experimentation"
-      ],
-      "fit_reasons": [
-        "Role alignment: Senior Data Analyst",
-        "Skill overlap: Experimentation"
       ],
       "skill_gaps": [],
       "salary_min": 70000,
@@ -1362,37 +1431,33 @@
       "salary_confidence": "high"
     },
     {
-      "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
+      "title": "Data Analyst (m/w/d) - The Data School Deutschland, Hamburg - Ausbildung, Studium, Vollzeit Job in Hamburg",
       "company": "OTTO",
-      "location": "Hamburg, Germany",
-      "work_mode": "Hybrid",
-      "level": "student",
-      "url": "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/",
-      "date_posted": "",
-      "description": "Werkstudent Change Management & Transformation | Data & AI (w/m/d) in Otto Group Campus Direkt auf dem OTTO-Campus in Hamburg die Zukunft des E-Commerce vorantreiben. Nutzen Sie den E-Commerce-Spirit von OTTO und die VielfÃ¤ltigkeit unseres Konzerns. Arbeiten Sie in den unterschiedlichen Teams, die OTTO.de erfolgreich machen und in den Otto Group Departments, die 123 nationale wie internationale Konzerngesellschaften steuern. Legen Sie los! Mit dem Programm Free Trade gestalten wir innerhalb der OTTO IT die Zukunft der datengetriebenen Zusammenarbeit. Unser Ziel ist es, OTTO auf die wachsenden Anforderungen im Umgang mit Daten vorzubereiten – insbesondere im Kontext von Generative AI, Agentic Commerce und einer zunehmend datengetriebenen Unternehmenssteuerung. Dafür etablieren wir unternehmensweit den Data Mesh-Ansatz, um Datenverantwortung näher an die Fachbereiche zu bringen und die Zu",
-      "discovery_source": "Official career page",
-      "freshness": "live check",
-      "id": "b5da7a309847",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 40,
-      "matched_skills": [
-        "Stakeholder consulting",
-        "E-commerce"
-      ],
+      "location": "Hamburg area",
+      "work_mode": "",
+      "level": "experienced",
+      "url": "https://www.stepstone.de/stellenangebote--Data-Analyst-m-w-d-The-Data-School-Deutschland-Hamburg-Hamburg-TIL-The-Information-Lab-Deutschland-GmbH--11479464-inline.html",
+      "date_posted": "2 weeks ago",
+      "description": "The Information Lab betreut Kunden wie Hapag-Lloyd // Kühne & Nagel // DZ Bank // Union Investment // Moia // Hanse Merkur // Volkswagen // Hamburg Süd // Lufthansa // Daimler // Vodafone // DAK // Deutsche Bahn // Funke Medien // OTTO // Tchibo // BCG // PWC // Sartorius // Stada // TUI und viele weitere…",
+      "discovery_source": "Brave Search API — daily request budget",
+      "freshness": "Brave query 2026-08-03",
+      "brave_query_date": "2026-08-03",
+      "id": "39a5a188450e",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 42,
+      "matched_skills": [],
       "fit_reasons": [
-        "Role alignment: Data Scientist",
-        "Skill overlap: Stakeholder consulting, E-commerce",
-        "Hamburg location",
-        "Relevant e-commerce / retail domain"
+        "Role alignment: Senior Data Analyst",
+        "Hamburg location"
       ],
       "skill_gaps": [],
-      "salary_min": 29000,
-      "salary_mid": 32000,
-      "salary_max": 35000,
+      "salary_min": 69000,
+      "salary_mid": 77000,
+      "salary_max": 85000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "medium"
     },
     {
       "title": "Data Science Remote: > 50 Jobs, Arbeit in Hamburg | Indeed",
@@ -1452,7 +1517,37 @@
       "salary_max": 77000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "high"
+      "salary_confidence": "low"
+    },
+    {
+      "title": "CRO Specialist",
+      "company": "sofatutor",
+      "location": "Germany & EMEA",
+      "work_mode": "Remote",
+      "level": "experienced",
+      "url": "https://experimentationjobs.com/job/sofatutor-senior-cro-specialist-remote-emea-germany/",
+      "date_posted": "2026-07-23",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-08-03",
+      "experimentation_query_date": "2026-08-03",
+      "id": "8be5f2d1f976",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Remote eligibility appears compatible with Hamburg",
+      "match_score": 35,
+      "matched_skills": [
+        "Experimentation"
+      ],
+      "fit_reasons": [
+        "Skill overlap: Experimentation"
+      ],
+      "skill_gaps": [],
+      "salary_min": 63000,
+      "salary_mid": 70000,
+      "salary_max": 77000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "low"
     },
     {
       "title": "Junior Data Analyst Jobs und Stellenangebote - 2026",
@@ -1519,38 +1614,6 @@
       "salary_confidence": "low"
     },
     {
-      "title": "Working Student HR Digital Development & Insights (all genders)",
-      "company": "Beiersdorf",
-      "location": "Hamburg, Germany",
-      "work_mode": "",
-      "level": "student",
-      "url": "https://www.beiersdorf.com/career/jobs/83b0ae895f94dfaa9bc88b60250c3c80",
-      "date_posted": "",
-      "description": "Working Student HR Digital Development & Insights (all genders) Apply now Job Details Contract Type: Limited, 6 Months / Part-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Human Resources Your Tasks How much digitalization can be found in HR? And how does this support the HR business? If you have asked yourself this question more than once, then you have come to the right place. The CoE HR Digital, Analytics & Transformation at Beiersdorf AG is responsible for running, optimizing, transforming and innovating HR. We are looking for reinforcement for our team: Someone who can think analytically. Someone who can help us on our way to becoming a data-driven digital HR function. Someone who enjoys learning new things and helping an organization break new ground. And someone who can laugh at oneself from time to time. Your tasks will be: Digitalization, AI & HR In",
-      "discovery_source": "Official career page",
-      "freshness": "live check",
-      "id": "7d5dcdf6d1df",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 29,
-      "matched_skills": [
-        "Data pipelines",
-        "Data visualization"
-      ],
-      "fit_reasons": [
-        "Role alignment: Customer Insights",
-        "Skill overlap: Data pipelines, Data visualization",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 32000,
-      "salary_mid": 35000,
-      "salary_max": 38000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
-    },
-    {
       "title": "Global Category Merchandise Manager (f/m/d)",
       "company": "Fielmann",
       "location": "Hamburg, Germany",
@@ -1576,6 +1639,34 @@
       "salary_min": 75000,
       "salary_mid": 83000,
       "salary_max": 91000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "low"
+    },
+    {
+      "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
+      "company": "OTTO",
+      "location": "Hamburg, Germany",
+      "work_mode": "Not stated",
+      "level": "student",
+      "url": "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/",
+      "date_posted": "",
+      "description": "Support change management and transformation in OTTO's Data & AI organization on the Hamburg campus. This is a working-student role and is retained as a low-seniority match while the OTTO source monitors for experienced analytics openings.",
+      "discovery_source": "Official career page",
+      "freshness": "snapshot 2026-07-20",
+      "id": "b5da7a309847",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 25,
+      "matched_skills": [],
+      "fit_reasons": [
+        "Role alignment: Data Scientist",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 29000,
+      "salary_mid": 32000,
+      "salary_max": 35000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
       "salary_confidence": "low"
