@@ -1,19 +1,18 @@
 {
   "meta": {
-    "generated_at": "2026-08-03T07:47:24+00:00",
+    "generated_at": "2026-08-10T05:45:30+00:00",
     "mode": "live official pages + dated snapshot coverage",
-    "job_count": 51,
+    "job_count": 53,
     "location": "Hamburg",
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2024",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987",
     "preference_excluded_count": 16,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 4 accepted)",
+    "brave_search_status": "Brave daily budget: success (10/10 requests used, 2 accepted)",
     "experimentation_jobs_status": "Experimentation Jobs refresh: success (4 accepted)",
-    "ba_jobs_status": "BA API refresh: success (4 detailed)",
+    "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd: HTTPError: HTTP Error 404: Not Found",
-      "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/: HTTPError: HTTP Error 404: Not Found",
-      "https://careers.publicisgroupe.com/jobs/150410?lang=de-de: HTTPError: HTTP Error 502: Bad Gateway"
+      "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/: HTTPError: HTTP Error 404: Not Found"
     ]
   },
   "jobs": [
@@ -53,6 +52,44 @@
       "skill_gaps": [],
       "salary_mid": 77500,
       "salary_confidence": "high"
+    },
+    {
+      "title": "Data Scientist (w/m/d) - AI & Automation",
+      "company": "Fielmann",
+      "location": "Hamburg, Hamburg, DE",
+      "work_mode": "Hybrid / mobile work",
+      "level": "senior",
+      "url": "https://jobs.fielmann.com/en/job-offers/detail/63094-data-scientist-wmd-ai-automation",
+      "date_posted": "1970-01-01",
+      "description": "Im Bereich Finance gestalten wir die finanzielle Entwicklung von Fielmann datenbasiert und zukunftsorientiert. Gemeinsam mit Controlling, Data Engineering, IT und weiteren Fachbereichen entwickeln wir technische Lösungen, die Reporting, Forecasting und Entscheidungsprozesse effizienter und transparenter machen. In dieser Rolle verbindest du Finance-Verständnis mit technischer Umsetzung: Du arbeitest mit SQL, Python, BI-Tools, Automatisierungslösungen und modernen KI-Anwendungen, um wiederkehrende Prozesse zu verbessern, Daten nutzbar zu machen und neue Analyseansätze in die Praxis zu bringen. So entsteht ein Umfeld, in dem Technologie echten Mehrwert für Controlling und Finance schafft – und in dem du mit deiner Expertise die digitale Weiterentwicklung unserer Finanzfunktion aktiv mitgestaltest. Das erwartet dich bei uns. Deine Aufgaben. Du entwickelst und implementierst KI- und Analytic",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "ba111c2c58e3",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 84,
+      "matched_skills": [
+        "SQL",
+        "Product analytics",
+        "Python",
+        "GCP",
+        "Data pipelines",
+        "Data visualization"
+      ],
+      "fit_reasons": [
+        "Role alignment: Data Scientist",
+        "Skill overlap: SQL, Product analytics, Python, GCP",
+        "Hamburg location"
+      ],
+      "skill_gaps": [
+        "AWS"
+      ],
+      "salary_min": 76000,
+      "salary_mid": 85000,
+      "salary_max": 94000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "medium"
     },
     {
       "title": "Data Scientist: 47 Jobs & Stellenangebote in Hamburg | 2. Juli 2026",
@@ -472,8 +509,8 @@
       "date_posted": "2026-07-05",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-08-03",
-      "experimentation_query_date": "2026-08-03",
+      "freshness": "Experimentation Jobs refresh 2026-08-10",
+      "experimentation_query_date": "2026-08-10",
       "id": "3064026fed12",
       "work_mode_fit": "fit",
       "work_mode_note": "Remote eligibility appears compatible with Hamburg",
@@ -492,6 +529,42 @@
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
       "salary_confidence": "medium"
+    },
+    {
+      "title": "(Senior) Digital Analytics Specialist (w/m/d)",
+      "company": "Fielmann",
+      "location": "Hamburg, Hamburg, DE",
+      "work_mode": "Hybrid / mobile work",
+      "level": "manager",
+      "url": "https://jobs.fielmann.com/en/job-offers/detail/63249-senior-digital-analytics-specialist-wmd",
+      "date_posted": "1970-01-01",
+      "description": "Als (Senior) Digital Analytics Specialist stärkst du unser Insights Team als zentrale fachliche Expert*in für digitales Tracking, Consent Management, Datenqualität und Digital Analytics. Du entwickelst unsere Tracking- und Measurement-Strukturen weiter, sorgst für verlässliche Daten entlang digitaler Customer Journeys und übersetzt fachliche Anforderungen aus Produkt-, UX-, Marketing- und Business-Teams in saubere Messkonzepte. Dabei arbeitest du an der Schnittstelle zwischen Business, Produkt, Engineering, Datenschutz, BI/Data Platform und externen Dienstleistern. Dein Ziel ist es, eine belastbare Datenbasis für bessere digitale Produktentscheidungen zu schaffen: durch klare Tracking-Standards, hohe Datenqualität, transparente Dokumentation und aussagekräftige Analysen. Das erwartet dich bei uns. Deine Aufgaben. Du konzipierst, implementierst und entwickelst skalierbare Tracking-Lösunge",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "de1538cd754a",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 60,
+      "matched_skills": [
+        "BigQuery",
+        "Product analytics",
+        "Stakeholder consulting",
+        "E-commerce",
+        "Data visualization"
+      ],
+      "fit_reasons": [
+        "Role alignment: Senior Data Analyst",
+        "Skill overlap: BigQuery, Product analytics, Stakeholder consulting, E-commerce",
+        "Hamburg location",
+        "Relevant e-commerce / retail domain"
+      ],
+      "skill_gaps": [],
+      "salary_min": 75000,
+      "salary_mid": 83000,
+      "salary_max": 91000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "low"
     },
     {
       "title": "Data Manager (all genders) in Digital Cardiovascular Research at the University Heart & Vascular...",
@@ -628,7 +701,7 @@
       "salary_max": 81000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
     },
     {
       "title": "Senior Data Analyst (m/f/d) – Shop Analytics – onsite in Hamburg or Berlin",
@@ -640,8 +713,8 @@
       "date_posted": "2026-05-15",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-08-03",
-      "experimentation_query_date": "2026-08-03",
+      "freshness": "Experimentation Jobs refresh 2026-08-10",
+      "experimentation_query_date": "2026-08-10",
       "id": "1872207a1b4f",
       "work_mode_fit": "mismatch",
       "work_mode_note": "Appears to require regular on-site work",
@@ -672,8 +745,8 @@
       "date_posted": "2026-07-22",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-08-03",
-      "experimentation_query_date": "2026-08-03",
+      "freshness": "Experimentation Jobs refresh 2026-08-10",
+      "experimentation_query_date": "2026-08-10",
       "id": "b6ad64d0684b",
       "work_mode_fit": "mismatch",
       "work_mode_note": "Appears to require regular on-site work",
@@ -762,6 +835,40 @@
       "salary_confidence": "low"
     },
     {
+      "title": "Media Technology & Data Strategy Lead (all genders)",
+      "company": "Publicis Groupe",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid",
+      "level": "lead",
+      "url": "https://careers.publicisgroupe.com/jobs/150410?lang=de-de",
+      "date_posted": "2026-05-11T12:33:00+0000",
+      "description": "Unternehmensbeschreibung Publicis One Unlimited is a bespoke agency built for Beiersdorf as their global creative, media and data partner. We cover four regions (North America, Europe, Emerging Markets, and North East Asia) and serve over 120 markets. Our mission is to deliver a Global and Connected Agency model, embracing a digital-first approach fuelled by data and cutting-edge technology. Stellenbeschreibung The Media Technology & Data Strategy Lead (all genders) is responsible for defining and evolving Beiersdorf's media technology, audience and data capabilities. The role owns the strategic roadmap for media technology, connected identity, audience intelligence and data enablement ensuring global teams are equipped with the tools, processes and capabilities required for modern marketing. A key responsibility is driving the adoption, governance and evolution of GrowthOS as Beiersdorf",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "80b9f271e45f",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 54,
+      "matched_skills": [
+        "Causal inference",
+        "Stakeholder consulting"
+      ],
+      "fit_reasons": [
+        "Role alignment: Data Scientist",
+        "Skill overlap: Causal inference, Stakeholder consulting",
+        "Hamburg location"
+      ],
+      "skill_gaps": [
+        "GA4"
+      ],
+      "salary_min": 76000,
+      "salary_mid": 84000,
+      "salary_max": 92000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "low"
+    },
+    {
       "title": "(Senior) Data Scientist (m/f/d) - Service Configuration Intelligence in Hamburg | XING Jobs",
       "company": "New Work SE",
       "location": "Hamburg area",
@@ -801,8 +908,8 @@
       "date_posted": "",
       "description": "Finden Sie jetzt 83 zu besetzende Data Scientist, Nlp, Airbus Jobs in Hamburg auf Indeed.com, der weltweiten Nr. 1 der Online-Jobbörsen. (Basierend auf Total Visits weltweit, Quelle: comScore)",
       "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-08-03",
-      "brave_query_date": "2026-08-03",
+      "freshness": "Brave query 2026-08-10",
+      "brave_query_date": "2026-08-10",
       "id": "c03d9aabe786",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -1147,39 +1254,6 @@
       "salary_confidence": "medium"
     },
     {
-      "title": "Media Technology & Data Strategy Lead (all genders)",
-      "company": "Publicis Groupe",
-      "location": "Hamburg, Germany",
-      "work_mode": "Hybrid",
-      "level": "lead",
-      "url": "https://careers.publicisgroupe.com/jobs/150410?lang=de-de",
-      "date_posted": "2026-05-11",
-      "description": "Own media technology, audience intelligence and data strategy for a global Beiersdorf agency team. The remit includes GA4, Adobe Analytics, measurement, attribution, incrementality testing and AI-enabled insight generation. The posting explicitly states hybrid work in Hamburg.",
-      "discovery_source": "Official career page",
-      "freshness": "snapshot 2026-07-20",
-      "id": "80b9f271e45f",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 46,
-      "matched_skills": [
-        "Causal inference"
-      ],
-      "fit_reasons": [
-        "Role alignment: Data Scientist",
-        "Skill overlap: Causal inference",
-        "Hamburg location"
-      ],
-      "skill_gaps": [
-        "GA4"
-      ],
-      "salary_min": 76000,
-      "salary_mid": 84000,
-      "salary_max": 92000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
-    },
-    {
       "title": "Financial Analyst (w/m/d) / Controlling",
       "company": "Fielmann",
       "location": "Hamburg, Hamburg, DE",
@@ -1457,7 +1531,7 @@
       "salary_max": 85000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high"
     },
     {
       "title": "Data Science Remote: > 50 Jobs, Arbeit in Hamburg | Indeed",
@@ -1584,25 +1658,24 @@
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
       "company": "Tchibo",
-      "location": "Hamburg, Hamb, DE",
+      "location": "Hamburg, Germany",
       "work_mode": "Not stated",
       "level": "student",
       "url": "https://www.tchibo-karriere.de/jobs/58593",
       "date_posted": "2026-06-30",
-      "description": "Wir bleiben anders. Du auch? Gute Ideen brauchen Energie und Mut! Jungen Talenten, die richtig viel erreichen wollen, bieten wir bei Tchibo deshalb die Möglichkeit, schnell Verantwortung zu übernehmen und sich einzubringen. Denn wir glauben, dass ganz unterschiedliche Menschen als Team zusammen Außergewöhnliches erreichen können. Bring dich ein und finde bei uns deinen eigenen Weg! Deine Aufgaben: Du machst mit uns den Unterschied. Gemeinsam mit unseren Expert*innen schaffst du die Grundlagen für datengetriebene und KI-gestützte Analysen und Services über unsere State-of-the-Art Big Data Analytics Platform . Durch aktive Mitarbeit unterstützt du den Bereich Data & AI bei der Entwicklung von Datenmodellen und innovativen Anwendungen im AI-Umfeld . Du erstellst Datenvisualisierungen über moderne Analytics Tools wie SAP Analytics Cloud , Google Looker Studio oder Tableau und unterstützt so ",
+      "description": "Support data models and AI applications on Tchibo's Big Data Analytics Platform and create visualizations with SAP Analytics Cloud, Looker Studio or Tableau. This is a working-student position and therefore a low seniority fit.",
       "discovery_source": "Official career page",
-      "freshness": "live check",
+      "freshness": "snapshot 2026-07-20",
       "id": "df00a9e6ce20",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 32,
+      "match_score": 28,
       "matched_skills": [
-        "Machine learning",
         "Data visualization"
       ],
       "fit_reasons": [
         "Role alignment: Data Scientist",
-        "Skill overlap: Machine learning, Data visualization",
+        "Skill overlap: Data visualization",
         "Hamburg location"
       ],
       "skill_gaps": [],
