@@ -1,19 +1,6 @@
 {
-  "updated_at": "2026-08-10T05:45:27+00:00",
+  "updated_at": "2026-08-17T04:59:07+00:00",
   "jobs": [
-    {
-      "title": "Senior Product Data Analyst (m/w/d) – Insurance Sales & Beratung (m/w/d) – 100% Remote",
-      "company": "Finanzguru",
-      "location": "Germany (Remote)",
-      "work_mode": "Remote",
-      "level": "",
-      "url": "https://experimentationjobs.com/job/finanzguru-senior-product-data-analyst-germany-remote/",
-      "date_posted": "2026-06-28",
-      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
-      "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-07-25",
-      "experimentation_query_date": "2026-07-25"
-    },
     {
       "title": "Staff AI Product Analyst, Product Management",
       "company": "Grafana Labs",
@@ -76,8 +63,21 @@
       "date_posted": "2026-07-22",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-08-10",
-      "experimentation_query_date": "2026-08-10"
+      "freshness": "Experimentation Jobs refresh 2026-08-17",
+      "experimentation_query_date": "2026-08-17"
+    },
+    {
+      "title": "Senior Data Analyst (Engineer)",
+      "company": "Adjoe",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/adjoe-senior-data-analyst-engineer-hamburg-germany/",
+      "date_posted": "2026-08-05",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-08-17",
+      "experimentation_query_date": "2026-08-17"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "request_date_utc": "2026-08-10",
+  "request_date_utc": "2026-08-17",
   "request_count": 1,
-  "query": "Product Analyst",
+  "query": "Data Analyst",
   "status": "success",
-  "updated_at": "2026-08-10T05:45:27+00:00",
-  "listing_count": 19,
-  "accepted_results": 4
+  "updated_at": "2026-08-17T04:59:07+00:00",
+  "listing_count": 17,
+  "accepted_results": 2
 }
