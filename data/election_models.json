@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T04:57:24+00:00",
-    "dawum_updated_at": "2026-08-16T21:31:31+02:00",
+    "generated_at": "2026-08-20T18:59:46+00:00",
+    "dawum_updated_at": "2026-08-20T16:29:08+02:00",
     "method_version": "1.0",
     "license": {
       "Name": "ODC Open Database License",
@@ -17,12 +17,12 @@
     },
     "candidate_search": {
       "status": "success",
-      "last_attempted_at": "2026-08-17T04:57:16+00:00",
+      "last_attempted_at": "2026-08-20T18:59:38+00:00",
       "requests_used": 7,
-      "last_successful_at": "2026-08-17T04:57:16+00:00",
-      "verified_candidates": 22,
+      "last_successful_at": "2026-08-20T18:59:38+00:00",
+      "verified_candidates": 21,
       "shared_daily_limit": 10,
-      "message": "Brave candidate search: success (7/7 weekly requests, 22 names verified)"
+      "message": "Brave candidate search: success (7/7 weekly requests, 21 names verified)"
     },
     "sources": [
       {
@@ -56,32 +56,32 @@
       "head_title": "Chancellor",
       "seat_count": 630,
       "poll_count": 12,
-      "latest_poll": "2026-08-15",
+      "latest_poll": "2026-08-20",
       "poll_only": {
         "parties": [
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 27.4,
-            "low": 25.8,
-            "high": 29.0,
-            "seats": 196,
+            "vote": 27.5,
+            "low": 25.9,
+            "high": 29.1,
+            "seats": 197,
             "threshold_probability": 100
           },
           {
             "party": "CDU/CSU",
             "color": "#282828",
-            "vote": 20.5,
-            "low": 19.1,
-            "high": 22.0,
-            "seats": 147,
+            "vote": 20.4,
+            "low": 19.0,
+            "high": 21.9,
+            "seats": 146,
             "threshold_probability": 100
           },
           {
             "party": "Grüne",
             "color": "#62a654",
             "vote": 14.2,
-            "low": 12.3,
+            "low": 12.4,
             "high": 16.1,
             "seats": 102,
             "threshold_probability": 100
@@ -89,9 +89,9 @@
           {
             "party": "SPD",
             "color": "#d64b4b",
-            "vote": 11.9,
+            "vote": 11.8,
             "low": 10.5,
-            "high": 13.3,
+            "high": 13.2,
             "seats": 85,
             "threshold_probability": 100
           },
@@ -99,7 +99,7 @@
             "party": "Linke",
             "color": "#a44d8c",
             "vote": 11.6,
-            "low": 10.2,
+            "low": 10.3,
             "high": 13.0,
             "seats": 83,
             "threshold_probability": 100
@@ -107,29 +107,29 @@
           {
             "party": "Sonstige",
             "color": "#aaa19b",
-            "vote": 6.5,
-            "low": 4.6,
-            "high": 8.7,
+            "vote": 6.7,
+            "low": 4.7,
+            "high": 8.9,
             "seats": 0,
-            "threshold_probability": 83
+            "threshold_probability": 85
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
-            "vote": 4.5,
+            "vote": 4.6,
             "low": 3.2,
-            "high": 6.0,
-            "seats": 12,
-            "threshold_probability": 30
+            "high": 6.1,
+            "seats": 13,
+            "threshold_probability": 32
           },
           {
             "party": "BSW",
             "color": "#7d365f",
-            "vote": 3.4,
-            "low": 2.1,
-            "high": 4.9,
-            "seats": 4,
-            "threshold_probability": 9
+            "vote": 3.2,
+            "low": 1.9,
+            "high": 4.8,
+            "seats": 3,
+            "threshold_probability": 8
           }
         ],
         "coalitions": [
@@ -140,10 +140,10 @@
               "SPD",
               "Grüne"
             ],
-            "majority_probability": 88,
-            "seat_share": 53.1,
+            "majority_probability": 87,
+            "seat_share": 52.9,
             "formation_prior": 68,
-            "formation_probability": 63,
+            "formation_probability": 62,
             "party_colors": [
               "#282828",
               "#d64b4b",
@@ -157,7 +157,7 @@
               "SPD"
             ],
             "majority_probability": 0,
-            "seat_share": 37.0,
+            "seat_share": 36.7,
             "formation_prior": 92,
             "formation_probability": 0,
             "party_colors": [
@@ -172,7 +172,7 @@
               "Grüne"
             ],
             "majority_probability": 0,
-            "seat_share": 39.5,
+            "seat_share": 39.4,
             "formation_prior": 55,
             "formation_probability": 0,
             "party_colors": [
@@ -219,12 +219,12 @@
           {
             "name": "Friedrich Merz",
             "party": "CDU/CSU",
-            "probability": 63,
+            "probability": 62,
             "color": "#282828",
             "source_status": "brave_verified",
             "source_url": "https://www.zdf.de/nachrichten/politik/deutschland/kanzlerkandidaten-merz-weidel-habeck-scholz-wahl-100.html",
             "source_title": "Kanzlerfrage um Habeck, Scholz, Merz und Weidel: Wer sie sind | Bundestagswahl",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -237,26 +237,26 @@
             "source_checked_at": ""
           }
         ],
-        "unresolved_probability": 37
+        "unresolved_probability": 38
       },
       "economy": {
         "parties": [
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 27.4,
-            "low": 25.7,
-            "high": 29.2,
-            "seats": 196,
+            "vote": 27.5,
+            "low": 25.8,
+            "high": 29.3,
+            "seats": 197,
             "threshold_probability": 100
           },
           {
             "party": "CDU/CSU",
             "color": "#282828",
-            "vote": 20.9,
-            "low": 19.4,
-            "high": 22.5,
-            "seats": 150,
+            "vote": 20.8,
+            "low": 19.2,
+            "high": 22.3,
+            "seats": 149,
             "threshold_probability": 100
           },
           {
@@ -271,17 +271,17 @@
           {
             "party": "SPD",
             "color": "#d64b4b",
-            "vote": 12.1,
-            "low": 10.7,
-            "high": 13.5,
-            "seats": 87,
+            "vote": 12.0,
+            "low": 10.6,
+            "high": 13.4,
+            "seats": 86,
             "threshold_probability": 100
           },
           {
             "party": "Linke",
             "color": "#a44d8c",
             "vote": 11.6,
-            "low": 10.2,
+            "low": 10.3,
             "high": 13.0,
             "seats": 83,
             "threshold_probability": 100
@@ -289,29 +289,29 @@
           {
             "party": "Sonstige",
             "color": "#aaa19b",
-            "vote": 6.3,
-            "low": 4.2,
-            "high": 8.3,
+            "vote": 6.5,
+            "low": 4.3,
+            "high": 8.5,
             "seats": 0,
-            "threshold_probability": 80
+            "threshold_probability": 82
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
-            "vote": 4.3,
+            "vote": 4.4,
             "low": 2.9,
             "high": 5.8,
-            "seats": 11,
-            "threshold_probability": 28
+            "seats": 12,
+            "threshold_probability": 30
           },
           {
             "party": "BSW",
             "color": "#7d365f",
-            "vote": 3.2,
-            "low": 1.7,
-            "high": 4.6,
-            "seats": 2,
-            "threshold_probability": 5
+            "vote": 3.0,
+            "low": 1.6,
+            "high": 4.5,
+            "seats": 1,
+            "threshold_probability": 4
           }
         ],
         "coalitions": [
@@ -322,8 +322,8 @@
               "SPD",
               "Grüne"
             ],
-            "majority_probability": 93,
-            "seat_share": 53.6,
+            "majority_probability": 91,
+            "seat_share": 53.4,
             "formation_prior": 68,
             "formation_probability": 64,
             "party_colors": [
@@ -339,7 +339,7 @@
               "SPD"
             ],
             "majority_probability": 0,
-            "seat_share": 37.5,
+            "seat_share": 37.3,
             "formation_prior": 92,
             "formation_probability": 0,
             "party_colors": [
@@ -354,7 +354,7 @@
               "Grüne"
             ],
             "majority_probability": 0,
-            "seat_share": 39.8,
+            "seat_share": 39.7,
             "formation_prior": 55,
             "formation_probability": 0,
             "party_colors": [
@@ -370,7 +370,7 @@
               "FDP"
             ],
             "majority_probability": 0,
-            "seat_share": 31.5,
+            "seat_share": 31.6,
             "formation_prior": 24,
             "formation_probability": 0,
             "party_colors": [
@@ -406,7 +406,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.zdf.de/nachrichten/politik/deutschland/kanzlerkandidaten-merz-weidel-habeck-scholz-wahl-100.html",
             "source_title": "Kanzlerfrage um Habeck, Scholz, Merz und Weidel: Wer sie sind | Bundestagswahl",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -608,7 +608,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/agh-bvv-volksentscheid-waehler-termin-kandidaten-faq.html",
             "source_title": "Berlin-Wahl 2026: Die wichtigsten Infos im Überblick",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           }
         ],
         "unresolved_probability": 19
@@ -780,7 +780,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/agh-bvv-volksentscheid-waehler-termin-kandidaten-faq.html",
             "source_title": "Berlin-Wahl 2026: Die wichtigsten Infos im Überblick",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Tobias Schulze",
@@ -970,9 +970,9 @@
             "probability": 35,
             "color": "#d64b4b",
             "source_status": "brave_verified",
-            "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101372134/mv-wahl-2026-wahlumfrage-zeigt-trend-spd-bangt-mit-diesen-parteien.html",
-            "source_title": "MV-Wahl 2026: Wahlumfrage gibt Prognosetrend ab – Schwesigs SPD bangt mit diesen Parteien",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101372134/mv-wahl-2026-wahlumfrage-zeigt-trend-spd-bangt-mit-zwei-parteien.html",
+            "source_title": "MV-Wahl 2026: Wahlumfrage gibt Prognosetrend ab – Schwesigs SPD bangt mit zwei Parteien",
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           }
         ],
         "unresolved_probability": 65
@@ -1142,9 +1142,9 @@
             "probability": 37,
             "color": "#d64b4b",
             "source_status": "brave_verified",
-            "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101372134/mv-wahl-2026-wahlumfrage-zeigt-trend-spd-bangt-mit-diesen-parteien.html",
-            "source_title": "MV-Wahl 2026: Wahlumfrage gibt Prognosetrend ab – Schwesigs SPD bangt mit diesen Parteien",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101372134/mv-wahl-2026-wahlumfrage-zeigt-trend-spd-bangt-mit-zwei-parteien.html",
+            "source_title": "MV-Wahl 2026: Wahlumfrage gibt Prognosetrend ab – Schwesigs SPD bangt mit zwei Parteien",
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           }
         ],
         "unresolved_probability": 63
@@ -1326,7 +1326,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101367382/sachsen-anhalt-wahl-2026-das-sind-die-spitzenkandidaten.html",
             "source_title": "Sachsen-Anhalt-Wahl 2026: Das sind die Spitzenkandidaten",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Sven Schulze",
@@ -1336,7 +1336,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101367382/sachsen-anhalt-wahl-2026-das-sind-die-spitzenkandidaten.html",
             "source_title": "Sachsen-Anhalt-Wahl 2026: Das sind die Spitzenkandidaten",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           }
         ],
         "unresolved_probability": 53
@@ -1508,7 +1508,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101367382/sachsen-anhalt-wahl-2026-das-sind-die-spitzenkandidaten.html",
             "source_title": "Sachsen-Anhalt-Wahl 2026: Das sind die Spitzenkandidaten",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Sven Schulze",
@@ -1518,7 +1518,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101367382/sachsen-anhalt-wahl-2026-das-sind-die-spitzenkandidaten.html",
             "source_title": "Sachsen-Anhalt-Wahl 2026: Das sind die Spitzenkandidaten",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           }
         ],
         "unresolved_probability": 52
@@ -1691,7 +1691,7 @@
             "source_status": "brave_verified",
             "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
             "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Jochen Ott",
@@ -1701,7 +1701,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.nrwspd.de/2026/01/23/landtagswahl-2027-nrwspd-vorstand-nominiert-jochen-ott-als-spitzenkandidaten/",
             "source_title": "Landtagswahl 2027: NRWSPD-Vorstand nominiert Jochen Ott als Spitzenkandidaten › NRWSPD",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           }
         ],
         "unresolved_probability": 14
@@ -1712,7 +1712,7 @@
             "party": "CDU",
             "color": "#282828",
             "vote": 32.5,
-            "low": 30.8,
+            "low": 30.9,
             "high": 34.4,
             "seats": 71,
             "threshold_probability": 100
@@ -1748,8 +1748,8 @@
             "party": "Sonstige",
             "color": "#aaa19b",
             "vote": 7.4,
-            "low": 5.8,
-            "high": 9.0,
+            "low": 5.9,
+            "high": 8.9,
             "seats": 0,
             "threshold_probability": 97
           },
@@ -1864,7 +1864,7 @@
             "source_status": "brave_verified",
             "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
             "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Jochen Ott",
@@ -1874,7 +1874,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.nrwspd.de/2026/01/23/landtagswahl-2027-nrwspd-vorstand-nominiert-jochen-ott-als-spitzenkandidaten/",
             "source_title": "Landtagswahl 2027: NRWSPD-Vorstand nominiert Jochen Ott als Spitzenkandidaten › NRWSPD",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           }
         ],
         "unresolved_probability": 14
@@ -2058,7 +2058,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/landtagswahl-2027-in-sh-auf-diese-themen-setzen-die-parteien,parteiprogramme-100.html",
             "source_title": "Landtagswahl 2027 in SH: So suchen die Parteien ihre Themen | ndr.de",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -2242,7 +2242,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/landtagswahl-2027-in-sh-auf-diese-themen-setzen-die-parteien,parteiprogramme-100.html",
             "source_title": "Landtagswahl 2027 in SH: So suchen die Parteien ihre Themen | ndr.de",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -2425,7 +2425,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -2435,7 +2435,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           }
         ],
         "unresolved_probability": 10
@@ -2598,7 +2598,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -2608,7 +2608,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-08-17T04:57:16+00:00"
+            "source_checked_at": "2026-08-20T18:59:38+00:00"
           }
         ],
         "unresolved_probability": 10

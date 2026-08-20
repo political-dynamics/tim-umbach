@@ -1,9 +1,9 @@
 {
-  "request_date_utc": "2026-08-17",
+  "request_date_utc": "2026-08-20",
   "request_count": 1,
-  "query": "Data Analyst",
+  "query": "Data Scientist",
   "status": "success",
-  "updated_at": "2026-08-17T04:59:07+00:00",
-  "listing_count": 17,
-  "accepted_results": 2
+  "updated_at": "2026-08-20T19:01:28+00:00",
+  "listing_count": 6,
+  "accepted_results": 0
 }
