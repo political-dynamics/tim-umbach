@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2026-08-23T16:08:16+00:00",
+    "generated_at": "2026-08-23T16:17:48+00:00",
     "mode": "live official pages + dated snapshot coverage",
     "job_count": 38,
     "location": "Hamburg",
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2024",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987",
     "preference_excluded_count": 14,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 3 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (7 accepted)",
-    "ba_jobs_status": "BA API refresh: error (0 detailed)",
+    "brave_search_status": "Brave daily budget already used (10/10); skipped",
+    "experimentation_jobs_status": "Experimentation Jobs daily refresh already used; cached",
+    "ba_jobs_status": "BA API daily search already used; cached",
     "errors": [
       "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd: HTTPError: HTTP Error 404: Not Found",
       "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/: HTTPError: HTTP Error 404: Not Found"
@@ -1133,7 +1133,7 @@
       "salary_max": 77000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high"
     },
     {
       "title": "CRO Specialist",
