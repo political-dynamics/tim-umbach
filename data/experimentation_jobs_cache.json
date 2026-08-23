@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20T19:01:28+00:00",
+  "updated_at": "2026-08-23T16:08:13+00:00",
   "jobs": [
     {
       "title": "Staff AI Product Analyst, Product Management",
@@ -11,8 +11,8 @@
       "date_posted": "2026-07-05",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-08-10",
-      "experimentation_query_date": "2026-08-10"
+      "freshness": "Experimentation Jobs refresh 2026-08-23",
+      "experimentation_query_date": "2026-08-23"
     },
     {
       "title": "Senior Data Analyst (m/f/d) – Shop Analytics – onsite in Hamburg or Berlin",
@@ -63,8 +63,8 @@
       "date_posted": "2026-07-22",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-08-17",
-      "experimentation_query_date": "2026-08-17"
+      "freshness": "Experimentation Jobs refresh 2026-08-23",
+      "experimentation_query_date": "2026-08-23"
     },
     {
       "title": "Senior Data Analyst (Engineer)",
@@ -76,8 +76,60 @@
       "date_posted": "2026-08-05",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-08-17",
-      "experimentation_query_date": "2026-08-17"
+      "freshness": "Experimentation Jobs refresh 2026-08-23",
+      "experimentation_query_date": "2026-08-23"
+    },
+    {
+      "title": "Product Data Analyst (m/f/d) – Hamburg",
+      "company": "Freenow by Lyft",
+      "location": "Hamburg or Berlin, Germany",
+      "work_mode": "Hybrid",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/freenow-product-data-analyst-hamburg-or-berlin-germany/",
+      "date_posted": "2026-08-21",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-08-23",
+      "experimentation_query_date": "2026-08-23"
+    },
+    {
+      "title": "E-Commerce Consultant / CRO & Datenanalyst:in (m/w/d)",
+      "company": "tante-e",
+      "location": "Germany (Remote)",
+      "work_mode": "Remote",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/tante-e-e-commerce-consultant-cro-datenanalystin-mwd-germany-remote/",
+      "date_posted": "2026-08-21",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-08-23",
+      "experimentation_query_date": "2026-08-23"
+    },
+    {
+      "title": "Senior Data Analyst – Experimentation & A/B Testing",
+      "company": "adjoe",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/adjoe-senior-data-analyst-experimentation-a-b-testing-hamburg-germany/",
+      "date_posted": "2026-08-19",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-08-23",
+      "experimentation_query_date": "2026-08-23"
+    },
+    {
+      "title": "Frontend Entwickler*in CRO & Experimentation (m/w/d) – Remote",
+      "company": "Naturtreu",
+      "location": "Germany (Remote)",
+      "work_mode": "Remote",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/naturtreu-frontend-entwicklerin-cro-experimentation-germany-remote/",
+      "date_posted": "2026-08-18",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-08-23",
+      "experimentation_query_date": "2026-08-23"
     }
   ]
 }
