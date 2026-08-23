@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="An interactive probit and logit election-model showcase for Germany, using DAWUM polls and macroeconomic signals.">
-    <meta name="theme-color" content="#743129">
+    <meta name="theme-color" content="#183f73">
     <title>Election Lab · Tim Umbach</title>
+    <link rel="icon" href="assets/tu-monogram.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/election-models.js" defer></script>
   </head>
@@ -13,12 +14,19 @@
     <a class="skip-link" href="#forecast">Skip to the forecast</a>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Tim Umbach home">
-        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <img class="brand-mark" src="assets/tu-monogram.svg" alt="" width="36" height="36">
         <span>Tim Umbach <b>· Data Scientist</b></span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html">About</a>
-        <a href="index.html#work" aria-current="page">Examples of my work</a>
+        <details class="nav-work-menu current">
+          <summary><span class="nav-work-label">Examples of my work</span><span class="nav-work-chevron" aria-hidden="true">⌄</span></summary>
+          <div class="nav-work-menu-panel">
+            <a href="index.html#work"><span>Work overview</span><small>Both case studies</small></a>
+            <a href="job-radar.html"><span>Job Radar</span><small>Opportunity intelligence</small></a>
+            <a href="election-lab.html" aria-current="page"><span>Election Lab</span><small>Forecasting case study</small></a>
+          </div>
+        </details>
         <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -218,7 +226,7 @@
     </main>
 
     <footer class="site-footer section-shell">
-      <div><span class="brand-mark mini" aria-hidden="true"><i></i><i></i><i></i></span><strong>Tim Umbach · Data Scientist</strong></div>
+      <div><img class="brand-mark mini" src="assets/tu-monogram.svg" alt="" width="28" height="28"><strong>Tim Umbach · Data Scientist</strong></div>
       <p><a href="index.html#work">Examples of my work</a> · <a href="cv.html">CV</a> · <a href="contact.html">Contact</a></p>
     </footer>
   </body>
