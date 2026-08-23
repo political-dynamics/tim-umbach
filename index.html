@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#9e4438">
     <title>Tim Umbach · Data Scientist</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/home.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#about">Skip to content</a>
@@ -17,9 +18,9 @@
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html" aria-current="page">About</a>
+        <a href="#work">Examples of my work</a>
+        <a href="cv.html">CV</a>
         <a href="contact.html">Contact</a>
-        <a href="job-radar.html">Job Radar</a>
-        <a href="election-lab.html">Election Lab</a>
       </nav>
     </header>
 
@@ -97,18 +98,71 @@
         </div>
       </section>
 
-      <section class="work-feature">
-        <div class="section-shell work-feature-grid">
-          <div>
-            <p class="section-number light">05 / Selected work</p>
-            <h2>A job search,<br>made measurable.</h2>
-          </div>
-          <div>
-            <p>Two static data products turn uncertainty into an inspectable decision: Job Radar ranks Hamburg roles, while Election Lab models vote, coalition, and government-formation probabilities.</p>
-            <div class="work-links">
-              <a class="button-link light-button" href="job-radar.html">Explore Job Radar <span aria-hidden="true">→</span></a>
-              <a class="button-link outline-button" href="election-lab.html">Open Election Lab <span aria-hidden="true">→</span></a>
+      <section id="work" class="work-showcase" aria-labelledby="work-title">
+        <div class="section-shell">
+          <div class="work-showcase-heading">
+            <div>
+              <p class="section-number">05 / Portfolio</p>
+              <h2 id="work-title">Examples of my work.</h2>
             </div>
+            <p>Two inspectable data products show how I move from noisy evidence to a useful decision. Explore the live overview below, then open either project for the full analysis.</p>
+          </div>
+
+          <article class="home-plot-card" aria-labelledby="home-plot-title">
+            <div class="home-plot-heading">
+              <div>
+                <p class="overline">Interactive preview · Job Radar</p>
+                <h3 id="home-plot-title">Opportunity, mapped.</h3>
+              </div>
+              <label class="home-plot-filter" for="home-plot-view">
+                <span>View</span>
+                <select id="home-plot-view">
+                  <option value="top">Top matches</option>
+                  <option value="advertised">Published salaries</option>
+                </select>
+              </label>
+            </div>
+            <div class="home-plot-layout">
+              <div>
+                <div id="home-opportunity-chart" class="home-opportunity-chart" role="group" aria-label="Interactive scatterplot of job match score and annual salary">
+                  <div class="loading-block"></div>
+                </div>
+                <div class="chart-legend">
+                  <span><i class="legend-dot advertised"></i> Published salary</span>
+                  <span><i class="legend-dot estimated"></i> Estimated salary</span>
+                  <span>Choose or focus a point for details</span>
+                </div>
+              </div>
+              <aside class="home-role-detail" aria-live="polite">
+                <p class="overline">Selected role</p>
+                <h4 id="home-role-title">Loading opportunities…</h4>
+                <p id="home-role-company">The latest Job Radar snapshot is loading.</p>
+                <dl>
+                  <div><dt>Profile match</dt><dd id="home-role-match">—</dd></div>
+                  <div><dt>Annual salary</dt><dd id="home-role-salary">—</dd></div>
+                </dl>
+                <a class="arrow-link" href="job-radar.html#opportunities">Inspect the full radar <span aria-hidden="true">→</span></a>
+              </aside>
+            </div>
+          </article>
+
+          <div class="work-example-grid">
+            <article id="job-radar-example" class="work-example-card">
+              <div class="work-example-index">01</div>
+              <p class="overline">Decision product · live data</p>
+              <h3>Job Radar</h3>
+              <p>Ranks Hamburg data roles with a transparent profile-match score, salary evidence, work-model checks, and filters for faster shortlisting.</p>
+              <div class="work-example-meta"><span>Python</span><span>Data pipelines</span><span>Interactive UI</span></div>
+              <a class="button-link dark-button" href="job-radar.html">Explore Job Radar <span aria-hidden="true">→</span></a>
+            </article>
+            <article id="election-lab-example" class="work-example-card election-example-card">
+              <div class="work-example-index">02</div>
+              <p class="overline">Forecasting case study · live data</p>
+              <h3>Election Lab</h3>
+              <p>Turns polling uncertainty into simulated seats, viable coalitions, and government-formation probabilities with explicit assumptions and backtests.</p>
+              <div class="work-example-meta"><span>Simulation</span><span>Logit / probit</span><span>Model diagnostics</span></div>
+              <a class="button-link dark-button" href="election-lab.html">Open Election Lab <span aria-hidden="true">→</span></a>
+            </article>
           </div>
         </div>
       </section>
@@ -116,7 +170,7 @@
 
     <footer class="site-footer section-shell">
       <div><span class="brand-mark mini" aria-hidden="true"><i></i><i></i><i></i></span><strong>Tim Umbach · Hamburg</strong></div>
-      <p><a href="contact.html">Get in touch</a> · <a href="job-radar.html">Job Radar</a> · <a href="election-lab.html">Election Lab</a></p>
+      <p><a href="#work">Examples of my work</a> · <a href="cv.html">CV</a> · <a href="contact.html">Get in touch</a></p>
     </footer>
   </body>
 </html>

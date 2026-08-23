@@ -3,10 +3,12 @@
 A static personal website for Tim Umbach, a Hamburg-based data scientist
 specialising in experimentation, causal inference, and product analytics.
 
-The site has four pages:
+The site is deployed from the `political-dynamics/tim-umbach` repository and has five pages:
 
-- `index.html`: professional profile, experience, and areas of expertise.
+- `index.html`: professional profile, experience, areas of expertise, and an
+  interactive preview of the work examples.
 - `contact.html`: public professional contact channels.
+- `cv.html`: embedded English CV with English and German PDF downloads.
 - `job-radar.html`: an interactive work sample that ranks Hamburg data roles
   against a local profile and shows either an employer-published salary range
   or a transparent estimate.
@@ -117,7 +119,7 @@ cannot exceed ten requests that day—even when requests fail.
 - `data/ba_jobs_cache.json`: 21-day cache of relevant BA API listings.
 - `scripts/collect_jobs.py`: scoring and salary logic.
 
-The current profile was distilled from the locally supplied CV and public LinkedIn summary. Personal contact details were deliberately excluded.
+The current profile was distilled from the locally supplied CV and public LinkedIn summary. Personal contact details are excluded from the dashboard data; the intentionally published CV PDFs live separately in `assets/`.
 
 The broader watchlist includes Statista, New Work/XING, Freenet, Tchibo,
 Maxingvest, EDEKA, Fielmann, OTTO, HELM AG, Publicis Groupe, Google, Adobe,
