@@ -1,15 +1,15 @@
 {
   "meta": {
-    "generated_at": "2026-08-23T19:06:11+00:00",
+    "generated_at": "2026-08-24T05:02:34+00:00",
     "mode": "live official pages + dated snapshot coverage",
     "job_count": 38,
     "location": "Hamburg",
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2024",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987",
     "preference_excluded_count": 14,
-    "brave_search_status": "Brave daily budget already used (10/10); skipped",
-    "experimentation_jobs_status": "Experimentation Jobs daily refresh already used; cached",
-    "ba_jobs_status": "BA API daily search already used; cached",
+    "brave_search_status": "Brave daily budget: success (10/10 requests used, 3 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (0 accepted)",
+    "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd: HTTPError: HTTP Error 404: Not Found",
       "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/: HTTPError: HTTP Error 404: Not Found"
@@ -702,8 +702,8 @@
       "date_posted": "",
       "description": "Finden Sie jetzt 83 zu besetzende Data Scientist, Nlp, Airbus Jobs in Hamburg auf Indeed.com, der weltweiten Nr. 1 der Online-Jobbörsen. (Basierend auf Total Visits weltweit, Quelle: comScore)",
       "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-08-23",
-      "brave_query_date": "2026-08-23",
+      "freshness": "Brave query 2026-08-24",
+      "brave_query_date": "2026-08-24",
       "id": "c03d9aabe786",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -1054,8 +1054,8 @@
       "date_posted": "",
       "description": "integrity in Airbus Procurement Tools Consolidate and follow-up supplier rating and performance data ... SAP MM Create and follow-up purchase orders Follow-up payment of invoices Support buyers in managing data ... working across workpackages Work with AI and Google Tools to automate administrative tasks Research data ...",
       "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-08-23",
-      "brave_query_date": "2026-08-23",
+      "freshness": "Brave query 2026-08-24",
+      "brave_query_date": "2026-08-24",
       "id": "4e21a682c819",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -1133,7 +1133,7 @@
       "salary_max": 77000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "high"
+      "salary_confidence": "low"
     },
     {
       "title": "CRO Specialist",
