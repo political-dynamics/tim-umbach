@@ -1,16 +1,16 @@
 {
   "meta": {
     "status": "success",
-    "last_attempted_at": "2026-08-25T18:04:05+00:00",
+    "last_attempted_at": "2026-08-31T10:50:52+00:00",
     "requests_used": 7,
-    "last_successful_at": "2026-08-25T18:04:05+00:00",
-    "verified_candidates": 22,
+    "last_successful_at": "2026-08-31T10:50:52+00:00",
+    "verified_candidates": 21,
     "shared_daily_limit": 10
   },
   "elections": {
     "bundestag": {
       "query": "Federal election Bundestag 2029 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU/CSU SPD AfD Grüne Linke",
-      "checked_at": "2026-08-25T18:04:05+00:00",
+      "checked_at": "2026-08-31T10:50:52+00:00",
       "status": "success",
       "candidates": {
         "CDU/CSU": {
@@ -18,49 +18,49 @@
           "status": "brave_verified",
           "source_url": "https://www.zdf.de/nachrichten/politik/deutschland/kanzlerkandidaten-merz-weidel-habeck-scholz-wahl-100.html",
           "source_title": "Kanzlerfrage um Habeck, Scholz, Merz und Weidel: Wer sie sind | Bundestagswahl",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "AfD": {
           "name": "Alice Weidel",
           "status": "brave_verified",
           "source_url": "https://www.deutschland.de/de/topic/politik/deutschland-bundestagswahl-spitzenkandidaten",
           "source_title": "Deutschland Bundestagswahl: das sind die Spitzenkandidaten",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         }
       }
     },
     "berlin": {
       "query": "Abgeordnetenhaus election Berlin 20 Sep 2026 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU SPD Linke Grüne AfD",
-      "checked_at": "2026-08-25T18:04:05+00:00",
+      "checked_at": "2026-08-31T10:50:52+00:00",
       "status": "success",
       "candidates": {
         "CDU": {
           "name": "Stefan Evers",
           "status": "brave_verified",
-          "source_url": "https://www.tagesspiegel.de/berlin/berlin-wahl-2026-das-sind-die-spitzenkandidaten-im-uberblick-15973131.html",
-          "source_title": "Berlin-Wahl 2026: Das sind die Spitzenkandidaten im Überblick",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "source_url": "https://www.zdfheute.de/politik/deutschland/berlin-wahl-2026-spitzenkandidaten-cdu-spd-gruene-linke-afd-100.html",
+          "source_title": "Berlin wählt am 20. September: Welche Spitzenkandidaten der Parteien ins Rennen gehen",
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "SPD": {
           "name": "Steffen Krach",
           "status": "brave_verified",
-          "source_url": "https://www.paritaet-berlin.de/verband/berlin-wahl-2026",
-          "source_title": "Berlin-Wahl 2026 | Parität Berlin",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "source_url": "https://spd.berlin/wahlen/",
+          "source_title": "Berlin-Wahl 2026: Wieder Berlin mit Steffen Krach - SPD Berlin",
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "Grüne": {
           "name": "Bettina Jarasch",
           "status": "brave_verified",
           "source_url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/agh-bvv-volksentscheid-waehler-termin-kandidaten-faq.html",
           "source_title": "Berlin-Wahl 2026: Die wichtigsten Infos im Überblick",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "AfD": {
           "name": "Kristin Brinker",
           "status": "brave_verified",
           "source_url": "https://www.deutschlandfunk.de/berlin-landtagswahl-abgeordnetenhaus-kandidaten-themen-100.html",
           "source_title": "Berlin-Wahl 2026: Kandidaten, Themen und Besonderheiten",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "Linke": {
           "name": "Tobias Schulze",
@@ -73,50 +73,50 @@
     },
     "mecklenburg-vorpommern": {
       "query": "Landtag election Mecklenburg-Vorpommern 20 Sep 2026 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler SPD CDU AfD Linke",
-      "checked_at": "2026-08-25T18:04:05+00:00",
+      "checked_at": "2026-08-31T10:50:52+00:00",
       "status": "success",
       "candidates": {
         "SPD": {
           "name": "Manuela Schwesig",
           "status": "brave_verified",
-          "source_url": "https://www.spiegel.de/politik/deutschland/wahl-o-mat-fuer-mecklenburg-vorpommern-2026-wen-sie-in-den-landtag-waehlen-wollen-a-53b2325c-8dc1-45d0-9e3e-79d3d940b1e0",
-          "source_title": "Wahl-O-Mat für Mecklenburg-Vorpommern 2026: Wen Sie in den Landtag wählen wollen - DER SPIEGEL",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "source_url": "https://www.deutschlandfunk.de/mecklenburg-vorpommern-meckpomm-landtagswahl-schwerin-parteien-kandidaten-100.html",
+          "source_title": "Landtagswahl Mecklenburg-Vorpommern: Parteien und Kandidaten",
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "CDU": {
           "name": "Daniel Peters",
           "status": "brave_verified",
           "source_url": "https://www.ndr.de/nachrichten/mecklenburg-vorpommern/landtagswahl",
           "source_title": "Landtagswahl 2026 in Mecklenburg-Vorpommern: Alle Infos | ndr.de",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "AfD": {
           "name": "Leif-Erik Holm",
           "status": "brave_verified",
-          "source_url": "https://www.mopo.de/im-norden/meck-pomm/schulleiterin-heilpraktiker-ex-moderator-das-sind-die-spitzenkandidaten-in-meckpomm/4950102",
-          "source_title": "Landtagswahl MV: Diese Spitzenkandidaten treten an",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "source_url": "https://www.spiegel.de/politik/deutschland/wahl-o-mat-fuer-mecklenburg-vorpommern-2026-wen-sie-in-den-landtag-waehlen-wollen-a-53b2325c-8dc1-45d0-9e3e-79d3d940b1e0",
+          "source_title": "Wahl-O-Mat für Mecklenburg-Vorpommern 2026: Wen Sie in den Landtag wählen wollen - DER SPIEGEL",
+          "checked_at": "2026-08-31T10:50:52+00:00"
         }
       }
     },
     "sachsen-anhalt": {
       "query": "Landtag election Saxony-Anhalt 6 Sep 2026 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU AfD SPD Linke",
-      "checked_at": "2026-08-25T18:04:05+00:00",
+      "checked_at": "2026-08-31T10:50:52+00:00",
       "status": "success",
       "candidates": {
         "CDU": {
           "name": "Sven Schulze",
           "status": "brave_verified",
-          "source_url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl",
-          "source_title": "Landtagswahl Sachsen-Anhalt 2026: Umfragen, Wahl-O-Mat, Parteien | mdr.de",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "source_url": "https://www.wiwo.de/politik/deutschland/sachsen-anhalt-das-sind-die-spitzenkandidaten-bei-der-landtagswahl-2026/100249766.html",
+          "source_title": "Sachsen-Anhalt: Das sind die Spitzenkandidaten bei der Landtagswahl 2026",
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "AfD": {
           "name": "Ulrich Siegmund",
           "status": "brave_verified",
-          "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101367382/sachsen-anhalt-wahl-2026-das-sind-die-spitzenkandidaten.html",
-          "source_title": "Sachsen-Anhalt-Wahl 2026: Das sind die Spitzenkandidaten",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101367382/sachsen-anhalt-wahl-2026-das-sind-die-spitzenkandidaten-der-parteien.html",
+          "source_title": "Sachsen-Anhalt-Wahl 2026: Das sind die Spitzenkandidaten der Parteien",
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "SPD": {
           "name": "Armin Willingmann",
@@ -128,15 +128,15 @@
         "Linke": {
           "name": "Eva von Angern",
           "status": "brave_verified",
-          "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101367382/sachsen-anhalt-wahl-2026-das-sind-die-spitzenkandidaten.html",
-          "source_title": "Sachsen-Anhalt-Wahl 2026: Das sind die Spitzenkandidaten",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "source_url": "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101367382/sachsen-anhalt-wahl-2026-das-sind-die-spitzenkandidaten-der-parteien.html",
+          "source_title": "Sachsen-Anhalt-Wahl 2026: Das sind die Spitzenkandidaten der Parteien",
+          "checked_at": "2026-08-31T10:50:52+00:00"
         }
       }
     },
     "nordrhein-westfalen": {
       "query": "Landtag election North Rhine-Westphalia Spring 2027 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU SPD Grüne AfD",
-      "checked_at": "2026-08-25T18:04:05+00:00",
+      "checked_at": "2026-08-31T10:50:52+00:00",
       "status": "success",
       "candidates": {
         "CDU": {
@@ -144,27 +144,27 @@
           "status": "brave_verified",
           "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
           "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "SPD": {
           "name": "Jochen Ott",
           "status": "brave_verified",
           "source_url": "https://www.nrwspd.de/2026/01/23/landtagswahl-2027-nrwspd-vorstand-nominiert-jochen-ott-als-spitzenkandidaten/",
           "source_title": "Landtagswahl 2027: NRWSPD-Vorstand nominiert Jochen Ott als Spitzenkandidaten › NRWSPD",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "AfD": {
           "name": "Martin Vincentz",
           "status": "brave_verified",
           "source_url": "https://rp-online.de/nrw/panorama/nrw-afd-waehlt-spitzenkandidaten-fuer-landtagswahl-2027_aid-151275259",
           "source_title": "Listenplätze werden vergeben: NRW-AfD wählt Spitzenkandidaten für Landtagswahl 2027",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         }
       }
     },
     "schleswig-holstein": {
       "query": "Landtag election Schleswig-Holstein 2027 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU SPD Grüne",
-      "checked_at": "2026-08-25T18:04:05+00:00",
+      "checked_at": "2026-08-31T10:50:52+00:00",
       "status": "success",
       "candidates": {
         "CDU": {
@@ -172,20 +172,20 @@
           "status": "brave_verified",
           "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/landtagswahl-2027-in-sh-auf-diese-themen-setzen-die-parteien,parteiprogramme-100.html",
           "source_title": "Landtagswahl 2027 in SH: So suchen die Parteien ihre Themen | ndr.de",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "SPD": {
           "name": "Ulf Kämpfer",
           "status": "brave_verified",
           "source_url": "https://www.spiegel.de/politik/schleswig-holstein-kieler-oberbuergermeister-ulf-kaempfer-wird-spitzenkandidat-der-spd-fuer-landtagswahl-2027-a-5e502765-a677-4aed-81fc-5b3f11ef3434",
           "source_title": "Kiel: Oberbürgermeister Ulf Kämpfer wird Spitzenkandidat der SPD für Landtagswahl 2027 - DER SPIEGEL",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         }
       }
     },
     "hamburg": {
       "query": "Bürgerschaft election Hamburg 2030 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler SPD CDU Grüne Linke",
-      "checked_at": "2026-08-25T18:04:05+00:00",
+      "checked_at": "2026-08-31T10:50:52+00:00",
       "status": "success",
       "candidates": {
         "SPD": {
@@ -193,28 +193,28 @@
           "status": "brave_verified",
           "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
           "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "CDU": {
           "name": "Dennis Thering",
           "status": "brave_verified",
           "source_url": "https://www.focus.de/politik/deutschland/heute-wird-in-hamburg-gewaehlt-die-spitzenkandidaten-fuer-die-buergerschaftswahl_e75a843f-b15d-4553-8acb-29a78b005681.html",
           "source_title": "Heute wird in Hamburg gewählt: Die Spitzenkandidaten für die Bürgerschaftswahl - FOCUS online",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "Grüne": {
           "name": "Katharina Fegebank",
           "status": "brave_verified",
           "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
           "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         },
         "Linke": {
           "name": "Cansu Özdemir",
           "status": "brave_verified",
           "source_url": "https://www.ndr.de/der_ndr/presse/mitteilungen/NDR-Umfrage-zur-Buergerschaftswahl-in-Hamburg-SPD-stabil-auf-Platz-eins-Gruene-schwaecher-CDU-und-Linke-legen-zu-,pressemeldungndr24940.html",
           "source_title": "NDR Umfrage zur Bürgerschaftswahl in Hamburg: SPD stabil auf Platz eins, Grüne schwächer - CDU und Linke legen zu | ndr.de",
-          "checked_at": "2026-08-25T18:04:05+00:00"
+          "checked_at": "2026-08-31T10:50:52+00:00"
         }
       }
     }
