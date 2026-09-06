@@ -1,9 +1,9 @@
 {
-  "request_date_utc": "2026-08-31",
+  "request_date_utc": "2026-09-06",
   "request_count": 1,
-  "query": "Experimentation",
+  "query": "Data Analyst",
   "status": "success",
-  "updated_at": "2026-08-31T10:52:13+00:00",
-  "listing_count": 50,
-  "accepted_results": 7
+  "updated_at": "2026-09-06T12:08:49+00:00",
+  "listing_count": 23,
+  "accepted_results": 4
 }
