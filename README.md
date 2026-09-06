@@ -177,3 +177,21 @@ deploys the result.
 - A role in the snapshot may have closed; always verify on the original career page.
 - The match score is a deterministic heuristic, not a hiring probability.
 - Saved jobs live only in browser `localStorage`.
+
+## Economy Lab
+
+`economy-lab.html` visualizes German sector VAR responses, annual measured capital
+stocks and employment exposure across 16 states. An optional calibrated synthesis
+closure adds sticky prices/wages and capital accumulation; it is explicitly separate
+from estimated reduced-form responses. No API key or client dependency is required.
+
+Serve with `python -m http.server 8000` and open `/economy-lab.html`.
+Refresh the bundled model from the sibling sandbox checkout:
+
+```bash
+python ../sandbox/economy/estimate.py --refresh --output data/economy-model.json
+node tests/test_economy.cjs
+```
+
+The dashboard includes source dates, complete chart tables, CSV scenario export,
+held-out forecast errors and residual diagnostics. No deployment is needed to preview.
