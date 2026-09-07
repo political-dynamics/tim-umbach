@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-06T12:07:32+00:00",
+    "generated_at": "2026-09-07T09:20:22+00:00",
     "dawum_updated_at": "2026-09-06T10:56:05+02:00",
     "method_version": "1.0",
     "license": {
@@ -17,9 +17,9 @@
     },
     "candidate_search": {
       "status": "success",
-      "last_attempted_at": "2026-09-06T12:07:23+00:00",
+      "last_attempted_at": "2026-09-07T09:20:12+00:00",
       "requests_used": 7,
-      "last_successful_at": "2026-09-06T12:07:23+00:00",
+      "last_successful_at": "2026-09-07T09:20:12+00:00",
       "verified_candidates": 22,
       "shared_daily_limit": 10,
       "message": "Brave candidate search: success (7/7 weekly requests, 22 names verified)"
@@ -224,7 +224,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.zdf.de/nachrichten/politik/deutschland/kanzlerkandidaten-merz-weidel-habeck-scholz-wahl-100.html",
             "source_title": "Kanzlerfrage um Habeck, Scholz, Merz und Weidel: Wer sie sind | Bundestagswahl",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -406,7 +406,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.zdf.de/nachrichten/politik/deutschland/kanzlerkandidaten-merz-weidel-habeck-scholz-wahl-100.html",
             "source_title": "Kanzlerfrage um Habeck, Scholz, Merz und Weidel: Wer sie sind | Bundestagswahl",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -606,9 +606,9 @@
             "probability": 32,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/agh-bvv-volksentscheid-waehler-termin-kandidaten-faq.html",
-            "source_title": "Berlin-Wahl 2026: Die wichtigsten Infos im Überblick",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_url": "https://www.zdfheute.de/politik/deutschland/berlin-wahl-2026-spitzenkandidaten-cdu-spd-gruene-linke-afd-100.html",
+            "source_title": "Berlin wählt am 20. September: Welche Spitzenkandidaten der Parteien ins Rennen gehen",
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 20
@@ -788,9 +788,9 @@
             "probability": 33,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://www.rbb24.de/politik/berlin-wahl-2026/beitraege/agh-bvv-volksentscheid-waehler-termin-kandidaten-faq.html",
-            "source_title": "Berlin-Wahl 2026: Die wichtigsten Infos im Überblick",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_url": "https://www.zdfheute.de/politik/deutschland/berlin-wahl-2026-spitzenkandidaten-cdu-spd-gruene-linke-afd-100.html",
+            "source_title": "Berlin wählt am 20. September: Welche Spitzenkandidaten der Parteien ins Rennen gehen",
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 19
@@ -972,7 +972,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.deutschlandfunk.de/mecklenburg-vorpommern-meckpomm-landtagswahl-schwerin-parteien-kandidaten-100.html",
             "source_title": "Landtagswahl Mecklenburg-Vorpommern: Parteien und Kandidaten",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 52
@@ -1144,7 +1144,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.deutschlandfunk.de/mecklenburg-vorpommern-meckpomm-landtagswahl-schwerin-parteien-kandidaten-100.html",
             "source_title": "Landtagswahl Mecklenburg-Vorpommern: Parteien und Kandidaten",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 47
@@ -1324,9 +1324,9 @@
             "probability": 35,
             "color": "#4d91c6",
             "source_status": "brave_verified",
-            "source_url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-faq-100.html",
-            "source_title": "Kandidaten, Parteien, Umfragen: Was Sie zur Wahl in Sachsen-Anhalt wissen müssen",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_url": "https://politpro.eu/de/sachsen-anhalt/wahl/parliament/2026",
+            "source_title": "Landtagswahl in Sachsen-Anhalt: Umfragen & Prognose",
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Sven Schulze",
@@ -1334,9 +1334,9 @@
             "probability": 10,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl",
-            "source_title": "Landtagswahl Sachsen-Anhalt 2026: Umfrage, Wahlprogramme, Wahl-O-Mat | mdr.de",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-politbarometer-schulze-siegmund-liveticker-100.html",
+            "source_title": "Wahl in Sachsen-Anhalt: Wahlkampf vor Landtagswahl im Endspurt",
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 55
@@ -1506,9 +1506,9 @@
             "probability": 34,
             "color": "#4d91c6",
             "source_status": "brave_verified",
-            "source_url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-faq-100.html",
-            "source_title": "Kandidaten, Parteien, Umfragen: Was Sie zur Wahl in Sachsen-Anhalt wissen müssen",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_url": "https://politpro.eu/de/sachsen-anhalt/wahl/parliament/2026",
+            "source_title": "Landtagswahl in Sachsen-Anhalt: Umfragen & Prognose",
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Sven Schulze",
@@ -1516,9 +1516,9 @@
             "probability": 10,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://www.mdr.de/nachrichten/sachsen-anhalt/landtagswahl",
-            "source_title": "Landtagswahl Sachsen-Anhalt 2026: Umfrage, Wahlprogramme, Wahl-O-Mat | mdr.de",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_url": "https://www.zdfheute.de/politik/deutschland/landtagswahl-sachsen-anhalt-2026-wahlkampf-politbarometer-schulze-siegmund-liveticker-100.html",
+            "source_title": "Wahl in Sachsen-Anhalt: Wahlkampf vor Landtagswahl im Endspurt",
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 56
@@ -1691,7 +1691,7 @@
             "source_status": "brave_verified",
             "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
             "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Jochen Ott",
@@ -1701,7 +1701,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www1.wdr.de/politik/politik-in-nrw/spd-liste-parteitag-ott-100.html",
             "source_title": "NRW-SPD wählt Jochen Ott zum Spitzenkandidaten: Kann er die Partei aus der Krise führen?",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 14
@@ -1864,7 +1864,7 @@
             "source_status": "brave_verified",
             "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
             "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Jochen Ott",
@@ -1874,7 +1874,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www1.wdr.de/politik/politik-in-nrw/spd-liste-parteitag-ott-100.html",
             "source_title": "NRW-SPD wählt Jochen Ott zum Spitzenkandidaten: Kann er die Partei aus der Krise führen?",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 15
@@ -2058,7 +2058,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/landtagswahl-2027-in-sh-auf-diese-themen-setzen-die-parteien,parteiprogramme-100.html",
             "source_title": "Landtagswahl 2027 in SH: So suchen die Parteien ihre Themen | ndr.de",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -2242,7 +2242,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/landtagswahl-2027-in-sh-auf-diese-themen-setzen-die-parteien,parteiprogramme-100.html",
             "source_title": "Landtagswahl 2027 in SH: So suchen die Parteien ihre Themen | ndr.de",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -2425,7 +2425,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -2435,7 +2435,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 10
@@ -2598,7 +2598,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -2608,7 +2608,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-06T12:07:23+00:00"
+            "source_checked_at": "2026-09-07T09:20:12+00:00"
           }
         ],
         "unresolved_probability": 10
