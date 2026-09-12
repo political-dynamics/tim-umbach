@@ -6,7 +6,7 @@
     "endpoint": "https://experimentationjobs.com/jm-ajax/get_listings/",
     "location": "Germany",
     "per_page": 50,
-    "retention_days": 21,
+    "retention_days": 60,
     "daily_queries": [
       "Data Scientist",
       "Data Analyst",
@@ -58,7 +58,7 @@
     "published_within_days": 30,
     "size": 50,
     "max_details": 10,
-    "retention_days": 21,
+    "retention_days": 60,
     "daily_queries": [""],
     "detail_candidate_pattern": "data|analytics|analyst|insight|experiment|statisti|ökonometr|econometr"
   },
@@ -104,9 +104,6 @@
       "discovery_urls": [
         "https://karriere.freenet-group.de/?page=home"
       ],
-      "detail_urls": [
-        "https://karriere.freenet-group.de/?action=view&id=ffw07hn0ky4aoj5xgd5ddf72blhte89&page=home"
-      ],
       "link_pattern": "action=view",
       "allowed_hosts": ["karriere.freenet-group.de"],
       "filter_links_by_url": false,
@@ -119,10 +116,6 @@
       "discovery_urls": [
         "https://verbund.edeka/karriere/stellenb%C3%B6rse/"
       ],
-      "detail_urls": [
-        "https://verbund.edeka/karriere/stellenb%C3%B6rse/stelle-data-engineer-datenplattform-m-w-d-hamburg-edeka-it-stiftung-amp-co.-ohg?id=229645_171676&type=j",
-        "https://verbund.edeka/karriere/stellenb%C3%B6rse/stelle-business-analyst-m-w-d-hamburg-edeka-zentrale-stiftung-amp-co.-kg?id=232469_27993&type=j"
-      ],
       "link_pattern": "/karriere/stellenb%C3%B6rse/stelle-",
       "allowed_hosts": ["verbund.edeka"],
       "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence"],
@@ -133,9 +126,6 @@
       "discovery_urls": [
         "https://jobs.fielmann.com/en/job-offers"
       ],
-      "detail_urls": [
-        "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd"
-      ],
       "link_pattern": "/job-offers/detail/",
       "allowed_hosts": ["jobs.fielmann.com"],
       "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence"],
@@ -145,11 +135,6 @@
       "company": "Tchibo",
       "discovery_urls": [
         "https://www.tchibo-karriere.de/hamburg"
-      ],
-      "detail_urls": [
-        "https://www.tchibo-karriere.de/jobs/58753",
-        "https://www.tchibo-karriere.de/jobs/58459",
-        "https://www.tchibo-karriere.de/jobs/58593"
       ],
       "link_pattern": "/jobs/",
       "allowed_hosts": ["www.tchibo-karriere.de", "tchibo-karriere.de"],
@@ -186,9 +171,6 @@
         "https://www.otto.de/jobs/de/",
         "https://www.otto.de/jobs/de/jobsuche/"
       ],
-      "detail_urls": [
-        "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/"
-      ],
       "link_pattern": "/jobs/de/stellenangebote/",
       "allowed_hosts": ["www.otto.de", "otto.de"],
       "filter_details_by_title": true,
@@ -200,9 +182,6 @@
       "discovery_urls": [
         "https://jobs.helmag.com/"
       ],
-      "detail_urls": [
-        "https://jobs.helmag.com/job/Hamburg-%28Junior%29-Business-Intelligence-Developer-Data-Warehouse-%28mfd%29-20097/1349353155/"
-      ],
       "link_pattern": "/job/",
       "allowed_hosts": ["jobs.helmag.com"],
       "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business-intelligence", "business intelligence", "data-warehouse"],
@@ -212,9 +191,6 @@
       "company": "Publicis Groupe",
       "discovery_urls": [
         "https://careers.publicisgroupe.com/jobs?location=Hamburg%2C%20Germany"
-      ],
-      "detail_urls": [
-        "https://careers.publicisgroupe.com/jobs/150410?lang=de-de"
       ],
       "link_pattern": "/jobs/",
       "allowed_hosts": ["careers.publicisgroupe.com"],
@@ -233,6 +209,40 @@
       "link_pattern": "/karriere",
       "allowed_hosts": ["www.maxingvest.de", "maxingvest.de"],
       "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "applike group",
+      "discovery_urls": [
+        "https://applike-group.com/jobs/"
+      ],
+      "link_pattern": "/jobs/",
+      "allowed_hosts": ["applike-group.com", "www.applike-group.com"],
+      "filter_links_by_url": false,
+      "filter_details_by_title": true,
+      "include_terms": ["data", "analytics", "analyst", "experiment", "business intelligence", "causal"],
+      "location_terms": ["hamburg", "remote", "germany"]
+    },
+    {
+      "company": "Hermes Germany",
+      "discovery_urls": [
+        "https://www.hermesworld.com/de/karriere/jobs/"
+      ],
+      "link_pattern": "/de/karriere/jobs/",
+      "allowed_hosts": ["www.hermesworld.com", "hermesworld.com"],
+      "filter_links_by_url": false,
+      "filter_details_by_title": true,
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business intelligence", "market intelligence"],
+      "location_terms": ["hamburg", "remote"]
+    },
+    {
+      "company": "Körber",
+      "discovery_urls": [
+        "https://jobs.koerber.com/?locale=de_DE"
+      ],
+      "link_pattern": "/job/",
+      "allowed_hosts": ["jobs.koerber.com"],
+      "include_terms": ["data", "analytics", "analyst", "insight", "experiment", "business-intelligence", "business intelligence"],
       "location_terms": ["hamburg", "remote"]
     }
   ]

@@ -24,10 +24,10 @@ Refresh the Election Lab data from DAWUM's ODbL-licensed open JSON API:
 python scripts/collect_election_models.py
 ```
 
-The GitHub Pages workflow runs once a week, on Monday at 04:17 UTC. It calls
-the election collector with `--discover-candidates` first, reserving at most
-seven of the shared ten-request daily Brave budget for current candidate-name
-evidence. The Job Radar refresh then uses the remaining requests. Candidate
+The GitHub Pages workflow runs every day at 04:17 UTC. It calls the election
+collector with `--discover-candidates` first; candidate evidence is refreshed
+weekly within the shared ten-request daily Brave budget. The Job Radar refresh
+then uses the remaining requests. Candidate
 names are retained as curated fallbacks when Brave does not return a matching
 source, so a search snippet can never silently invent or replace a person.
 
@@ -44,7 +44,8 @@ sample size on the log-odds scale. The second specification adds a capped
 economic-vote term based on real-GDP growth and the change in the BA
 unemployment rate, then simulates on a latent-normal scale. Coalition formation
 priors are explicit and separate from parliamentary-majority probabilities.
-This is a methodological portfolio project, not voting advice.
+Completed contests are removed from the live selector automatically after
+election day. This is a methodological portfolio project, not voting advice.
 
 ## Recommended architecture
 
@@ -56,9 +57,14 @@ This prototype therefore uses:
 2. Up to ten Brave Web Search API requests per UTC day, guarded individually before each request.
 3. One daily refresh from Experimentation Jobs' public WP Job Manager listing route, which its `robots.txt` permits.
 4. One daily search through the community-documented BA Jobsuche endpoint, followed by at most ten detail requests for relevant candidates.
-5. A 21-day rolling cache of normalized discoveries plus a dated fallback snapshot.
+5. A 60-day rolling lifecycle for roles without a stated deadline, plus an
+   archive for expired or no-longer-confirmed vacancies.
 6. Work-model labelling: relevant Hamburg-area and remote roles are retained, then marked as a fit, unclear, or likely mismatch. Unclear/on-site roles are ranked lower instead of silently discarded.
-7. A fully static HTML/CSS/JavaScript frontend that GitHub Pages can host. Results are grouped by company and initially show only each employer's highest-ranked role; every multi-role company can be expanded.
+7. Strict outbound-link validation: general search pages and aggregator result
+   pages are rejected; cards point to job-specific application or detail pages.
+8. A fully static HTML/CSS/JavaScript frontend that GitHub Pages can host.
+   Results are grouped by company, mapped at approximate Hamburg city-area
+   coordinates, and can be switched between current and archived roles.
 
 The Bundesagentur für Arbeit website is deliberately not scraped. Instead, the
 collector uses the community-documented Jobsuche endpoint with the published
@@ -98,9 +104,12 @@ This is an explicit one-time operation for a new installation. It records
 to run a second time. The scheduled workflow never passes this option.
 
 Career sites change frequently. The collector merges permitted live results,
-recent Brave, Experimentation Jobs, and BA API discoveries, and the dated
-snapshot, then deduplicates, applies safety exclusions, and labels work-model
-fit. The dashboard shows the active collection mode in its header.
+recent Brave, Experimentation Jobs, BA API discoveries, and a rolling copy of
+the last successful output, then deduplicates, applies safety exclusions, and
+labels work-model fit. A structured or text-extracted application deadline
+takes precedence; without one, the role moves to the archive after 60 days
+without confirmation. The dashboard shows the active collection mode in its
+header.
 
 Locally, the collector reads the Brave key from
 `../docu/brave_search_api_key`. It can alternatively read
@@ -115,8 +124,8 @@ cannot exceed ten requests that day—even when requests fail.
 - `config/sources.json`: allowlisted companies and link/location filters.
 - `config/discovery.json`: ten-request Brave budget, query set, company watchlist, location rules, and industry exclusions.
 - `data/seed_jobs.json`: dated fallback only; refresh or remove entries when roles close.
-- `data/experimentation_jobs_cache.json`: 21-day cache of relevant niche-board listings.
-- `data/ba_jobs_cache.json`: 21-day cache of relevant BA API listings.
+- `data/experimentation_jobs_cache.json`: 60-day cache of relevant niche-board listings.
+- `data/ba_jobs_cache.json`: 60-day cache of relevant BA API listings.
 - `scripts/collect_jobs.py`: scoring and salary logic.
 
 The current profile was distilled from the locally supplied CV and public LinkedIn summary. Personal contact details are excluded from the dashboard data; the intentionally published CV PDFs live separately in `assets/`.
@@ -129,6 +138,10 @@ Deutschland/Gruner + Jahr, Hamburg public service, Techniker Krankenkasse,
 Eppendorf, and Berenberg. Bauer Media is explicitly excluded. Airbus Defence
 and other weapons, military, gambling, betting, tobacco, and adult-industry
 roles are blocked by company and keyword filters.
+
+The direct-source watchlist also includes applike group, Hermes Germany, and
+Körber. They were added for their fit with experimentation/product analytics,
+e-commerce and logistics data, and applied industrial analytics respectively.
 
 Engineering-titled roles are also excluded: any vacancy whose title contains
 the standalone word `engineer` is removed before scoring. Mentions of engineers
@@ -149,6 +162,11 @@ Employer ranges are passed through unchanged and marked `high` confidence. Other
 - Data Analyst, Hamburg: €6,447 × 12 = €77,364.
 
 The collector then applies a role-family factor, a seniority factor, and at most a small fit adjustment. The displayed range is ±10% around the midpoint. These are prioritization estimates, not compensation advice; bonuses, equity, pension, working hours, and benefits are excluded. The source is the Bundesagentur für Arbeit Entgeltatlas, data year 2024.
+
+The salary evidence card updates itself from the median midpoint of active,
+employer-published ranges whenever any are available. This live market signal
+is shown separately from the Entgeltatlas anchor so that a small vacancy sample
+is not misrepresented as an official statistic.
 
 ## Tests
 
@@ -177,21 +195,3 @@ deploys the result.
 - A role in the snapshot may have closed; always verify on the original career page.
 - The match score is a deterministic heuristic, not a hiring probability.
 - Saved jobs live only in browser `localStorage`.
-
-## Economy Lab
-
-`economy-lab.html` visualizes German sector VAR responses, annual measured capital
-stocks and employment exposure across 16 states. An optional calibrated synthesis
-closure adds sticky prices/wages and capital accumulation; it is explicitly separate
-from estimated reduced-form responses. No API key or client dependency is required.
-
-Serve with `python -m http.server 8000` and open `/economy-lab.html`.
-Refresh the bundled model from the sibling sandbox checkout:
-
-```bash
-python ../sandbox/economy/estimate.py --refresh --output data/economy-model.json
-node tests/test_economy.cjs
-```
-
-The dashboard includes source dates, complete chart tables, CSV scenario export,
-held-out forecast errors and residual diagnostics. No deployment is needed to preview.

@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import election_candidates  # noqa: E402
+import collect_election_models  # noqa: E402
 
 
 class ElectionModelSnapshotTests(unittest.TestCase):
@@ -22,7 +23,7 @@ class ElectionModelSnapshotTests(unittest.TestCase):
         elections = self.payload["elections"]
         self.assertIn("bundestag", elections)
         self.assertIn("berlin", elections)
-        self.assertGreaterEqual(len(elections), 7)
+        self.assertGreaterEqual(len(elections), 6)
 
     def test_model_outputs_are_bounded_and_complete(self):
         for election in self.payload["elections"].values():
@@ -46,6 +47,12 @@ class ElectionModelSnapshotTests(unittest.TestCase):
         self.assertGreater(summary["logit_mae"], 0)
         self.assertGreater(summary["probit_mae"], 0)
         self.assertEqual(summary["count"], len(self.payload["backtests"]))
+
+    def test_completed_elections_are_retired_from_live_targets(self):
+        self.assertNotIn("sachsen-anhalt", self.payload["elections"])
+        active = collect_election_models.active_targets(date(2026, 9, 12))
+        self.assertNotIn("sachsen-anhalt", active)
+        self.assertIn("berlin", active)
 
     def test_brave_result_verifies_only_known_candidate_name(self):
         payload = {
@@ -132,6 +139,32 @@ class ElectionModelSnapshotTests(unittest.TestCase):
             self.assertEqual(state["request_count"], 10)
             self.assertEqual(cache["meta"]["requests_used"], 2)
             self.assertEqual(len(cache["elections"]), 2)
+
+    def test_candidate_search_skips_until_weekly_refresh_is_due(self):
+        with TemporaryDirectory() as directory:
+            cache_path = Path(directory) / "candidates.json"
+            state_path = Path(directory) / "state.json"
+            cache_path.write_text(
+                json.dumps(
+                    {
+                        "meta": {"last_successful_at": "2026-07-25T09:00:00+00:00"},
+                        "elections": {},
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with patch.object(election_candidates, "read_api_key") as read_api_key:
+                cache, status = election_candidates.discover_candidates(
+                    {},
+                    cache_path=cache_path,
+                    state_path=state_path,
+                    target_date=date(2026, 7, 27),
+                )
+
+            read_api_key.assert_not_called()
+            self.assertIn("weekly refresh not due", status)
+            self.assertEqual(cache["meta"]["last_successful_at"][:10], "2026-07-25")
+            self.assertFalse(state_path.exists())
 
 
 if __name__ == "__main__":

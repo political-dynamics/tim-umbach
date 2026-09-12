@@ -60,6 +60,65 @@ class CollectorTest(unittest.TestCase):
         self.assertEqual(result["salary_mid"], 65000)
         self.assertEqual(result["salary_confidence"], "high")
 
+    def test_deadline_and_sixty_day_fallback_move_jobs_to_archive(self):
+        base = {
+            "title": "Senior Data Analyst",
+            "company": "Example",
+            "location": "Hamburg",
+            "work_mode": "Hybrid",
+            "url": "https://example.com/jobs/123",
+            "description": "SQL, Python, experimentation and product analytics",
+        }
+        jobs = [
+            {**base, "title": "Senior Data Analyst", "url": "https://example.com/jobs/1", "application_deadline": "2026-07-31", "last_seen": "2026-08-20"},
+            {**base, "title": "Product Data Analyst", "url": "https://example.com/jobs/2", "last_seen": "2026-06-01"},
+            {**base, "title": "Marketing Data Analyst", "url": "https://example.com/jobs/3", "last_seen": "2026-08-20"},
+        ]
+        output = collect_jobs.build_output(
+            jobs,
+            self.profile,
+            "test",
+            [],
+            target_date=date(2026, 9, 1),
+        )
+        self.assertEqual(len(output["jobs"]), 1)
+        self.assertEqual(len(output["archived_jobs"]), 2)
+        self.assertTrue(all(job["archive_reason"] for job in output["archived_jobs"]))
+
+    def test_application_deadline_is_extracted_from_description(self):
+        job = {"description": "Application deadline: 23 August 2026"}
+        self.assertEqual(
+            collect_jobs.extract_application_deadline(job),
+            "2026-08-23",
+        )
+
+    def test_aggregators_and_search_pages_are_not_application_links(self):
+        self.assertFalse(
+            collect_jobs.is_direct_application_url(
+                {"url": "https://www.stepstone.de/jobs/data-scientist/in-hamburg"}
+            )
+        )
+        self.assertFalse(
+            collect_jobs.job_matches_preferences(
+                {
+                    "title": "Data Scientist",
+                    "company": "Example",
+                    "description": "Python analytics",
+                    "location": "Hamburg",
+                    "url": "https://example.com/jobs",
+                    "discovery_source": "Company search page; verify role availability",
+                },
+                self.discovery,
+            )
+        )
+
+    def test_hamburg_jobs_receive_map_coordinates(self):
+        position = collect_jobs.map_position(
+            {"title": "Data Analyst", "company": "Example", "location": "Hamburg"}
+        )
+        self.assertIsNotNone(position)
+        self.assertAlmostEqual(position["latitude"], 53.55, delta=0.02)
+
     def test_multilingual_duplicates_are_collapsed(self):
         jobs = [
             {
@@ -112,6 +171,22 @@ class CollectorTest(unittest.TestCase):
             self.discovery,
         )
         self.assertEqual(company, "Maxingvest")
+
+    def test_brave_accepts_only_official_job_detail_pages(self):
+        self.assertTrue(
+            brave_search.is_company_application_url(
+                "https://applike-group.com/jobs/1234/",
+                "applike group",
+                self.discovery,
+            )
+        )
+        self.assertFalse(
+            brave_search.is_company_application_url(
+                "https://www.stepstone.de/jobs/data-scientist",
+                "applike group",
+                self.discovery,
+            )
+        )
 
     def test_offline_output_has_unique_ids_and_required_fields(self):
         seed = collect_jobs.read_json(collect_jobs.SEED_PATH)

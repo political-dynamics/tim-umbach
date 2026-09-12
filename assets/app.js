@@ -2,11 +2,14 @@
 
 const state = {
   jobs: [],
+  archivedJobs: [],
   profile: null,
   meta: null,
   saved: new Set(JSON.parse(localStorage.getItem("job-radar-saved") || "[]")),
   savedOnly: false,
+  showArchived: false,
   expandedCompanies: new Set(),
+  selectedMapJob: null,
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -17,12 +20,21 @@ const elements = {
   profileTags: $("#profile-tags"),
   strongMatchCount: $("#strong-match-count"),
   medianSalary: $("#median-salary"),
+  salaryReferenceLabel: $("#salary-reference-label"),
+  salaryReferenceNumber: $("#salary-reference-number"),
+  salaryReferenceTitle: $("#salary-reference-title"),
+  salaryReferenceCopy: $("#salary-reference-copy"),
+  salaryReferenceScale: $("#salary-reference-scale"),
   companyCount: $("#company-count"),
   jobCountLabel: $("#job-count-label"),
   savedCount: $("#saved-count"),
   showSaved: $("#show-saved"),
   chart: $("#opportunity-chart"),
+  jobsTitle: $("#jobs-title"),
   resultsLabel: $("#results-label"),
+  showCurrent: $("#show-current"),
+  showArchived: $("#show-archived"),
+  archiveCount: $("#archive-count"),
   searchInput: $("#search-input"),
   companyFilter: $("#company-filter"),
   matchFilter: $("#match-filter"),
@@ -30,9 +42,15 @@ const elements = {
   salaryFilterValue: $("#salary-filter-value"),
   resetFilters: $("#reset-filters"),
   jobList: $("#job-list"),
+  hamburgMap: $("#hamburg-map"),
+  mapRoleDetail: $("#map-role-detail"),
   dialog: $("#job-dialog"),
   dialogContent: $("#dialog-content"),
 };
+
+function allJobs() {
+  return [...state.jobs, ...state.archivedJobs];
+}
 
 function escapeHtml(value) {
   return String(value ?? "").replace(/[&<>'"]/g, (character) => ({
@@ -94,6 +112,20 @@ function updateOverview() {
   elements.companyCount.textContent = companies.size;
   elements.jobCountLabel.textContent = `${state.jobs.length} opportunities tracked`;
   elements.savedCount.textContent = state.saved.size;
+  elements.archiveCount.textContent = state.archivedJobs.length;
+  const publishedCount = Number(state.meta.published_salary_count || 0);
+  const marketReference = Number(state.meta.market_salary_reference_eur || state.meta.salary_benchmark_annual_eur);
+  elements.salaryReferenceNumber.textContent = money(marketReference, true);
+  elements.salaryReferenceScale.style.width = `${Math.max(0, Math.min(100, (marketReference - 50000) / 40000 * 100))}%`;
+  if (publishedCount) {
+    elements.salaryReferenceLabel.textContent = "Live salary evidence";
+    elements.salaryReferenceTitle.textContent = "Published-role median";
+    elements.salaryReferenceCopy.textContent = `${publishedCount} active employer-published ${publishedCount === 1 ? "range updates" : "ranges update"} this signal. Modelled roles still use the official Entgeltatlas anchor.`;
+  } else {
+    elements.salaryReferenceLabel.textContent = "Official salary anchor";
+    elements.salaryReferenceTitle.textContent = "Hamburg Data Scientist median";
+    elements.salaryReferenceCopy.textContent = "No active employer range is available, so the signal uses the annualised Entgeltatlas median.";
+  }
   const generated = state.meta.generated_at ? new Date(state.meta.generated_at) : null;
   const dateText = generated && !Number.isNaN(generated.valueOf())
     ? generated.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })
@@ -120,7 +152,7 @@ function updateOverview() {
 }
 
 function populateCompanies() {
-  const companies = [...new Set(state.jobs.map((job) => job.company))].sort();
+  const companies = [...new Set(allJobs().map((job) => job.company))].sort();
   elements.companyFilter.insertAdjacentHTML("beforeend", companies.map((company) => `<option value="${escapeHtml(company)}">${escapeHtml(company)}</option>`).join(""));
 }
 
@@ -129,7 +161,8 @@ function filteredJobs() {
   const company = elements.companyFilter.value;
   const minMatch = Number(elements.matchFilter.value);
   const minSalary = Number(elements.salaryFilter.value) * 1000;
-  return state.jobs.filter((job) => {
+  const source = state.showArchived ? state.archivedJobs : state.jobs;
+  return source.filter((job) => {
     const searchable = [job.title, job.company, job.location, ...(job.matched_skills || [])].join(" ").toLowerCase();
     return (!query || searchable.includes(query))
       && (!company || job.company === company)
@@ -167,6 +200,51 @@ function renderChart(jobs) {
   elements.chart.querySelectorAll(".job-dot").forEach((dot) => dot.addEventListener("click", () => openJob(dot.dataset.jobId)));
 }
 
+function updateMapDetail(job) {
+  if (!job) {
+    elements.mapRoleDetail.innerHTML = `<p class="overline">Map coverage</p><h3>No Hamburg-area points</h3><p>Remote-only and unstated locations remain in the ranked list.</p>`;
+    return;
+  }
+  state.selectedMapJob = job.id;
+  elements.mapRoleDetail.innerHTML = `<p class="overline">${escapeHtml(job.map?.label || "Hamburg area")}</p>
+    <h3>${escapeHtml(job.title)}</h3>
+    <p>${escapeHtml(job.company)} · ${job.match_score}% match · ${money(job.salary_mid, true)}</p>
+    <span>${escapeHtml(job.work_mode || "Work mode not stated")} · approximate city-level position</span>
+    <button type="button" data-map-open="${escapeHtml(job.id)}">Inspect role <span aria-hidden="true">→</span></button>`;
+  elements.mapRoleDetail.querySelector("[data-map-open]").addEventListener("click", () => openJob(job.id));
+  elements.hamburgMap.querySelectorAll(".map-marker").forEach((marker) => {
+    const active = marker.dataset.mapJob === job.id;
+    marker.classList.toggle("active", active);
+    marker.setAttribute("aria-pressed", String(active));
+  });
+}
+
+function renderHamburgMap(jobs = state.jobs) {
+  const mapped = jobs.filter((job) => Number.isFinite(Number(job.map?.latitude)) && Number.isFinite(Number(job.map?.longitude)));
+  const bounds = { north: 53.73, south: 53.36, west: 9.62, east: 10.32 };
+  const point = (job) => ({
+    left: (Number(job.map.longitude) - bounds.west) / (bounds.east - bounds.west) * 100,
+    top: (bounds.north - Number(job.map.latitude)) / (bounds.north - bounds.south) * 100,
+  });
+  const base = `<svg viewBox="0 0 800 430" aria-hidden="true">
+    <path class="map-boundary" d="M97 246 132 132 238 58 367 73 438 38 545 91 688 109 739 205 680 307 574 351 492 397 356 366 266 405 163 345Z"/>
+    <path class="map-water" d="M-20 285 C120 240 178 292 286 280 S455 231 550 266 685 333 825 277"/>
+    <path class="map-water-branch" d="M272 280 C294 247 323 220 353 180"/>
+    <g class="map-roads"><path d="M154 146 630 319"/><path d="M250 382 420 56"/><path d="M102 252 697 178"/></g>
+  </svg>
+  <span class="map-label altona">Altona</span><span class="map-label center">Mitte</span><span class="map-label north">Nord</span><span class="map-label wandsbek">Wandsbek</span><span class="map-label harburg">Harburg</span><span class="map-label elbe">Elbe</span>`;
+  const markers = mapped.map((job) => {
+    const position = point(job);
+    const salaryClass = sourceIsAdvertised(job) ? "published" : "estimated";
+    return `<button class="map-marker ${salaryClass}" style="left:${position.left.toFixed(2)}%;top:${position.top.toFixed(2)}%" type="button" data-map-job="${escapeHtml(job.id)}" aria-label="${escapeHtml(job.company)}, ${escapeHtml(job.title)}" aria-pressed="false"><span>${escapeHtml(initials(job.company))}</span></button>`;
+  }).join("");
+  elements.hamburgMap.innerHTML = `${base}${markers}<div class="map-key"><span><i class="published"></i>Published salary</span><span><i class="estimated"></i>Estimated</span></div>`;
+  elements.hamburgMap.querySelectorAll("[data-map-job]").forEach((marker) => marker.addEventListener("click", () => {
+    updateMapDetail(mapped.find((job) => job.id === marker.dataset.mapJob));
+  }));
+  updateMapDetail(mapped.find((job) => job.id === state.selectedMapJob) || mapped[0]);
+}
+
 function cardMarkup(job) {
   const saved = state.saved.has(job.id);
   const salaryLabel = `${money(job.salary_min, true)}–${money(job.salary_max, true)}`;
@@ -174,13 +252,18 @@ function cardMarkup(job) {
   const sourceLabel = sourceIsAdvertised(job) ? "Employer range" : `${job.salary_confidence} confidence estimate`;
   const tags = (job.matched_skills || []).slice(0, 3).map((skill) => `<span class="job-tag">${escapeHtml(skill)}</span>`).join("");
   const workFit = ["fit", "unclear", "mismatch"].includes(job.work_mode_fit) ? job.work_mode_fit : "unclear";
-  return `<article class="job-card">
+  const archiveNote = state.showArchived
+    ? `<span class="archive-note">Archived · ${escapeHtml(job.archive_reason || "No longer active")}</span>`
+    : job.application_deadline
+      ? `<span class="deadline-note">Apply by ${escapeHtml(job.application_deadline)}</span>`
+      : "";
+  return `<article class="job-card ${state.showArchived ? "archived" : ""}">
     <button class="card-open" type="button" data-open-job="${escapeHtml(job.id)}" aria-label="Open ${escapeHtml(job.title)} details"></button>
     <div class="match-ring" style="--score:${job.match_score}"><span>${job.match_score}%</span></div>
     <div class="job-main">
       <div class="job-kicker"><span class="company-avatar">${escapeHtml(initials(job.company))}</span>${escapeHtml(job.company)} · ${escapeHtml(job.level)}</div>
       <h3>${escapeHtml(job.title)}</h3>
-      <div class="job-tags">${tags}</div>
+      <div class="job-tags">${tags}${archiveNote}</div>
     </div>
     <div class="job-location"><p>Location</p><strong>${escapeHtml(job.location || "Not stated")}</strong><span class="work-fit ${workFit}">${escapeHtml(job.work_mode || "Work mode unclear")}</span><small>${escapeHtml(job.work_mode_note || "Verify work model")}</small></div>
     <div class="job-salary"><p>Annual gross</p><strong>${salaryLabel}</strong><span class="salary-source ${sourceClass}">${escapeHtml(sourceLabel)}</span></div>
@@ -214,15 +297,17 @@ function companyGroupMarkup([company, jobs]) {
 
 function renderJobs() {
   const jobs = filteredJobs();
+  const total = state.showArchived ? state.archivedJobs.length : state.jobs.length;
   const groups = groupJobsByCompany(jobs);
-  elements.resultsLabel.textContent = `${groups.length} companies · ${jobs.length} of ${state.jobs.length} opportunities`;
+  elements.resultsLabel.textContent = `${groups.length} companies · ${jobs.length} of ${total} ${state.showArchived ? "archived" : "current"} opportunities`;
   elements.salaryFilterValue.textContent = `€${elements.salaryFilter.value}k`;
   if (!jobs.length) {
-    elements.jobList.innerHTML = `<div class="empty-state"><strong>No roles match these filters.</strong><p>Lower the salary or match threshold, or reset all filters.</p></div>`;
+    elements.jobList.innerHTML = `<div class="empty-state"><strong>No ${state.showArchived ? "archived" : "current"} roles match these filters.</strong><p>Lower the salary or match threshold, or reset all filters.</p></div>`;
   } else {
     elements.jobList.innerHTML = groups.map(companyGroupMarkup).join("");
   }
-  renderChart(jobs.length ? jobs : state.jobs);
+  renderChart(jobs.length ? jobs : (state.showArchived ? state.archivedJobs : state.jobs));
+  if (!state.showArchived) renderHamburgMap(jobs.length ? jobs : state.jobs);
   elements.jobList.querySelectorAll("[data-open-job]").forEach((button) => button.addEventListener("click", () => openJob(button.dataset.openJob)));
   elements.jobList.querySelectorAll("[data-save-job]").forEach((button) => button.addEventListener("click", () => toggleSave(button.dataset.saveJob)));
   elements.jobList.querySelectorAll("[data-toggle-company]").forEach((button) => button.addEventListener("click", () => {
@@ -240,7 +325,7 @@ function toggleSave(id) {
 }
 
 function openJob(id) {
-  const job = state.jobs.find((candidate) => candidate.id === id);
+  const job = allJobs().find((candidate) => candidate.id === id);
   if (!job) return;
   const advertised = sourceIsAdvertised(job);
   const reasons = (job.fit_reasons || []).map((reason) => `<li>${escapeHtml(reason)}</li>`).join("");
@@ -282,11 +367,24 @@ function bindEvents() {
     renderJobs();
     $("#opportunities").scrollIntoView({ behavior: "smooth" });
   });
+  elements.showCurrent.addEventListener("click", () => setListingMode(false));
+  elements.showArchived.addEventListener("click", () => setListingMode(true));
   $(".dialog-close").addEventListener("click", () => elements.dialog.close());
   elements.dialog.addEventListener("click", (event) => {
     const bounds = elements.dialog.getBoundingClientRect();
     if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) elements.dialog.close();
   });
+}
+
+function setListingMode(showArchived) {
+  state.showArchived = showArchived;
+  state.expandedCompanies.clear();
+  elements.showCurrent.classList.toggle("active", !showArchived);
+  elements.showArchived.classList.toggle("active", showArchived);
+  elements.showCurrent.setAttribute("aria-pressed", String(!showArchived));
+  elements.showArchived.setAttribute("aria-pressed", String(showArchived));
+  elements.jobsTitle.textContent = showArchived ? "Past opportunities, kept tidy." : "Best company matches first.";
+  renderJobs();
 }
 
 async function initialize() {
@@ -295,6 +393,7 @@ async function initialize() {
     if (!jobsResponse.ok || !profileResponse.ok) throw new Error("Dashboard data could not be loaded");
     const jobsPayload = await jobsResponse.json();
     state.jobs = jobsPayload.jobs;
+    state.archivedJobs = jobsPayload.archived_jobs || [];
     state.meta = jobsPayload.meta;
     state.profile = await profileResponse.json();
     updateProfile();

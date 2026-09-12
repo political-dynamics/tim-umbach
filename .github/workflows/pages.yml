@@ -3,7 +3,7 @@ name: Refresh and deploy site data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 4 * * 1"
+    - cron: "17 4 * * *"
 
 permissions:
   contents: write
@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
@@ -26,7 +27,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Refresh DAWUM models and Brave candidate evidence
+      - name: Refresh DAWUM forecast and candidate evidence
         env:
           BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
         run: python scripts/collect_election_models.py --discover-candidates

@@ -1,12 +1,12 @@
 {
   "daily_request_limit": 10,
   "result_count": 20,
-  "retention_days": 21,
+  "retention_days": 60,
   "require_watchlist_company": true,
   "country": "de",
   "search_lang": "de",
   "daily_queries": [
-    "(Data Scientist OR Senior Data Analyst OR Product Analyst OR Customer Insights) (Hamburg OR remote) (ABOUT YOU OR OTTO OR Beiersdorf OR Tchibo OR Maxingvest OR EDEKA OR Fielmann OR Heinemann OR Freenet) (hybrid OR remote)",
+    "(Data Scientist OR Senior Data Analyst OR Product Analyst OR Customer Insights) (Hamburg OR remote) (ABOUT YOU OR OTTO OR Beiersdorf OR Tchibo OR Maxingvest OR EDEKA OR Fielmann OR Heinemann OR Freenet OR applike OR Hermes OR Körber) (hybrid OR remote)",
     "(Data Scientist OR Product Analyst OR Experimentation OR Customer Insights) (Hamburg OR remote) (Statista OR New Work OR XING OR Bertelsmann OR RTL OR Gruner Jahr OR ZEIT OR SPIEGEL OR NDR OR Publicis) (hybrid OR remote)",
     "(Data Scientist OR Data Analyst OR Product Analyst OR Business Intelligence) (Hamburg OR remote) (MOIA OR FREE NOW OR Airbus OR Hapag-Lloyd OR HHLA OR Lufthansa Technik OR Jungheinrich OR HELM OR Google OR Adobe) (hybrid OR remote)",
     "(Data Scientist OR Data Analyst OR Econometrics OR Causal Inference) (Hamburg OR remote) (DESY OR Universität Hamburg OR Stadt Hamburg OR Techniker Krankenkasse OR Eppendorf OR Berenberg) (hybrid OR mobile Arbeit OR remote)",
@@ -151,6 +151,9 @@
     {"name": "Freie und Hansestadt Hamburg", "aliases": ["stadt hamburg", "hamburg service"], "domains": ["hamburg.de"]},
     {"name": "Techniker Krankenkasse", "aliases": ["techniker krankenkasse", "die techniker"], "domains": ["tk.de"]},
     {"name": "Eppendorf", "aliases": ["eppendorf"], "domains": ["eppendorf.com"]},
-    {"name": "Berenberg", "aliases": ["berenberg"], "domains": ["berenberg.de"]}
+    {"name": "Berenberg", "aliases": ["berenberg"], "domains": ["berenberg.de"]},
+    {"name": "applike group", "aliases": ["applike group", "applike", "adjoe", "justdice", "justtrack"], "domains": ["applike-group.com", "lever.co"]},
+    {"name": "Hermes Germany", "aliases": ["hermes germany", "hermesworld"], "domains": ["hermesworld.com"]},
+    {"name": "Körber", "aliases": ["körber", "koerber"], "domains": ["koerber.com"]}
   ]
 }

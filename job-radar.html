@@ -25,7 +25,6 @@
             <a href="index.html#work">All work</a>
             <a href="job-radar.html" aria-current="page">Job Radar</a>
             <a href="election-lab.html">Election Lab</a>
-            <a href="economy-lab.html">Economy Lab</a>
           </div>
         </details>
         <a href="cv.html">CV</a>
@@ -90,16 +89,36 @@
         </article>
 
         <article class="panel benchmark-panel">
-          <p class="overline">Salary anchor</p>
-          <div class="benchmark-number">€74k</div>
-          <h2>Hamburg Data Scientist median</h2>
-          <p>The official 2024 median is €6,168 gross per month. Job estimates adjust this anchor for role family, level, and profile fit.</p>
+          <p class="overline" id="salary-reference-label">Salary evidence</p>
+          <div class="benchmark-number" id="salary-reference-number">—</div>
+          <h2 id="salary-reference-title">Loading salary signal</h2>
+          <p id="salary-reference-copy">Employer-published ranges update this market signal automatically; estimates remain anchored to the official Entgeltatlas median.</p>
           <a href="https://web.arbeitsagentur.de/entgeltatlas/beruf/129987" target="_blank" rel="noopener noreferrer">Open Entgeltatlas <span aria-hidden="true">↗</span></a>
           <div class="benchmark-scale" aria-label="Salary benchmark scale">
-            <span style="width: 66%"></span>
+            <span id="salary-reference-scale" style="width: 0"></span>
           </div>
           <div class="benchmark-labels"><span>€50k</span><span>€90k+</span></div>
         </article>
+      </section>
+
+      <section class="hamburg-map-panel section-shell panel" aria-labelledby="hamburg-map-title">
+        <div class="panel-heading">
+          <div>
+            <p class="overline">Where the work is</p>
+            <h2 id="hamburg-map-title">Hamburg opportunity map</h2>
+          </div>
+          <p class="chart-note">City-level positions are approximate. Select a marker to inspect the role.</p>
+        </div>
+        <div class="hamburg-map-layout">
+          <div id="hamburg-map" class="hamburg-map" role="group" aria-label="Interactive map of Hamburg-area jobs">
+            <div class="loading-block"></div>
+          </div>
+          <aside id="map-role-detail" class="map-role-detail" aria-live="polite">
+            <p class="overline">Selected map point</p>
+            <h3>Loading locations…</h3>
+            <p>The latest active opportunities are being placed on the map.</p>
+          </aside>
+        </div>
       </section>
 
       <section id="opportunities" class="jobs-section section-shell" aria-labelledby="jobs-title">
@@ -110,6 +129,10 @@
           </div>
           <div class="results-tools">
             <p id="results-label" aria-live="polite">Loading opportunities…</p>
+            <div class="listing-mode" role="group" aria-label="Opportunity status">
+              <button id="show-current" class="active" type="button" aria-pressed="true">Current</button>
+              <button id="show-archived" type="button" aria-pressed="false">Archive <span id="archive-count">0</span></button>
+            </div>
             <a href="https://www.arbeitsagentur.de/jobsuche/suche?angebotsart=1&amp;was=Data%20Scientist&amp;wo=Hamburg&amp;umkreis=50" target="_blank" rel="noopener noreferrer">Search BA manually <span aria-hidden="true">↗</span></a>
           </div>
         </div>
@@ -146,8 +169,44 @@
         </div>
       </section>
 
+      <section class="company-landscape section-shell" aria-labelledby="company-landscape-title">
+        <div class="section-title-row">
+          <div>
+            <div class="eyebrow"><span>03</span> Expanded watchlist</div>
+            <h2 id="company-landscape-title">More places worth watching.</h2>
+          </div>
+          <p>Three additional Hamburg employers selected for product data, experimentation, and applied analytics fit.</p>
+        </div>
+        <div class="company-profile-grid">
+          <article>
+            <span class="company-profile-index">01</span>
+            <p class="overline">Mobile products · adtech</p>
+            <h3>applike group</h3>
+            <p>Strong overlap with product analytics, experimentation, causal questions, and high-volume behavioural data.</p>
+            <div><span>Experimentation</span><span>Product data</span><span>Hamburg</span></div>
+            <a href="https://applike-group.com/jobs/" target="_blank" rel="noopener noreferrer">Open careers <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <span class="company-profile-index">02</span>
+            <p class="overline">E-commerce · logistics</p>
+            <h3>Hermes Germany</h3>
+            <p>A useful match for business analytics, customer insights, operations data, and Otto Group domain experience.</p>
+            <div><span>Business analytics</span><span>Retail</span><span>Hamburg</span></div>
+            <a href="https://www.hermesworld.com/de/karriere/jobs/" target="_blank" rel="noopener noreferrer">Open careers <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <span class="company-profile-index">03</span>
+            <p class="overline">Industrial tech · supply chain</p>
+            <h3>Körber</h3>
+            <p>Relevant for decision science and analytics roles where operational data and cross-functional consulting meet.</p>
+            <div><span>Applied analytics</span><span>Industry</span><span>Hamburg</span></div>
+            <a href="https://jobs.koerber.com/?locale=de_DE" target="_blank" rel="noopener noreferrer">Open careers <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
       <section class="method-section section-shell" aria-labelledby="method-title">
-        <div class="eyebrow"><span>03</span> Transparent by design</div>
+        <div class="eyebrow"><span>04</span> Transparent by design</div>
         <div class="method-grid">
           <div>
             <h2 id="method-title">What the score<br>actually means.</h2>
@@ -160,7 +219,7 @@
             </details>
             <details>
               <summary>Where jobs come from</summary>
-              <p>The updater visits permitted official career pages, refreshes Experimentation Jobs and the community-documented BA Jobsuche endpoint once daily, and uses at most ten Brave Search requests per UTC day. Dated results remain for 21 days. Jobs with unclear, on-site, or region-restricted work models stay visible but are marked and ranked lower; weapons, defence-specific, gambling, tobacco, and adult-industry roles are excluded. Google Search, LinkedIn, and Bundesagentur web pages are not scraped.</p>
+              <p>The daily updater visits permitted official career pages, refreshes Experimentation Jobs and the community-documented BA Jobsuche endpoint, and uses at most ten Brave Search requests per UTC day. A stated application deadline retires a role immediately after it passes; otherwise a role moves to the archive after 60 days without confirmation. Only job-specific application pages are retained. Google Search, LinkedIn, and Bundesagentur web pages are not scraped.</p>
             </details>
           </div>
         </div>

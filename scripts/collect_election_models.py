@@ -90,6 +90,7 @@ TARGETS: dict[str, dict[str, Any]] = {
         "label": "Bundestag",
         "election_label": "Federal election",
         "election_date": "2029",
+        "election_date_iso": "2029-12-31",
         "head_title": "Chancellor",
         "seats": 630,
         "incumbent_parties": ["CDU/CSU", "SPD"],
@@ -113,6 +114,7 @@ TARGETS: dict[str, dict[str, Any]] = {
         "label": "Berlin",
         "election_label": "Abgeordnetenhaus election",
         "election_date": "20 Sep 2026",
+        "election_date_iso": "2026-09-20",
         "head_title": "Governing Mayor",
         "seats": 130,
         "incumbent_parties": ["CDU", "SPD"],
@@ -136,6 +138,7 @@ TARGETS: dict[str, dict[str, Any]] = {
         "label": "Mecklenburg-Vorpommern",
         "election_label": "Landtag election",
         "election_date": "20 Sep 2026",
+        "election_date_iso": "2026-09-20",
         "head_title": "Minister-President",
         "seats": 79,
         "incumbent_parties": ["SPD", "Linke"],
@@ -158,6 +161,7 @@ TARGETS: dict[str, dict[str, Any]] = {
         "label": "Saxony-Anhalt",
         "election_label": "Landtag election",
         "election_date": "6 Sep 2026",
+        "election_date_iso": "2026-09-06",
         "head_title": "Minister-President",
         "seats": 97,
         "incumbent_parties": ["CDU", "SPD", "FDP"],
@@ -180,6 +184,7 @@ TARGETS: dict[str, dict[str, Any]] = {
         "label": "North Rhine-Westphalia",
         "election_label": "Landtag election",
         "election_date": "Spring 2027",
+        "election_date_iso": "2027-06-30",
         "head_title": "Minister-President",
         "seats": 195,
         "incumbent_parties": ["CDU", "Grüne"],
@@ -202,6 +207,7 @@ TARGETS: dict[str, dict[str, Any]] = {
         "label": "Schleswig-Holstein",
         "election_label": "Landtag election",
         "election_date": "2027",
+        "election_date_iso": "2027-12-31",
         "head_title": "Minister-President",
         "seats": 69,
         "incumbent_parties": ["CDU", "Grüne"],
@@ -224,6 +230,7 @@ TARGETS: dict[str, dict[str, Any]] = {
         "label": "Hamburg",
         "election_label": "Bürgerschaft election",
         "election_date": "2030",
+        "election_date_iso": "2030-12-31",
         "head_title": "First Mayor",
         "seats": 121,
         "incumbent_parties": ["SPD", "Grüne"],
@@ -242,6 +249,15 @@ TARGETS: dict[str, dict[str, Any]] = {
         ],
     },
 }
+
+
+def active_targets(as_of: date = TODAY) -> dict[str, dict[str, Any]]:
+    """Return current and future contests for the live dashboard."""
+    return {
+        slug: target
+        for slug, target in TARGETS.items()
+        if date.fromisoformat(target["election_date_iso"]) >= as_of
+    }
 
 
 BACKTESTS = [
@@ -613,13 +629,16 @@ def build_snapshot(
     payload: dict[str, Any],
     candidate_cache: dict[str, Any] | None = None,
     candidate_search_status: str = "Candidate evidence cache loaded",
+    as_of: date | None = None,
 ) -> dict[str, Any]:
     id_to_party, _ = party_maps(payload)
     database_update = payload["Database"]["Last_Update"]
     snapshot_day = datetime.fromisoformat(database_update).date()
     elections: dict[str, Any] = {}
     candidate_cache = candidate_cache or {"meta": {}, "elections": {}}
-    for index, (slug, base_target) in enumerate(TARGETS.items()):
+    for index, (slug, base_target) in enumerate(
+        active_targets(as_of or snapshot_day).items()
+    ):
         target = deepcopy(base_target)
         target["candidate_evidence"] = candidate_evidence(
             candidate_cache,
@@ -641,6 +660,7 @@ def build_snapshot(
             "label": target["label"],
             "election_label": target["election_label"],
             "election_date": target["election_date"],
+            "election_date_iso": target["election_date_iso"],
             "head_title": target["head_title"],
             "seat_count": target["seats"],
             "poll_count": len(surveys),
@@ -697,7 +717,7 @@ def main() -> None:
     args = parse_args()
     if args.discover_candidates:
         candidate_cache, candidate_status = discover_candidates(
-            TARGETS,
+            active_targets(),
             cache_path=args.candidate_cache,
         )
     else:

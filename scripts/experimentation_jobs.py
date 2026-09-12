@@ -173,6 +173,7 @@ def normalize_listings(
                 "discovery_source": "Experimentation Jobs",
                 "freshness": f"Experimentation Jobs refresh {query_date}",
                 "experimentation_query_date": query_date,
+                "last_seen": query_date,
             }
         )
     return jobs
@@ -189,6 +190,7 @@ def retained_cache(
         except (KeyError, TypeError, ValueError):
             continue
         if seen >= cutoff:
+            job.setdefault("last_seen", seen.isoformat())
             retained.append(job)
     return retained
 

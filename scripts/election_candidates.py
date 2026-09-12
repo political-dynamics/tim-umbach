@@ -7,7 +7,8 @@ name cannot be verified, the curated value remains visible and is explicitly
 marked as such in the frontend.
 
 Candidate queries share the Job Radar's ten-request daily budget and state
-file. The weekly workflow runs this module first with a maximum of seven
+file. The daily workflow invokes this module first, but an internal seven-day
+guard limits candidate checks to a weekly cadence. A refresh uses at most seven
 requests, leaving at least three Brave requests for job discovery that day.
 """
 
@@ -29,6 +30,7 @@ ROOT = Path(__file__).resolve().parents[1]
 CACHE_PATH = ROOT / "data" / "election_candidates.json"
 DAILY_LIMIT = 10
 WEEKLY_CANDIDATE_LIMIT = 7
+CANDIDATE_REFRESH_DAYS = 7
 
 PARTY_SEARCH_ALIASES = {
     "CDU/CSU": ["CDU", "CSU", "Union"],
@@ -189,6 +191,17 @@ def discover_candidates(
     date_text = target_date.isoformat()
     checked_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     cache = read_cache(cache_path)
+    try:
+        last_successful = date.fromisoformat(
+            str(cache.get("meta", {}).get("last_successful_at", ""))[:10]
+        )
+    except ValueError:
+        last_successful = None
+    if last_successful is not None:
+        days_since_refresh = (target_date - last_successful).days
+        if 0 <= days_since_refresh < CANDIDATE_REFRESH_DAYS:
+            return cache, "Brave candidate search: weekly refresh not due; cached evidence used"
+
     api_key = read_api_key()
     if not api_key:
         cache["meta"].update(

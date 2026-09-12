@@ -1,19 +1,22 @@
 {
   "meta": {
-    "generated_at": "2026-09-07T09:21:44+00:00",
-    "mode": "live official pages + dated snapshot coverage",
-    "job_count": 33,
+    "generated_at": "2026-09-12T12:00:33+00:00",
+    "mode": "existing snapshot reindexed",
+    "job_count": 27,
+    "archived_job_count": 0,
     "location": "Hamburg",
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2024",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987",
-    "preference_excluded_count": 11,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 2 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (4 accepted)",
-    "ba_jobs_status": "BA API refresh: error (0 detailed)",
-    "errors": [
-      "https://jobs.fielmann.com/en/job-offers/detail/57146-global-category-merchandise-manager-fmd: HTTPError: HTTP Error 404: Not Found",
-      "https://www.otto.de/jobs/de/stellenangebote/03576975/werkstudent-change-management-transformation-data-ai-bei-otto-w-m-d/: HTTPError: HTTP Error 404: Not Found"
-    ]
+    "salary_benchmark_annual_eur": 74016,
+    "published_salary_count": 2,
+    "published_salary_median_eur": 71250,
+    "market_salary_reference_eur": 71250,
+    "market_salary_reference_source": "Median of active employer-published ranges",
+    "preference_excluded_count": 6,
+    "brave_search_status": "Brave not requested during reindex",
+    "experimentation_jobs_status": "Experimentation Jobs not requested during reindex",
+    "ba_jobs_status": "BA API not requested during reindex",
+    "errors": []
   },
   "jobs": [
     {
@@ -51,7 +54,15 @@
       ],
       "skill_gaps": [],
       "salary_mid": 77500,
-      "salary_confidence": "high"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.5481,
+        "longitude": 9.98046,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Data Scientist (w/m/d) - AI & Automation",
@@ -60,110 +71,39 @@
       "work_mode": "Hybrid / mobile work",
       "level": "senior",
       "url": "https://jobs.fielmann.com/en/job-offers/detail/63094-data-scientist-wmd-ai-automation",
-      "date_posted": "1970-01-01",
+      "date_posted": "",
       "description": "Im Bereich Finance gestalten wir die finanzielle Entwicklung von Fielmann datenbasiert und zukunftsorientiert. Gemeinsam mit Controlling, Data Engineering, IT und weiteren Fachbereichen entwickeln wir technische Lösungen, die Reporting, Forecasting und Entscheidungsprozesse effizienter und transparenter machen. In dieser Rolle verbindest du Finance-Verständnis mit technischer Umsetzung: Du arbeitest mit SQL, Python, BI-Tools, Automatisierungslösungen und modernen KI-Anwendungen, um wiederkehrende Prozesse zu verbessern, Daten nutzbar zu machen und neue Analyseansätze in die Praxis zu bringen. So entsteht ein Umfeld, in dem Technologie echten Mehrwert für Controlling und Finance schafft – und in dem du mit deiner Expertise die digitale Weiterentwicklung unserer Finanzfunktion aktiv mitgestaltest. Das erwartet dich bei uns. Deine Aufgaben. Du entwickelst und implementierst KI- und Analytic",
       "discovery_source": "Official career page",
       "freshness": "live check",
       "id": "ba111c2c58e3",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 84,
+      "match_score": 72,
       "matched_skills": [
         "SQL",
-        "Product analytics",
         "Python",
-        "GCP",
-        "Data pipelines",
-        "Data visualization"
+        "Data pipelines"
       ],
       "fit_reasons": [
         "Role alignment: Data Scientist",
-        "Skill overlap: SQL, Product analytics, Python, GCP",
+        "Skill overlap: SQL, Python, Data pipelines",
         "Hamburg location"
       ],
-      "skill_gaps": [
-        "AWS"
-      ],
+      "skill_gaps": [],
       "salary_min": 76000,
       "salary_mid": 85000,
       "salary_max": 94000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
-    },
-    {
-      "title": "BI Data Scientist",
-      "company": "Gebr. Heinemann",
-      "location": "Hamburg, Germany",
-      "work_mode": "Not stated",
-      "level": "experienced",
-      "url": "https://www.gebr-heinemann.com/heu/en/jobs?country=Germany",
-      "date_posted": "",
-      "description": "Business-intelligence and data-science role in international travel retail. Expected work includes Python/SQL analytics, predictive modeling, dashboards and communicating insights to business stakeholders.",
-      "discovery_source": "Company search page; verify role availability",
-      "freshness": "snapshot 2026-07-20",
-      "id": "348d8baa43c4",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 83,
-      "matched_skills": [
-        "SQL",
-        "Python",
-        "Stakeholder consulting",
-        "E-commerce",
-        "Machine learning",
-        "Data visualization"
-      ],
-      "fit_reasons": [
-        "Role alignment: Data Scientist",
-        "Skill overlap: SQL, Python, Stakeholder consulting, E-commerce",
-        "Hamburg location",
-        "Relevant e-commerce / retail domain"
-      ],
-      "skill_gaps": [],
-      "salary_min": 68000,
-      "salary_mid": 75000,
-      "salary_max": 82000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
-    },
-    {
-      "title": "Data Scientist Customer Analytics (w/m/d)",
-      "company": "Freenet Group",
-      "location": "Hamburg, Germany",
-      "work_mode": "Hybrid / mobile work",
-      "level": "manager",
-      "url": "https://karriere.freenet-group.de/?page=home&action=view&id=wjckqqzrtakek5pvpkoc9gij18sz9gp&mandator_template_id=1",
-      "date_posted": "",
-      "description": "Data Scientist Customer Analytics (w/m/d) Das erwartet dich Unser Bereich Customer Management entwickelt und betreibt auf einer skalierbaren AWS-Plattform datengetriebene Lösungen, die Kundenbedürfnisse entlang des gesamten Customer Lifecycles frühzeitig erkennen und Kundenansprachen intelligent automatisieren. Dafür arbeiten DevOps, Data Engineers und Data Scientists gemeinsam an modernen Technologien, um messbaren Mehrwert für unsere Kunden zu schaffen und neue datengetriebene Geschäftspotenziale zu erschließen. In diesem Umfeld entwickelst Du datengetriebene Lösungen von der ersten Analyse bis zum produktiven Einsatz und trägst dazu bei, intelligente Modelle erfolgreich in unsere Geschäftsprozesse zu integrieren. Deine Aufgaben Analyse fachlicher Anforderungen sowie Entwicklung datengetriebener Lösungsansätze und Handlungsempfehlungen gemeinsam mit den relevanten Stakeholdern Entwickl",
-      "discovery_source": "Official career page",
-      "freshness": "live check",
-      "id": "41d641795342",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 74,
-      "matched_skills": [
-        "SQL",
-        "Python",
-        "Stakeholder consulting",
-        "Data pipelines"
-      ],
-      "fit_reasons": [
-        "Role alignment: Data Scientist",
-        "Skill overlap: SQL, Python, Stakeholder consulting, Data pipelines",
-        "Hamburg location"
-      ],
-      "skill_gaps": [
-        "AWS",
-        "Spark"
-      ],
-      "salary_min": 79000,
-      "salary_mid": 88000,
-      "salary_max": 97000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.54619,
+        "longitude": 10.00658,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Data Analyst (all genders) — Supply Data Solutions",
@@ -198,7 +138,15 @@
       ],
       "skill_gaps": [],
       "salary_mid": 65000,
-      "salary_confidence": "high"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.54817,
+        "longitude": 10.00658,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Product Data Analyst (m/f/d) – Hamburg",
@@ -231,45 +179,19 @@
       "salary_max": 86000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
-    },
-    {
-      "title": "Business Analyst - Digitales Marketing (m/w/d)",
-      "company": "EDEKA",
-      "location": "Hamburg",
-      "work_mode": "Hybrid",
-      "level": "experienced",
-      "url": "https://verbund.edeka/karriere/stellenb%C3%B6rse/stelle-business-analyst-m-w-d-hamburg-edeka-zentrale-stiftung-amp-co.-kg?id=232469_27993&type=j",
-      "date_posted": "2026-03-17T10:38:31.710+0000",
-      "description": "Business Analyst bei EDEKA – Deine Chance, den Lebensmittelhandel neu zu denken Als Business Analyst im digitalen Marketing bei EDEKA stehst du im Herzen unserer digitalen Transformation. Du arbeitest an Themen, die Millionen Kund:innen täglich berühren – von der App‑Experience bis zu datengetriebenen Loyalty‑Mechaniken. Dein Impact ist unmittelbar sichtbar: Du identifizierst Chancen, entwickelst Hypothesen, bringst Innovationen voran und gestaltest aktiv die Zukunft des Einkaufens. Bei uns hast du die Möglichkeit, anspruchsvolle Herausforderungen mit analytischem Scharfsinn, Kreativität und Ownership anzugehen. Dein Weg ist nicht vorgegeben – du formst ihn selbst, unterstützt von starken Teams aus CRM, App, IT und Marketing. Deine Aufgaben Kunden verstehen – Erlebnisse gestalten Du analysierst Transaktions‑, Response‑ und Interaktionsdaten, um tiefgreifende Erkenntnisse über Kundenverha",
-      "discovery_source": "Official career page",
-      "freshness": "live check",
-      "id": "64a77389dfb4",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 66,
-      "matched_skills": [
-        "SQL",
-        "Python",
-        "Stakeholder consulting",
-        "Data visualization"
-      ],
-      "fit_reasons": [
-        "Role alignment: Business Analyst",
-        "Skill overlap: SQL, Python, Stakeholder consulting, Data visualization",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 65000,
-      "salary_mid": 72000,
-      "salary_max": 79000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.54761,
+        "longitude": 9.99623,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Senior Data Analyst – Experimentation & A/B Testing",
-      "company": "adjoe",
+      "company": "applike group",
       "location": "Hamburg, Germany",
       "work_mode": "Hybrid",
       "level": "senior",
@@ -279,7 +201,7 @@
       "discovery_source": "Experimentation Jobs",
       "freshness": "Experimentation Jobs refresh 2026-09-07",
       "experimentation_query_date": "2026-09-07",
-      "id": "514415775833",
+      "id": "0aa3558d65c8",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
       "match_score": 65,
@@ -297,7 +219,15 @@
       "salary_max": 96000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55318,
+        "longitude": 10.00164,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Senior Business Analyst",
@@ -331,40 +261,15 @@
       "salary_max": 89000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
-    },
-    {
-      "title": "Product Data Manager (w/m/d) - Hörakustik",
-      "company": "Fielmann",
-      "location": "Hamburg, Hamburg, DE",
-      "work_mode": "Hybrid / mobile work",
-      "level": "manager",
-      "url": "https://jobs.fielmann.com/en/job-offers/detail/61963-product-data-manager-wmd-hoerakustik",
-      "date_posted": "1970-01-01",
-      "description": "Das Product Information Management Team sorgt dafür, dass hochwertige, vollständige und aktuelle Produktdaten zur richtigen Zeit in den relevanten Systemen und Prozessen verfügbar sind. Gemeinsam schaffen wir damit die Grundlage für erfolgreiche Produkteinführungen, effiziente Abläufe und ein konsistentes Produkterlebnis im Bereich Hörakustik. Das erwartet dich bei uns. Deine Aufgaben. Du verantwortest die Identifikation, Pflege, Validierung und kontinuierliche Weiterentwicklung von Produktdaten im Bereich Hörakustik. Du stellst die Vollständigkeit, Konsistenz, Aktualität und Qualität von Produktstammdaten in relevanten Systemen und Prozessen sicher. Du pflegst und verwaltest Produktdaten im PIM-System Stibo STEP sowie in angebundenen Systemen, insbesondere SAP. Du unterstützt die Einführung neuer Hörsysteme, Zubehörartikel, Verbrauchsmaterialien und Services durch eine termingerechte un",
-      "discovery_source": "Official career page",
-      "freshness": "live check",
-      "id": "37fb055beabc",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 61,
-      "matched_skills": [
-        "SQL",
-        "Product analytics",
-        "Data visualization"
-      ],
-      "fit_reasons": [
-        "Role alignment: Product Data Scientist",
-        "Skill overlap: SQL, Product analytics, Data visualization",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 83000,
-      "salary_mid": 92000,
-      "salary_max": 101000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55996,
+        "longitude": 9.98494,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -398,7 +303,15 @@
       "salary_max": 91000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55488,
+        "longitude": 9.98929,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Staff AI Product Analyst, Product Management",
@@ -429,77 +342,50 @@
       "salary_max": 107000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": ""
     },
     {
-      "title": "(Senior) Digital Analytics Specialist (w/m/d)",
-      "company": "Fielmann",
-      "location": "Hamburg, Hamburg, DE",
+      "title": "Data Scientist Customer Analytics (w/m/d)",
+      "company": "Freenet Group",
+      "location": "Hamburg, Germany",
       "work_mode": "Hybrid / mobile work",
       "level": "manager",
-      "url": "https://jobs.fielmann.com/en/job-offers/detail/63249-senior-digital-analytics-specialist-wmd",
-      "date_posted": "1970-01-01",
-      "description": "Als (Senior) Digital Analytics Specialist stärkst du unser Insights Team als zentrale fachliche Expert*in für digitales Tracking, Consent Management, Datenqualität und Digital Analytics. Du entwickelst unsere Tracking- und Measurement-Strukturen weiter, sorgst für verlässliche Daten entlang digitaler Customer Journeys und übersetzt fachliche Anforderungen aus Produkt-, UX-, Marketing- und Business-Teams in saubere Messkonzepte. Dabei arbeitest du an der Schnittstelle zwischen Business, Produkt, Engineering, Datenschutz, BI/Data Platform und externen Dienstleistern. Dein Ziel ist es, eine belastbare Datenbasis für bessere digitale Produktentscheidungen zu schaffen: durch klare Tracking-Standards, hohe Datenqualität, transparente Dokumentation und aussagekräftige Analysen. Das erwartet dich bei uns. Deine Aufgaben. Du konzipierst, implementierst und entwickelst skalierbare Tracking-Lösunge",
+      "url": "https://karriere.freenet-group.de/?page=home&action=view&id=wjckqqzrtakek5pvpkoc9gij18sz9gp&mandator_template_id=1",
+      "date_posted": "",
+      "description": "Data Scientist Customer Analytics (w/m/d) Das erwartet dich Unser Bereich Customer Management entwickelt und betreibt auf einer skalierbaren AWS-Plattform datengetriebene Lösungen, die Kundenbedürfnisse entlang des gesamten Customer Lifecycles frühzeitig erkennen und Kundenansprachen intelligent automatisieren. Dafür arbeiten DevOps, Data Engineers und Data Scientists gemeinsam an modernen Technologien, um messbaren Mehrwert für unsere Kunden zu schaffen und neue datengetriebene Geschäftspotenziale zu erschließen. In diesem Umfeld entwickelst Du datengetriebene Lösungen von der ersten Analyse bis zum produktiven Einsatz und trägst dazu bei, intelligente Modelle erfolgreich in unsere Geschäftsprozesse zu integrieren. Deine Aufgaben Analyse fachlicher Anforderungen sowie Entwicklung datengetriebener Lösungsansätze und Handlungsempfehlungen gemeinsam mit den relevanten Stakeholdern Entwickl",
       "discovery_source": "Official career page",
       "freshness": "live check",
-      "id": "de1538cd754a",
+      "id": "41d641795342",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
       "match_score": 60,
       "matched_skills": [
-        "BigQuery",
-        "Product analytics",
-        "Stakeholder consulting",
-        "E-commerce",
-        "Data visualization"
+        "Stakeholder consulting"
       ],
       "fit_reasons": [
-        "Role alignment: Senior Data Analyst",
-        "Skill overlap: BigQuery, Product analytics, Stakeholder consulting, E-commerce",
-        "Hamburg location",
-        "Relevant e-commerce / retail domain"
+        "Role alignment: Data Scientist",
+        "Skill overlap: Stakeholder consulting",
+        "Hamburg location"
       ],
-      "skill_gaps": [],
-      "salary_min": 75000,
-      "salary_mid": 83000,
-      "salary_max": 91000,
+      "skill_gaps": [
+        "AWS"
+      ],
+      "salary_min": 79000,
+      "salary_mid": 88000,
+      "salary_max": 97000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
-    },
-    {
-      "title": "Business Analyst Commercial",
-      "company": "Gebr. Heinemann",
-      "location": "Hamburg, Germany",
-      "work_mode": "Not stated",
-      "level": "experienced",
-      "url": "https://www.gebr-heinemann.com/heu/en/jobs?country=Germany",
-      "date_posted": "",
-      "description": "Commercial business analysis for an international travel-retail business. Expected focus on KPIs, stakeholder communication, structured analysis and actionable commercial recommendations.",
-      "discovery_source": "Company search page; verify role availability",
-      "freshness": "snapshot 2026-07-20",
-      "id": "5ebae7322104",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 59,
-      "matched_skills": [
-        "Product analytics",
-        "Stakeholder consulting",
-        "E-commerce"
-      ],
-      "fit_reasons": [
-        "Role alignment: Business Analyst",
-        "Skill overlap: Product analytics, Stakeholder consulting, E-commerce",
-        "Hamburg location",
-        "Relevant e-commerce / retail domain"
-      ],
-      "skill_gaps": [],
-      "salary_min": 65000,
-      "salary_mid": 72000,
-      "salary_max": 79000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.5577,
+        "longitude": 10.0067,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Senior Product Analyst – Shop Analytics",
@@ -531,75 +417,15 @@
       "salary_max": 96000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
-    },
-    {
-      "title": "(Junior) Data Analyst Campaigning (w/m/d)",
-      "company": "Freenet Group",
-      "location": "Hamburg, Germany",
-      "work_mode": "Hybrid / mobile work",
-      "level": "manager",
-      "url": "https://karriere.freenet-group.de/?action=view&id=ffw07hn0ky4aoj5xgd5ddf72blhte89&page=home",
-      "date_posted": "",
-      "description": "(Junior) Data Analyst Campaigning (w/m/d) Das erwartet dich Der Bereich Data & AI entwickelt auf einer skalierenden AWS-Infrastruktur datengetriebene Services mit signifikantem Business Impact. Dafür arbeiten Platform Engineers, Data Engineers, Data Analysts und Data Scientists an leading-edge Technologien, um Fachbereichen ML- und AI-getriebene Lösungen zur Verfügung zu stellen. In dem Kontext der Stelle wird in diesem Umfeld der Bereich des Kampagnenmanagements optimiert. Deine Aufgaben In unserer Abteilung Data Analytics & Campaigning in Hamburg optimierst Du technisch und inhaltlich alle Schritte des freenet Kampagnenmanagement - von der Kampagnenidee bis zur Optimierung nach Bewertung der Kampagnenperformance Du erstellst Kampagnenkonfigurationen und findest die richtigen Teilnehmer für eine Ansprache in Zusammenarbeit im Dialog mit verschiedenen Fachbereichen (z.B. dem Customer Man",
-      "discovery_source": "Official career page",
-      "freshness": "live check",
-      "id": "7dbab4f3d21b",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 55,
-      "matched_skills": [
-        "SQL",
-        "Python"
-      ],
-      "fit_reasons": [
-        "Role alignment: Senior Data Analyst",
-        "Skill overlap: SQL, Python",
-        "Hamburg location"
-      ],
-      "skill_gaps": [
-        "AWS"
-      ],
-      "salary_min": 82000,
-      "salary_mid": 91000,
-      "salary_max": 100000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
-    },
-    {
-      "title": "Media Technology & Data Strategy Lead (all genders)",
-      "company": "Publicis Groupe",
-      "location": "Hamburg, Germany",
-      "work_mode": "Hybrid",
-      "level": "lead",
-      "url": "https://careers.publicisgroupe.com/jobs/150410?lang=de-de",
-      "date_posted": "2026-05-11T12:33:00+0000",
-      "description": "Unternehmensbeschreibung Publicis One Unlimited is a bespoke agency built for Beiersdorf as their global creative, media and data partner. We cover four regions (North America, Europe, Emerging Markets, and North East Asia) and serve over 120 markets. Our mission is to deliver a Global and Connected Agency model, embracing a digital-first approach fuelled by data and cutting-edge technology. Stellenbeschreibung The Media Technology & Data Strategy Lead (all genders) is responsible for defining and evolving Beiersdorf's media technology, audience and data capabilities. The role owns the strategic roadmap for media technology, connected identity, audience intelligence and data enablement ensuring global teams are equipped with the tools, processes and capabilities required for modern marketing. A key responsibility is driving the adoption, governance and evolution of GrowthOS as Beiersdorf",
-      "discovery_source": "Official career page",
-      "freshness": "live check",
-      "id": "80b9f271e45f",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 54,
-      "matched_skills": [
-        "Causal inference",
-        "Stakeholder consulting"
-      ],
-      "fit_reasons": [
-        "Role alignment: Data Scientist",
-        "Skill overlap: Causal inference, Stakeholder consulting",
-        "Hamburg location"
-      ],
-      "skill_gaps": [
-        "GA4"
-      ],
-      "salary_min": 76000,
-      "salary_mid": 84000,
-      "salary_max": 92000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55057,
+        "longitude": 10.00341,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "(Senior) Data Scientist (m/f/d) - Service Configuration Intelligence in Hamburg | XING Jobs",
@@ -628,37 +454,54 @@
       "salary_max": 91000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "high"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55883,
+        "longitude": 10.00788,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
-      "title": "Data Scientist, Nlp, Airbus Jobs in Hamburg | Jetzt 75 offene Stellen finden | Indeed",
-      "company": "Airbus",
-      "location": "Hamburg area",
-      "work_mode": "",
-      "level": "experienced",
-      "url": "https://de.indeed.com/q-data-scientist,-nlp,-airbus-l-hamburg-jobs.html",
+      "title": "Product Data Manager (w/m/d) - Hörakustik",
+      "company": "Fielmann",
+      "location": "Hamburg, Hamburg, DE",
+      "work_mode": "Hybrid / mobile work",
+      "level": "manager",
+      "url": "https://jobs.fielmann.com/en/job-offers/detail/61963-product-data-manager-wmd-hoerakustik",
       "date_posted": "",
-      "description": "Finden Sie jetzt 83 zu besetzende Data Scientist, Nlp, Airbus Jobs in Hamburg auf Indeed.com, der weltweiten Nr. 1 der Online-Jobbörsen. (Basierend auf Total Visits weltweit, Quelle: comScore)",
-      "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-09-07",
-      "brave_query_date": "2026-09-07",
-      "id": "c03d9aabe786",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 53,
-      "matched_skills": [],
+      "description": "Das Product Information Management Team sorgt dafür, dass hochwertige, vollständige und aktuelle Produktdaten zur richtigen Zeit in den relevanten Systemen und Prozessen verfügbar sind. Gemeinsam schaffen wir damit die Grundlage für erfolgreiche Produkteinführungen, effiziente Abläufe und ein konsistentes Produkterlebnis im Bereich Hörakustik. Das erwartet dich bei uns. Deine Aufgaben. Du verantwortest die Identifikation, Pflege, Validierung und kontinuierliche Weiterentwicklung von Produktdaten im Bereich Hörakustik. Du stellst die Vollständigkeit, Konsistenz, Aktualität und Qualität von Produktstammdaten in relevanten Systemen und Prozessen sicher. Du pflegst und verwaltest Produktdaten im PIM-System Stibo STEP sowie in angebundenen Systemen, insbesondere SAP. Du unterstützt die Einführung neuer Hörsysteme, Zubehörartikel, Verbrauchsmaterialien und Services durch eine termingerechte un",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "37fb055beabc",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 52,
+      "matched_skills": [
+        "Product analytics"
+      ],
       "fit_reasons": [
-        "Role alignment: Data Scientist",
+        "Role alignment: Product Data Scientist",
+        "Skill overlap: Product analytics",
         "Hamburg location"
       ],
       "skill_gaps": [],
-      "salary_min": 67000,
-      "salary_mid": 74000,
-      "salary_max": 81000,
+      "salary_min": 83000,
+      "salary_mid": 92000,
+      "salary_max": 101000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
       "salary_confidence": "high",
-      "confirmed_by": "Brave Search API"
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55862,
+        "longitude": 10.00117,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -690,7 +533,15 @@
       "salary_max": 91000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55311,
+        "longitude": 10.00846,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Frontend Entwickler*in CRO & Experimentation (m/w/d) – Remote",
@@ -721,7 +572,9 @@
       "salary_max": 77000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": ""
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -751,43 +604,55 @@
       ],
       "skill_gaps": [],
       "salary_min": 50000,
-      "salary_mid": 55000,
+      "salary_mid": 55500,
       "salary_max": 61000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "medium"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55304,
+        "longitude": 9.99694,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
-      "title": "Financial Analyst (w/m/d) / Controlling",
-      "company": "Fielmann",
-      "location": "Hamburg, Hamburg, DE",
-      "work_mode": "",
-      "level": "senior",
-      "url": "https://jobs.fielmann.com/en/job-offers/detail/61420-financial-analyst-wmd-controlling",
-      "date_posted": "1970-01-01",
-      "description": "Als Financial Analyst (w/m/d) im Controlling der Fielmann Group AG arbeitest Du an zentralen finanziellen und strategischen Fragestellungen zur Steuerung und Weiterentwicklung unseres Familienunternehmens. In enger Zusammenarbeit mit dem VP Controlling arbeitest du direkt an den wesentlichen Fragestellungen der Fielmann Unternehmensgruppe – mit hoher Sichtbarkeit und viel Eigenverantwortung. Du bereitest entscheidungsrelevante Erkenntnisse für das Senior Management und den Vorstand auf. Dich erwarten anspruchsvolle Analytik und Controllingprojekte mit echter Relevanz für das Business. Du beherrschst Analysen und Finanzmodelle und kannst aus ihnen Handlungsempfehlungen ableiten. Somit trägt dein Know-how maßgeblich dazu bei, Wachstum, Profitabilität und Innovation voranzutreiben. Die Rolle eignet sich besonders für Talente aus Investment Banking, Strategy Consulting, Transaction Services,",
+      "title": "Business Analyst - Digitales Marketing (m/w/d)",
+      "company": "EDEKA",
+      "location": "Hamburg",
+      "work_mode": "Hybrid",
+      "level": "experienced",
+      "url": "https://verbund.edeka/karriere/stellenb%C3%B6rse/stelle-business-analyst-m-w-d-hamburg-edeka-zentrale-stiftung-amp-co.-kg?id=232469_27993&type=j",
+      "date_posted": "2026-03-17T10:38:31.710+0000",
+      "description": "Business Analyst bei EDEKA – Deine Chance, den Lebensmittelhandel neu zu denken Als Business Analyst im digitalen Marketing bei EDEKA stehst du im Herzen unserer digitalen Transformation. Du arbeitest an Themen, die Millionen Kund:innen täglich berühren – von der App‑Experience bis zu datengetriebenen Loyalty‑Mechaniken. Dein Impact ist unmittelbar sichtbar: Du identifizierst Chancen, entwickelst Hypothesen, bringst Innovationen voran und gestaltest aktiv die Zukunft des Einkaufens. Bei uns hast du die Möglichkeit, anspruchsvolle Herausforderungen mit analytischem Scharfsinn, Kreativität und Ownership anzugehen. Dein Weg ist nicht vorgegeben – du formst ihn selbst, unterstützt von starken Teams aus CRM, App, IT und Marketing. Deine Aufgaben Kunden verstehen – Erlebnisse gestalten Du analysierst Transaktions‑, Response‑ und Interaktionsdaten, um tiefgreifende Erkenntnisse über Kundenverha",
       "discovery_source": "Official career page",
       "freshness": "live check",
-      "id": "c140527c9cc9",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "id": "64a77389dfb4",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
       "match_score": 46,
-      "matched_skills": [
-        "Product analytics",
-        "Data visualization"
-      ],
+      "matched_skills": [],
       "fit_reasons": [
-        "Role alignment: Product Analyst",
-        "Skill overlap: Product analytics, Data visualization",
+        "Role alignment: Business Analyst",
         "Hamburg location"
       ],
       "skill_gaps": [],
-      "salary_min": 70000,
-      "salary_mid": 78000,
-      "salary_max": 86000,
+      "salary_min": 65000,
+      "salary_mid": 72000,
+      "salary_max": 79000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55714,
+        "longitude": 9.98117,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Junior Technology Analyst (w/m/d)",
@@ -796,7 +661,7 @@
       "work_mode": "Hybrid / mobile work",
       "level": "lead",
       "url": "https://jobs.fielmann.com/en/job-offers/detail/64767-junior-technology-analyst-wmd",
-      "date_posted": "1970-01-01",
+      "date_posted": "",
       "description": "Das Technology-Team der Fielmann Ventures GmbH identifiziert, testet und bewertet neue Produkte sowie Hardware- und Softwarelösungen in den Bereichen Augenoptik, Hörakustik, Augengesundheit und angrenzende Gesundheitslösungen. In unserem Head Office in Hamburg trägst dazu bei, technologische Entwicklungen strukturiert einzuordnen und fundierte Handlungsempfehlungen für interne Stakeholder abzuleiten. Das erwartet dich bei uns. Deine Aufgaben. Du recherchierst neue Produkte, Hardware- und Softwarelösungen sowie relevante Technologietrends. Du baust durch kontinuierliche Marktbeobachtung, den Austausch mit Herstellern, Start-ups und Partnern sowie die Teilnahme an Fachmessen und Kongressen fundiertes Markt- und Technologiewissen auf. Du testest neue Produkte und Technologien praktisch und bewertest ihre Funktionalität, ihren Reifegrad, ihre Benutzerfreundlichkeit und technische Eignung. Du",
       "discovery_source": "Official career page",
       "freshness": "live check",
@@ -818,7 +683,53 @@
       "salary_max": 92000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55332,
+        "longitude": 9.99458,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
+    },
+    {
+      "title": "(Junior) Data Analyst Campaigning (w/m/d)",
+      "company": "Freenet Group",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid / mobile work",
+      "level": "manager",
+      "url": "https://karriere.freenet-group.de/?action=view&id=ffw07hn0ky4aoj5xgd5ddf72blhte89&page=home",
+      "date_posted": "",
+      "description": "(Junior) Data Analyst Campaigning (w/m/d) Das erwartet dich Der Bereich Data & AI entwickelt auf einer skalierenden AWS-Infrastruktur datengetriebene Services mit signifikantem Business Impact. Dafür arbeiten Platform Engineers, Data Engineers, Data Analysts und Data Scientists an leading-edge Technologien, um Fachbereichen ML- und AI-getriebene Lösungen zur Verfügung zu stellen. In dem Kontext der Stelle wird in diesem Umfeld der Bereich des Kampagnenmanagements optimiert. Deine Aufgaben In unserer Abteilung Data Analytics & Campaigning in Hamburg optimierst Du technisch und inhaltlich alle Schritte des freenet Kampagnenmanagement - von der Kampagnenidee bis zur Optimierung nach Bewertung der Kampagnenperformance Du erstellst Kampagnenkonfigurationen und findest die richtigen Teilnehmer für eine Ansprache in Zusammenarbeit im Dialog mit verschiedenen Fachbereichen (z.B. dem Customer Man",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "7dbab4f3d21b",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 43,
+      "matched_skills": [],
+      "fit_reasons": [
+        "Role alignment: Senior Data Analyst",
+        "Hamburg location"
+      ],
+      "skill_gaps": [
+        "AWS"
+      ],
+      "salary_min": 82000,
+      "salary_mid": 91000,
+      "salary_max": 100000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55784,
+        "longitude": 9.98341,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -849,30 +760,34 @@
       "salary_max": 86000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.54937,
+        "longitude": 9.98952,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
-      "title": "(Senior) Manager Business Analytics (w/m/d)",
-      "company": "Freenet Group",
+      "title": "Media Technology & Data Strategy Lead (all genders)",
+      "company": "Publicis Groupe",
       "location": "Hamburg, Germany",
-      "work_mode": "Hybrid / mobile work",
+      "work_mode": "Hybrid",
       "level": "lead",
-      "url": "https://karriere.freenet-group.de/?page=home&action=view&id=txjsey3qi11xiv03m87bct63iqn64bg&mandator_template_id=1",
-      "date_posted": "",
-      "description": "(Senior) Manager Business Analytics (w/m/d) Das erwartet dich Als Manager Business Analytics bist Du mitten im Herzstück unserer strategischen Entscheidungsprozesse. Du modellierst Geschäftsentwicklungen und sorgst mit Deinen Analysen und Reportings für eine konsolidierte Datenbasis, die als Grundlage für wichtige Steuerungsentscheidungen dient. Neue Geschäftsmodelle analysierst Du auf Wirtschaftlichkeit und bereitest Verhandlungen mit unseren Partnern vor. Deine Arbeit bei uns im Team ist geprägt von spannenden Business Cases, strategischen Entscheidungsprozessen, einem hohen Maß an Verantwortung und der Möglichkeit, Dich beruflich sowie persönlich kontinuierlich weiterzuentwickeln. Deine Aufgaben Geschäftsentwicklung: Du erstellst und pflegst Forecast-Modelle zur Geschäftsentwicklung und sorgst dafür, dass Entscheidungen immer auf Basis der letzten Prognosen erfolgen Wirtschaftlichkeit",
+      "url": "https://careers.publicisgroupe.com/jobs/150410?lang=de-de",
+      "date_posted": "2026-05-11T12:33:00+0000",
+      "description": "Unternehmensbeschreibung Publicis One Unlimited is a bespoke agency built for Beiersdorf as their global creative, media and data partner. We cover four regions (North America, Europe, Emerging Markets, and North East Asia) and serve over 120 markets. Our mission is to deliver a Global and Connected Agency model, embracing a digital-first approach fuelled by data and cutting-edge technology. Stellenbeschreibung The Media Technology & Data Strategy Lead (all genders) is responsible for defining and evolving Beiersdorf's media technology, audience and data capabilities. The role owns the strategic roadmap for media technology, connected identity, audience intelligence and data enablement ensuring global teams are equipped with the tools, processes and capabilities required for modern marketing. A key responsibility is driving the adoption, governance and evolution of GrowthOS as Beiersdorf",
       "discovery_source": "Official career page",
       "freshness": "live check",
-      "id": "ef0b466b5fdd",
+      "id": "80b9f271e45f",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 42,
-      "matched_skills": [
-        "Stakeholder consulting",
-        "Data visualization"
-      ],
+      "match_score": 40,
+      "matched_skills": [],
       "fit_reasons": [
-        "Role alignment: Business Analyst",
-        "Skill overlap: Stakeholder consulting, Data visualization",
+        "Role alignment: Data Scientist",
         "Hamburg location"
       ],
       "skill_gaps": [],
@@ -881,37 +796,15 @@
       "salary_max": 92000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
-    },
-    {
-      "title": "48 data analyst English-speaking jobs in Hamburg",
-      "company": "Google",
-      "location": "Hamburg area",
-      "work_mode": "",
-      "level": "experienced",
-      "url": "https://englishjobs.de/in/hamburg/data_analyst",
-      "date_posted": "",
-      "description": "integrity in Airbus Procurement Tools Consolidate and follow-up supplier rating and performance data ... SAP MM Create and follow-up purchase orders Follow-up payment of invoices Support buyers in managing data ... working across workpackages Work with AI and Google Tools to automate administrative tasks Research data ...",
-      "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-08-25",
-      "brave_query_date": "2026-08-25",
-      "id": "4e21a682c819",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 42,
-      "matched_skills": [],
-      "fit_reasons": [
-        "Role alignment: Senior Data Analyst",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 69000,
-      "salary_mid": 77000,
-      "salary_max": 85000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
       "salary_confidence": "high",
-      "confirmed_by": "Brave Search API"
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.54994,
+        "longitude": 10.00317,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "E-Commerce Consultant / CRO & Datenanalyst:in (m/w/d)",
@@ -942,37 +835,117 @@
       "salary_max": 77000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": ""
     },
     {
-      "title": "Data Science Remote: > 50 Jobs, Arbeit in Hamburg | Indeed",
-      "company": "RTL Deutschland / Gruner + Jahr",
-      "location": "Hamburg area",
+      "title": "Financial Analyst (w/m/d) / Controlling",
+      "company": "Fielmann",
+      "location": "Hamburg, Hamburg, DE",
       "work_mode": "",
-      "level": "experienced",
-      "url": "https://de.indeed.com/q-data-science-remote-l-hamburg-jobs.html",
+      "level": "senior",
+      "url": "https://jobs.fielmann.com/en/job-offers/detail/61420-financial-analyst-wmd-controlling",
       "date_posted": "",
-      "description": "As a subsidiary of Mediengruppe RTL Deutschland, smartclip is part of RTL Group — Europe’s leading free-to-air broadcaster group. Headquartered in Hamburg, smartclip has offices in Berlin, Munich, Düsseldorf, Gütersloh, Stockholm, Oslo, Helsinki, Amsterdam, Milan and Rome. Please visit www.smartclip.tv and follow us on Twitter and LinkedIn. At smartclip, we're not about chasing trends; we're about solving real, complex problems with data. We're looking for a curious and pragmatic Data Scientist to join our passionate team.",
-      "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-08-17",
-      "brave_query_date": "2026-08-17",
-      "confirmed_by": "Brave Search API",
-      "id": "60d19e915035",
+      "description": "Als Financial Analyst (w/m/d) im Controlling der Fielmann Group AG arbeitest Du an zentralen finanziellen und strategischen Fragestellungen zur Steuerung und Weiterentwicklung unseres Familienunternehmens. In enger Zusammenarbeit mit dem VP Controlling arbeitest du direkt an den wesentlichen Fragestellungen der Fielmann Unternehmensgruppe – mit hoher Sichtbarkeit und viel Eigenverantwortung. Du bereitest entscheidungsrelevante Erkenntnisse für das Senior Management und den Vorstand auf. Dich erwarten anspruchsvolle Analytik und Controllingprojekte mit echter Relevanz für das Business. Du beherrschst Analysen und Finanzmodelle und kannst aus ihnen Handlungsempfehlungen ableiten. Somit trägt dein Know-how maßgeblich dazu bei, Wachstum, Profitabilität und Innovation voranzutreiben. Die Rolle eignet sich besonders für Talente aus Investment Banking, Strategy Consulting, Transaction Services,",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
       "match_score": 38,
       "matched_skills": [],
       "fit_reasons": [
-        "Role alignment: Data Scientist",
+        "Role alignment: Product Analyst",
         "Hamburg location"
       ],
       "skill_gaps": [],
-      "salary_min": 63000,
-      "salary_mid": 70000,
-      "salary_max": 77000,
+      "salary_min": 70000,
+      "salary_mid": 78000,
+      "salary_max": 86000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55368,
+        "longitude": 9.99482,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
+    },
+    {
+      "title": "(Senior) Manager Business Analytics (w/m/d)",
+      "company": "Freenet Group",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid / mobile work",
+      "level": "lead",
+      "url": "https://karriere.freenet-group.de/?page=home&action=view&id=txjsey3qi11xiv03m87bct63iqn64bg&mandator_template_id=1",
+      "date_posted": "",
+      "description": "(Senior) Manager Business Analytics (w/m/d) Das erwartet dich Als Manager Business Analytics bist Du mitten im Herzstück unserer strategischen Entscheidungsprozesse. Du modellierst Geschäftsentwicklungen und sorgst mit Deinen Analysen und Reportings für eine konsolidierte Datenbasis, die als Grundlage für wichtige Steuerungsentscheidungen dient. Neue Geschäftsmodelle analysierst Du auf Wirtschaftlichkeit und bereitest Verhandlungen mit unseren Partnern vor. Deine Arbeit bei uns im Team ist geprägt von spannenden Business Cases, strategischen Entscheidungsprozessen, einem hohen Maß an Verantwortung und der Möglichkeit, Dich beruflich sowie persönlich kontinuierlich weiterzuentwickeln. Deine Aufgaben Geschäftsentwicklung: Du erstellst und pflegst Forecast-Modelle zur Geschäftsentwicklung und sorgst dafür, dass Entscheidungen immer auf Basis der letzten Prognosen erfolgen Wirtschaftlichkeit",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "ef0b466b5fdd",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 34,
+      "matched_skills": [],
+      "fit_reasons": [
+        "Role alignment: Business Analyst",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 76000,
+      "salary_mid": 84000,
+      "salary_max": 92000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55904,
+        "longitude": 10.00682,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
+    },
+    {
+      "title": "(Senior) Digital Analytics Specialist (w/m/d)",
+      "company": "Fielmann",
+      "location": "Hamburg, Hamburg, DE",
+      "work_mode": "Hybrid / mobile work",
+      "level": "manager",
+      "url": "https://jobs.fielmann.com/en/job-offers/detail/63249-senior-digital-analytics-specialist-wmd",
+      "date_posted": "",
+      "description": "Als (Senior) Digital Analytics Specialist stärkst du unser Insights Team als zentrale fachliche Expert*in für digitales Tracking, Consent Management, Datenqualität und Digital Analytics. Du entwickelst unsere Tracking- und Measurement-Strukturen weiter, sorgst für verlässliche Daten entlang digitaler Customer Journeys und übersetzt fachliche Anforderungen aus Produkt-, UX-, Marketing- und Business-Teams in saubere Messkonzepte. Dabei arbeitest du an der Schnittstelle zwischen Business, Produkt, Engineering, Datenschutz, BI/Data Platform und externen Dienstleistern. Dein Ziel ist es, eine belastbare Datenbasis für bessere digitale Produktentscheidungen zu schaffen: durch klare Tracking-Standards, hohe Datenqualität, transparente Dokumentation und aussagekräftige Analysen. Das erwartet dich bei uns. Deine Aufgaben. Du konzipierst, implementierst und entwickelst skalierbare Tracking-Lösunge",
+      "discovery_source": "Official career page",
+      "freshness": "live check",
+      "id": "de1538cd754a",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 34,
+      "matched_skills": [],
+      "fit_reasons": [
+        "Role alignment: Senior Data Analyst",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 75000,
+      "salary_mid": 83000,
+      "salary_max": 91000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.54365,
+        "longitude": 10.00082,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1003,7 +976,15 @@
       "salary_max": 35000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.55092,
+        "longitude": 9.99258,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1033,37 +1014,15 @@
       "salary_max": 91000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
-    },
-    {
-      "title": "consumer experience intern data insights in Hamburg - Stellenangebote | Trabajo.org",
-      "company": "Statista",
-      "location": "Hamburg area",
-      "work_mode": "",
-      "level": "intern",
-      "url": "https://de.trabajo.org/stellenangebote-consumer+experience+intern+data+insights/Hamburg",
-      "date_posted": "",
-      "description": "As a Data Analyst - LiveOps , you will join our Stillfront Central Product team and play a vital role in fostering data-driven decision-making across our portfolio of games. In this position, your primary focus will be on translating complex data into actionable insights, and reports that directly contribute to business growth. Success will be achieved... ... Hamburg, HH, Deutschland Statista Ltd.",
-      "discovery_source": "Brave Search API — daily request budget",
-      "freshness": "Brave query 2026-08-31",
-      "brave_query_date": "2026-08-31",
-      "id": "fcda1e39f53a",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 27,
-      "matched_skills": [],
-      "fit_reasons": [
-        "Role alignment: Data Scientist",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 29000,
-      "salary_mid": 32000,
-      "salary_max": 35000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
       "salary_confidence": "high",
-      "confirmed_by": "Brave Search API"
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.54281,
+        "longitude": 9.98517,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1091,7 +1050,16 @@
       "salary_max": 35000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
-      "salary_confidence": "low"
+      "salary_confidence": "high",
+      "last_seen": "2026-09-07",
+      "application_deadline": "",
+      "map": {
+        "latitude": 53.5493,
+        "longitude": 10.00552,
+        "label": "Hamburg",
+        "precision": "city area"
+      }
     }
-  ]
+  ],
+  "archived_jobs": []
 }

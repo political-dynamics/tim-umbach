@@ -116,6 +116,27 @@ def work_mode(detail: dict[str, Any]) -> str:
     return ""
 
 
+def application_url(detail: dict[str, Any], summary: dict[str, Any], reference: str) -> str:
+    candidates = [
+        detail.get("bewerbungUrl"),
+        detail.get("externeUrl"),
+        summary.get("externeUrl"),
+    ]
+    for value in candidates:
+        url = str(value or "").strip()
+        if not url:
+            continue
+        parsed = urllib.parse.urlparse(url)
+        host = (parsed.hostname or "").lower()
+        tail = parsed.path.rstrip("/").rsplit("/", 1)[-1].lower()
+        if any(term in host for term in ["stepstone.", "indeed.", "linkedin."]):
+            continue
+        if tail in {"", "job", "jobs", "search", "stellenangebote", "karriere"}:
+            continue
+        return url
+    return f"https://www.arbeitsagentur.de/jobsuche/jobdetail/{reference}"
+
+
 def normalize_detail(
     detail: dict[str, Any],
     summary: dict[str, Any],
@@ -147,11 +168,7 @@ def normalize_detail(
         "location": location_text(detail, summary),
         "work_mode": work_mode(detail),
         "level": "",
-        "url": (
-            str(summary.get("externeUrl"))
-            if summary.get("externeUrl")
-            else f"https://www.arbeitsagentur.de/jobsuche/jobdetail/{reference}"
-        ),
+        "url": application_url(detail, summary, reference),
         "date_posted": str(
             detail.get("aktuelleVeroeffentlichungsdatum")
             or summary.get("aktuelleVeroeffentlichungsdatum")
@@ -162,6 +179,13 @@ def normalize_detail(
         "freshness": f"BA API refresh {query_date}",
         "ba_query_date": query_date,
         "ba_reference": reference,
+        "application_deadline": str(
+            detail.get("bewerbungBis")
+            or detail.get("bewerbungsfrist")
+            or detail.get("angebotsEnde")
+            or ""
+        ),
+        "last_seen": query_date,
     }
 
 
@@ -176,6 +200,7 @@ def retained_cache(
         except (KeyError, TypeError, ValueError):
             continue
         if seen >= cutoff:
+            job.setdefault("last_seen", seen.isoformat())
             if not job.get("work_mode"):
                 job["work_mode"] = work_mode(
                     {"stellenangebotsBeschreibung": job.get("description", "")}

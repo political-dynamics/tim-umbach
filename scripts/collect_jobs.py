@@ -24,7 +24,12 @@ from pathlib import Path
 from typing import Any
 
 from ba_jobs import search_once_daily as search_ba_jobs
-from brave_search import bootstrap_queries, contains_term, search_once_daily
+from brave_search import (
+    bootstrap_queries,
+    contains_term,
+    is_company_application_url,
+    search_once_daily,
+)
 from experimentation_jobs import search_once_daily as search_experimentation_jobs
 
 
@@ -35,8 +40,12 @@ DISCOVERY_PATH = ROOT / "config" / "discovery.json"
 SEED_PATH = ROOT / "data" / "seed_jobs.json"
 OUTPUT_PATH = ROOT / "data" / "jobs.json"
 
+ENTGELTATLAS_YEAR = 2024
+ENTGELTATLAS_DATA_SCIENTIST_MONTHLY = 6168
+ENTGELTATLAS_URL = "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987"
+
 SALARY_BENCHMARKS = {
-    "data_science": 74000,
+    "data_science": ENTGELTATLAS_DATA_SCIENTIST_MONTHLY * 12,
     "data_analytics": 77364,
     "analytics_engineering": 79000,
     "data_engineering": 82000,
@@ -69,6 +78,50 @@ GAP_KEYWORDS = {
     "GA4": ["ga4", "google analytics 4"],
 }
 
+LOCATION_CENTRES = {
+    "altona": (53.5505, 9.9350, "Altona"),
+    "eimsbüttel": (53.5748, 9.9510, "Eimsbüttel"),
+    "eimsbuettel": (53.5748, 9.9510, "Eimsbüttel"),
+    "hamburg-nord": (53.5964, 10.0071, "Hamburg-Nord"),
+    "wandsbek": (53.5753, 10.0757, "Wandsbek"),
+    "bergedorf": (53.4871, 10.2108, "Bergedorf"),
+    "harburg": (53.4608, 9.9826, "Harburg"),
+    "norderstedt": (53.7064, 10.0103, "Norderstedt"),
+    "ahrensburg": (53.6751, 10.2393, "Ahrensburg"),
+    "pinneberg": (53.6591, 9.8009, "Pinneberg"),
+    "reinbek": (53.5084, 10.2520, "Reinbek"),
+    "wedel": (53.5830, 9.6980, "Wedel"),
+    "seevetal": (53.3868, 10.0352, "Seevetal"),
+    "buxtehude": (53.4676, 9.6960, "Buxtehude"),
+    "lüneburg": (53.2464, 10.4115, "Lüneburg"),
+    "hamburg": (53.5511, 9.9937, "Hamburg"),
+}
+
+GENERIC_JOB_PATHS = {
+    "",
+    "/",
+    "/career",
+    "/careers",
+    "/job",
+    "/jobs",
+    "/jobs/",
+    "/job-search",
+    "/job-search/",
+    "/search",
+    "/search/",
+    "/search-results",
+}
+
+AGGREGATOR_HOST_TERMS = (
+    "stepstone.",
+    "indeed.",
+    "linkedin.",
+    "glassdoor.",
+    "stellenanzeigen.",
+    "jobrapido.",
+    "talent.com",
+)
+
 
 def read_json(path: Path) -> dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
@@ -77,6 +130,114 @@ def read_json(path: Path) -> dict[str, Any]:
 def clean_text(value: str) -> str:
     value = html.unescape(re.sub(r"<[^>]+>", " ", value or ""))
     return re.sub(r"\s+", " ", value).strip()
+
+
+def parse_date(value: Any) -> date | None:
+    """Parse useful posting dates while rejecting placeholder epoch values."""
+    text = clean_text(str(value or ""))[:10]
+    try:
+        parsed = date.fromisoformat(text)
+    except ValueError:
+        return None
+    return parsed if parsed.year >= 2000 else None
+
+
+def extract_application_deadline(job: dict[str, Any]) -> str:
+    for field in ("application_deadline", "valid_through", "validThrough"):
+        parsed = parse_date(job.get(field))
+        if parsed:
+            return parsed.isoformat()
+
+    text = clean_text(str(job.get("description", "")))
+    labelled_patterns = [
+        r"(?i)(?:application\s+deadline|apply\s+by|bewerbungsfrist|bewerbungsschluss)\D{0,32}(\d{1,2})[./-](\d{1,2})[./-](20\d{2})",
+        r"(?i)(?:application\s+deadline|apply\s+by|bewerbungsfrist|bewerbungsschluss)\D{0,32}(\d{1,2})\s+([a-zä]+)\s+(20\d{2})",
+    ]
+    numeric = re.search(labelled_patterns[0], text)
+    if numeric:
+        try:
+            return date(int(numeric.group(3)), int(numeric.group(2)), int(numeric.group(1))).isoformat()
+        except ValueError:
+            return ""
+
+    named = re.search(labelled_patterns[1], text)
+    if not named:
+        return ""
+    months = {
+        "january": 1, "januar": 1, "february": 2, "februar": 2,
+        "march": 3, "märz": 3, "maerz": 3, "april": 4, "may": 5,
+        "mai": 5, "june": 6, "juni": 6, "july": 7, "juli": 7,
+        "august": 8, "september": 9, "october": 10, "oktober": 10,
+        "november": 11, "december": 12, "dezember": 12,
+    }
+    month = months.get(named.group(2).lower())
+    if not month:
+        return ""
+    try:
+        return date(int(named.group(3)), month, int(named.group(1))).isoformat()
+    except ValueError:
+        return ""
+
+
+def is_direct_application_url(job: dict[str, Any]) -> bool:
+    """Reject aggregators and generic result pages; keep job-specific BA pages."""
+    try:
+        parsed = urllib.parse.urlparse(str(job.get("url", "")))
+    except ValueError:
+        return False
+    host = (parsed.hostname or "").lower()
+    if parsed.scheme not in {"http", "https"} or not host:
+        return False
+    if any(term in host for term in AGGREGATOR_HOST_TERMS):
+        return False
+    if "arbeitsagentur.de" in host and "/jobdetail/" in parsed.path.lower():
+        return True
+    path = parsed.path.rstrip("/").lower() or "/"
+    query = urllib.parse.parse_qs(parsed.query)
+    has_detail_query = (
+        any(key.lower() in {"id", "jobid", "job_id", "gh_jid", "lever-via"} for key in query)
+        or str(query.get("action", [""])[0]).lower() == "view"
+    )
+    generic_tail = {
+        "job", "jobs", "career", "careers", "search", "results",
+        "search-results", "job-search", "job-offers", "stellenangebote",
+    }
+    return (path not in GENERIC_JOB_PATHS and path.rsplit("/", 1)[-1] not in generic_tail) or has_detail_query
+
+
+def map_position(job: dict[str, Any]) -> dict[str, Any] | None:
+    location = str(job.get("location", "")).lower()
+    match = next(
+        (value for key, value in LOCATION_CENTRES.items() if key in location),
+        None,
+    )
+    if not match:
+        return None
+    latitude, longitude, label = match
+    digest = hashlib.sha1(
+        f"{job.get('company')}|{job.get('title')}".encode("utf-8")
+    ).digest()
+    # City-level postings share a coordinate, so add a stable, small visual offset.
+    latitude += ((digest[0] / 255) - 0.5) * 0.018
+    longitude += ((digest[1] / 255) - 0.5) * 0.030
+    return {
+        "latitude": round(latitude, 5),
+        "longitude": round(longitude, 5),
+        "label": label,
+        "precision": "city area",
+    }
+
+
+def archive_reason(
+    job: dict[str, Any], target_date: date, retention_days: int
+) -> str:
+    deadline = parse_date(job.get("application_deadline"))
+    if deadline and deadline < target_date:
+        return f"Application deadline passed on {deadline.isoformat()}"
+    last_seen = parse_date(job.get("last_seen"))
+    if last_seen and last_seen < target_date - timedelta(days=retention_days):
+        return f"Not rediscovered since {last_seen.isoformat()}"
+    return ""
 
 
 class PageParser(HTMLParser):
@@ -310,6 +471,7 @@ def normalize_job(
             "level": "",
             "url": clean_text(str(posting.get("url", url))),
             "date_posted": clean_text(str(posting.get("datePosted", ""))),
+            "valid_through": clean_text(str(posting.get("validThrough", ""))),
             "description": clean_text(str(posting.get("description", ""))),
             "discovery_source": discovery_source,
         }
@@ -334,6 +496,7 @@ def normalize_job(
             "level": "",
             "url": url,
             "date_posted": "",
+            "valid_through": "",
             "description": focused_page_description(parser.page_text, title),
             "discovery_source": discovery_source,
         }
@@ -370,6 +533,7 @@ def normalize_job(
                     "salary_source": "Employer advertised",
                 }
             )
+    job["application_deadline"] = extract_application_deadline(job)
     return job
 
 
@@ -429,6 +593,7 @@ def discover_jobs(
         ):
             continue
         job["freshness"] = "live check"
+        job["last_seen"] = datetime.now(timezone.utc).date().isoformat()
         jobs.append(job)
     return jobs, errors
 
@@ -454,6 +619,7 @@ def retain_recent_brave_jobs(
             continue
         if query_date >= cutoff:
             job["discovery_source"] = "Brave Search API — daily request budget"
+            job.setdefault("last_seen", query_date.isoformat())
             retained.append(job)
     return retained
 
@@ -478,6 +644,10 @@ def job_matches_preferences(job: dict[str, Any], discovery: dict[str, Any]) -> b
         return False
     if contains_term(str(job.get("company", "")), discovery["blocked_companies"]):
         return False
+    if "search page" in str(job.get("discovery_source", "")).lower():
+        return False
+    if str(job.get("discovery_source", "")).strip() and not is_direct_application_url(job):
+        return False
     if str(job.get("discovery_source", "")).startswith(
         "Brave Search"
     ) and discovery.get("require_watchlist_company", False):
@@ -485,6 +655,10 @@ def job_matches_preferences(job: dict[str, Any], discovery: dict[str, Any]) -> b
             str(company["name"]) for company in discovery["company_watchlist"]
         }
         if str(job.get("company", "")) not in watched_companies:
+            return False
+        if not is_company_application_url(
+            str(job.get("url", "")), str(job.get("company", "")), discovery
+        ):
             return False
 
     return True
@@ -759,12 +933,19 @@ def deduplicate(jobs: list[dict[str, Any]]) -> list[dict[str, Any]]:
             )
             winner["brave_query_date"] = other.get("brave_query_date")
             winner["confirmed_by"] = "Brave Search API"
-        for field in ["work_mode", "location", "date_posted"]:
+        for field in ["work_mode", "location", "date_posted", "application_deadline"]:
             if (
                 not str(winner.get(field, "")).strip()
                 and str(other.get(field, "")).strip()
             ):
                 winner[field] = other[field]
+        seen_dates = [
+            parsed
+            for parsed in (parse_date(winner.get("last_seen")), parse_date(other.get("last_seen")))
+            if parsed
+        ]
+        if seen_dates:
+            winner["last_seen"] = max(seen_dates).isoformat()
         unique[key] = winner
     return list(unique.values())
 
@@ -786,6 +967,11 @@ def canonical_company_name(value: str) -> str:
         ("helm", "HELM AG"),
         ("publicis", "Publicis Groupe"),
         ("about you", "ABOUT YOU"),
+        ("applike", "applike group"),
+        ("adjoe", "applike group"),
+        ("hermes", "Hermes Germany"),
+        ("körber", "Körber"),
+        ("koerber", "Körber"),
     ]
     for alias, canonical in aliases:
         if alias in lowered:
@@ -803,8 +989,12 @@ def build_output(
     search_status: str = "",
     experimentation_status: str = "",
     ba_status: str = "",
+    previous_archived: list[dict[str, Any]] | None = None,
+    target_date: date | None = None,
 ) -> dict[str, Any]:
     discovery = discovery or read_json(DISCOVERY_PATH)
+    target_date = target_date or datetime.now(timezone.utc).date()
+    retention_days = int(discovery.get("retention_days", 21))
     canonicalized = []
     for raw in jobs:
         job = dict(raw)
@@ -815,29 +1005,92 @@ def build_output(
         job = dict(raw)
         job["id"] = stable_id(job)
         job["description"] = clean_text(str(job.get("description", "")))
+        if job.get("date_posted") and not parse_date(job.get("date_posted")):
+            job["date_posted"] = ""
+        job["application_deadline"] = extract_application_deadline(job)
         job.update(assess_work_mode_fit(job, discovery))
         job = estimate_salary(score_job(job, profile))
+        position = map_position(job)
+        if position:
+            job["map"] = position
         job["description"] = job["description"][:900]
         normalized.append(job)
-    normalized.sort(
+
+    active: list[dict[str, Any]] = []
+    newly_archived: list[dict[str, Any]] = []
+    for job in normalized:
+        reason = archive_reason(job, target_date, retention_days)
+        if reason:
+            job["archive_reason"] = reason
+            job["archived_at"] = target_date.isoformat()
+            newly_archived.append(job)
+        else:
+            active.append(job)
+
+    active.sort(
         key=lambda item: (-int(item["match_score"]), -int(item["salary_mid"]))
     )
+    active_keys = {
+        f"{job.get('company', '').lower()}::{job.get('title', '').lower()}"
+        for job in active
+    }
+    archived_by_id: dict[str, dict[str, Any]] = {}
+    for raw in [*(previous_archived or []), *newly_archived]:
+        archived = dict(raw)
+        archived.setdefault("id", stable_id(archived))
+        key = f"{archived.get('company', '').lower()}::{archived.get('title', '').lower()}"
+        if key not in active_keys:
+            archived_by_id[str(archived["id"])] = archived
+    archived_jobs = sorted(
+        archived_by_id.values(),
+        key=lambda item: str(item.get("archived_at", "")),
+        reverse=True,
+    )[:250]
+
+    published_ranges = [
+        int(job["salary_mid"])
+        for job in active
+        if str(job.get("salary_source", "")).lower().startswith("employer")
+    ]
+    published_ranges.sort()
+    if published_ranges:
+        middle = len(published_ranges) // 2
+        published_median = (
+            published_ranges[middle]
+            if len(published_ranges) % 2
+            else round((published_ranges[middle - 1] + published_ranges[middle]) / 2)
+        )
+    else:
+        published_median = 0
+    official_benchmark = SALARY_BENCHMARKS["data_science"]
+    market_reference = published_median or official_benchmark
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     return {
         "meta": {
             "generated_at": now,
             "mode": mode,
-            "job_count": len(normalized),
+            "job_count": len(active),
+            "archived_job_count": len(archived_jobs),
             "location": profile["location"],
-            "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2024",
-            "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987",
+            "salary_benchmark": f"Bundesagentur für Arbeit Entgeltatlas {ENTGELTATLAS_YEAR}",
+            "salary_benchmark_url": ENTGELTATLAS_URL,
+            "salary_benchmark_annual_eur": official_benchmark,
+            "published_salary_count": len(published_ranges),
+            "published_salary_median_eur": published_median,
+            "market_salary_reference_eur": market_reference,
+            "market_salary_reference_source": (
+                "Median of active employer-published ranges"
+                if published_median
+                else f"Entgeltatlas {ENTGELTATLAS_YEAR} annualised median"
+            ),
             "preference_excluded_count": excluded_count,
             "brave_search_status": search_status,
             "experimentation_jobs_status": experimentation_status,
             "ba_jobs_status": ba_status,
             "errors": errors,
         },
-        "jobs": normalized,
+        "jobs": active,
+        "archived_jobs": archived_jobs,
     }
 
 
@@ -845,6 +1098,11 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--offline", action="store_true", help="Use the dated seed snapshot only"
+    )
+    parser.add_argument(
+        "--reindex",
+        action="store_true",
+        help="Rebuild the current output lifecycle and derived fields without network requests",
     )
     parser.add_argument(
         "--max-details",
@@ -879,10 +1137,21 @@ def main() -> int:
     sources = read_json(SOURCES_PATH)
     discovery = read_json(DISCOVERY_PATH)
     seed = read_json(SEED_PATH)
+    try:
+        previous_payload = read_json(args.output) if args.output.exists() else {}
+    except (json.JSONDecodeError, OSError):
+        previous_payload = {}
+    previous_generated = str(previous_payload.get("meta", {}).get("generated_at", ""))[:10]
+    previous_jobs = []
+    for raw_job in previous_payload.get("jobs", []):
+        previous_job = dict(raw_job)
+        previous_job.setdefault("last_seen", previous_generated)
+        previous_jobs.append(previous_job)
     seed_jobs = []
     for raw_job in seed["jobs"]:
         seed_job = dict(raw_job)
         seed_job["freshness"] = f"snapshot {seed['snapshot_date']}"
+        seed_job["last_seen"] = seed["snapshot_date"]
         seed_jobs.append(seed_job)
     jobs: list[dict[str, Any]] = []
     errors: list[str] = []
@@ -891,7 +1160,13 @@ def main() -> int:
     experimentation_status = "Experimentation Jobs disabled for offline run"
     ba_status = "BA API disabled for offline run"
 
-    if not args.offline:
+    if args.reindex:
+        jobs.extend(previous_jobs)
+        mode = "existing snapshot reindexed"
+        search_status = "Brave not requested during reindex"
+        experimentation_status = "Experimentation Jobs not requested during reindex"
+        ba_status = "BA API not requested during reindex"
+    elif not args.offline:
         fetcher = Fetcher(
             sources["user_agent"], float(sources["request_delay_seconds"])
         )
@@ -935,15 +1210,18 @@ def main() -> int:
             jobs.extend(brave_jobs)
         mode = "live official career pages"
 
-    if args.offline:
+    if args.reindex:
+        pass
+    elif args.offline:
         jobs.extend(seed_jobs)
     else:
         live_count = len(jobs)
+        jobs.extend(previous_jobs)
         jobs.extend(seed_jobs)
         mode = (
-            "live official pages + dated snapshot coverage"
+            "daily live refresh + rolling fallback"
             if live_count
-            else "live attempt + dated snapshot fallback"
+            else "daily refresh attempt + rolling fallback"
         )
 
     eligible_jobs = [job for job in jobs if job_matches_preferences(job, discovery)]
@@ -958,6 +1236,7 @@ def main() -> int:
         search_status=search_status,
         experimentation_status=experimentation_status,
         ba_status=ba_status,
+        previous_archived=previous_payload.get("archived_jobs", []),
     )
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(

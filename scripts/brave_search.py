@@ -90,6 +90,42 @@ def infer_work_mode(text: str, config: dict[str, Any]) -> str:
     return ""
 
 
+def is_company_application_url(
+    url: str, company_name: str, config: dict[str, Any]
+) -> bool:
+    """Keep only official, job-specific pages from general web results."""
+    parsed = urllib.parse.urlparse(url)
+    host = (parsed.hostname or "").lower()
+    company = next(
+        (
+            item
+            for item in config["company_watchlist"]
+            if str(item["name"]) == company_name
+        ),
+        None,
+    )
+    if not company or not any(
+        host == str(domain).lower() or host.endswith(f".{str(domain).lower()}")
+        for domain in company["domains"]
+    ):
+        return False
+    path = parsed.path.rstrip("/").lower()
+    generic = {
+        "", "/", "/jobs", "/job", "/career", "/careers",
+        "/job-search", "/search", "/search-results",
+    }
+    query = urllib.parse.parse_qs(parsed.query)
+    has_job_id = any(
+        key.lower() in {"id", "jobid", "job_id", "gh_jid"} for key in query
+    )
+    last_segment = path.rsplit("/", 1)[-1]
+    generic_tail = {
+        "job", "jobs", "career", "careers", "search", "results",
+        "search-results", "job-search", "job-offers", "stellenangebote",
+    }
+    return (path not in generic and last_segment not in generic_tail) or has_job_id
+
+
 def clean_result_title(title: str, company: str) -> str:
     title = re.sub(r"(?i)^job\s*[:\-–—]\s*", "", title).strip()
     for separator in [" | ", " – ", " — ", " - "]:
@@ -113,6 +149,8 @@ def normalize_results(
         url = str(result.get("url", ""))
         company = infer_company(raw_title, description, url, config)
         if not company:
+            continue
+        if not is_company_application_url(url, company, config):
             continue
         title = clean_result_title(raw_title, company)
         text = f"{title} {description} {company} {url}"
@@ -148,6 +186,7 @@ def normalize_results(
                 "discovery_source": "Brave Search API — daily request budget",
                 "freshness": f"Brave query {query_date}",
                 "brave_query_date": query_date,
+                "last_seen": query_date,
             }
         )
     return normalized
