@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-07T09:21:41+00:00",
+  "updated_at": "2026-09-12T12:08:36+00:00",
   "jobs": [
     {
       "title": "Staff AI Product Analyst, Product Management",
@@ -11,8 +11,9 @@
       "date_posted": "2026-07-05",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-09-07",
-      "experimentation_query_date": "2026-09-07"
+      "freshness": "Experimentation Jobs refresh 2026-09-12",
+      "experimentation_query_date": "2026-09-12",
+      "last_seen": "2026-09-12"
     },
     {
       "title": "Senior Product Analyst – Shop Analytics",
@@ -24,8 +25,9 @@
       "date_posted": "2026-07-22",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-09-07",
-      "experimentation_query_date": "2026-09-07"
+      "freshness": "Experimentation Jobs refresh 2026-09-12",
+      "experimentation_query_date": "2026-09-12",
+      "last_seen": "2026-09-12"
     },
     {
       "title": "Senior Data Analyst (Engineer)",
@@ -37,8 +39,9 @@
       "date_posted": "2026-08-05",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-09-06",
-      "experimentation_query_date": "2026-09-06"
+      "freshness": "Experimentation Jobs refresh 2026-09-12",
+      "experimentation_query_date": "2026-09-12",
+      "last_seen": "2026-09-12"
     },
     {
       "title": "Product Data Analyst (m/f/d) – Hamburg",
@@ -50,8 +53,9 @@
       "date_posted": "2026-08-21",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-09-07",
-      "experimentation_query_date": "2026-09-07"
+      "freshness": "Experimentation Jobs refresh 2026-09-12",
+      "experimentation_query_date": "2026-09-12",
+      "last_seen": "2026-09-12"
     },
     {
       "title": "E-Commerce Consultant / CRO & Datenanalyst:in (m/w/d)",
@@ -63,8 +67,9 @@
       "date_posted": "2026-08-21",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-08-31",
-      "experimentation_query_date": "2026-08-31"
+      "freshness": "Experimentation Jobs refresh 2026-09-12",
+      "experimentation_query_date": "2026-09-12",
+      "last_seen": "2026-09-12"
     },
     {
       "title": "Senior Data Analyst – Experimentation & A/B Testing",
@@ -76,8 +81,9 @@
       "date_posted": "2026-08-19",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-09-07",
-      "experimentation_query_date": "2026-09-07"
+      "freshness": "Experimentation Jobs refresh 2026-09-12",
+      "experimentation_query_date": "2026-09-12",
+      "last_seen": "2026-09-12"
     },
     {
       "title": "Frontend Entwickler*in CRO & Experimentation (m/w/d) – Remote",
@@ -89,8 +95,23 @@
       "date_posted": "2026-08-18",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-08-31",
-      "experimentation_query_date": "2026-08-31"
+      "freshness": "Experimentation Jobs refresh 2026-09-12",
+      "experimentation_query_date": "2026-09-12",
+      "last_seen": "2026-09-12"
+    },
+    {
+      "title": "(Senior) CRO & Personalization-Consultant",
+      "company": "Reply",
+      "location": "Berlin, München or Hamburg, Germany",
+      "work_mode": "Hybrid",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/reply-senior-cro-personalization-consultant-berlin-munchen-hamburg-germany/",
+      "date_posted": "2026-09-06",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-09-12",
+      "experimentation_query_date": "2026-09-12",
+      "last_seen": "2026-09-12"
     }
   ]
 }
