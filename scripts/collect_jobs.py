@@ -40,9 +40,12 @@ DISCOVERY_PATH = ROOT / "config" / "discovery.json"
 SEED_PATH = ROOT / "data" / "seed_jobs.json"
 OUTPUT_PATH = ROOT / "data" / "jobs.json"
 
-ENTGELTATLAS_YEAR = 2024
-ENTGELTATLAS_DATA_SCIENTIST_MONTHLY = 6168
-ENTGELTATLAS_URL = "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987"
+ENTGELTATLAS_YEAR = 2025
+ENTGELTATLAS_DATA_SCIENTIST_MONTHLY = 6432
+ENTGELTATLAS_URL = (
+    "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987?alter=3&region=5"
+)
+PUBLISHED_SALARY_MIN_COMPARABLE = 3
 
 SALARY_BENCHMARKS = {
     "data_science": ENTGELTATLAS_DATA_SCIENTIST_MONTHLY * 12,
@@ -868,7 +871,13 @@ def score_job(job: dict[str, Any], profile: dict[str, Any]) -> dict[str, Any]:
 
 
 def estimate_salary(job: dict[str, Any]) -> dict[str, Any]:
-    if job.get("salary_min") and job.get("salary_max"):
+    salary_source = str(job.get("salary_source", "")).lower()
+    has_published_range = (
+        job.get("salary_min")
+        and job.get("salary_max")
+        and not salary_source.startswith("estimate:")
+    )
+    if has_published_range:
         job["salary_mid"] = round((int(job["salary_min"]) + int(job["salary_max"])) / 2)
         job["salary_confidence"] = "high"
         job.setdefault("salary_source", "Employer advertised")
@@ -885,11 +894,66 @@ def estimate_salary(job: dict[str, Any]) -> dict[str, Any]:
             "salary_mid": midpoint,
             "salary_max": round(midpoint * 1.10 / 1000) * 1000,
             "salary_currency": "EUR",
-            "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+            "salary_source": (
+                f"Estimate: BA Entgeltatlas {ENTGELTATLAS_YEAR} "
+                "+ role/level/fit adjustment"
+            ),
             "salary_confidence": "medium" if family != "other" else "low",
         }
     )
     return job
+
+
+def median_eur(values: list[int]) -> int:
+    ordered = sorted(values)
+    if not ordered:
+        return 0
+    middle = len(ordered) // 2
+    if len(ordered) % 2:
+        return ordered[middle]
+    return round((ordered[middle - 1] + ordered[middle]) / 2)
+
+
+def salary_reference(active: list[dict[str, Any]]) -> dict[str, Any]:
+    """Build a market signal that can raise, but never lower, the official anchor."""
+    published = [
+        int(job["salary_mid"])
+        for job in active
+        if str(job.get("salary_source", "")).lower().startswith("employer")
+    ]
+    comparable = [
+        int(job["salary_mid"])
+        for job in active
+        if str(job.get("salary_source", "")).lower().startswith("employer")
+        and (
+            role_family(str(job.get("title", ""))) == "data_science"
+            or "data scientist" in str(job.get("title", "")).lower()
+        )
+    ]
+    published_median = median_eur(published)
+    comparable_median = median_eur(comparable)
+    official_benchmark = SALARY_BENCHMARKS["data_science"]
+    uplift_applied = (
+        len(comparable) >= PUBLISHED_SALARY_MIN_COMPARABLE
+        and comparable_median > official_benchmark
+    )
+    return {
+        "salary_benchmark_annual_eur": official_benchmark,
+        "published_salary_count": len(published),
+        "published_salary_median_eur": published_median,
+        "comparable_published_salary_count": len(comparable),
+        "comparable_published_salary_median_eur": comparable_median,
+        "published_salary_minimum_sample": PUBLISHED_SALARY_MIN_COMPARABLE,
+        "published_salary_uplift_applied": uplift_applied,
+        "market_salary_reference_eur": (
+            comparable_median if uplift_applied else official_benchmark
+        ),
+        "market_salary_reference_source": (
+            "Median of comparable employer-published Data Scientist ranges"
+            if uplift_applied
+            else f"Entgeltatlas {ENTGELTATLAS_YEAR} annualised median floor"
+        ),
+    }
 
 
 def deduplicate(jobs: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -1047,23 +1111,7 @@ def build_output(
         reverse=True,
     )[:250]
 
-    published_ranges = [
-        int(job["salary_mid"])
-        for job in active
-        if str(job.get("salary_source", "")).lower().startswith("employer")
-    ]
-    published_ranges.sort()
-    if published_ranges:
-        middle = len(published_ranges) // 2
-        published_median = (
-            published_ranges[middle]
-            if len(published_ranges) % 2
-            else round((published_ranges[middle - 1] + published_ranges[middle]) / 2)
-        )
-    else:
-        published_median = 0
-    official_benchmark = SALARY_BENCHMARKS["data_science"]
-    market_reference = published_median or official_benchmark
+    reference = salary_reference(active)
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     return {
         "meta": {
@@ -1074,15 +1122,7 @@ def build_output(
             "location": profile["location"],
             "salary_benchmark": f"Bundesagentur für Arbeit Entgeltatlas {ENTGELTATLAS_YEAR}",
             "salary_benchmark_url": ENTGELTATLAS_URL,
-            "salary_benchmark_annual_eur": official_benchmark,
-            "published_salary_count": len(published_ranges),
-            "published_salary_median_eur": published_median,
-            "market_salary_reference_eur": market_reference,
-            "market_salary_reference_source": (
-                "Median of active employer-published ranges"
-                if published_median
-                else f"Entgeltatlas {ENTGELTATLAS_YEAR} annualised median"
-            ),
+            **reference,
             "preference_excluded_count": excluded_count,
             "brave_search_status": search_status,
             "experimentation_jobs_status": experimentation_status,

@@ -63,8 +63,10 @@ This prototype therefore uses:
 7. Strict outbound-link validation: general search pages and aggregator result
    pages are rejected; cards point to job-specific application or detail pages.
 8. A fully static HTML/CSS/JavaScript frontend that GitHub Pages can host.
-   Results are grouped by company, mapped at approximate Hamburg city-area
-   coordinates, and can be switched between current and archived roles.
+   Results are grouped by company, mapped with Leaflet on OpenStreetMap tiles,
+   clustered/spiderfied when locations overlap, and can be switched between
+   current and archived roles. City-only postings remain explicitly
+   approximate rather than being presented as known office addresses.
 
 The Bundesagentur für Arbeit website is deliberately not scraped. Instead, the
 collector uses the community-documented Jobsuche endpoint with the published
@@ -158,15 +160,17 @@ ranking through incidental matches such as Python or stakeholder management.
 
 Employer ranges are passed through unchanged and marked `high` confidence. Otherwise the estimate begins with these annual gross anchors:
 
-- Data Scientist, Hamburg: €6,168 × 12 = €74,016.
+- Data Scientist, Hamburg, age 25–54: €6,432 × 12 = €77,184.
 - Data Analyst, Hamburg: €6,447 × 12 = €77,364.
 
-The collector then applies a role-family factor, a seniority factor, and at most a small fit adjustment. The displayed range is ±10% around the midpoint. These are prioritization estimates, not compensation advice; bonuses, equity, pension, working hours, and benefits are excluded. The source is the Bundesagentur für Arbeit Entgeltatlas, data year 2024.
+The collector then applies a role-family factor, a seniority factor, and at most a small fit adjustment. The displayed range is ±10% around the midpoint. These are prioritization estimates, not compensation advice; bonuses, equity, pension, working hours, and benefits are excluded. The primary Data Scientist source is the Bundesagentur für Arbeit Entgeltatlas, data year 2025.
 
-The salary evidence card updates itself from the median midpoint of active,
-employer-published ranges whenever any are available. This live market signal
-is shown separately from the Entgeltatlas anchor so that a small vacancy sample
-is not misrepresented as an official statistic.
+The salary evidence card uses the Entgeltatlas value as a floor. It can move
+upward only when at least three active, comparable Data Scientist vacancies
+publish a higher median midpoint; advertised ranges never reduce the anchor.
+All employer ranges remain visible unchanged, including ranges below the
+benchmark. This prevents a small or mixed-role sample from being misrepresented
+as a market correction.
 
 ## Tests
 
@@ -195,3 +199,6 @@ deploys the result.
 - A role in the snapshot may have closed; always verify on the original career page.
 - The match score is a deterministic heuristic, not a hiring probability.
 - Saved jobs live only in browser `localStorage`.
+- The public OpenStreetMap tile service is best-effort and intended for this
+  site's modest interactive traffic; tiles are attributed and never bulk
+  downloaded or preloaded.

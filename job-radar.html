@@ -7,7 +7,11 @@
     <meta name="theme-color" content="#f1ede8">
     <title>Job Radar · Tim Umbach</title>
     <link rel="icon" href="assets/tu-monogram.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js" defer></script>
     <script src="assets/app.js" defer></script>
   </head>
   <body>
@@ -92,8 +96,8 @@
           <p class="overline" id="salary-reference-label">Salary evidence</p>
           <div class="benchmark-number" id="salary-reference-number">—</div>
           <h2 id="salary-reference-title">Loading salary signal</h2>
-          <p id="salary-reference-copy">Employer-published ranges update this market signal automatically; estimates remain anchored to the official Entgeltatlas median.</p>
-          <a href="https://web.arbeitsagentur.de/entgeltatlas/beruf/129987" target="_blank" rel="noopener noreferrer">Open Entgeltatlas <span aria-hidden="true">↗</span></a>
+          <p id="salary-reference-copy">The official Entgeltatlas median is the floor; sufficient comparable employer ranges can raise, but never lower, this signal.</p>
+          <a href="https://web.arbeitsagentur.de/entgeltatlas/beruf/129987?alter=3&amp;region=5" target="_blank" rel="noopener noreferrer">Open Entgeltatlas <span aria-hidden="true">↗</span></a>
           <div class="benchmark-scale" aria-label="Salary benchmark scale">
             <span id="salary-reference-scale" style="width: 0"></span>
           </div>
@@ -107,7 +111,7 @@
             <p class="overline">Where the work is</p>
             <h2 id="hamburg-map-title">Hamburg opportunity map</h2>
           </div>
-          <p class="chart-note">City-level positions are approximate. Select a marker to inspect the role.</p>
+          <p class="chart-note">OpenStreetMap · clusters expand on click · city-only locations are approximate.</p>
         </div>
         <div class="hamburg-map-layout">
           <div id="hamburg-map" class="hamburg-map" role="group" aria-label="Interactive map of Hamburg-area jobs">
@@ -215,7 +219,7 @@
             <p>The match score combines role alignment (30%), CV skill overlap (40%), seniority (15%), Hamburg/remote fit (10%), and domain relevance (5%). It is a prioritization aid, not a hiring probability.</p>
             <details>
               <summary>How salary estimates work</summary>
-              <p>Employer-published ranges pass through unchanged. Otherwise the model starts from Bundesagentur für Arbeit medians, applies a role-family and level factor, then a small profile-fit adjustment. Estimated ranges are intentionally broad and shown with medium or low confidence.</p>
+              <p>Employer-published ranges pass through unchanged. Otherwise the model starts from Bundesagentur für Arbeit medians, applies a role-family and level factor, then a small profile-fit adjustment. The headline anchor never moves below Entgeltatlas and rises only with at least three comparable published Data Scientist ranges. Estimated ranges are intentionally broad and shown with medium or low confidence.</p>
             </details>
             <details>
               <summary>Where jobs come from</summary>

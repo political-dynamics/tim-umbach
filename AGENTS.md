@@ -30,8 +30,9 @@ evidence-led, responsive, and accessible while using available space well.
   never an aggregator result or generic career-search page.
 - Archive jobs after a stated application deadline. If no deadline is known,
   archive them after 60 days without confirmation.
-- Employer-published salary ranges remain unchanged and update the live market
-  signal. Keep that signal distinct from the official Entgeltatlas estimation anchor.
+- Employer-published salary ranges remain unchanged. The official Entgeltatlas
+  value is the headline floor; only at least three comparable, higher published
+  Data Scientist ranges may raise it. Never use vacancy evidence to lower it.
 - Map Hamburg-area jobs using approximate area-level coordinates; do not imply
   exact office locations without evidence.
 - Keep LinkedIn integration out of scope unless the user explicitly reopens it.

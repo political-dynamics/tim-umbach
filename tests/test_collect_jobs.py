@@ -60,6 +60,61 @@ class CollectorTest(unittest.TestCase):
         self.assertEqual(result["salary_mid"], 65000)
         self.assertEqual(result["salary_confidence"], "high")
 
+    def test_stale_estimate_is_recomputed_from_current_anchor(self):
+        job = {
+            "title": "Data Scientist",
+            "match_score": 70,
+            "salary_min": 65000,
+            "salary_mid": 72000,
+            "salary_max": 79000,
+            "salary_source": "Estimate: BA Entgeltatlas 2024 + role/level/fit adjustment",
+            "salary_confidence": "medium",
+        }
+        result = collect_jobs.estimate_salary(job)
+        self.assertEqual(
+            result["salary_mid"],
+            round(collect_jobs.SALARY_BENCHMARKS["data_science"] / 1000) * 1000,
+        )
+        self.assertIn(str(collect_jobs.ENTGELTATLAS_YEAR), result["salary_source"])
+        self.assertEqual(result["salary_confidence"], "medium")
+
+    def test_published_ranges_can_raise_but_never_lower_official_anchor(self):
+        def published(title, midpoint):
+            return {
+                "title": title,
+                "salary_mid": midpoint,
+                "salary_source": "Employer advertised",
+            }
+
+        official = collect_jobs.SALARY_BENCHMARKS["data_science"]
+        below = collect_jobs.salary_reference(
+            [
+                published("Data Scientist", 70000),
+                published("Senior Data Scientist", 72000),
+                published("Product Data Scientist", 74000),
+            ]
+        )
+        insufficient = collect_jobs.salary_reference(
+            [
+                published("Data Scientist", 85000),
+                published("Senior Data Scientist", 90000),
+            ]
+        )
+        above = collect_jobs.salary_reference(
+            [
+                published("Data Scientist", 85000),
+                published("Senior Data Scientist", 90000),
+                published("Product Data Scientist", 95000),
+            ]
+        )
+
+        self.assertEqual(below["market_salary_reference_eur"], official)
+        self.assertFalse(below["published_salary_uplift_applied"])
+        self.assertEqual(insufficient["market_salary_reference_eur"], official)
+        self.assertFalse(insufficient["published_salary_uplift_applied"])
+        self.assertEqual(above["market_salary_reference_eur"], 90000)
+        self.assertTrue(above["published_salary_uplift_applied"])
+
     def test_deadline_and_sixty_day_fallback_move_jobs_to_archive(self):
         base = {
             "title": "Senior Data Analyst",

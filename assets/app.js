@@ -10,6 +10,9 @@ const state = {
   showArchived: false,
   expandedCompanies: new Set(),
   selectedMapJob: null,
+  leafletMap: null,
+  leafletMarkerLayer: null,
+  leafletMarkersByJob: new Map(),
 };
 
 const $ = (selector) => document.querySelector(selector);
@@ -114,17 +117,23 @@ function updateOverview() {
   elements.savedCount.textContent = state.saved.size;
   elements.archiveCount.textContent = state.archivedJobs.length;
   const publishedCount = Number(state.meta.published_salary_count || 0);
+  const publishedMedian = Number(state.meta.published_salary_median_eur || 0);
+  const comparableCount = Number(state.meta.comparable_published_salary_count || 0);
+  const minimumSample = Number(state.meta.published_salary_minimum_sample || 3);
+  const upliftApplied = Boolean(state.meta.published_salary_uplift_applied);
   const marketReference = Number(state.meta.market_salary_reference_eur || state.meta.salary_benchmark_annual_eur);
-  elements.salaryReferenceNumber.textContent = money(marketReference, true);
+  elements.salaryReferenceNumber.textContent = money(marketReference);
   elements.salaryReferenceScale.style.width = `${Math.max(0, Math.min(100, (marketReference - 50000) / 40000 * 100))}%`;
-  if (publishedCount) {
+  if (upliftApplied) {
     elements.salaryReferenceLabel.textContent = "Live salary evidence";
-    elements.salaryReferenceTitle.textContent = "Published-role median";
-    elements.salaryReferenceCopy.textContent = `${publishedCount} active employer-published ${publishedCount === 1 ? "range updates" : "ranges update"} this signal. Modelled roles still use the official Entgeltatlas anchor.`;
+    elements.salaryReferenceTitle.textContent = "Published Data Scientist median";
+    elements.salaryReferenceCopy.textContent = `${comparableCount} comparable employer-published ranges raise this signal above the official Entgeltatlas floor.`;
   } else {
     elements.salaryReferenceLabel.textContent = "Official salary anchor";
     elements.salaryReferenceTitle.textContent = "Hamburg Data Scientist median";
-    elements.salaryReferenceCopy.textContent = "No active employer range is available, so the signal uses the annualised Entgeltatlas median.";
+    elements.salaryReferenceCopy.textContent = publishedCount
+      ? `${publishedCount} active published ${publishedCount === 1 ? "range has" : "ranges have"} a median midpoint of ${money(publishedMedian, true)}. ${minimumSample} comparable Data Scientist ranges are required to raise—but never lower—this anchor.`
+      : "No active employer range is available, so the signal uses the annualised Entgeltatlas median.";
   }
   const generated = state.meta.generated_at ? new Date(state.meta.generated_at) : null;
   const dateText = generated && !Number.isNaN(generated.valueOf())
@@ -212,36 +221,75 @@ function updateMapDetail(job) {
     <span>${escapeHtml(job.work_mode || "Work mode not stated")} · approximate city-level position</span>
     <button type="button" data-map-open="${escapeHtml(job.id)}">Inspect role <span aria-hidden="true">→</span></button>`;
   elements.mapRoleDetail.querySelector("[data-map-open]").addEventListener("click", () => openJob(job.id));
-  elements.hamburgMap.querySelectorAll(".map-marker").forEach((marker) => {
-    const active = marker.dataset.mapJob === job.id;
-    marker.classList.toggle("active", active);
-    marker.setAttribute("aria-pressed", String(active));
+  state.leafletMarkersByJob.forEach((marker, jobId) => {
+    const markerJob = state.jobs.find((candidate) => candidate.id === jobId);
+    if (markerJob) marker.setIcon(jobMapIcon(markerJob, jobId === job.id));
   });
+}
+
+function jobMapIcon(job, active = false) {
+  const salaryClass = sourceIsAdvertised(job) ? "published" : "estimated";
+  return window.L.divIcon({
+    className: "job-map-icon-wrap",
+    html: `<span class="leaflet-job-marker ${salaryClass} ${active ? "active" : ""}"><i>${escapeHtml(initials(job.company))}</i></span>`,
+    iconSize: [32, 38],
+    iconAnchor: [16, 34],
+  });
+}
+
+function ensureLeafletMap() {
+  if (state.leafletMap) return true;
+  if (!window.L || typeof window.L.markerClusterGroup !== "function") {
+    elements.hamburgMap.innerHTML = `<div class="map-unavailable"><strong>Interactive map unavailable</strong><span>Roles remain available in the ranked list.</span></div>`;
+    return false;
+  }
+  elements.hamburgMap.innerHTML = "";
+  state.leafletMap = window.L.map(elements.hamburgMap, {
+    minZoom: 9,
+    maxZoom: 19,
+    scrollWheelZoom: false,
+  }).setView([53.5511, 9.9937], 11);
+  window.L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',
+  }).addTo(state.leafletMap);
+  state.leafletMarkerLayer = window.L.markerClusterGroup({
+    showCoverageOnHover: false,
+    spiderfyOnMaxZoom: true,
+    spiderfyDistanceMultiplier: 1.7,
+    maxClusterRadius: 48,
+    iconCreateFunction: (cluster) => window.L.divIcon({
+      className: "job-map-cluster",
+      html: `<span>${cluster.getChildCount()}</span>`,
+      iconSize: [44, 44],
+    }),
+  });
+  state.leafletMap.addLayer(state.leafletMarkerLayer);
+  return true;
 }
 
 function renderHamburgMap(jobs = state.jobs) {
   const mapped = jobs.filter((job) => Number.isFinite(Number(job.map?.latitude)) && Number.isFinite(Number(job.map?.longitude)));
-  const bounds = { north: 53.73, south: 53.36, west: 9.62, east: 10.32 };
-  const point = (job) => ({
-    left: (Number(job.map.longitude) - bounds.west) / (bounds.east - bounds.west) * 100,
-    top: (bounds.north - Number(job.map.latitude)) / (bounds.north - bounds.south) * 100,
+  if (!ensureLeafletMap()) return;
+  state.leafletMarkerLayer.clearLayers();
+  state.leafletMarkersByJob.clear();
+  mapped.forEach((job) => {
+    const marker = window.L.marker(
+      [Number(job.map.latitude), Number(job.map.longitude)],
+      { icon: jobMapIcon(job, job.id === state.selectedMapJob), title: `${job.company} — ${job.title}` },
+    );
+    marker.bindTooltip(`${escapeHtml(job.company)} — ${escapeHtml(job.title)}`, { direction: "top" });
+    marker.on("click", () => updateMapDetail(job));
+    state.leafletMarkersByJob.set(job.id, marker);
+    state.leafletMarkerLayer.addLayer(marker);
   });
-  const base = `<svg viewBox="0 0 800 430" aria-hidden="true">
-    <path class="map-boundary" d="M97 246 132 132 238 58 367 73 438 38 545 91 688 109 739 205 680 307 574 351 492 397 356 366 266 405 163 345Z"/>
-    <path class="map-water" d="M-20 285 C120 240 178 292 286 280 S455 231 550 266 685 333 825 277"/>
-    <path class="map-water-branch" d="M272 280 C294 247 323 220 353 180"/>
-    <g class="map-roads"><path d="M154 146 630 319"/><path d="M250 382 420 56"/><path d="M102 252 697 178"/></g>
-  </svg>
-  <span class="map-label altona">Altona</span><span class="map-label center">Mitte</span><span class="map-label north">Nord</span><span class="map-label wandsbek">Wandsbek</span><span class="map-label harburg">Harburg</span><span class="map-label elbe">Elbe</span>`;
-  const markers = mapped.map((job) => {
-    const position = point(job);
-    const salaryClass = sourceIsAdvertised(job) ? "published" : "estimated";
-    return `<button class="map-marker ${salaryClass}" style="left:${position.left.toFixed(2)}%;top:${position.top.toFixed(2)}%" type="button" data-map-job="${escapeHtml(job.id)}" aria-label="${escapeHtml(job.company)}, ${escapeHtml(job.title)}" aria-pressed="false"><span>${escapeHtml(initials(job.company))}</span></button>`;
-  }).join("");
-  elements.hamburgMap.innerHTML = `${base}${markers}<div class="map-key"><span><i class="published"></i>Published salary</span><span><i class="estimated"></i>Estimated</span></div>`;
-  elements.hamburgMap.querySelectorAll("[data-map-job]").forEach((marker) => marker.addEventListener("click", () => {
-    updateMapDetail(mapped.find((job) => job.id === marker.dataset.mapJob));
-  }));
+  if (mapped.length) {
+    state.leafletMap.fitBounds(state.leafletMarkerLayer.getBounds(), {
+      padding: [34, 34],
+      maxZoom: 13,
+    });
+  }
+  window.setTimeout(() => state.leafletMap.invalidateSize(), 0);
   updateMapDetail(mapped.find((job) => job.id === state.selectedMapJob) || mapped[0]);
 }
 
