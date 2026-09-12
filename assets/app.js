@@ -215,10 +215,22 @@ function updateMapDetail(job) {
     return;
   }
   state.selectedMapJob = job.id;
+  const employerOffice = job.map?.precision === "verified employer office";
+  const address = employerOffice ? String(job.map?.address || "Hamburg office") : "Hamburg area";
+  const sourceUrl = safeUrl(job.map?.source_url);
+  const osmUrl = safeUrl(job.map?.osm_url);
+  const evidenceLinks = employerOffice
+    ? `<div class="map-evidence-links">
+        ${sourceUrl !== "#" ? `<a href="${sourceUrl}" target="_blank" rel="noopener noreferrer">Address evidence ↗</a>` : ""}
+        ${osmUrl !== "#" ? `<a href="${osmUrl}" target="_blank" rel="noopener noreferrer">OpenStreetMap ↗</a>` : ""}
+      </div>`
+    : "";
   elements.mapRoleDetail.innerHTML = `<p class="overline">${escapeHtml(job.map?.label || "Hamburg area")}</p>
     <h3>${escapeHtml(job.title)}</h3>
     <p>${escapeHtml(job.company)} · ${job.match_score}% match · ${money(job.salary_mid, true)}</p>
-    <span>${escapeHtml(job.work_mode || "Work mode not stated")} · approximate city-level position</span>
+    <strong class="map-address">${escapeHtml(address)}</strong>
+    <span>${escapeHtml(job.work_mode || "Work mode not stated")} · ${employerOffice ? escapeHtml(job.map?.location_note || "verified office reference; vacancy worksite may differ") : "approximate city-level position"}</span>
+    ${evidenceLinks}
     <button type="button" data-map-open="${escapeHtml(job.id)}">Inspect role <span aria-hidden="true">→</span></button>`;
   elements.mapRoleDetail.querySelector("[data-map-open]").addEventListener("click", () => openJob(job.id));
   state.leafletMarkersByJob.forEach((marker, jobId) => {
@@ -274,11 +286,14 @@ function renderHamburgMap(jobs = state.jobs) {
   state.leafletMarkerLayer.clearLayers();
   state.leafletMarkersByJob.clear();
   mapped.forEach((job) => {
+    const tooltipAddress = job.map.precision === "verified employer office" && job.map.address
+      ? `<br>${escapeHtml(job.map.address)}`
+      : "";
     const marker = window.L.marker(
       [Number(job.map.latitude), Number(job.map.longitude)],
       { icon: jobMapIcon(job, job.id === state.selectedMapJob), title: `${job.company} — ${job.title}` },
     );
-    marker.bindTooltip(`${escapeHtml(job.company)} — ${escapeHtml(job.title)}`, { direction: "top" });
+    marker.bindTooltip(`${escapeHtml(job.company)} — ${escapeHtml(job.title)}${tooltipAddress}`, { direction: "top" });
     marker.on("click", () => updateMapDetail(job));
     state.leafletMarkersByJob.set(job.id, marker);
     state.leafletMarkerLayer.addLayer(marker);

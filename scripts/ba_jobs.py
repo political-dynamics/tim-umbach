@@ -129,7 +129,14 @@ def application_url(detail: dict[str, Any], summary: dict[str, Any], reference: 
         parsed = urllib.parse.urlparse(url)
         host = (parsed.hostname or "").lower()
         tail = parsed.path.rstrip("/").rsplit("/", 1)[-1].lower()
-        if any(term in host for term in ["stepstone.", "indeed.", "linkedin."]):
+        if any(
+            term in host
+            for term in [
+                "stepstone.", "indeed.", "linkedin.", "glassdoor.",
+                "stellenanzeigen.", "gute-jobs.", "careerjet.", "oproma.",
+                "wearedevelopers.", "jobrapido.", "talent.com",
+            ]
+        ):
             continue
         if tail in {"", "job", "jobs", "search", "stellenangebote", "karriere"}:
             continue

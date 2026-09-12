@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "updated_at": "2026-09-12T21:38:53+00:00",
+    "location_count": 20,
+    "official_source_count": 19,
+    "brave_discovered_count": 0,
+    "brave_status": [
+      "No eligible unresolved employer used the Brave fallback"
+    ],
+    "nominatim_policy_url": "https://operations.osmfoundation.org/policies/nominatim/",
+    "errors": []
+  },
+  "locations": {
+    "ABOUT YOU": {
+      "company": "ABOUT YOU",
+      "address": "Domstraße 10, 20095 Hamburg, Germany",
+      "source_url": "https://corporate.aboutyou.de/en/legal-notice",
+      "source_type": "Official company page",
+      "latitude": 53.549264,
+      "longitude": 9.995625,
+      "geocoder_label": "10, Domstraße, Altstadt, Hamburg-Mitte, Hamburg, 20095, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/45851583",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Beiersdorf": {
+      "company": "Beiersdorf",
+      "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
+      "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
+      "source_type": "Official company page",
+      "latitude": 53.583019,
+      "longitude": 9.958834,
+      "geocoder_label": "Beiersdorfstraße, Lokstedt, Eimsbüttel, Hamburg, 22529, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/1187653917",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Computacenter AG & Co. oHG": {
+      "company": "Computacenter AG & Co. oHG",
+      "address": "Sachsenkamp 4, 20097 Hamburg, Germany",
+      "source_url": "https://bhh.hamburg.de/unsere-kooperationsunternehmen/",
+      "source_type": "Public institutional employer directory",
+      "location_note": "Selected Hamburg employer office; the vacancy may use another listed Computacenter site.",
+      "latitude": 53.545795,
+      "longitude": 10.022793,
+      "geocoder_label": "Europa-Center Haus 3, 4, Sachsenkamp, Hammerbrook, Hamburg-Mitte, Hamburg, 20097, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/node/1925853705",
+      "geocoded_at": "2026-09-12T21:38:53+00:00"
+    },
+    "EDEKA": {
+      "company": "EDEKA",
+      "address": "New-York-Ring 6, 22297 Hamburg, Germany",
+      "source_url": "https://verbund.edeka/karriere/edeka-als-arbeitgeber/unternehmen-im-%C3%BCberblick/edeka-zentrale/",
+      "source_type": "Official company page",
+      "latitude": 53.602949,
+      "longitude": 10.020383,
+      "geocoder_label": "Edekabank AG, 6, New-York-Ring, Winterhude, Hamburg-Nord, Hamburg, 22297, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/node/2465877319",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Europace Ratenkredit GmbH": {
+      "company": "Europace Ratenkredit GmbH",
+      "address": "Millerntorplatz 1, 20359 Hamburg, Germany",
+      "source_url": "https://karriere.hypoport.de/jobs/frontend-developer-m-w-d/?firmID=26",
+      "source_type": "Official Hypoport network career page",
+      "map_label": "Europace · Hamburg network office",
+      "location_note": "Selected Hypoport network office for this location-flexible role; Europace's registered office is in Berlin.",
+      "latitude": 53.550561,
+      "longitude": 9.968652,
+      "geocoder_label": "1, Millerntorplatz, St. Pauli, Hamburg-Mitte, Hamburg, 20359, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/39824583",
+      "geocoded_at": "2026-09-12T21:38:53+00:00"
+    },
+    "Fielmann": {
+      "company": "Fielmann",
+      "address": "Weidestraße 118a, 22083 Hamburg, Germany",
+      "source_url": "https://www.fielmann-group.com/fileadmin/fielmann/Dokumente/Hauptversammlung/2025/DE/Hinweise_zum_Datenschutz.pdf",
+      "source_type": "Official company page",
+      "latitude": 53.580257,
+      "longitude": 10.030299,
+      "geocoder_label": "118a, Weidestraße, Barmbek-Süd, Hamburg-Nord, Hamburg, 22083, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/node/1214564522",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Freenet Group": {
+      "company": "Freenet Group",
+      "address": "Deelbögenkamp 4, 22297 Hamburg, Germany",
+      "source_url": "https://www.freenet.ag/binaries/_ts_1743426272688/content/assets/freenetgroup/pdf/ir-englisch/hauptversammlung/2025/agm_2025_invitation-agenda.pdf",
+      "source_type": "Official company page",
+      "latitude": 53.60138,
+      "longitude": 9.989452,
+      "geocoder_label": "4, Deelbögenkamp, Alsterdorf, Hamburg-Nord, Hamburg, 22297, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/node/3451511483",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Freenow by Lyft": {
+      "company": "Freenow by Lyft",
+      "address": "Neumühlen 19, 22763 Hamburg, Germany",
+      "source_url": "https://www.free-now.com/de/office-information/hamburg/",
+      "source_type": "Official company page",
+      "latitude": 53.543902,
+      "longitude": 9.919623,
+      "geocoder_label": "19, Neumühlen, Ottensen, Altona, Hamburg, 22763, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/19743129",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Gebr. Heinemann": {
+      "company": "Gebr. Heinemann",
+      "address": "Koreastraße 3, 20457 Hamburg, Germany",
+      "source_url": "https://reports.gebr-heinemann.de/2024/pdfs/GH-24-Annual-Report-Legal-Notice.pdf",
+      "source_type": "Official company page",
+      "latitude": 53.543582,
+      "longitude": 10.000704,
+      "geocoder_label": "3, Koreastraße, Quartier Brooktorkai/Ericus, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/801408647",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Google Germany GmbH": {
+      "company": "Google Germany GmbH",
+      "address": "ABC-Straße 19, 20354 Hamburg, Germany",
+      "source_url": "https://about.google/company-info/locations/",
+      "source_type": "Official company page",
+      "latitude": 53.553738,
+      "longitude": 9.986117,
+      "geocoder_label": "Google, 19, ABC-Straße, Neustadt, Hamburg-Mitte, Hamburg, 20354, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/43900036",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "HELM AG": {
+      "company": "HELM AG",
+      "address": "Nordkanalstraße 28, 20097 Hamburg, Germany",
+      "source_url": "https://www.helmag.com/kontakt",
+      "source_type": "Official company page",
+      "latitude": 53.549225,
+      "longitude": 10.018994,
+      "geocoder_label": "28, Nordkanalstraße, Hammerbrook, Hamburg-Mitte, Hamburg, 20097, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/node/3126215217",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Nect GmbH": {
+      "company": "Nect GmbH",
+      "address": "Großer Burstah 21, 20457 Hamburg, Germany",
+      "source_url": "https://nect.com/legal/imprint/",
+      "source_type": "Official company page",
+      "latitude": 53.548448,
+      "longitude": 9.990032,
+      "geocoder_label": "Großer Burstah, Altstadt, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/37071241",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "New Work SE": {
+      "company": "New Work SE",
+      "address": "Am Strandkai 1, 20457 Hamburg, Germany",
+      "source_url": "https://new-work.se/en/privacy-notice",
+      "source_type": "Official company page",
+      "latitude": 53.539079,
+      "longitude": 9.993341,
+      "geocoder_label": "Hamburg Port Authority, 1, Am Strandkai, Quartier Strandkai, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/relation/15812591",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "OTTO": {
+      "company": "OTTO",
+      "address": "Werner-Otto-Straße 1-7, 22179 Hamburg, Germany",
+      "source_url": "https://www.otto.de/jobs/en/jobsearch/",
+      "source_type": "Official company page",
+      "latitude": 53.601332,
+      "longitude": 10.074724,
+      "geocoder_label": "Gebäude 4, 1-7, Werner-Otto-Straße, Bramfeld, Wandsbek, Hamburg, 22179, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/47661192",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Publicis Groupe": {
+      "company": "Publicis Groupe",
+      "address": "Heidi-Kabel-Platz 2, 20099 Hamburg, Germany",
+      "source_url": "https://www.saatchi.de/offices",
+      "source_type": "Official Publicis Groupe agency page",
+      "map_label": "Publicis Groupe · Hamburg group office",
+      "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite.",
+      "latitude": 53.554599,
+      "longitude": 10.00777,
+      "geocoder_label": "Ubilabs GmbH, 2, Heidi-Kabel-Platz, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/node/11576823673",
+      "geocoded_at": "2026-09-12T21:38:53+00:00"
+    },
+    "Reply": {
+      "company": "Reply",
+      "address": "Admiralitätstraße 59, 20459 Hamburg, Germany",
+      "source_url": "https://www.reply.com/de/offices",
+      "source_type": "Official company page",
+      "latitude": 53.547634,
+      "longitude": 9.983684,
+      "geocoder_label": "59, Admiralitätstraße, Neustadt, Hamburg-Mitte, Hamburg, 20459, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/45403914",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Tchibo": {
+      "company": "Tchibo",
+      "address": "Überseering 18, 22297 Hamburg, Germany",
+      "source_url": "https://www.tchibo-karriere.de/impressum",
+      "source_type": "Official company page",
+      "latitude": 53.607307,
+      "longitude": 10.019144,
+      "geocoder_label": "18, Überseering, Winterhude, Hamburg-Nord, Hamburg, 22297, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/way/26942778",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "ThoughtWorks Deutschland GmbH Standort Hamburg": {
+      "company": "ThoughtWorks Deutschland GmbH Standort Hamburg",
+      "address": "Caffamacherreihe 7, 20355 Hamburg, Germany",
+      "source_url": "https://www.thoughtworks.com/de-de/about-us/locations/hamburg",
+      "source_type": "Official company page",
+      "latitude": 53.554749,
+      "longitude": 9.983076,
+      "geocoder_label": "7, Caffamacherreihe, Neustadt, Hamburg-Mitte, Hamburg, 20355, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/node/706388989",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "Universitätsklinikum Hamburg-Eppendorf GB Personal, Recht & Organisation": {
+      "company": "Universitätsklinikum Hamburg-Eppendorf GB Personal, Recht & Organisation",
+      "address": "Martinistraße 52, 20246 Hamburg, Germany",
+      "source_url": "https://www.uke.de/allgemein/kontakt/",
+      "source_type": "Official company page",
+      "latitude": 53.590905,
+      "longitude": 9.975376,
+      "geocoder_label": "Universitätsklinikum Hamburg-Eppendorf, 52, Martinistraße, Lokstedt, Eimsbüttel, Hamburg, 20251, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/relation/8743422",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    },
+    "applike group": {
+      "company": "applike group",
+      "address": "An der Alster 42, 20099 Hamburg, Germany",
+      "source_url": "https://applike-group.com/imprint/",
+      "source_type": "Official company page",
+      "latitude": 53.559077,
+      "longitude": 10.00924,
+      "geocoder_label": "Laiqon AG, 42, An der Alster, St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland",
+      "osm_url": "https://www.openstreetmap.org/node/7146806439",
+      "geocoded_at": "2026-09-12T18:51:15+00:00"
+    }
+  },
+  "unresolved": {}
+}

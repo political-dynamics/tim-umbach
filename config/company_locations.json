@@ -1,0 +1,123 @@
+{
+  "user_agent": "Tim-Umbach-Job-Radar/1.0 (https://github.com/political-dynamics/tim-umbach)",
+  "nominatim": {
+    "search_url": "https://nominatim.openstreetmap.org/search",
+    "policy_url": "https://operations.osmfoundation.org/policies/nominatim/",
+    "minimum_interval_seconds": 1.1,
+    "viewbox": [9.65, 53.75, 10.35, 53.35]
+  },
+  "brave": {
+    "max_queries_per_run": 1,
+    "retry_days": 30
+  },
+  "companies": [
+    {
+      "company": "ABOUT YOU",
+      "address": "Domstraße 10, 20095 Hamburg, Germany",
+      "source_url": "https://corporate.aboutyou.de/en/legal-notice"
+    },
+    {
+      "company": "Fielmann",
+      "address": "Weidestraße 118a, 22083 Hamburg, Germany",
+      "source_url": "https://www.fielmann-group.com/fileadmin/fielmann/Dokumente/Hauptversammlung/2025/DE/Hinweise_zum_Datenschutz.pdf"
+    },
+    {
+      "company": "Freenow by Lyft",
+      "address": "Neumühlen 19, 22763 Hamburg, Germany",
+      "source_url": "https://www.free-now.com/de/office-information/hamburg/"
+    },
+    {
+      "company": "Nect GmbH",
+      "address": "Großer Burstah 21, 20457 Hamburg, Germany",
+      "source_url": "https://nect.com/legal/imprint/"
+    },
+    {
+      "company": "applike group",
+      "address": "An der Alster 42, 20099 Hamburg, Germany",
+      "source_url": "https://applike-group.com/imprint/"
+    },
+    {
+      "company": "Gebr. Heinemann",
+      "address": "Koreastraße 3, 20457 Hamburg, Germany",
+      "source_url": "https://reports.gebr-heinemann.de/2024/pdfs/GH-24-Annual-Report-Legal-Notice.pdf"
+    },
+    {
+      "company": "Tchibo",
+      "address": "Überseering 18, 22297 Hamburg, Germany",
+      "source_url": "https://www.tchibo-karriere.de/impressum"
+    },
+    {
+      "company": "Freenet Group",
+      "address": "Deelbögenkamp 4, 22297 Hamburg, Germany",
+      "source_url": "https://www.freenet.ag/binaries/_ts_1743426272688/content/assets/freenetgroup/pdf/ir-englisch/hauptversammlung/2025/agm_2025_invitation-agenda.pdf"
+    },
+    {
+      "company": "Universitätsklinikum Hamburg-Eppendorf GB Personal, Recht & Organisation",
+      "address": "Martinistraße 52, 20246 Hamburg, Germany",
+      "source_url": "https://www.uke.de/allgemein/kontakt/"
+    },
+    {
+      "company": "New Work SE",
+      "address": "Am Strandkai 1, 20457 Hamburg, Germany",
+      "source_url": "https://new-work.se/en/privacy-notice"
+    },
+    {
+      "company": "Google Germany GmbH",
+      "address": "ABC-Straße 19, 20354 Hamburg, Germany",
+      "source_url": "https://about.google/company-info/locations/"
+    },
+    {
+      "company": "ThoughtWorks Deutschland GmbH Standort Hamburg",
+      "address": "Caffamacherreihe 7, 20355 Hamburg, Germany",
+      "source_url": "https://www.thoughtworks.com/de-de/about-us/locations/hamburg"
+    },
+    {
+      "company": "HELM AG",
+      "address": "Nordkanalstraße 28, 20097 Hamburg, Germany",
+      "source_url": "https://www.helmag.com/kontakt"
+    },
+    {
+      "company": "Reply",
+      "address": "Admiralitätstraße 59, 20459 Hamburg, Germany",
+      "source_url": "https://www.reply.com/de/offices"
+    },
+    {
+      "company": "EDEKA",
+      "address": "New-York-Ring 6, 22297 Hamburg, Germany",
+      "source_url": "https://verbund.edeka/karriere/edeka-als-arbeitgeber/unternehmen-im-%C3%BCberblick/edeka-zentrale/"
+    },
+    {
+      "company": "Beiersdorf",
+      "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
+      "source_url": "https://www.beiersdorf.com/career/locations/headquarters"
+    },
+    {
+      "company": "OTTO",
+      "address": "Werner-Otto-Straße 1-7, 22179 Hamburg, Germany",
+      "source_url": "https://www.otto.de/jobs/en/jobsearch/"
+    },
+    {
+      "company": "Computacenter AG & Co. oHG",
+      "address": "Sachsenkamp 4, 20097 Hamburg, Germany",
+      "source_url": "https://bhh.hamburg.de/unsere-kooperationsunternehmen/",
+      "source_type": "Public institutional employer directory",
+      "location_note": "Selected Hamburg employer office; the vacancy may use another listed Computacenter site."
+    },
+    {
+      "company": "Europace Ratenkredit GmbH",
+      "address": "Millerntorplatz 1, 20359 Hamburg, Germany",
+      "source_url": "https://karriere.hypoport.de/jobs/frontend-developer-m-w-d/?firmID=26",
+      "source_type": "Official Hypoport network career page",
+      "map_label": "Europace · Hamburg network office",
+      "location_note": "Selected Hypoport network office for this location-flexible role; Europace's registered office is in Berlin."
+    },
+    {
+      "company": "Publicis Groupe",
+      "address": "Heidi-Kabel-Platz 2, 20099 Hamburg, Germany",
+      "source_url": "https://www.saatchi.de/offices",
+      "source_type": "Official Publicis Groupe agency page",
+      "map_label": "Publicis Groupe · Hamburg group office",
+      "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
+    }
+  ]
+}

@@ -33,8 +33,12 @@ evidence-led, responsive, and accessible while using available space well.
 - Employer-published salary ranges remain unchanged. The official Entgeltatlas
   value is the headline floor; only at least three comparable, higher published
   Data Scientist ranges may raise it. Never use vacancy evidence to lower it.
-- Map Hamburg-area jobs using approximate area-level coordinates; do not imply
-  exact office locations without evidence.
+- Map Hamburg-area jobs to cached employer offices when an official-company or
+  authoritative institutional source supports the address. If more than one
+  plausible Hamburg office exists, choose one documented reference rather than
+  using a random visual offset. Never imply it is the guaranteed vacancy worksite.
+- Geocode only new or changed verified addresses, cache the result, respect the
+  public Nominatim policy, and share the existing ten-request Brave daily budget.
 - Keep LinkedIn integration out of scope unless the user explicitly reopens it.
 - Do not publish private CV/contact source data beyond assets already intended
   for the public website.
@@ -59,6 +63,7 @@ node --check assets/election-models.js
 python -m py_compile scripts/*.py
 python -m json.tool data/jobs.json >/dev/null
 python -m json.tool data/election_models.json >/dev/null
+python -m json.tool data/company_locations.json >/dev/null
 git diff --check
 ```
 

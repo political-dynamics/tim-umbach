@@ -39,6 +39,7 @@ SOURCES_PATH = ROOT / "config" / "sources.json"
 DISCOVERY_PATH = ROOT / "config" / "discovery.json"
 SEED_PATH = ROOT / "data" / "seed_jobs.json"
 OUTPUT_PATH = ROOT / "data" / "jobs.json"
+COMPANY_LOCATIONS_PATH = ROOT / "data" / "company_locations.json"
 
 ENTGELTATLAS_YEAR = 2025
 ENTGELTATLAS_DATA_SCIENTIST_MONTHLY = 6432
@@ -121,6 +122,10 @@ AGGREGATOR_HOST_TERMS = (
     "linkedin.",
     "glassdoor.",
     "stellenanzeigen.",
+    "gute-jobs.",
+    "careerjet.",
+    "oproma.",
+    "wearedevelopers.",
     "jobrapido.",
     "talent.com",
 )
@@ -208,7 +213,21 @@ def is_direct_application_url(job: dict[str, Any]) -> bool:
     return (path not in GENERIC_JOB_PATHS and path.rsplit("/", 1)[-1] not in generic_tail) or has_detail_query
 
 
-def map_position(job: dict[str, Any]) -> dict[str, Any] | None:
+def repair_application_url(job: dict[str, Any]) -> dict[str, Any]:
+    """Replace an intermediary BA result URL with its stable BA detail page."""
+    repaired = dict(job)
+    reference = str(repaired.get("ba_reference", "")).strip()
+    if reference and not is_direct_application_url(repaired):
+        repaired["url"] = (
+            "https://www.arbeitsagentur.de/jobsuche/jobdetail/"
+            f"{urllib.parse.quote(reference, safe='-')}"
+        )
+    return repaired
+
+
+def map_position(
+    job: dict[str, Any], company_locations: dict[str, Any] | None = None
+) -> dict[str, Any] | None:
     location = str(job.get("location", "")).lower()
     match = next(
         (value for key, value in LOCATION_CENTRES.items() if key in location),
@@ -216,6 +235,31 @@ def map_position(job: dict[str, Any]) -> dict[str, Any] | None:
     )
     if not match:
         return None
+    if company_locations is None:
+        company_locations = (
+            read_json(COMPANY_LOCATIONS_PATH).get("locations", {})
+            if COMPANY_LOCATIONS_PATH.exists()
+            else {}
+        )
+    elif "locations" in company_locations:
+        company_locations = company_locations.get("locations", {})
+    office = company_locations.get(str(job.get("company", "")), {})
+    if office.get("latitude") is not None and office.get("longitude") is not None:
+        return {
+            "latitude": round(float(office["latitude"]), 6),
+            "longitude": round(float(office["longitude"]), 6),
+            "label": str(
+                office.get("map_label") or f"{job.get('company')} · Hamburg office"
+            ),
+            "precision": "verified employer office",
+            "address": str(office.get("address", "")),
+            "source_url": str(office.get("source_url", "")),
+            "osm_url": str(office.get("osm_url", "")),
+            "location_note": str(
+                office.get("location_note")
+                or "Employer office reference; the vacancy may use another worksite."
+            ),
+        }
     latitude, longitude, label = match
     digest = hashlib.sha1(
         f"{job.get('company')}|{job.get('title')}".encode("utf-8")
@@ -1055,13 +1099,19 @@ def build_output(
     ba_status: str = "",
     previous_archived: list[dict[str, Any]] | None = None,
     target_date: date | None = None,
+    company_locations: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     discovery = discovery or read_json(DISCOVERY_PATH)
+    company_locations = company_locations or (
+        read_json(COMPANY_LOCATIONS_PATH).get("locations", {})
+        if COMPANY_LOCATIONS_PATH.exists()
+        else {}
+    )
     target_date = target_date or datetime.now(timezone.utc).date()
     retention_days = int(discovery.get("retention_days", 21))
     canonicalized = []
     for raw in jobs:
-        job = dict(raw)
+        job = repair_application_url(raw)
         job["company"] = canonical_company_name(str(job.get("company", "")))
         canonicalized.append(job)
     normalized = []
@@ -1074,7 +1124,7 @@ def build_output(
         job["application_deadline"] = extract_application_deadline(job)
         job.update(assess_work_mode_fit(job, discovery))
         job = estimate_salary(score_job(job, profile))
-        position = map_position(job)
+        position = map_position(job, company_locations)
         if position:
             job["map"] = position
         job["description"] = job["description"][:900]
@@ -1112,6 +1162,13 @@ def build_output(
     )[:250]
 
     reference = salary_reference(active)
+    employer_office_mapped = sum(
+        job.get("map", {}).get("precision") == "verified employer office"
+        for job in active
+    )
+    city_area_mapped = sum(
+        job.get("map", {}).get("precision") == "city area" for job in active
+    )
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
     return {
         "meta": {
@@ -1120,6 +1177,8 @@ def build_output(
             "job_count": len(active),
             "archived_job_count": len(archived_jobs),
             "location": profile["location"],
+            "employer_office_mapped_job_count": employer_office_mapped,
+            "city_area_mapped_job_count": city_area_mapped,
             "salary_benchmark": f"Bundesagentur für Arbeit Entgeltatlas {ENTGELTATLAS_YEAR}",
             "salary_benchmark_url": ENTGELTATLAS_URL,
             **reference,
@@ -1264,6 +1323,7 @@ def main() -> int:
             else "daily refresh attempt + rolling fallback"
         )
 
+    jobs = [repair_application_url(job) for job in jobs]
     eligible_jobs = [job for job in jobs if job_matches_preferences(job, discovery)]
     excluded_count = len(jobs) - len(eligible_jobs)
     output = build_output(

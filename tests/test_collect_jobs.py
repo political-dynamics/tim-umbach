@@ -154,6 +154,21 @@ class CollectorTest(unittest.TestCase):
             )
         )
         self.assertFalse(
+            collect_jobs.is_direct_application_url(
+                {"url": "https://gute-jobs.de/viewjob-example"}
+            )
+        )
+        repaired = collect_jobs.repair_application_url(
+            {
+                "url": "https://gute-jobs.de/viewjob-example",
+                "ba_reference": "12336-example-S",
+            }
+        )
+        self.assertEqual(
+            repaired["url"],
+            "https://www.arbeitsagentur.de/jobsuche/jobdetail/12336-example-S",
+        )
+        self.assertFalse(
             collect_jobs.job_matches_preferences(
                 {
                     "title": "Data Scientist",

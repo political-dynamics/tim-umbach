@@ -32,6 +32,11 @@ jobs:
           BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
         run: python scripts/collect_election_models.py --discover-candidates
 
+      - name: Refresh cached employer locations
+        env:
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+        run: python scripts/collect_company_locations.py --discover-with-brave
+
       - name: Refresh official career sources
         env:
           BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
@@ -47,6 +52,7 @@ jobs:
           git add data/jobs.json
           git add data/election_models.json
           git add data/election_candidates.json
+          git add data/company_locations.json
           if [ -f data/search_state.json ]; then git add data/search_state.json; fi
           if [ -f data/experimentation_jobs_cache.json ]; then git add data/experimentation_jobs_cache.json; fi
           if [ -f data/experimentation_jobs_state.json ]; then git add data/experimentation_jobs_state.json; fi

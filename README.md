@@ -65,8 +65,9 @@ This prototype therefore uses:
 8. A fully static HTML/CSS/JavaScript frontend that GitHub Pages can host.
    Results are grouped by company, mapped with Leaflet on OpenStreetMap tiles,
    clustered/spiderfied when locations overlap, and can be switched between
-   current and archived roles. City-only postings remain explicitly
-   approximate rather than being presented as known office addresses.
+   current and archived roles. Cached employer-office coordinates require
+   official-company or authoritative institutional evidence and are labelled as
+   reference offices, not guaranteed vacancy worksites.
 
 The Bundesagentur für Arbeit website is deliberately not scraped. Instead, the
 collector uses the community-documented Jobsuche endpoint with the published
@@ -78,6 +79,7 @@ searches. This is not an official public BA API and may change without notice.
 From this folder:
 
 ```bash
+python scripts/collect_company_locations.py --offline
 python scripts/collect_jobs.py --offline
 python -m http.server 8000 --bind 0.0.0.0
 ```
@@ -92,8 +94,18 @@ Try a live refresh of the official sources, Experimentation Jobs, BA, and the
 daily Brave budget:
 
 ```bash
+python scripts/collect_company_locations.py --discover-with-brave
 python scripts/collect_jobs.py
 ```
+
+`config/company_locations.json` contains evidence-backed Hamburg office choices
+and their source URLs. `data/company_locations.json` caches the corresponding
+Nominatim result, so scheduled runs never geocode an unchanged address again.
+The optional Brave fallback handles at most one unresolved employer per run,
+accepts only a configured official company domain, shares the same ten-request
+daily limit as job and candidate discovery, and waits 30 days before retrying a
+failed employer. Public Nominatim calls are sequential, identified, at least
+1.1 seconds apart, and used only for new or changed verified addresses.
 
 The initial repository setup may populate every rotation exactly once:
 
@@ -125,10 +137,13 @@ cannot exceed ten requests that day—even when requests fail.
 - `config/profile.json`: target roles, salary floor, experience, and weighted skills. It contains no address, phone number, email, or CV file.
 - `config/sources.json`: allowlisted companies and link/location filters.
 - `config/discovery.json`: ten-request Brave budget, query set, company watchlist, location rules, and industry exclusions.
+- `config/company_locations.json`: official office-address evidence and geocoding policy settings.
 - `data/seed_jobs.json`: dated fallback only; refresh or remove entries when roles close.
 - `data/experimentation_jobs_cache.json`: 60-day cache of relevant niche-board listings.
 - `data/ba_jobs_cache.json`: 60-day cache of relevant BA API listings.
+- `data/company_locations.json`: cached employer-office coordinates and provenance.
 - `scripts/collect_jobs.py`: scoring and salary logic.
+- `scripts/collect_company_locations.py`: address discovery, validation, and cached geocoding.
 
 The current profile was distilled from the locally supplied CV and public LinkedIn summary. Personal contact details are excluded from the dashboard data; the intentionally published CV PDFs live separately in `assets/`.
 
@@ -178,7 +193,7 @@ as a market correction.
 python -m unittest discover -s tests -v
 ```
 
-The tests cover salary parsing, score direction, preservation of employer salary ranges, and output schema/IDs.
+The tests cover salary parsing, score direction, preservation of employer salary ranges, address extraction and cache behavior, and output schema/IDs.
 
 ## GitHub Pages
 

@@ -111,7 +111,7 @@
             <p class="overline">Where the work is</p>
             <h2 id="hamburg-map-title">Hamburg opportunity map</h2>
           </div>
-          <p class="chart-note">OpenStreetMap · clusters expand on click · city-only locations are approximate.</p>
+          <p class="chart-note">Verified employer offices where available · clusters expand · remaining city-only locations are approximate.</p>
         </div>
         <div class="hamburg-map-layout">
           <div id="hamburg-map" class="hamburg-map" role="group" aria-label="Interactive map of Hamburg-area jobs">
@@ -224,6 +224,10 @@
             <details>
               <summary>Where jobs come from</summary>
               <p>The daily updater visits permitted official career pages, refreshes Experimentation Jobs and the community-documented BA Jobsuche endpoint, and uses at most ten Brave Search requests per UTC day. A stated application deadline retires a role immediately after it passes; otherwise a role moves to the archive after 60 days without confirmation. Only job-specific application pages are retained. Google Search, LinkedIn, and Bundesagentur web pages are not scraped.</p>
+            </details>
+            <details>
+              <summary>How map locations are verified</summary>
+              <p>Office coordinates are cached from official-company or authoritative institutional address evidence, then geocoded through OpenStreetMap. Where an employer has several plausible Hamburg worksites, one documented office is selected and labelled as a reference—not a guarantee that the vacancy uses that exact worksite.</p>
             </details>
           </div>
         </div>
