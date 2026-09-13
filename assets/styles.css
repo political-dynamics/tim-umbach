@@ -136,7 +136,9 @@ h1 em { color: var(--brick); font-family: Georgia, "Times New Roman", serif; fon
 .hamburg-map-panel { min-height: 0; margin-top: 18px; }
 .hamburg-map-layout { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(250px, .55fr); gap: 22px; margin-top: 22px; }
 .hamburg-map { position: relative; min-height: 390px; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #e5e9e8; isolation: isolate; }
+.hamburg-map::after { position: absolute; z-index: 350; inset: 0; background: rgba(241, 237, 232, .2); content: ""; pointer-events: none; }
 .hamburg-map.leaflet-container { color: var(--ink); font-family: var(--font); }
+.hamburg-map .leaflet-tile-pane { filter: grayscale(.48) sepia(.14) saturate(.66) contrast(.9) brightness(1.05); }
 .hamburg-map .leaflet-control-zoom a { color: var(--royal-dark); }
 .hamburg-map .leaflet-control-attribution { font-size: .55rem; }
 .hamburg-map .leaflet-tooltip { border: 0; border-radius: 7px; color: var(--ink); font-family: var(--font); font-size: .65rem; font-weight: 700; box-shadow: var(--shadow); }
