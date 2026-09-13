@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-13T06:10:54+00:00",
+    "generated_at": "2026-09-13T09:34:29+00:00",
     "mode": "daily live refresh + rolling fallback",
     "job_count": 37,
     "archived_job_count": 0,
@@ -19,9 +19,9 @@
     "market_salary_reference_eur": 77184,
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 17,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 1 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (0 accepted)",
-    "ba_jobs_status": "BA API refresh: error (0 detailed)",
+    "brave_search_status": "Brave daily budget already used (10/10); skipped",
+    "experimentation_jobs_status": "Experimentation Jobs daily refresh already used; cached",
+    "ba_jobs_status": "BA API daily search already used; cached",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
     ]
