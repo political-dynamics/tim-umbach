@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-16T09:19:52+00:00",
+    "generated_at": "2026-09-17T09:28:40+00:00",
     "mode": "daily live refresh + rolling fallback",
     "job_count": 37,
     "archived_job_count": 0,
@@ -20,9 +20,12 @@
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 16,
     "brave_search_status": "Brave daily budget: success (10/10 requests used, 1 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (8 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (0 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
+      "https://www.beiersdorf.com/career/jobs/0354fa36c6bef33d8f04a73095844c14: HTTPError: HTTP Error 404: Not Found",
+      "https://www.beiersdorf.com/career/jobs/1db06759059a5663d83f7978d0108eeb: HTTPError: HTTP Error 404: Not Found",
+      "https://www.beiersdorf.com/career/jobs/eca93aa56a8346cf83c9bc8d40388968: HTTPError: HTTP Error 404: Not Found",
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
     ]
   },
@@ -41,7 +44,7 @@
       "salary_currency": "EUR",
       "salary_source": "Employer advertised",
       "discovery_source": "Official career page",
-      "freshness": "Brave query 2026-09-16",
+      "freshness": "Brave query 2026-09-17",
       "id": "52cbf71dc1e0",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -63,7 +66,7 @@
       "skill_gaps": [],
       "salary_mid": 77500,
       "salary_confidence": "high",
-      "last_seen": "2026-09-16",
+      "last_seen": "2026-09-17",
       "application_deadline": "",
       "map": {
         "latitude": 53.549264,
@@ -75,7 +78,7 @@
         "osm_url": "https://www.openstreetmap.org/way/45851583",
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
-      "brave_query_date": "2026-09-16",
+      "brave_query_date": "2026-09-17",
       "confirmed_by": "Brave Search API"
     },
     {
@@ -91,7 +94,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-09-16",
+      "last_seen": "2026-09-17",
       "id": "ba111c2c58e3",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -589,7 +592,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-09-16",
+      "last_seen": "2026-09-17",
       "id": "de1538cd754a",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -733,7 +736,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-09-16",
+      "last_seen": "2026-09-17",
       "id": "5b81070d7169",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -1130,7 +1133,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-09-16",
+      "last_seen": "2026-09-17",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -1308,7 +1311,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-09-16",
+      "last_seen": "2026-09-17",
       "id": "1dce7931c646",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -1395,7 +1398,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-09-16",
+      "last_seen": "2026-09-17",
       "id": "ef0b466b5fdd",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
