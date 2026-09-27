@@ -1,0 +1,81 @@
+.amrum-page { --amrum-accent: #183f73; }
+.amrum-hero { display: grid; grid-template-columns: 1.5fr 1fr; gap: 70px; padding: 72px 0 42px; align-items: end; }
+.amrum-hero h1 { font-size: clamp(3.6rem, 7.4vw, 6.7rem); }
+.amrum-intro { max-width: 390px; padding-bottom: 6px; font-size: 1.12rem; line-height: 1.65; }
+.amrum-intro .snapshot { font-size: .78rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 18px; }
+.research-note { padding: 17px 21px; background: var(--beige); border-left: 3px solid var(--brick); font-size: .84rem; line-height: 1.65; }
+.coverage-grid { display: grid; grid-template-columns: repeat(4,1fr); border-block: 1px solid var(--line); margin-top: 25px; }
+.coverage-grid div { padding: 20px 12px; border-right: 1px solid var(--line); }
+.coverage-grid div:last-child { border-right: 0; }
+.coverage-grid strong { display: block; font-size: 1.9rem; letter-spacing: -.04em; }
+.coverage-grid span { display: block; font-size: .72rem; color: var(--ink-soft); margin-top: 5px; line-height: 1.5; }
+.amrum-section { padding: 48px 0; border-bottom: 1px solid var(--line); }
+.amrum-heading { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.amrum-heading h2, .methodology h2 { margin: 0; font-size: clamp(1.65rem, 3vw, 2.4rem); letter-spacing: -.045em; }
+.amrum-heading label, .amrum-heading > a { font-size: .8rem; }
+.map-tools { display: grid; gap: 12px; justify-items: end; }
+.amrum-page select { border: 1px solid var(--line); border-radius: 7px; padding: 10px; margin-left: 8px; color: var(--ink); background: white; }
+.muted, .small-note { color: var(--ink-soft); line-height: 1.65; }
+.muted { font-size: .86rem; }
+.small-note { font-size: .76rem; }
+.season-control { display: grid; grid-template-columns: repeat(4,1fr); gap: 7px; margin-top: 26px; }
+.season-control button { border: 1px solid var(--line); border-radius: 9px; background: transparent; padding: 13px 10px; color: var(--ink); cursor: pointer; font-weight: 750; text-align: left; }
+.season-control button small { display: block; font-size: .7rem; font-weight: 400; margin-top: 5px; }
+.season-control button[aria-pressed="true"] { background: var(--royal); border-color: var(--royal); color: white; }
+.season-dates { font-size: .78rem; min-height: 18px; color: var(--ink-soft); }
+.apartment-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 24px 0 18px; }
+.apartment-card { padding: 23px 20px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); position: relative; }
+.apartment-card.selected { outline: 2px solid var(--royal); outline-offset: -2px; }
+.apartment-card h3 { margin: 0 0 8px; font-size: 1.2rem; letter-spacing: -.03em; }
+.flat-meta { margin: 0 0 22px; font-size: .74rem; color: var(--ink-soft); }
+.price-label { font-size: .69rem; color: var(--ink-soft); }
+.flat-price { display: block; margin-top: 7px; font-size: 2.65rem; letter-spacing: -.06em; color: var(--royal); line-height: 1.1; }
+.flat-range { margin: 9px 0 17px; font-size: .77rem; }
+.flat-tariff { border-top: 1px solid var(--line); padding-top: 13px; font-size: .75rem; line-height: 1.6; min-height: 57px; }
+.flat-action { width: 100%; padding: 10px 6px; border: 1px solid var(--line); border-radius: 6px; background: transparent; font-size: .74rem; font-weight: 700; color: var(--royal); cursor: pointer; }
+.flat-action[aria-pressed="true"] { background: var(--royal-light); }
+.amrum-page button:focus-visible, .amrum-page select:focus-visible, .amrum-page a:focus-visible, .amrum-page input:focus-visible { outline: 3px solid var(--brick); outline-offset: 3px; }
+.amrum-map-layout { display: grid; grid-template-columns: minmax(0, 1fr) 290px; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: white; margin-top: 20px; }
+#amrum-map { height: 490px; min-width: 0; background: #e2e7e3; isolation: isolate; }
+#amrum-map .leaflet-tile-pane { filter: saturate(.4); }
+.amrum-map-detail { padding: 25px; line-height: 1.55; overflow-wrap: anywhere; }
+.amrum-map-detail h3 { font-size: 1.4rem; letter-spacing: -.04em; margin: 0 0 8px; }
+.amrum-map-detail p { font-size: .8rem; }
+.amrum-map-detail strong.map-price { font-size: 2.2rem; color: var(--royal); letter-spacing: -.05em; }
+.map-detail-list { padding-left: 16px; font-size: .78rem; }
+.amrum-map-detail a { font-size: .8rem; }
+.amrum-legend { display: flex; gap: 22px; flex-wrap: wrap; margin: 16px 0; font-size: .73rem; color: var(--ink-soft); }
+.amrum-legend i { display: inline-block; height: 9px; width: 9px; margin-right: 5px; border-radius: 50%; }
+.target-dot { background: var(--brick); }.peer-dot { background: var(--royal); }
+.amrum-pin { display: flex; width: max-content; padding: 6px 9px; border-radius: 20px; background: var(--royal); border: 2px solid white; color: white; box-shadow: 0 2px 6px #0004; font: 700 11px var(--font); white-space: nowrap; }
+.amrum-pin.target { background: var(--brick); font-size: 12px; padding: 8px 11px; }
+.amrum-pin.active { outline: 3px solid #bd8a41; }
+.amrum-cluster { border-radius: 50%; background: var(--royal-light); border: 2px solid white; display: grid; place-items: center; color: var(--royal); font: 750 12px var(--font); box-shadow: 0 2px 6px #0003; }
+.season-chart { display: grid; grid-template-columns: repeat(6,1fr); gap: 13px; margin: 30px 0; align-items: end; }
+.season-column { text-align: center; }
+.season-bar-box { height: 160px; display: flex; align-items: end; justify-content: center; }
+.season-bar { width: 70%; background: var(--royal); border-radius: 5px 5px 0 0; min-height: 8px; }
+.season-column.selected .season-bar { background: var(--brick); }
+.season-column strong { display: block; font-size: .94rem; margin: 8px 0; }
+.season-column small { display: block; color: var(--ink-soft); font-size: .68rem; min-height: 29px; }
+.table-scroll { overflow-x: auto; margin: 22px 0 15px; border: 1px solid var(--line); border-radius: 10px; background: white; }
+.amrum-table { width: 100%; border-collapse: collapse; min-width: 680px; font-size: .78rem; text-align: left; }
+.amrum-table caption { text-align: left; padding: 15px; font-weight: 750; background: var(--beige); }
+.amrum-table th { padding: 13px 15px; color: var(--ink-soft); font-size: .7rem; font-weight: 650; }
+.amrum-table td { border-top: 1px solid var(--line); padding: 15px; line-height: 1.5; }
+.amrum-table td small { display: block; color: var(--ink-soft); font-size: .7rem; }
+.amrum-table tr.active-row { background: #183f7309; }
+.source-details { margin-top: 25px; padding: 20px; border: 1px solid var(--line); border-radius: 9px; font-size: .82rem; line-height: 1.65; }
+.source-details summary { cursor: pointer; font-weight: 700; }
+.source-details li { margin: 10px 0; }
+.methodology { display: grid; grid-template-columns: 1fr 1.5fr; gap: 80px; padding-bottom: 70px; }
+.methodology p { font-size: .84rem; line-height: 1.8; color: var(--ink-soft); }
+.methodology h3 { font-size: .93rem; margin-top: 25px; }
+.methodology h3:first-child { margin-top: 0; }
+.amrum-page .site-footer { margin-top: 30px; }
+@media (max-width: 1000px) { .apartment-grid { grid-template-columns: repeat(2,1fr); } .amrum-hero { gap: 35px; } .methodology { gap: 35px; } }
+@media (max-width: 700px) { .amrum-hero { grid-template-columns: 1fr; padding-top: 45px; gap: 25px; } .amrum-intro { max-width: none; font-size: 1rem; } .amrum-section { padding: 34px 0; } .amrum-heading { align-items: start; flex-direction: column; gap: 14px; } .season-control { grid-template-columns: repeat(2,1fr); } .amrum-map-layout { grid-template-columns: 1fr; } #amrum-map { height: 380px; } .amrum-map-detail { border-top: 1px solid var(--line); } .methodology { grid-template-columns: 1fr; gap: 15px; } .season-chart { gap: 6px; } .season-column small { font-size: .61rem; } .amrum-legend { gap: 12px; } }
+@media (max-width: 400px) { .apartment-grid { gap: 8px; } .apartment-card { padding: 18px 12px; } .flat-price { font-size: 2.2rem; } }
+@media (max-width: 700px) { .coverage-grid { grid-template-columns: repeat(2,1fr); } .coverage-grid div:nth-child(2) { border-right: 0; } }
+@media (max-width: 700px) { .map-tools { justify-items: start; } }
+@media (prefers-reduced-motion: reduce) { .amrum-page { scroll-behavior: auto; } }

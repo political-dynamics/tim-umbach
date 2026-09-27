@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seasonal asking-price estimates for the four Alte Schule apartments on Amrum, with a comparable-property map and transparent source evidence.">
+  <meta name="theme-color" content="#f1ede8">
+  <title>Amrum Price Lab · Tim Umbach</title>
+  <link rel="icon" href="assets/tu-monogram.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/amrum.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js" defer></script>
+  <script src="assets/amrum.js" defer></script>
+</head>
+<body class="amrum-page">
+  <a class="skip-link" href="#prices">Skip to prices</a>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img class="brand-mark" src="assets/tu-monogram.svg" alt="" width="30" height="30"><span class="brand-copy"><strong>Tim Umbach</strong><small>Data Scientist</small></span></a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">About</a>
+      <details class="nav-work-menu current"><summary><span>Work</span><span aria-hidden="true">⌄</span></summary><div class="nav-work-menu-panel"><a href="index.html#work">All work</a><a href="job-radar.html">Job Radar</a><a href="election-lab.html">Election Lab</a><a href="amrum.html" aria-current="page">Amrum Price Lab</a></div></details>
+      <a href="cv.html">CV</a><a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="section-shell">
+    <section class="amrum-hero" aria-labelledby="title">
+      <div><p class="overline">Amrum Price Lab · Nebel · Die Alte Schule</p><h1 id="title">An island.<br>Four flats.<br><em>A fairer price.</em></h1></div>
+      <div class="amrum-intro"><p>What is a reasonable nightly price for each apartment on <a href="https://amrum.sh/">amrum.sh</a>? Compare seasonal market estimates, published tariffs, and nearby alternatives.</p><p class="snapshot" id="snapshot" role="status">Loading the research snapshot…</p><a class="arrow-link" href="#method">Inspect the method <span aria-hidden="true">↘</span></a></div>
+    </section>
+    <div class="research-note"><strong>A starting point for pricing.</strong> These are estimates from advertised asking prices, with low confidence. They are not confirmed booking prices or forecasts of occupancy. All amounts are per whole apartment, per night, excluding visitor tax.</div>
+    <div id="coverage" class="coverage-grid" aria-label="Market data coverage"></div>
+    <section id="prices" class="amrum-section" aria-labelledby="prices-title">
+      <div class="amrum-heading"><div><p class="overline">01 / Seasonal comparison</p><h2 id="prices-title">The four apartments</h2></div><label class="year-control" for="year">Calendar <select id="year"><option value="2026">2026</option><option value="2027" selected>2027</option></select></label></div>
+      <p id="year-note" class="muted"></p>
+      <div class="season-control" role="group" aria-label="Pricing season">
+        <button type="button" data-season="A" aria-pressed="true">Hauptsaison <small>Summer peak</small></button>
+        <button type="button" data-season="B" aria-pressed="false">Nebensaison <small>Spring / autumn</small></button>
+        <button type="button" data-season="C" aria-pressed="false">Randsaison <small>Low / off-season</small></button>
+        <button type="button" data-season="christmas" aria-pressed="false">Weihnachten <small>Christmas / New Year</small></button>
+      </div>
+      <p id="season-dates" class="season-dates"></p>
+      <div id="apartments" class="apartment-grid" aria-live="polite"></div>
+      <p class="small-note">Ranges describe sensitivity to comparable properties and seasonal assumptions, not a statistical confidence interval. Choose an apartment to inspect its map and evidence.</p>
+    </section>
+    <section class="amrum-section" aria-labelledby="map-title">
+      <div class="amrum-heading"><div><p class="overline">02 / The local market</p><h2 id="map-title">Put the price on the map.</h2></div><div class="map-tools"><label for="map-season">Season <select id="map-season"><option value="A">Hauptsaison</option><option value="B">Nebensaison</option><option value="C">Randsaison / off-season</option><option value="christmas">Christmas / New Year</option></select></label><label class="map-option"><input id="all-properties" type="checkbox" checked> Show all eligible properties</label></div></div>
+      <p id="map-description" class="muted"></p>
+      <div class="amrum-map-layout"><div id="amrum-map" aria-label="Map of Amrum accommodation prices"></div><aside id="map-detail" class="amrum-map-detail" aria-live="polite"></aside></div>
+      <div class="amrum-legend"><span><i class="target-dot"></i> Alte Schule · market estimate</span><span><i class="peer-dot"></i> Other properties · seasonal proxy</span><span>Locations: official amrum.de records</span></div>
+      <p class="small-note">Map prices for other properties are their published “from” prices plus known cleaning charges spread over seven nights, multiplied by the seasonal factor. They are modeled seasonal proxies, not date-specific offers. Multiple apartments at one address share a marker.</p>
+    </section>
+    <section class="amrum-section" aria-labelledby="calendar-title">
+      <div class="amrum-heading"><div><p class="overline">03 / The year at a glance</p><h2 id="calendar-title">One flat, every season.</h2></div><label for="flat">Apartment <select id="flat"></select></label></div>
+      <div id="season-chart" class="season-chart" aria-label="Seasonal price comparison"></div>
+      <div class="table-scroll"><table class="amrum-table"><caption id="calendar-caption">Seasonal estimates and advertised tariffs</caption><thead><tr><th scope="col">Season / dates</th><th scope="col">Estimate / night</th><th scope="col">Range</th><th scope="col">amrum.sh tariff</th><th scope="col">7-night estimate</th></tr></thead><tbody id="calendar-rows"></tbody></table></div>
+      <p class="small-note">Season boundaries follow <a href="https://www.amrum.de/kurabgabe-saisonzeiten">AmrumTouristik’s recommended calendar</a>. Departure dates are exclusive. The first days of January belong to the previous Christmas period. Owners may use different dates.</p>
+      <p id="tariff-warning" class="research-note" hidden></p>
+    </section>
+    <section class="amrum-section" aria-labelledby="evidence-title">
+      <div class="amrum-heading"><div><p class="overline">04 / Check the comparison</p><h2 id="evidence-title">The evidence behind the number.</h2></div><a href="data/amrum_market.json" download>Download data ↓</a></div>
+      <p id="peer-note" class="muted"></p>
+      <div class="table-scroll"><table class="amrum-table"><caption>Selected comparable apartments · source asking prices</caption><thead><tr><th scope="col">Property / apartment</th><th scope="col">Size / capacity</th><th scope="col">Portal “from” / night</th><th scope="col">Known cleaning / stay</th><th scope="col">Adjusted B-season proxy</th></tr></thead><tbody id="peer-rows"></tbody></table></div>
+      <details class="source-details"><summary>Seasonal tariff evidence and collection coverage</summary><div id="source-evidence"></div></details>
+    </section>
+    <section id="method" class="amrum-section methodology" aria-labelledby="method-title">
+      <div><p class="overline">05 / Method & limitations</p><h2 id="method-title">A benchmark you can question.</h2><p>“Fair market price” here means a central asking-price benchmark for comparable apartments. The model has no transaction history, occupancy, cancellations, or revenue data and has not been backtested against completed bookings.</p></div>
+      <div>
+        <h3>Nearby, with room for the same guests</h3><p>Brave Search discovers sources, supplemented by a walk through the full official island directory. The collector extracts apartment-level prices, floor area, capacity, and coordinates directly from public amrum.de records. The map can show the whole island; the pricing model uses Nebel comparables. Alte Schule is excluded from the market sample. Whole houses, incomplete records, and flats outside 20–100 m² are excluded. Selected peers must fit the target’s guest capacity (at most two extra places) and be between half and twice its floor area.</p>
+        <h3>Size adjustment, without false precision</h3><p>Up to seven nearest properties contribute, with one apartment per property. Distance uses log floor-area difference, capacity difference (0.18 per guest), and bedroom difference when known (0.15 per room). The estimate is the weighted median of asking prices multiplied by the square root of target area / comparable area. Weights are exp(−2 × distance). These coefficients are assumptions, not fitted effects.</p>
+        <h3>A modest seasonal evidence base</h3><p>The September 2026 portal prices are treated as B-season proxies; “from” prices do not guarantee availability or a fully comparable fee basis. A and C factors are medians of provider-level tariff ratios from two independent owners. One owner’s tariff is undated. Christmas uses a separate factor because the owners assign it to different seasons. The target apartments’ own prices never determine these factors.</p>
+        <h3>What the range means</h3><p>The band includes the weighted 20th–80th percentile of adjusted peer prices, the spread of the two owners’ seasonal factors, and at least ±20% around the unrounded estimate. Prices round to €5. This is a sensitivity range, with no claimed coverage probability. Small four-person flats require particularly substantial size extrapolation.</p>
+        <h3>Fees and the next year</h3><p>Known additional cleaning fees are spread over seven nights; an unknown fee is left unfilled, not treated as evidence that cleaning is free. Linen, service, minimum stays, quality, view, and amenities may differ. amrum.sh says linen and service are included. Visitor tax is excluded everywhere. The 2027 model holds the observed 2026 market level constant; its calendar and the owner’s published 2027 tariffs update separately.</p>
+        <p>This is a dated research snapshot. It is not refreshed automatically with the Job Radar. <a href="https://github.com/political-dynamics/tim-umbach/blob/main/scripts/collect_amrum.py">Read the collector and model →</a></p>
+      </div>
+    </section>
+    <noscript><p class="research-note">JavaScript is needed for the price explorer and map. <a href="data/amrum_market.json">Download the complete price snapshot</a> to inspect the estimates and sources.</p></noscript>
+  </main>
+  <footer class="site-footer"><p>Tim Umbach · Amrum Price Lab</p><p><a href="index.html#work">All work</a> · <a href="https://amrum.sh/">Die Alte Schule</a> · <a href="https://www.amrum.de/">AmrumTouristik</a></p></footer>
+</body>
+</html>

@@ -2,8 +2,8 @@
 
 ## Scope
 
-This repository is Tim Umbach's static personal website and its two data
-products: Job Radar and Election Lab. Keep the presentation restrained,
+This repository is Tim Umbach's static personal website and its data
+products: Job Radar, Election Lab, and Amrum Price Lab. Keep the presentation restrained,
 evidence-led, responsive, and accessible while using available space well.
 
 ## Architecture
@@ -17,6 +17,9 @@ evidence-led, responsive, and accessible while using available space well.
   system unless the user explicitly asks for one.
 - Generated snapshots live in `data/`. Update them through their collectors
   when collector behavior changes.
+- `amrum.html`, `assets/amrum.js`, `assets/amrum.css`, and
+  `scripts/collect_amrum.py` implement Amrum Price Lab. Directory discovery is
+  in `scripts/discover_amrum.py`; raw HTML caches stay outside this repository.
 
 ## Product invariants
 
@@ -42,6 +45,11 @@ evidence-led, responsive, and accessible while using available space well.
 - Keep LinkedIn integration out of scope unless the user explicitly reopens it.
 - Do not publish private CV/contact source data beyond assets already intended
   for the public website.
+- Keep Amrum asking prices separate from modeled seasonal estimates. Exclude
+  the target property from its own benchmarks, retain extraction failures and
+  source provenance, and never silently fill missing fees or tariff years.
+  The snapshot is dated research, not an automatic daily scrape. Revisit the
+  reference-season assumption before refreshing outside autumn 2026.
 
 ## Working practice
 
@@ -60,10 +68,12 @@ Run the checks relevant to the change; before deployment, run the complete set:
 python -m unittest discover -s tests -v
 node --check assets/app.js
 node --check assets/election-models.js
+node --check assets/amrum.js
 python -m py_compile scripts/*.py
 python -m json.tool data/jobs.json >/dev/null
 python -m json.tool data/election_models.json >/dev/null
 python -m json.tool data/company_locations.json >/dev/null
+python -m json.tool data/amrum_market.json >/dev/null
 git diff --check
 ```
 

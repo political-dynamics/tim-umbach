@@ -21,9 +21,14 @@ class ElectionModelSnapshotTests(unittest.TestCase):
 
     def test_contains_federal_and_state_models(self):
         elections = self.payload["elections"]
-        self.assertIn("bundestag", elections)
-        self.assertIn("berlin", elections)
-        self.assertGreaterEqual(len(elections), 6)
+        snapshot_day = date.fromisoformat(self.payload["meta"]["generated_at"][:10])
+        active = collect_election_models.active_targets(snapshot_day)
+        self.assertTrue(elections)
+        self.assertLessEqual(set(elections), set(active))
+        if "bundestag" in active:
+            self.assertIn("bundestag", elections)
+        if set(active) - {"bundestag"}:
+            self.assertTrue(set(elections) - {"bundestag"})
 
     def test_model_outputs_are_bounded_and_complete(self):
         for election in self.payload["elections"].values():
@@ -53,6 +58,12 @@ class ElectionModelSnapshotTests(unittest.TestCase):
         active = collect_election_models.active_targets(date(2026, 9, 12))
         self.assertNotIn("sachsen-anhalt", active)
         self.assertIn("berlin", active)
+
+    def test_september_elections_retire_after_election_day(self):
+        for slug in ("berlin", "mecklenburg-vorpommern"):
+            with self.subTest(election=slug):
+                self.assertIn(slug, collect_election_models.active_targets(date(2026, 9, 20)))
+                self.assertNotIn(slug, collect_election_models.active_targets(date(2026, 9, 21)))
 
     def test_brave_result_verifies_only_known_candidate_name(self):
         payload = {

@@ -3,7 +3,7 @@
 A static personal website for Tim Umbach, a Hamburg-based data scientist
 specialising in experimentation, causal inference, and product analytics.
 
-The site is deployed from the `political-dynamics/tim-umbach` repository and has five pages:
+The site is deployed from the `political-dynamics/tim-umbach` repository and has six pages:
 
 - `index.html`: professional profile, experience, areas of expertise, and an
   interactive preview of the work examples.
@@ -15,6 +15,8 @@ The site is deployed from the `political-dynamics/tim-umbach` repository and has
 - `election-lab.html`: an interactive federal/state election-model showcase
   built from DAWUM polling data, with poll-only logit and economy-enriched
   probit specifications, coalition paths, and historical backtests.
+
+- `amrum.html`: seasonal holiday-apartment price benchmarks with a map and source evidence.
 
 ## Election model snapshot
 
@@ -217,3 +219,43 @@ deploys the result.
 - The public OpenStreetMap tile service is best-effort and intended for this
   site's modest interactive traffic; tiles are attributed and never bulk
   downloaded or preloaded.
+
+## Amrum Price Lab
+
+`amrum.html` compares the four Alte Schule apartments on `amrum.sh`, with
+season switches, a Leaflet map, official calendar dates, published tariffs,
+and transparent market estimates. It is a dated research snapshot, separate
+from the daily Job Radar refresh.
+
+The public Amrum host directory supplies the broad collection frame; Brave
+Search supplies additional discovery and independent seasonal tariff sources.
+The collector deduplicates apartment IDs and uses Nebel flats with compatible
+capacity and area. One flat per building contributes to each weighted-median
+estimate. The target building never contributes to its own estimates.
+
+```bash
+# Public read-only collection; caches must remain outside the published tree.
+python scripts/discover_amrum.py --cache-dir /tmp/amrum-cache
+python scripts/collect_amrum.py --offline-cache --cache-dir /tmp/amrum-cache
+# Refresh the configured sources (only within the reviewed reference season):
+python scripts/collect_amrum.py --refresh --cache-dir /tmp/amrum-cache
+# Recalculate using the checked-in extracted observations, without network:
+python scripts/collect_amrum.py
+python -m unittest discover -s tests -p 'test_amrum.py' -v
+node --check assets/amrum.js
+```
+
+For a first collection, run `collect_amrum.py --refresh` after discovery to
+fetch target tariffs and seasonal evidence as well. `--offline-cache` expects
+those pages to already be cached. Keep the key assumption visible: undated
+portal “heute ab” prices are treated as September 2026 shoulder-season proxies.
+The 2027 estimates hold this price level constant. Seasonal ratios come from
+two independent owners (one undated); intervals are sensitivity envelopes,
+not calibrated statistical confidence intervals. Full fees and availability
+are unverified. The second Wohnung I price table has a duplicate 2026 heading,
+so the UI does not present it as a verified 2027 tariff.
+
+The September 2026 site-deployment failures were caused by a snapshot test
+requiring Berlin and a fixed number of live elections after completed contests
+were correctly retired. The test now checks eligibility at the snapshot date,
+with a regression check for the September 20/21 retirement boundary.
