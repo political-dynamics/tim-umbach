@@ -7,7 +7,7 @@
   const link = (url) => { try { const u = new URL(url); return u.protocol === 'https:' ? esc(u.href) : '#'; } catch { return '#'; } };
   const dateLabel = (s) => new Date(`${s}T12:00:00Z`).toLocaleDateString('en-GB', {day:'numeric', month:'short', timeZone:'UTC'});
   const seasonNames = {A:'Hauptsaison', B:'Nebensaison', C:'Off-season / Vor- & Nachsaison', christmas:'Christmas / New Year'};
-  const state = {data:null, season:'A', flat:'wohnung-1', year:'2027', map:null, layer:null, targetMarker:null, mapHouse:'target', fitted:false};
+  const state = {data:null, season:'A', flat:'wohnung-1', year:'2027', map:null, layer:null, targetMarker:null, mapHouse:'target', fitted:false, exampleLimit:7};
   const currentFlat = () => state.data.apartments.find((a) => a.id === state.flat);
   const pricesFor = (a) => a.market?.seasons_by_year?.[state.year] || a.market?.seasons;
   const selectedPrice = (a) => pricesFor(a)?.[state.season];
@@ -50,8 +50,11 @@
   function renderEvidence() {
     const a = currentFlat();
     const peers = (a.market?.peers || []).map((p) => ({...state.data.observations.find((r) => r.id === p.id), ...p}));
-    $('#peer-note').textContent = `${a.name}: ${peers.length} nearby examples for inspection. The regression uses ${a.market?.observation_count || 0} apartments across ${a.market?.property_count || 0} buildings island-wide. Adjusted examples use the fitted size, capacity, bedroom and location effects; this table is not the training sample.`;
-    $('#peer-rows').innerHTML = peers.map((r) => `<tr><td><a href="${link(r.url)}">${esc(r.property)}</a><small>${esc(r.name)}</small></td><td>${r.area} m² / ${r.guests} guests</td><td>${money(r.nightly)}</td><td>${r.cleaning == null ? 'Not specified' : money(r.cleaning)}</td><td>${money(r.adjusted)}</td></tr>`).join('');
+    $('#peer-note').textContent = `${a.name}: showing ${Math.min(state.exampleLimit, peers.length)} of ${peers.length} nearby examples for inspection. The regression uses ${a.market?.observation_count || 0} apartments across ${a.market?.property_count || 0} buildings island-wide. Adjusted examples use the fitted size, capacity, bedroom and location effects; this table is not the training sample.`;
+    $('#peer-rows').innerHTML = peers.slice(0, state.exampleLimit).map((r) => `<tr><td><a href="${link(r.url)}">${esc(r.property)}</a><small>${esc(r.name)}</small></td><td>${r.area} m² / ${r.guests} guests</td><td>${money(r.nightly)}</td><td>${r.cleaning == null ? 'Not specified' : money(r.cleaning)}</td><td>${money(r.adjusted)}</td></tr>`).join('');
+    const more = $('#show-more-examples');
+    more.hidden = state.exampleLimit >= peers.length;
+    more.textContent = `Show more (${Math.min(7, Math.max(0, peers.length-state.exampleLimit))})`;
   }
 
   function renderHistory() {
@@ -184,7 +187,7 @@
   async function init() {
     try {
       // Version the snapshot with this release and revalidate it on subsequent visits.
-      const response = await fetch('data/amrum_market.json?v=20260928-model2', {cache:'no-cache'});
+      const response = await fetch('data/amrum_market.json?v=20260928-examples', {cache:'no-cache'});
       if (!response.ok) throw new Error('Snapshot unavailable');
       const data = await response.json();
       if (!Array.isArray(data.apartments) || data.apartments.length !== 4) throw new Error('Invalid apartment snapshot');
@@ -195,15 +198,21 @@
       $('#flat').innerHTML = data.apartments.map((a) => `<option value="${a.id}">${esc(a.name)}</option>`).join('');
       setupSources(); render(); renderHistory();
       $('#history-metric').addEventListener('change', renderHistory);
+      $('#show-more-examples').addEventListener('click', () => {
+        const previous = state.exampleLimit;
+        state.exampleLimit += 7;
+        renderEvidence();
+        document.querySelectorAll('#peer-rows tr')[previous]?.querySelector('a')?.focus({preventScroll:true});
+      });
       $('.season-control').addEventListener('click', (event) => {
         const button = event.target.closest('[data-season]');
         if (button) { state.season = button.dataset.season; render(); }
       });
       $('#apartments').addEventListener('click', (event) => {
         const button = event.target.closest('[data-flat]');
-        if (button) { state.flat=button.dataset.flat; state.mapHouse='target'; state.fitted=false; render(); $(`[data-flat="${state.flat}"]`).focus({preventScroll:true}); }
+        if (button) { state.flat=button.dataset.flat; state.exampleLimit=7; state.mapHouse='target'; state.fitted=false; render(); $(`[data-flat="${state.flat}"]`).focus({preventScroll:true}); }
       });
-      $('#flat').addEventListener('change', (event) => { state.flat=event.target.value; state.mapHouse='target'; state.fitted=false; render(); });
+      $('#flat').addEventListener('change', (event) => { state.flat=event.target.value; state.exampleLimit=7; state.mapHouse='target'; state.fitted=false; render(); });
       $('#year').addEventListener('change', (event) => { state.year=event.target.value; render(); });
       $('#map-season').addEventListener('change', (event) => { state.season=event.target.value; render(); });
       $('#all-properties').addEventListener('change', () => { state.fitted=false; renderMap(); });

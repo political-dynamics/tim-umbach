@@ -88,3 +88,5 @@
 .history-reference { stroke: var(--brick); stroke-width: 1; stroke-dasharray: 3 5; }
 .history-chart circle { fill: var(--royal); stroke: white; stroke-width: 2; }
 .history-chart circle:focus { fill: var(--brick); outline: none; stroke: var(--brick); stroke-width: 4; }
+#show-more-examples { border: 0; cursor: pointer; font-family: inherit; }
+#show-more-examples[hidden] { display: none; }

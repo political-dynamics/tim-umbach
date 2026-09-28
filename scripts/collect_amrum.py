@@ -234,7 +234,7 @@ def comparable_rows(target, records):
         group = row.get('building', row['house'])
         if group not in houses or distance < houses[group][0]:
             houses[group] = (distance, row)
-    return sorted(houses.values(), key=lambda item: (item[0], item[1]['id']))[:7]
+    return sorted(houses.values(), key=lambda item: (item[0], item[1]['id']))
 
 
 def estimate(target, records, seasonal, model=None, year_factor=1.):
