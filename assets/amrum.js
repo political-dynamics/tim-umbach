@@ -183,7 +183,8 @@
 
   async function init() {
     try {
-      const response = await fetch('data/amrum_market.json');
+      // Version the snapshot with this release and revalidate it on subsequent visits.
+      const response = await fetch('data/amrum_market.json?v=20260928-model2', {cache:'no-cache'});
       if (!response.ok) throw new Error('Snapshot unavailable');
       const data = await response.json();
       if (!Array.isArray(data.apartments) || data.apartments.length !== 4) throw new Error('Invalid apartment snapshot');
