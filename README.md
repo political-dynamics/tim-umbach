@@ -229,9 +229,13 @@ from the daily Job Radar refresh.
 
 The public Amrum host directory supplies the broad collection frame; Brave
 Search supplies additional discovery and independent seasonal tariff sources.
-The collector deduplicates apartment IDs and uses Nebel flats with compatible
-capacity and area. One flat per building contributes to each weighted-median
-estimate. The target building never contributes to its own estimates.
+The collector deduplicates apartment IDs and fits a building-balanced ridge
+regression on every eligible island apartment (20–100 m²), using log floor area,
+capacity, bedrooms and village. Alte Schule and its address are excluded.
+Five building-held-out folds select regularization and report asking-price error
+against a median baseline. Nearby examples are shown separately from the training
+sample. The model, fitted coefficients, preprocessing, training IDs and validation
+scores are included in the downloadable snapshot.
 
 ```bash
 # Public read-only collection; caches must remain outside the published tree.
@@ -241,6 +245,8 @@ python scripts/collect_amrum.py --offline-cache --cache-dir /tmp/amrum-cache
 python scripts/collect_amrum.py --refresh --cache-dir /tmp/amrum-cache
 # Recalculate using the checked-in extracted observations, without network:
 python scripts/collect_amrum.py
+# Recheck downloaded main flat-page tables without refreshing portal observations:
+python scripts/collect_amrum.py --target-html-dir /tmp/amrum-verified
 python -m unittest discover -s tests -p 'test_amrum.py' -v
 node --check assets/amrum.js
 ```
@@ -250,12 +256,36 @@ fetch target tariffs and seasonal evidence as well. `--offline-cache` expects
 those pages to already be cached. Keep the key assumption visible: undated
 portal “heute ab” prices are treated as September 2026 shoulder-season proxies.
 The 2027 estimates hold this price level constant. Seasonal ratios come from
-two independent owners (one undated); intervals are sensitivity envelopes,
-not calibrated statistical confidence intervals. Full fees and availability
-are unverified. The second Wohnung I price table has a duplicate 2026 heading,
-so the UI does not present it as a verified 2027 tariff.
+five independent owners (one undated); ranges combine building-held-out residual quantiles
+with provider-factor spread, without claiming calibrated seasonal coverage. Full fees and availability
+are unverified. Main six-column tables on each flat page supply the owner prices; mobile tables
+are ignored. The checked Wohnung I second main table repeats the 2026 heading;
+its exact six date ranges match the other flats’ 2027 tables. That year inference
+is disclosed while the published prices are displayed. Off-season is included,
+but the broad portal snapshot contains no date-specific off-season quotes.
 
 The September 2026 site-deployment failures were caused by a snapshot test
 requiring Berlin and a fixed number of live elections after completed contests
 were correctly retired. The test now checks eligibility at the snapshot date,
 with a regression check for the September 20/21 retirement boundary.
+
+Historical tariff research now retains 98 apartment/season/year records from
+four owners (2025–2027), including the original owner season codes. Run
+`python scripts/collect_amrum.py --history-html-dir /tmp/amrum-verified` to
+re-extract the four downloaded source pages. A matched apartment/season year
+effect is tested with equal owner weights and leave-owner-out validation. The
+2027 year dummy currently worsens held-owner log RMSE (0.1307 vs 0.1081), so no
+annual uplift is applied. 2025 has only one independent owner. This research
+measures published room-rate changes, not realized bookings or historical fees.
+
+`collect_amrum_archive.py` reads Internet Archive CDX indexes for 2025 and 2026
+and extracts saved amrum.de property pages into `data/amrum_archive.json`. Use
+`--fetch` for a network collection; cached replay is the default. Capture time
+is retained separately from unknown tariff year and unknown stay season.
+
+The lower-page historical chart shows sparse monthly archived asking prices and
+a same-apartment index relative to the current September 2026 snapshot. It uses
+current eligible apartment IDs, checks unchanged size/capacity for index pairs,
+deduplicates unit-month captures and gives buildings equal total weight. Raw
+prices exclude separate fees. Capture month is not stay month. Historical prices
+and tested year effects are descriptive only and never enter the current model.

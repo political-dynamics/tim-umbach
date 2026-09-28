@@ -79,3 +79,12 @@
 @media (max-width: 700px) { .coverage-grid { grid-template-columns: repeat(2,1fr); } .coverage-grid div:nth-child(2) { border-right: 0; } }
 @media (max-width: 700px) { .map-tools { justify-items: start; } }
 @media (prefers-reduced-motion: reduce) { .amrum-page { scroll-behavior: auto; } }
+
+.history-chart { overflow-x: auto; margin: 24px 0; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
+.history-chart svg { display: block; width: 100%; min-width: 560px; }
+.history-chart text { font: 12px var(--font); fill: var(--ink-soft); }
+.history-grid { stroke: var(--line); stroke-width: 1; }
+.history-line { fill: none; stroke: var(--royal); stroke-width: 2; stroke-dasharray: 5 5; }
+.history-reference { stroke: var(--brick); stroke-width: 1; stroke-dasharray: 3 5; }
+.history-chart circle { fill: var(--royal); stroke: white; stroke-width: 2; }
+.history-chart circle:focus { fill: var(--brick); outline: none; stroke: var(--brick); stroke-width: 4; }

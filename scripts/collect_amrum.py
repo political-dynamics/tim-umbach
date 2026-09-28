@@ -18,6 +18,9 @@ import statistics
 import time
 from urllib.request import Request, urlopen
 
+import amrum_model
+import amrum_history
+
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'data/amrum_market.json'
 TARGET_HOUSE = 'GER00020060915743264'
@@ -147,22 +150,30 @@ def parse_official(raw, url, retrieved_at):
 
 def parse_target(raw, index, official):
     doc = Document(raw).root
-    tables = []
+    tables, table_dates = [], []
     for table in doc.all('table', 'preis-table'):
+        # Only the main six-column table; mobile duplicates use three columns.
         bodies = table.all('tbody')
         cells = bodies[0].all('td') if bodies else []
         if len(cells) == 6:
             tables.append([match_number(r'(\d+)', cell.text()) for cell in cells])
+            table_dates.append(re.findall(r'(\d{2})\.(\d{2})(?:\.)?', table.all('tfoot')[0].text()) if table.all('tfoot') else [])
     if len(tables) != 2 or any(value is None for row in tables for value in row):
         raise ValueError('Target tariff structure changed')
     year_labels = [n.text() for n in doc.all('h4') if re.fullmatch(r'20\d{2}', n.text())]
-    # Do not guess a corrected year for the duplicated Wohnung I heading.
-    verified_2027 = '2027' in year_labels
+    # Reviewed against the main tables on all four flat pages, 2026-09-28.
+    # Wohnung I's repeated heading is resolved only for the exact reviewed calendar.
+    expected = [('09','01'),('27','02'),('27','02'),('12','06'),('12','06'),('11','09'),
+                ('11','09'),('30','10'),('30','10'),('18','12'),('18','12'),('08','01')]
+    inferred_year = index == 1 and '2027' not in year_labels and table_dates[1] == expected
+    verified_2027 = '2027' in year_labels or inferred_year
     return dict(id=f'wohnung-{index}', name='Wohnung ' + ['I', 'II', 'III', 'IV'][index-1],
                 area=official['area'], guests=official['guests'], bedrooms=[2, 2, 1, 0][index-1], coordinates=official['coordinates'],
                 url=f'https://amrum.sh/wohnung{index}.php',
                 tariffs={'2026': tables[0], '2027': tables[1] if verified_2027 else None},
                 ambiguous_tariff=tables[1] if not verified_2027 else None,
+                tariff_note=('Main table prices checked on the flat page. Its second heading repeats 2026; '
+                             'the year 2027 is inferred from all six date ranges, matching the other flats’ 2027 tables.') if inferred_year else 'Prices from the main tariff tables on the flat page.',
                 warning=None if verified_2027 else 'The second tariff table repeats 2026 although its dates match 2027. The 2027 advertised price is unverified.')
 
 
@@ -226,31 +237,28 @@ def comparable_rows(target, records):
     return sorted(houses.values(), key=lambda item: (item[0], item[1]['id']))[:7]
 
 
-def estimate(target, records, seasonal):
-    peers = comparable_rows(target, records)
-    if len(peers) < 3:
+def estimate(target, records, seasonal, model=None, year_factor=1.):
+    model = model or amrum_model.train(records, TARGET_HOUSE)
+    if model is None:
         return None
-    pairs, details = [], []
-    for distance, row in peers:
-        # Only explicitly listed cleaning charges are added; unknown fees remain unknown.
-        base = row['nightly'] + (row['cleaning'] or 0) / 7
-        adjusted = base * (target['area'] / row['area']) ** .5
-        weight = math.exp(-2 * distance)
-        pairs.append((adjusted, weight))
-        details.append(dict(id=row['id'], adjusted=round(adjusted, 2), weight=round(weight, 4)))
-    mid = weighted_quantile(pairs, .5)
-    low, high = weighted_quantile(pairs, .2), weighted_quantile(pairs, .8)
+    mid = math.exp(amrum_model.predict_log(model, target)) * year_factor
+    lower, upper = model['residual_log_quantiles']
     output = {}
     for season in ('A', 'B', 'C', 'christmas'):
         ratios = [source['ratios'][season] for source in seasonal]
         factor = statistics.median(ratios)
         point = mid * factor
-        # Descriptive sensitivity envelope, NOT a calibrated confidence interval.
         output[season] = dict(estimate=5 * math.floor(point/5 + .5),
-                              low=5 * math.floor(min(low * min(ratios), point*.8)/5),
-                              high=5 * math.ceil(max(high * max(ratios), point*1.2)/5),
-                              factor=round(factor, 4))
-    return dict(seasons=output, peers=details, property_count=len(peers), confidence='Low')
+                              low=5 * math.floor(mid * math.exp(min(lower, 0)) * min(ratios)/5),
+                              high=5 * math.ceil(mid * math.exp(max(upper, 0)) * max(ratios)/5),
+                              factor=round(factor * year_factor, 4))
+    # Nearby examples aid inspection; they do not determine the fitted estimate.
+    details = []
+    for _, row in comparable_rows(target, records):
+        adjusted = amrum_model.price(row) * math.exp(amrum_model.predict_log(model, target) - amrum_model.predict_log(model, row))
+        details.append(dict(id=row['id'], adjusted=round(adjusted, 2)))
+    return dict(seasons=output, peers=details, property_count=model['property_count'],
+                observation_count=model['observation_count'], confidence='Limited seasonal evidence')
 
 
 def seasons(year):
@@ -264,10 +272,25 @@ def seasons(year):
 
 
 def recalculate(payload):
+    historical = payload.get('historical_tariffs', [])
+    extra_sources = amrum_history.seasonal_sources(historical)
+    extra_urls = {s['url'] for s in extra_sources}
+    payload['seasonal_evidence'] = [s for s in payload['seasonal_evidence'] if s['url'] not in extra_urls] + extra_sources
+    payload['year_effects'] = amrum_history.year_effects(historical)
+    model = amrum_model.train(payload['observations'], TARGET_HOUSE)
+    payload['model'] = model
     for target in payload['apartments']:
-        target['market'] = estimate(target, payload['observations'], payload['seasonal_evidence'])
+        target['market'] = estimate(target, payload['observations'], payload['seasonal_evidence'], model)
+        if target['market']:
+            # Historical year estimates are descriptive only; keep current price level.
+            future = estimate(target, payload['observations'], payload['seasonal_evidence'], model)
+            target['market']['seasons_by_year'] = {'2026': target['market']['seasons'], '2027': future['seasons']}
     payload['seasons'] = {str(year): seasons(year) for year in (2026,2027)}
-    payload['meta']['method_version'] = '1.0'
+    payload['meta']['method_version'] = '2.0'
+    payload['seasonal_coverage'] = dict(dated_portal_off_season_quotes=0,
+        independent_tariff_providers=len(payload['seasonal_evidence']),
+        off_season_tariff_apartments=sum(s['apartments'] for s in payload['seasonal_evidence']),
+        note='Off-season is modeled from C/B tariff ratios. The broad portal sample has no date-specific off-season quotes.')
     return payload
 
 
@@ -316,6 +339,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--refresh', action='store_true')
     parser.add_argument('--offline-cache', action='store_true')
+    parser.add_argument('--history-html-dir', type=Path, help='Read reviewed owner history pages: sanskiin.html, uesdrum.html, suedspitze.html, jensen.html')
+    parser.add_argument('--target-html-dir', type=Path, help='Recheck only target main tariff tables from downloaded wohnung1.html through wohnung4.html')
     parser.add_argument('--cache-dir', type=Path, default=Path('/tmp/amrum-cache'))
     args = parser.parse_args()
     if args.refresh or args.offline_cache:
@@ -325,8 +350,46 @@ def main():
         if not args.offline_cache and not date(2026,9,12) <= date.today() < date(2026,10,31):
             raise ValueError('Refresh outside the reviewed reference season requires model review')
         payload = collect(args.cache_dir, args.offline_cache)
+        if OUTPUT.exists():
+            previous = json.loads(OUTPUT.read_text())
+            payload['historical_tariffs'] = previous.get('historical_tariffs', [])
+            history_urls = {r['url'] for r in payload['historical_tariffs']}
+            payload['sources'].extend(s for s in previous['sources'] if s['url'] in history_urls)
+            payload = recalculate(payload)
     else:
         payload = recalculate(json.loads(OUTPUT.read_text()))
+    if args.history_html_dir:
+        now = datetime.now(timezone.utc).isoformat(timespec='seconds')
+        payload['historical_tariffs'] = []
+        for name, (_, url) in amrum_history.SOURCES.items():
+            raw = (args.history_html_dir / f'{name}.html').read_text(encoding='utf-8')
+            rows = amrum_history.parse(raw, name, Document)
+            for row in rows:
+                row['retrieved_at'] = now
+            payload['historical_tariffs'].extend(rows)
+            payload['sources'] = [source for source in payload['sources'] if source['url'] != url]
+            payload['sources'].append(dict(url=url, retrieved_at=now, sha256=hashlib.sha256(raw.encode()).hexdigest()))
+        payload = recalculate(payload)
+    if args.target_html_dir:
+        now = datetime.now(timezone.utc).isoformat(timespec='seconds')
+        for index, previous in enumerate(payload['apartments'], 1):
+            raw = (args.target_html_dir / f'wohnung{index}.html').read_text(encoding='utf-8')
+            updated = parse_target(raw, index, previous)
+            updated['tariff_checked_at'] = now
+            updated['market'] = previous['market']
+            payload['apartments'][index-1] = updated
+            payload['sources'] = [source for source in payload['sources'] if source['url'] != updated['url']]
+            payload['sources'].append(dict(url=updated['url'], retrieved_at=now, sha256=hashlib.sha256(raw.encode()).hexdigest()))
+    archive_path = ROOT / 'data/amrum_archive.json'
+    if archive_path.exists():
+        archive = json.loads(archive_path.read_text())
+        payload['history_series'] = amrum_history.monthly_series(payload['observations'], archive['observations'], payload['meta']['retrieved_at'], TARGET_HOUSE)
+        payload['archive_coverage'] = dict(observation_count=len(archive['observations']),
+            eligible_count=sum(not r['excluded'] for r in archive['observations']),
+            page_count=len(archive['sources']), errors=len(archive['meta']['errors']),
+            by_year={str(year): sum(r['capture_year'] == year for r in archive['observations']) for year in (2025,2026)},
+            note='Saved amrum.de from-prices; capture year is not tariff year. Retained for research, not pooled into the current price model because stay dates and price season are unknown.',
+            path='data/amrum_archive.json')
     tmp = OUTPUT.with_suffix('.tmp')
     tmp.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     tmp.replace(OUTPUT)
