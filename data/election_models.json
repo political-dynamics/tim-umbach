@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T10:29:17+00:00",
-    "dawum_updated_at": "2026-09-29T16:45:36+02:00",
+    "generated_at": "2026-10-01T10:57:02+00:00",
+    "dawum_updated_at": "2026-10-01T01:19:57+02:00",
     "method_version": "1.0",
     "license": {
       "Name": "ODC Open Database License",
@@ -440,7 +440,7 @@
             "color": "#282828",
             "vote": 29.0,
             "low": 27.6,
-            "high": 30.6,
+            "high": 30.5,
             "seats": 62,
             "threshold_probability": 100
           },
@@ -1167,243 +1167,88 @@
       "election_date_iso": "2030-12-31",
       "head_title": "First Mayor",
       "seat_count": 121,
-      "poll_count": 1,
-      "latest_poll": "2026-06-20",
+      "poll_count": 2,
+      "latest_poll": "2026-09-30",
       "poll_only": {
         "parties": [
           {
             "party": "SPD",
             "color": "#d64b4b",
-            "vote": 30.9,
-            "low": 29.4,
-            "high": 32.4,
-            "seats": 41,
+            "vote": 29.0,
+            "low": 27.4,
+            "high": 30.7,
+            "seats": 39,
             "threshold_probability": 100
           },
           {
             "party": "Grüne",
             "color": "#62a654",
-            "vote": 16.9,
-            "low": 15.6,
-            "high": 18.3,
-            "seats": 23,
-            "threshold_probability": 100
-          },
-          {
-            "party": "CDU",
-            "color": "#282828",
-            "vote": 16.0,
-            "low": 14.6,
-            "high": 17.4,
-            "seats": 21,
+            "vote": 18.0,
+            "low": 16.5,
+            "high": 19.4,
+            "seats": 24,
             "threshold_probability": 100
           },
           {
             "party": "Linke",
             "color": "#a44d8c",
-            "vote": 14.0,
-            "low": 12.7,
-            "high": 15.3,
-            "seats": 19,
+            "vote": 15.0,
+            "low": 13.6,
+            "high": 16.4,
+            "seats": 20,
             "threshold_probability": 100
           },
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 12.0,
-            "low": 10.6,
-            "high": 13.4,
+            "vote": 13.9,
+            "low": 12.5,
+            "high": 15.4,
+            "seats": 19,
+            "threshold_probability": 100
+          },
+          {
+            "party": "CDU",
+            "color": "#282828",
+            "vote": 12.1,
+            "low": 10.7,
+            "high": 13.5,
             "seats": 16,
             "threshold_probability": 100
           },
           {
             "party": "Sonstige",
             "color": "#aaa19b",
-            "vote": 7.0,
-            "low": 5.7,
-            "high": 8.5,
+            "vote": 3.3,
+            "low": 1.9,
+            "high": 4.9,
             "seats": 0,
-            "threshold_probability": 98
+            "threshold_probability": 9
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
             "vote": 3.2,
-            "low": 1.8,
+            "low": 1.9,
             "high": 4.8,
             "seats": 1,
             "threshold_probability": 8
-          }
-        ],
-        "coalitions": [
-          {
-            "name": "Red–green",
-            "parties": [
-              "SPD",
-              "Grüne"
-            ],
-            "majority_probability": 95,
-            "seat_share": 53.0,
-            "formation_prior": 94,
-            "formation_probability": 31,
-            "party_colors": [
-              "#d64b4b",
-              "#62a654"
-            ]
           },
           {
-            "name": "Red–red–green",
-            "parties": [
-              "SPD",
-              "Linke",
-              "Grüne"
-            ],
-            "majority_probability": 100,
-            "seat_share": 68.5,
-            "formation_prior": 72,
-            "formation_probability": 22,
-            "party_colors": [
-              "#d64b4b",
-              "#a44d8c",
-              "#62a654"
-            ]
+            "party": "BSW",
+            "color": "#7d365f",
+            "vote": 3.2,
+            "low": 1.9,
+            "high": 4.8,
+            "seats": 1,
+            "threshold_probability": 8
           },
           {
-            "name": "Red–black",
-            "parties": [
-              "SPD",
-              "CDU"
-            ],
-            "majority_probability": 87,
-            "seat_share": 52.0,
-            "formation_prior": 65,
-            "formation_probability": 19,
-            "party_colors": [
-              "#d64b4b",
-              "#282828"
-            ]
-          },
-          {
-            "name": "Red–green–yellow",
-            "parties": [
-              "SPD",
-              "Grüne",
-              "FDP"
-            ],
-            "majority_probability": 99,
-            "seat_share": 53.5,
-            "formation_prior": 42,
-            "formation_probability": 13,
-            "party_colors": [
-              "#d64b4b",
-              "#62a654",
-              "#e9bf35"
-            ]
-          },
-          {
-            "name": "Black–green–left",
-            "parties": [
-              "CDU",
-              "Grüne",
-              "Linke"
-            ],
-            "majority_probability": 88,
-            "seat_share": 51.9,
-            "formation_prior": 15,
-            "formation_probability": 4,
-            "party_colors": [
-              "#282828",
-              "#62a654",
-              "#a44d8c"
-            ]
-          }
-        ],
-        "candidates": [
-          {
-            "name": "Peter Tschentscher",
-            "party": "SPD",
-            "probability": 85,
-            "color": "#d64b4b",
-            "source_status": "brave_verified",
-            "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
-            "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
-          },
-          {
-            "name": "Katharina Fegebank",
-            "party": "Grüne",
-            "probability": 4,
-            "color": "#62a654",
-            "source_status": "brave_verified",
-            "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
-            "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
-          }
-        ],
-        "unresolved_probability": 11
-      },
-      "economy": {
-        "parties": [
-          {
-            "party": "SPD",
-            "color": "#d64b4b",
-            "vote": 31.3,
-            "low": 29.6,
-            "high": 32.9,
-            "seats": 42,
-            "threshold_probability": 100
-          },
-          {
-            "party": "Grüne",
-            "color": "#62a654",
-            "vote": 17.1,
-            "low": 15.8,
-            "high": 18.5,
-            "seats": 23,
-            "threshold_probability": 100
-          },
-          {
-            "party": "CDU",
-            "color": "#282828",
-            "vote": 15.8,
-            "low": 14.5,
-            "high": 17.2,
-            "seats": 21,
-            "threshold_probability": 100
-          },
-          {
-            "party": "Linke",
-            "color": "#a44d8c",
-            "vote": 13.9,
-            "low": 12.5,
-            "high": 15.2,
-            "seats": 19,
-            "threshold_probability": 100
-          },
-          {
-            "party": "AfD",
-            "color": "#4d91c6",
-            "vote": 11.9,
-            "low": 10.5,
-            "high": 13.3,
-            "seats": 16,
-            "threshold_probability": 100
-          },
-          {
-            "party": "Sonstige",
+            "party": "Volt",
             "color": "#aaa19b",
-            "vote": 7.0,
-            "low": 5.6,
-            "high": 8.4,
-            "seats": 0,
-            "threshold_probability": 96
-          },
-          {
-            "party": "FDP",
-            "color": "#e9bf35",
-            "vote": 3.0,
-            "low": 1.5,
-            "high": 4.5,
+            "vote": 2.3,
+            "low": 1.0,
+            "high": 4.0,
             "seats": 0,
             "threshold_probability": 4
           }
@@ -1415,10 +1260,10 @@
               "SPD",
               "Grüne"
             ],
-            "majority_probability": 98,
-            "seat_share": 53.7,
+            "majority_probability": 88,
+            "seat_share": 52.7,
             "formation_prior": 94,
-            "formation_probability": 31,
+            "formation_probability": 37,
             "party_colors": [
               "#d64b4b",
               "#62a654"
@@ -1432,28 +1277,13 @@
               "Grüne"
             ],
             "majority_probability": 100,
-            "seat_share": 69.0,
+            "seat_share": 69.5,
             "formation_prior": 72,
-            "formation_probability": 22,
+            "formation_probability": 29,
             "party_colors": [
               "#d64b4b",
               "#a44d8c",
               "#62a654"
-            ]
-          },
-          {
-            "name": "Red–black",
-            "parties": [
-              "SPD",
-              "CDU"
-            ],
-            "majority_probability": 92,
-            "seat_share": 52.2,
-            "formation_prior": 65,
-            "formation_probability": 20,
-            "party_colors": [
-              "#d64b4b",
-              "#282828"
             ]
           },
           {
@@ -1463,10 +1293,10 @@
               "Grüne",
               "FDP"
             ],
-            "majority_probability": 100,
-            "seat_share": 53.9,
+            "majority_probability": 93,
+            "seat_share": 53.2,
             "formation_prior": 42,
-            "formation_probability": 13,
+            "formation_probability": 16,
             "party_colors": [
               "#d64b4b",
               "#62a654",
@@ -1480,8 +1310,8 @@
               "Grüne",
               "Linke"
             ],
-            "majority_probability": 90,
-            "seat_share": 52.0,
+            "majority_probability": 67,
+            "seat_share": 50.5,
             "formation_prior": 15,
             "formation_probability": 4,
             "party_colors": [
@@ -1489,13 +1319,28 @@
               "#62a654",
               "#a44d8c"
             ]
+          },
+          {
+            "name": "Red–black",
+            "parties": [
+              "SPD",
+              "CDU"
+            ],
+            "majority_probability": 1,
+            "seat_share": 46.1,
+            "formation_prior": 65,
+            "formation_probability": 0,
+            "party_colors": [
+              "#d64b4b",
+              "#282828"
+            ]
           }
         ],
         "candidates": [
           {
             "name": "Peter Tschentscher",
             "party": "SPD",
-            "probability": 86,
+            "probability": 82,
             "color": "#d64b4b",
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
@@ -1513,7 +1358,198 @@
             "source_checked_at": "2026-09-27T15:58:05+00:00"
           }
         ],
-        "unresolved_probability": 10
+        "unresolved_probability": 14
+      },
+      "economy": {
+        "parties": [
+          {
+            "party": "SPD",
+            "color": "#d64b4b",
+            "vote": 29.6,
+            "low": 27.7,
+            "high": 31.5,
+            "seats": 40,
+            "threshold_probability": 100
+          },
+          {
+            "party": "Grüne",
+            "color": "#62a654",
+            "vote": 18.3,
+            "low": 16.8,
+            "high": 19.8,
+            "seats": 25,
+            "threshold_probability": 100
+          },
+          {
+            "party": "Linke",
+            "color": "#a44d8c",
+            "vote": 15.0,
+            "low": 13.6,
+            "high": 16.4,
+            "seats": 20,
+            "threshold_probability": 100
+          },
+          {
+            "party": "AfD",
+            "color": "#4d91c6",
+            "vote": 14.0,
+            "low": 12.6,
+            "high": 15.4,
+            "seats": 19,
+            "threshold_probability": 100
+          },
+          {
+            "party": "CDU",
+            "color": "#282828",
+            "vote": 12.1,
+            "low": 10.6,
+            "high": 13.6,
+            "seats": 16,
+            "threshold_probability": 100
+          },
+          {
+            "party": "Sonstige",
+            "color": "#aaa19b",
+            "vote": 3.1,
+            "low": 1.5,
+            "high": 4.6,
+            "seats": 0,
+            "threshold_probability": 6
+          },
+          {
+            "party": "FDP",
+            "color": "#e9bf35",
+            "vote": 3.0,
+            "low": 1.4,
+            "high": 4.5,
+            "seats": 0,
+            "threshold_probability": 4
+          },
+          {
+            "party": "BSW",
+            "color": "#7d365f",
+            "vote": 3.0,
+            "low": 1.5,
+            "high": 4.5,
+            "seats": 0,
+            "threshold_probability": 4
+          },
+          {
+            "party": "Volt",
+            "color": "#aaa19b",
+            "vote": 2.0,
+            "low": 0.4,
+            "high": 3.5,
+            "seats": 0,
+            "threshold_probability": 0
+          }
+        ],
+        "coalitions": [
+          {
+            "name": "Red–green",
+            "parties": [
+              "SPD",
+              "Grüne"
+            ],
+            "majority_probability": 96,
+            "seat_share": 53.5,
+            "formation_prior": 94,
+            "formation_probability": 39,
+            "party_colors": [
+              "#d64b4b",
+              "#62a654"
+            ]
+          },
+          {
+            "name": "Red–red–green",
+            "parties": [
+              "SPD",
+              "Linke",
+              "Grüne"
+            ],
+            "majority_probability": 100,
+            "seat_share": 70.3,
+            "formation_prior": 72,
+            "formation_probability": 28,
+            "party_colors": [
+              "#d64b4b",
+              "#a44d8c",
+              "#62a654"
+            ]
+          },
+          {
+            "name": "Red–green–yellow",
+            "parties": [
+              "SPD",
+              "Grüne",
+              "FDP"
+            ],
+            "majority_probability": 97,
+            "seat_share": 53.8,
+            "formation_prior": 42,
+            "formation_probability": 16,
+            "party_colors": [
+              "#d64b4b",
+              "#62a654",
+              "#e9bf35"
+            ]
+          },
+          {
+            "name": "Black–green–left",
+            "parties": [
+              "CDU",
+              "Grüne",
+              "Linke"
+            ],
+            "majority_probability": 69,
+            "seat_share": 50.8,
+            "formation_prior": 15,
+            "formation_probability": 4,
+            "party_colors": [
+              "#282828",
+              "#62a654",
+              "#a44d8c"
+            ]
+          },
+          {
+            "name": "Red–black",
+            "parties": [
+              "SPD",
+              "CDU"
+            ],
+            "majority_probability": 2,
+            "seat_share": 46.6,
+            "formation_prior": 65,
+            "formation_probability": 1,
+            "party_colors": [
+              "#d64b4b",
+              "#282828"
+            ]
+          }
+        ],
+        "candidates": [
+          {
+            "name": "Peter Tschentscher",
+            "party": "SPD",
+            "probability": 84,
+            "color": "#d64b4b",
+            "source_status": "brave_verified",
+            "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
+            "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
+            "source_checked_at": "2026-09-27T15:58:05+00:00"
+          },
+          {
+            "name": "Katharina Fegebank",
+            "party": "Grüne",
+            "probability": 4,
+            "color": "#62a654",
+            "source_status": "brave_verified",
+            "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
+            "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
+            "source_checked_at": "2026-09-27T15:58:05+00:00"
+          }
+        ],
+        "unresolved_probability": 12
       }
     }
   },
