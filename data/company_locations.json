@@ -1,14 +1,16 @@
 {
   "meta": {
-    "updated_at": "2026-10-02T10:30:08+00:00",
+    "updated_at": "2026-10-03T09:51:58+00:00",
     "location_count": 20,
     "official_source_count": 19,
     "brave_discovered_count": 0,
     "brave_status": [
-      "No eligible unresolved employer used the Brave fallback"
+      "Brave address discovery found an official source for Hermes Germany"
     ],
     "nominatim_policy_url": "https://operations.osmfoundation.org/policies/nominatim/",
-    "errors": []
+    "errors": [
+      "Hermes Germany: no Hamburg geocode for Straße 89, 22419 Hamburg, Germany"
+    ]
   },
   "locations": {
     "ABOUT YOU": {
