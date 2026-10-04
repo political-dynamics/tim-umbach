@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-10-03T09:51:58+00:00",
-    "dawum_updated_at": "2026-10-02T11:10:20+02:00",
+    "generated_at": "2026-10-04T10:34:47+00:00",
+    "dawum_updated_at": "2026-10-04T02:45:49+02:00",
     "method_version": "1.0",
     "license": {
       "Name": "ODC Open Database License",
@@ -17,12 +17,12 @@
     },
     "candidate_search": {
       "status": "success",
-      "last_attempted_at": "2026-09-27T15:58:05+00:00",
+      "last_attempted_at": "2026-10-04T10:34:41+00:00",
       "requests_used": 4,
-      "last_successful_at": "2026-09-27T15:58:05+00:00",
-      "verified_candidates": 11,
+      "last_successful_at": "2026-10-04T10:34:41+00:00",
+      "verified_candidates": 10,
       "shared_daily_limit": 10,
-      "message": "Brave candidate search: weekly refresh not due; cached evidence used"
+      "message": "Brave candidate search: success (4/7 weekly requests, 10 names verified)"
     },
     "sources": [
       {
@@ -57,25 +57,25 @@
       "head_title": "Chancellor",
       "seat_count": 630,
       "poll_count": 12,
-      "latest_poll": "2026-10-01",
+      "latest_poll": "2026-10-03",
       "poll_only": {
         "parties": [
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 27.6,
+            "vote": 27.7,
             "low": 25.7,
-            "high": 29.5,
-            "seats": 197,
+            "high": 29.7,
+            "seats": 198,
             "threshold_probability": 100
           },
           {
             "party": "CDU/CSU",
             "color": "#282828",
-            "vote": 19.5,
-            "low": 17.8,
+            "vote": 19.4,
+            "low": 17.6,
             "high": 21.2,
-            "seats": 140,
+            "seats": 139,
             "threshold_probability": 100
           },
           {
@@ -90,19 +90,19 @@
           {
             "party": "SPD",
             "color": "#d64b4b",
-            "vote": 13.3,
-            "low": 11.8,
-            "high": 14.8,
-            "seats": 95,
+            "vote": 13.4,
+            "low": 11.9,
+            "high": 14.9,
+            "seats": 96,
             "threshold_probability": 100
           },
           {
             "party": "Linke",
             "color": "#a44d8c",
             "vote": 11.0,
-            "low": 9.5,
+            "low": 9.4,
             "high": 12.6,
-            "seats": 79,
+            "seats": 78,
             "threshold_probability": 100
           },
           {
@@ -112,13 +112,13 @@
             "low": 4.0,
             "high": 8.5,
             "seats": 0,
-            "threshold_probability": 70
+            "threshold_probability": 69
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
             "vote": 4.3,
-            "low": 3.0,
+            "low": 2.9,
             "high": 5.8,
             "seats": 10,
             "threshold_probability": 24
@@ -126,11 +126,11 @@
           {
             "party": "BSW",
             "color": "#7d365f",
-            "vote": 3.5,
+            "vote": 3.6,
             "low": 2.2,
             "high": 5.1,
-            "seats": 4,
-            "threshold_probability": 11
+            "seats": 5,
+            "threshold_probability": 12
           }
         ],
         "coalitions": [
@@ -142,7 +142,7 @@
               "Grüne"
             ],
             "majority_probability": 92,
-            "seat_share": 53.9,
+            "seat_share": 53.8,
             "formation_prior": 68,
             "formation_probability": 64,
             "party_colors": [
@@ -159,6 +159,188 @@
             ],
             "majority_probability": 0,
             "seat_share": 37.2,
+            "formation_prior": 92,
+            "formation_probability": 0,
+            "party_colors": [
+              "#282828",
+              "#d64b4b"
+            ]
+          },
+          {
+            "name": "Black–green",
+            "parties": [
+              "CDU/CSU",
+              "Grüne"
+            ],
+            "majority_probability": 0,
+            "seat_share": 38.7,
+            "formation_prior": 55,
+            "formation_probability": 0,
+            "party_colors": [
+              "#282828",
+              "#62a654"
+            ]
+          },
+          {
+            "name": "Traffic light",
+            "parties": [
+              "SPD",
+              "Grüne",
+              "FDP"
+            ],
+            "majority_probability": 0,
+            "seat_share": 33.4,
+            "formation_prior": 24,
+            "formation_probability": 0,
+            "party_colors": [
+              "#d64b4b",
+              "#62a654",
+              "#e9bf35"
+            ]
+          },
+          {
+            "name": "Red–red–green",
+            "parties": [
+              "SPD",
+              "Linke",
+              "Grüne"
+            ],
+            "majority_probability": 1,
+            "seat_share": 44.3,
+            "formation_prior": 28,
+            "formation_probability": 0,
+            "party_colors": [
+              "#d64b4b",
+              "#a44d8c",
+              "#62a654"
+            ]
+          }
+        ],
+        "candidates": [
+          {
+            "name": "Friedrich Merz",
+            "party": "CDU/CSU",
+            "probability": 64,
+            "color": "#282828",
+            "source_status": "brave_verified",
+            "source_url": "https://bundestagwahlumfrage.de/ratgeber/wahlen/bundestagswahl-2029/",
+            "source_title": "Bundestagswahl 2029: Termin, mögliche Kandidaten & erste Prognose",
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
+          },
+          {
+            "name": "Franziska Brantner",
+            "party": "Grüne",
+            "probability": 0,
+            "color": "#62a654",
+            "source_status": "curated",
+            "source_url": "",
+            "source_title": "",
+            "source_checked_at": ""
+          }
+        ],
+        "unresolved_probability": 36
+      },
+      "economy": {
+        "parties": [
+          {
+            "party": "AfD",
+            "color": "#4d91c6",
+            "vote": 27.8,
+            "low": 25.7,
+            "high": 29.9,
+            "seats": 198,
+            "threshold_probability": 100
+          },
+          {
+            "party": "CDU/CSU",
+            "color": "#282828",
+            "vote": 19.7,
+            "low": 17.9,
+            "high": 21.6,
+            "seats": 141,
+            "threshold_probability": 100
+          },
+          {
+            "party": "Grüne",
+            "color": "#62a654",
+            "vote": 14.6,
+            "low": 12.9,
+            "high": 16.4,
+            "seats": 104,
+            "threshold_probability": 100
+          },
+          {
+            "party": "SPD",
+            "color": "#d64b4b",
+            "vote": 13.6,
+            "low": 12.1,
+            "high": 15.1,
+            "seats": 97,
+            "threshold_probability": 100
+          },
+          {
+            "party": "Linke",
+            "color": "#a44d8c",
+            "vote": 11.0,
+            "low": 9.4,
+            "high": 12.6,
+            "seats": 78,
+            "threshold_probability": 100
+          },
+          {
+            "party": "Sonstige",
+            "color": "#aaa19b",
+            "vote": 5.8,
+            "low": 3.5,
+            "high": 8.0,
+            "seats": 0,
+            "threshold_probability": 68
+          },
+          {
+            "party": "FDP",
+            "color": "#e9bf35",
+            "vote": 4.1,
+            "low": 2.6,
+            "high": 5.5,
+            "seats": 8,
+            "threshold_probability": 21
+          },
+          {
+            "party": "BSW",
+            "color": "#7d365f",
+            "vote": 3.4,
+            "low": 1.9,
+            "high": 4.9,
+            "seats": 3,
+            "threshold_probability": 8
+          }
+        ],
+        "coalitions": [
+          {
+            "name": "Kenya",
+            "parties": [
+              "CDU/CSU",
+              "SPD",
+              "Grüne"
+            ],
+            "majority_probability": 95,
+            "seat_share": 54.3,
+            "formation_prior": 68,
+            "formation_probability": 65,
+            "party_colors": [
+              "#282828",
+              "#d64b4b",
+              "#62a654"
+            ]
+          },
+          {
+            "name": "Black–red",
+            "parties": [
+              "CDU/CSU",
+              "SPD"
+            ],
+            "majority_probability": 0,
+            "seat_share": 37.8,
             "formation_prior": 92,
             "formation_probability": 0,
             "party_colors": [
@@ -206,188 +388,6 @@
               "Grüne"
             ],
             "majority_probability": 0,
-            "seat_share": 44.3,
-            "formation_prior": 28,
-            "formation_probability": 0,
-            "party_colors": [
-              "#d64b4b",
-              "#a44d8c",
-              "#62a654"
-            ]
-          }
-        ],
-        "candidates": [
-          {
-            "name": "Friedrich Merz",
-            "party": "CDU/CSU",
-            "probability": 64,
-            "color": "#282828",
-            "source_status": "brave_verified",
-            "source_url": "https://bundestagwahlumfrage.de/ratgeber/wahlen/bundestagswahl-2029/",
-            "source_title": "Bundestagswahl 2029: Termin, mögliche Kandidaten & erste Prognose",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
-          },
-          {
-            "name": "Franziska Brantner",
-            "party": "Grüne",
-            "probability": 0,
-            "color": "#62a654",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
-          }
-        ],
-        "unresolved_probability": 36
-      },
-      "economy": {
-        "parties": [
-          {
-            "party": "AfD",
-            "color": "#4d91c6",
-            "vote": 27.7,
-            "low": 25.7,
-            "high": 29.7,
-            "seats": 197,
-            "threshold_probability": 100
-          },
-          {
-            "party": "CDU/CSU",
-            "color": "#282828",
-            "vote": 19.9,
-            "low": 18.1,
-            "high": 21.7,
-            "seats": 142,
-            "threshold_probability": 100
-          },
-          {
-            "party": "Grüne",
-            "color": "#62a654",
-            "vote": 14.7,
-            "low": 13.0,
-            "high": 16.4,
-            "seats": 105,
-            "threshold_probability": 100
-          },
-          {
-            "party": "SPD",
-            "color": "#d64b4b",
-            "vote": 13.5,
-            "low": 12.0,
-            "high": 15.0,
-            "seats": 96,
-            "threshold_probability": 100
-          },
-          {
-            "party": "Linke",
-            "color": "#a44d8c",
-            "vote": 11.0,
-            "low": 9.5,
-            "high": 12.6,
-            "seats": 79,
-            "threshold_probability": 100
-          },
-          {
-            "party": "Sonstige",
-            "color": "#aaa19b",
-            "vote": 5.8,
-            "low": 3.5,
-            "high": 8.0,
-            "seats": 0,
-            "threshold_probability": 69
-          },
-          {
-            "party": "FDP",
-            "color": "#e9bf35",
-            "vote": 4.1,
-            "low": 2.7,
-            "high": 5.6,
-            "seats": 9,
-            "threshold_probability": 22
-          },
-          {
-            "party": "BSW",
-            "color": "#7d365f",
-            "vote": 3.3,
-            "low": 1.8,
-            "high": 4.8,
-            "seats": 3,
-            "threshold_probability": 7
-          }
-        ],
-        "coalitions": [
-          {
-            "name": "Kenya",
-            "parties": [
-              "CDU/CSU",
-              "SPD",
-              "Grüne"
-            ],
-            "majority_probability": 96,
-            "seat_share": 54.4,
-            "formation_prior": 68,
-            "formation_probability": 65,
-            "party_colors": [
-              "#282828",
-              "#d64b4b",
-              "#62a654"
-            ]
-          },
-          {
-            "name": "Black–red",
-            "parties": [
-              "CDU/CSU",
-              "SPD"
-            ],
-            "majority_probability": 0,
-            "seat_share": 37.8,
-            "formation_prior": 92,
-            "formation_probability": 0,
-            "party_colors": [
-              "#282828",
-              "#d64b4b"
-            ]
-          },
-          {
-            "name": "Black–green",
-            "parties": [
-              "CDU/CSU",
-              "Grüne"
-            ],
-            "majority_probability": 0,
-            "seat_share": 39.1,
-            "formation_prior": 55,
-            "formation_probability": 0,
-            "party_colors": [
-              "#282828",
-              "#62a654"
-            ]
-          },
-          {
-            "name": "Traffic light",
-            "parties": [
-              "SPD",
-              "Grüne",
-              "FDP"
-            ],
-            "majority_probability": 0,
-            "seat_share": 33.2,
-            "formation_prior": 24,
-            "formation_probability": 0,
-            "party_colors": [
-              "#d64b4b",
-              "#62a654",
-              "#e9bf35"
-            ]
-          },
-          {
-            "name": "Red–red–green",
-            "parties": [
-              "SPD",
-              "Linke",
-              "Grüne"
-            ],
-            "majority_probability": 0,
             "seat_share": 44.4,
             "formation_prior": 28,
             "formation_probability": 0,
@@ -407,7 +407,7 @@
             "source_status": "brave_verified",
             "source_url": "https://bundestagwahlumfrage.de/ratgeber/wahlen/bundestagswahl-2029/",
             "source_title": "Bundestagswahl 2029: Termin, mögliche Kandidaten & erste Prognose",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -448,7 +448,7 @@
             "party": "AfD",
             "color": "#4d91c6",
             "vote": 21.7,
-            "low": 20.1,
+            "low": 20.2,
             "high": 23.3,
             "seats": 46,
             "threshold_probability": 100
@@ -525,7 +525,7 @@
             "majority_probability": 100,
             "seat_share": 66.9,
             "formation_prior": 48,
-            "formation_probability": 28,
+            "formation_probability": 29,
             "party_colors": [
               "#282828",
               "#d64b4b",
@@ -586,12 +586,12 @@
           {
             "name": "Hendrik Wüst",
             "party": "CDU",
-            "probability": 78,
+            "probability": 79,
             "color": "#282828",
             "source_status": "brave_verified",
             "source_url": "https://www.politikcheck-deutschland.de/termine/landtagswahl-nordrhein-westfalen",
-            "source_title": "Landtagswahl Nordrhein-Westfalen 2027: Termin, Umfragen & Kandidaten",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
+            "source_title": "Landtagswahl Nordrhein-Westfalen 2027: Termin & Umfragen",
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
           },
           {
             "name": "Mona Neubaur",
@@ -604,7 +604,7 @@
             "source_checked_at": ""
           }
         ],
-        "unresolved_probability": 22
+        "unresolved_probability": 21
       },
       "economy": {
         "parties": [
@@ -763,8 +763,8 @@
             "color": "#282828",
             "source_status": "brave_verified",
             "source_url": "https://www.politikcheck-deutschland.de/termine/landtagswahl-nordrhein-westfalen",
-            "source_title": "Landtagswahl Nordrhein-Westfalen 2027: Termin, Umfragen & Kandidaten",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
+            "source_title": "Landtagswahl Nordrhein-Westfalen 2027: Termin & Umfragen",
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
           },
           {
             "name": "Mona Neubaur",
@@ -959,7 +959,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/spd-landeschef-kaempfer-vor-wahl-zum-spitzenkandidaten,spd-772.html",
             "source_title": "Er will es 2027 mit Daniel Günther aufnehmen: SPD wählt Spitzenkandidaten für die Landtagswahl",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -1143,7 +1143,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/spd-landeschef-kaempfer-vor-wahl-zum-spitzenkandidaten,spd-772.html",
             "source_title": "Er will es 2027 mit Daniel Günther aufnehmen: SPD wählt Spitzenkandidaten für die Landtagswahl",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -1176,7 +1176,7 @@
             "color": "#d64b4b",
             "vote": 29.0,
             "low": 27.4,
-            "high": 30.6,
+            "high": 30.7,
             "seats": 39,
             "threshold_probability": 100
           },
@@ -1345,7 +1345,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -1355,7 +1355,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
           }
         ],
         "unresolved_probability": 14
@@ -1414,7 +1414,7 @@
             "low": 1.6,
             "high": 4.6,
             "seats": 0,
-            "threshold_probability": 6
+            "threshold_probability": 5
           },
           {
             "party": "FDP",
@@ -1536,7 +1536,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -1546,7 +1546,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-09-27T15:58:05+00:00"
+            "source_checked_at": "2026-10-04T10:34:41+00:00"
           }
         ],
         "unresolved_probability": 12
