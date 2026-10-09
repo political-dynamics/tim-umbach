@@ -12,7 +12,7 @@
   "bootstrap_completed_at": "2026-07-20T11:38:56+00:00",
   "bootstrap_accepted_results": 10,
   "bootstrap_error_types": [],
-  "request_date_utc": "2026-10-08",
+  "request_date_utc": "2026-10-09",
   "request_count": 10,
   "daily_attempted_queries": [
     "\"Hermes Germany\" Hamburg Adresse Standort (site:hermesworld.com)",
@@ -28,7 +28,7 @@
   ],
   "query": "(Data Scientist OR Product Analyst OR Experimentation OR Analytics) (Hamburg OR Germany remote) (Tchibo OR Maxingvest OR EDEKA OR Fielmann OR Freenet OR HELM OR Publicis OR Google OR Adobe OR Statista OR New Work OR MOIA OR FREE NOW) job",
   "status": "success",
-  "updated_at": "2026-10-08T11:23:50+00:00",
+  "updated_at": "2026-10-09T11:21:31+00:00",
   "accepted_results": 1,
   "daily_error_types": []
 }
