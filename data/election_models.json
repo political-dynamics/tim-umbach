@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-10-10T10:36:17+00:00",
-    "dawum_updated_at": "2026-10-09T08:54:53+02:00",
+    "generated_at": "2026-10-11T10:49:09+00:00",
+    "dawum_updated_at": "2026-10-11T02:44:31+02:00",
     "method_version": "1.0",
     "license": {
       "Name": "ODC Open Database License",
@@ -17,12 +17,12 @@
     },
     "candidate_search": {
       "status": "success",
-      "last_attempted_at": "2026-10-04T10:34:41+00:00",
+      "last_attempted_at": "2026-10-11T10:49:03+00:00",
       "requests_used": 4,
-      "last_successful_at": "2026-10-04T10:34:41+00:00",
-      "verified_candidates": 10,
+      "last_successful_at": "2026-10-11T10:49:03+00:00",
+      "verified_candidates": 12,
       "shared_daily_limit": 10,
-      "message": "Brave candidate search: weekly refresh not due; cached evidence used"
+      "message": "Brave candidate search: success (4/7 weekly requests, 12 names verified)"
     },
     "sources": [
       {
@@ -225,7 +225,7 @@
             "source_status": "brave_verified",
             "source_url": "https://bundestagwahlumfrage.de/ratgeber/wahlen/bundestagswahl-2029/",
             "source_title": "Bundestagswahl 2029: Termin, mögliche Kandidaten & erste Prognose",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -407,7 +407,7 @@
             "source_status": "brave_verified",
             "source_url": "https://bundestagwahlumfrage.de/ratgeber/wahlen/bundestagswahl-2029/",
             "source_title": "Bundestagswahl 2029: Termin, mögliche Kandidaten & erste Prognose",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -589,19 +589,19 @@
             "probability": 78,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://www.politikcheck-deutschland.de/termine/landtagswahl-nordrhein-westfalen",
-            "source_title": "Landtagswahl Nordrhein-Westfalen 2027: Termin & Umfragen",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_url": "https://rp-online.de/thema/landtagswahl/",
+            "source_title": "Landtagswahl NRW 2027: Aktuelle News und Infos zur Wahl in Nordrhein-Westfalen",
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           },
           {
             "name": "Mona Neubaur",
             "party": "Grüne",
             "probability": 0,
             "color": "#62a654",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://gruene-nrw.de/2026/10/gruene-nrw-stellen-sich-fuer-die-landtagswahl-auf/",
+            "source_title": "Grüne NRW stellen sich für die Landtagswahl auf | GRÜNE NRW",
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           }
         ],
         "unresolved_probability": 22
@@ -622,7 +622,7 @@
             "color": "#4d91c6",
             "vote": 21.6,
             "low": 20.1,
-            "high": 23.2,
+            "high": 23.1,
             "seats": 46,
             "threshold_probability": 100
           },
@@ -762,19 +762,19 @@
             "probability": 80,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://www.politikcheck-deutschland.de/termine/landtagswahl-nordrhein-westfalen",
-            "source_title": "Landtagswahl Nordrhein-Westfalen 2027: Termin & Umfragen",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_url": "https://rp-online.de/thema/landtagswahl/",
+            "source_title": "Landtagswahl NRW 2027: Aktuelle News und Infos zur Wahl in Nordrhein-Westfalen",
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           },
           {
             "name": "Mona Neubaur",
             "party": "Grüne",
             "probability": 0,
             "color": "#62a654",
-            "source_status": "curated",
-            "source_url": "",
-            "source_title": "",
-            "source_checked_at": ""
+            "source_status": "brave_verified",
+            "source_url": "https://gruene-nrw.de/2026/10/gruene-nrw-stellen-sich-fuer-die-landtagswahl-auf/",
+            "source_title": "Grüne NRW stellen sich für die Landtagswahl auf | GRÜNE NRW",
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           }
         ],
         "unresolved_probability": 20
@@ -957,9 +957,9 @@
             "probability": 66,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/spd-landeschef-kaempfer-vor-wahl-zum-spitzenkandidaten,spd-772.html",
-            "source_title": "Er will es 2027 mit Daniel Günther aufnehmen: SPD wählt Spitzenkandidaten für die Landtagswahl",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_url": "https://www.kn-online.de/politik/regional/schleswig-holstein-diese-spitzenkandidaten-treten-zur-landtagswahl-2027-an-XSB54ISLXJDTJLKVPOQYZ3D5OY.html",
+            "source_title": "Schleswig-Holstein: Diese Spitzenkandidaten treten zur Landtagswahl 2027 an",
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -1141,9 +1141,9 @@
             "probability": 69,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://www.ndr.de/nachrichten/schleswig-holstein/spd-landeschef-kaempfer-vor-wahl-zum-spitzenkandidaten,spd-772.html",
-            "source_title": "Er will es 2027 mit Daniel Günther aufnehmen: SPD wählt Spitzenkandidaten für die Landtagswahl",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_url": "https://www.kn-online.de/politik/regional/schleswig-holstein-diese-spitzenkandidaten-treten-zur-landtagswahl-2027-an-XSB54ISLXJDTJLKVPOQYZ3D5OY.html",
+            "source_title": "Schleswig-Holstein: Diese Spitzenkandidaten treten zur Landtagswahl 2027 an",
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -1345,7 +1345,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -1355,7 +1355,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           }
         ],
         "unresolved_probability": 14
@@ -1536,7 +1536,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -1546,7 +1546,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-10-04T10:34:41+00:00"
+            "source_checked_at": "2026-10-11T10:49:03+00:00"
           }
         ],
         "unresolved_probability": 12
