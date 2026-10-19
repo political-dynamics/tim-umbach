@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-18T08:50:57+00:00",
+    "generated_at": "2026-10-19T09:53:27+00:00",
     "dawum_updated_at": "2026-10-17T16:08:32+02:00",
     "method_version": "1.0",
     "license": {
@@ -22,7 +22,7 @@
       "last_successful_at": "2026-10-18T08:50:51+00:00",
       "verified_candidates": 11,
       "shared_daily_limit": 10,
-      "message": "Brave candidate search: success (4/7 weekly requests, 11 names verified)"
+      "message": "Brave candidate search: weekly refresh not due; cached evidence used"
     },
     "sources": [
       {
