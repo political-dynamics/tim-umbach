@@ -1,9 +1,9 @@
 {
-  "request_date_utc": "2026-10-19",
+  "request_date_utc": "2026-10-20",
   "request_count": 1,
   "detail_request_count": 0,
   "query": "Informatik",
   "status": "error",
-  "updated_at": "2026-10-19T09:55:12+00:00",
+  "updated_at": "2026-10-20T09:26:41+00:00",
   "error_type": "HTTPError"
 }
