@@ -1,31 +1,31 @@
 {
   "meta": {
     "status": "success",
-    "last_attempted_at": "2026-10-18T08:50:51+00:00",
+    "last_attempted_at": "2026-10-25T09:08:56+00:00",
     "requests_used": 4,
-    "last_successful_at": "2026-10-18T08:50:51+00:00",
+    "last_successful_at": "2026-10-25T09:08:56+00:00",
     "verified_candidates": 11,
     "shared_daily_limit": 10
   },
   "elections": {
     "bundestag": {
       "query": "Federal election Bundestag 2029 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU/CSU SPD AfD Grüne Linke",
-      "checked_at": "2026-10-18T08:50:51+00:00",
+      "checked_at": "2026-10-25T09:08:56+00:00",
       "status": "success",
       "candidates": {
         "CDU/CSU": {
           "name": "Friedrich Merz",
           "status": "brave_verified",
-          "source_url": "https://bundestagwahlumfrage.de/ratgeber/wahlen/bundestagswahl-2029/",
-          "source_title": "Bundestagswahl 2029: Termin, mögliche Kandidaten & erste Prognose",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "source_url": "https://www.merkur.de/politik/bundestagswahl-ere754863/",
+          "source_title": "News zur Bundestagswahl 2029: Alle Nachrichten zu Kanzlerkandidaten, Parteien, Wahlprogrammen",
+          "checked_at": "2026-10-25T09:08:56+00:00"
         },
         "AfD": {
           "name": "Alice Weidel",
           "status": "brave_verified",
           "source_url": "https://www.deutschland.de/de/topic/politik/deutschland-bundestagswahl-spitzenkandidaten",
           "source_title": "Deutschland Bundestagswahl: das sind die Spitzenkandidaten",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "checked_at": "2026-10-25T09:08:56+00:00"
         }
       }
     },
@@ -136,29 +136,29 @@
     },
     "nordrhein-westfalen": {
       "query": "Landtag election North Rhine-Westphalia Spring 2027 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU SPD Grüne AfD",
-      "checked_at": "2026-10-18T08:50:51+00:00",
+      "checked_at": "2026-10-25T09:08:56+00:00",
       "status": "success",
       "candidates": {
         "CDU": {
           "name": "Hendrik Wüst",
           "status": "brave_verified",
-          "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
-          "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "source_url": "https://www.morgenpost.de/politik/article413287403/landtagswahl-nordrhein-westfalen-nrw-2027-aktuelle-umfragen-19-oktober.html",
+          "source_title": "Umfrage NRW aktuell: Wo stehen die Parteien vor der Landtagswahl 2027?",
+          "checked_at": "2026-10-25T09:08:56+00:00"
         },
         "SPD": {
           "name": "Jochen Ott",
           "status": "brave_verified",
           "source_url": "https://www.nrwspd.de/2026/01/23/landtagswahl-2027-nrwspd-vorstand-nominiert-jochen-ott-als-spitzenkandidaten/",
           "source_title": "Landtagswahl 2027: NRWSPD-Vorstand nominiert Jochen Ott als Spitzenkandidaten › NRWSPD",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "checked_at": "2026-10-25T09:08:56+00:00"
         },
         "AfD": {
           "name": "Martin Vincentz",
           "status": "brave_verified",
-          "source_url": "https://www.ruhrnachrichten.de/ueberregionales/poltik-newsblog-deutschland-merz-wuest-cdu-spd-afd-gruene-linke-fdp-berlin-duesseldorf-10-juli-w1219056-2002138812/",
-          "source_title": "NRW-AfD wählt Spitzenkandidaten für Landtagswahl 2027: Alle Infos im Politik-Newsblog",
-          "checked_at": "2026-10-11T10:49:03+00:00"
+          "source_url": "https://rp-online.de/nrw/landespolitik/was-in-einem-halben-jahr-in-nrw-zur-wahl-steht_aid-156828907",
+          "source_title": "Urnengang für Düsseldorfer Landtag: Was in einem halben Jahr in NRW zur Wahl steht",
+          "checked_at": "2026-10-25T09:08:56+00:00"
         },
         "Grüne": {
           "name": "Mona Neubaur",
@@ -171,7 +171,7 @@
     },
     "schleswig-holstein": {
       "query": "Landtag election Schleswig-Holstein 2027 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU SPD Grüne",
-      "checked_at": "2026-10-18T08:50:51+00:00",
+      "checked_at": "2026-10-25T09:08:56+00:00",
       "status": "success",
       "candidates": {
         "CDU": {
@@ -179,20 +179,20 @@
           "status": "brave_verified",
           "source_url": "https://www.kn-online.de/politik/regional/schleswig-holstein-diese-spitzenkandidaten-treten-zur-landtagswahl-2027-an-XSB54ISLXJDTJLKVPOQYZ3D5OY.html",
           "source_title": "Schleswig-Holstein: Diese Spitzenkandidaten treten zur Landtagswahl 2027 an",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "checked_at": "2026-10-25T09:08:56+00:00"
         },
         "SPD": {
           "name": "Ulf Kämpfer",
           "status": "brave_verified",
           "source_url": "https://www.kn-online.de/politik/regional/schleswig-holstein-diese-spitzenkandidaten-treten-zur-landtagswahl-2027-an-XSB54ISLXJDTJLKVPOQYZ3D5OY.html",
           "source_title": "Schleswig-Holstein: Diese Spitzenkandidaten treten zur Landtagswahl 2027 an",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "checked_at": "2026-10-25T09:08:56+00:00"
         }
       }
     },
     "hamburg": {
       "query": "Bürgerschaft election Hamburg 2030 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler SPD CDU Grüne Linke",
-      "checked_at": "2026-10-18T08:50:51+00:00",
+      "checked_at": "2026-10-25T09:08:56+00:00",
       "status": "success",
       "candidates": {
         "SPD": {
@@ -200,28 +200,28 @@
           "status": "brave_verified",
           "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
           "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "checked_at": "2026-10-25T09:08:56+00:00"
         },
         "CDU": {
           "name": "Dennis Thering",
           "status": "brave_verified",
           "source_url": "https://www.ndr.de/der_ndr/presse/mitteilungen/NDR-Umfrage-zur-Buergerschaftswahl-in-Hamburg-SPD-stabil-auf-Platz-eins-Gruene-schwaecher-CDU-und-Linke-legen-zu-,pressemeldungndr24940.html",
           "source_title": "NDR Umfrage zur Bürgerschaftswahl in Hamburg: SPD stabil auf Platz eins, Grüne schwächer - CDU und Linke legen zu | ndr.de",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "checked_at": "2026-10-25T09:08:56+00:00"
         },
         "Grüne": {
           "name": "Katharina Fegebank",
           "status": "brave_verified",
           "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
           "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "checked_at": "2026-10-25T09:08:56+00:00"
         },
         "Linke": {
           "name": "Cansu Özdemir",
           "status": "brave_verified",
           "source_url": "https://www.ndr.de/der_ndr/presse/mitteilungen/NDR-Umfrage-zur-Buergerschaftswahl-in-Hamburg-SPD-stabil-auf-Platz-eins-Gruene-schwaecher-CDU-und-Linke-legen-zu-,pressemeldungndr24940.html",
           "source_title": "NDR Umfrage zur Bürgerschaftswahl in Hamburg: SPD stabil auf Platz eins, Grüne schwächer - CDU und Linke legen zu | ndr.de",
-          "checked_at": "2026-10-18T08:50:51+00:00"
+          "checked_at": "2026-10-25T09:08:56+00:00"
         }
       }
     }

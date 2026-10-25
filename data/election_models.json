@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-24T08:52:28+00:00",
+    "generated_at": "2026-10-25T09:09:01+00:00",
     "dawum_updated_at": "2026-10-23T06:07:58+02:00",
     "method_version": "1.0",
     "license": {
@@ -17,12 +17,12 @@
     },
     "candidate_search": {
       "status": "success",
-      "last_attempted_at": "2026-10-18T08:50:51+00:00",
+      "last_attempted_at": "2026-10-25T09:08:56+00:00",
       "requests_used": 4,
-      "last_successful_at": "2026-10-18T08:50:51+00:00",
+      "last_successful_at": "2026-10-25T09:08:56+00:00",
       "verified_candidates": 11,
       "shared_daily_limit": 10,
-      "message": "Brave candidate search: weekly refresh not due; cached evidence used"
+      "message": "Brave candidate search: success (4/7 weekly requests, 11 names verified)"
     },
     "sources": [
       {
@@ -232,9 +232,9 @@
             "probability": 63,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://bundestagwahlumfrage.de/ratgeber/wahlen/bundestagswahl-2029/",
-            "source_title": "Bundestagswahl 2029: Termin, mögliche Kandidaten & erste Prognose",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_url": "https://www.merkur.de/politik/bundestagswahl-ere754863/",
+            "source_title": "News zur Bundestagswahl 2029: Alle Nachrichten zu Kanzlerkandidaten, Parteien, Wahlprogrammen",
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -423,9 +423,9 @@
             "probability": 64,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://bundestagwahlumfrage.de/ratgeber/wahlen/bundestagswahl-2029/",
-            "source_title": "Bundestagswahl 2029: Termin, mögliche Kandidaten & erste Prognose",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_url": "https://www.merkur.de/politik/bundestagswahl-ere754863/",
+            "source_title": "News zur Bundestagswahl 2029: Alle Nachrichten zu Kanzlerkandidaten, Parteien, Wahlprogrammen",
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -607,9 +607,9 @@
             "probability": 66,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
-            "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_url": "https://www.morgenpost.de/politik/article413287403/landtagswahl-nordrhein-westfalen-nrw-2027-aktuelle-umfragen-19-oktober.html",
+            "source_title": "Umfrage NRW aktuell: Wo stehen die Parteien vor der Landtagswahl 2027?",
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           },
           {
             "name": "Jochen Ott",
@@ -619,7 +619,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.nrwspd.de/2026/01/23/landtagswahl-2027-nrwspd-vorstand-nominiert-jochen-ott-als-spitzenkandidaten/",
             "source_title": "Landtagswahl 2027: NRWSPD-Vorstand nominiert Jochen Ott als Spitzenkandidaten › NRWSPD",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           }
         ],
         "unresolved_probability": 33
@@ -780,9 +780,9 @@
             "probability": 68,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
-            "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_url": "https://www.morgenpost.de/politik/article413287403/landtagswahl-nordrhein-westfalen-nrw-2027-aktuelle-umfragen-19-oktober.html",
+            "source_title": "Umfrage NRW aktuell: Wo stehen die Parteien vor der Landtagswahl 2027?",
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           },
           {
             "name": "Mona Neubaur",
@@ -977,7 +977,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.kn-online.de/politik/regional/schleswig-holstein-diese-spitzenkandidaten-treten-zur-landtagswahl-2027-an-XSB54ISLXJDTJLKVPOQYZ3D5OY.html",
             "source_title": "Schleswig-Holstein: Diese Spitzenkandidaten treten zur Landtagswahl 2027 an",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -1161,7 +1161,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.kn-online.de/politik/regional/schleswig-holstein-diese-spitzenkandidaten-treten-zur-landtagswahl-2027-an-XSB54ISLXJDTJLKVPOQYZ3D5OY.html",
             "source_title": "Schleswig-Holstein: Diese Spitzenkandidaten treten zur Landtagswahl 2027 an",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           },
           {
             "name": "Lasse Petersdotter",
@@ -1363,7 +1363,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -1373,7 +1373,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           }
         ],
         "unresolved_probability": 14
@@ -1554,7 +1554,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -1564,7 +1564,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-10-18T08:50:51+00:00"
+            "source_checked_at": "2026-10-25T09:08:56+00:00"
           }
         ],
         "unresolved_probability": 13
