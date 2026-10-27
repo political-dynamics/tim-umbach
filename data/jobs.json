@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T10:08:57+00:00",
+    "generated_at": "2026-10-27T09:50:35+00:00",
     "mode": "daily live refresh + rolling fallback",
     "job_count": 36,
     "archived_job_count": 8,
@@ -20,10 +20,9 @@
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
     "brave_search_status": "Brave daily budget: success (10/10 requests used, 0 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (6 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (0 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
-      "EDEKA: PermissionError: robots.txt does not allow collection: https://verbund.edeka/karriere/stellenb%C3%B6rse/",
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
     ]
   },
@@ -444,7 +443,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-10-27",
       "id": "c1c7958a13c2",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -822,7 +821,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-10-27",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -1023,52 +1022,6 @@
       }
     },
     {
-      "title": "Data Protection Manager / Legal Counsel (all genders)",
-      "company": "Beiersdorf",
-      "location": "Hamburg, Germany",
-      "work_mode": "",
-      "level": "manager",
-      "url": "https://www.beiersdorf.com/career/jobs/8b2d4cf02e02ef88818534246f489a9f",
-      "date_posted": "",
-      "valid_through": "",
-      "description": "Data Protection Manager / Legal Counsel (all genders) Apply now Job Details Contract Type: Limited, 1 Year / Part-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Legal Affairs / Patents / Licences Your Tasks Advise business functions and affiliates on data protection matters and regulatory requirements, increasingly including also AI compliance topics Contribute to the further development of Beiersdorf’s global data protection and AI compliance framework, processes and tools Support the identification, assessment and mitigation of privacy and AI-related risks Assist in the prevention, investigation, monitoring and reporting of privacy incidents and compliance violations Define and assess technical and organizational measures Coordinate and maintain data protection documentation with business functions and affiliates Support audits and monitoring activities rel",
-      "discovery_source": "Official career page",
-      "application_deadline": "",
-      "freshness": "live check",
-      "last_seen": "2026-10-26",
-      "id": "35a00bc8a6e6",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 44,
-      "matched_skills": [
-        "Stakeholder consulting"
-      ],
-      "fit_reasons": [
-        "Role alignment: Data Scientist",
-        "Skill overlap: Stakeholder consulting",
-        "Hamburg location"
-      ],
-      "skill_gaps": [
-        "AWS"
-      ],
-      "salary_min": 75000,
-      "salary_mid": 83000,
-      "salary_max": 91000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "low",
-      "map": {
-        "latitude": 53.583019,
-        "longitude": 9.958834,
-        "label": "Beiersdorf · Hamburg office",
-        "precision": "verified employer office",
-        "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
-        "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
-        "osm_url": "https://www.openstreetmap.org/way/1187653917",
-        "location_note": "Employer office reference; the vacancy may use another worksite."
-      }
-    },
-    {
       "title": "(Junior) Data Analyst Campaigning (w/m/d)",
       "company": "Freenet Group",
       "location": "Hamburg, Germany",
@@ -1167,7 +1120,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-10-26",
+      "last_seen": "2026-10-27",
       "id": "ef0b466b5fdd",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -1271,6 +1224,47 @@
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
       "salary_confidence": "low"
+    },
+    {
+      "title": "Data Protection Manager / Legal Counsel (all genders)",
+      "company": "Beiersdorf",
+      "location": "Hamburg, Germany",
+      "work_mode": "",
+      "level": "manager",
+      "url": "https://www.beiersdorf.com/career/jobs/8b2d4cf02e02ef88818534246f489a9f",
+      "date_posted": "",
+      "valid_through": "",
+      "description": "Data Protection Manager / Legal Counsel (all genders) Apply now Job Details Contract Type: Limited, 1 Year / Part-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Legal Affairs / Patents / Licences Your Tasks Advise business functions and affiliates on data protection matters and regulatory requirements, increasingly including also AI compliance topics Contribute to the further development of Beiersdorf’s global data protection and AI compliance framework, processes and tools Support the identification, assessment and mitigation of privacy and AI-related risks Assist in the prevention, investigation, monitoring and reporting of privacy incidents and compliance violations Define and assess technical and organizational measures Coordinate and maintain data protection documentation with business functions and affiliates Support audits and monitoring activities rel",
+      "discovery_source": "Official career page",
+      "application_deadline": "",
+      "freshness": "live check",
+      "last_seen": "2026-10-26",
+      "id": "35a00bc8a6e6",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 36,
+      "matched_skills": [],
+      "fit_reasons": [
+        "Role alignment: Data Scientist",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 75000,
+      "salary_mid": 83000,
+      "salary_max": 91000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "low",
+      "map": {
+        "latitude": 53.583019,
+        "longitude": 9.958834,
+        "label": "Beiersdorf · Hamburg office",
+        "precision": "verified employer office",
+        "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
+        "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
+        "osm_url": "https://www.openstreetmap.org/way/1187653917",
+        "location_note": "Employer office reference; the vacancy may use another worksite."
+      }
     },
     {
       "title": "Fullstack Shopify Entwickler*in (m/w/d) – Schwerpunkt A/B-Testing & CRO – Remote",
