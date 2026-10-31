@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-30T10:54:00+00:00",
+    "generated_at": "2026-10-31T10:25:14+00:00",
     "mode": "daily live refresh + rolling fallback",
     "job_count": 37,
     "archived_job_count": 8,
@@ -20,7 +20,7 @@
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
     "brave_search_status": "Brave daily budget: success (10/10 requests used, 0 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (6 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (0 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -813,7 +813,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-10-30",
+      "last_seen": "2026-10-31",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -1112,7 +1112,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-10-30",
+      "last_seen": "2026-10-31",
       "id": "ef0b466b5fdd",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
