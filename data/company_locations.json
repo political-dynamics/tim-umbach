@@ -1,11 +1,11 @@
 {
   "meta": {
-    "updated_at": "2026-10-31T10:23:11+00:00",
+    "updated_at": "2026-11-01T11:15:50+00:00",
     "location_count": 20,
     "official_source_count": 19,
     "brave_discovered_count": 0,
     "brave_status": [
-      "Brave address discovery found no verified Hamburg address for Hermes Germany"
+      "No eligible unresolved employer used the Brave fallback"
     ],
     "nominatim_policy_url": "https://operations.osmfoundation.org/policies/nominatim/",
     "errors": []
