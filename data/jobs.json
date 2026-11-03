@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-02T12:25:11+00:00",
+    "generated_at": "2026-11-03T11:57:18+00:00",
     "mode": "daily live refresh + rolling fallback",
     "job_count": 37,
     "archived_job_count": 8,
@@ -19,8 +19,8 @@
     "market_salary_reference_eur": 77184,
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 0 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: error (0 accepted)",
+    "brave_search_status": "Brave daily budget: success (10/10 requests used, 1 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (1 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -226,9 +226,9 @@
       "date_posted": "2026-08-19",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-01",
-      "experimentation_query_date": "2026-11-01",
-      "last_seen": "2026-11-01",
+      "freshness": "Experimentation Jobs refresh 2026-11-03",
+      "experimentation_query_date": "2026-11-03",
+      "last_seen": "2026-11-03",
       "id": "0aa3558d65c8",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -516,48 +516,6 @@
       "confirmed_by": "Brave Search API"
     },
     {
-      "title": "Business Analyst (m/w/d) Business Intelligence",
-      "company": "Hermes Germany",
-      "location": "Hamburg, Hamburg, DE",
-      "work_mode": "",
-      "level": "experienced",
-      "url": "https://www.hermesworld.com/de/karriere/jobs/Business-Analyst-mwd-Business-Intelligence-de-j6672.html",
-      "date_posted": "2026-11-02",
-      "valid_through": "2026-12-31",
-      "description": "In unserer IT stimmt die Chemie: mehr als 300 Spezialist*innen arbeiten daran, unsere Logistiklösungen noch smarter und innovativer zu machen. So entwickeln wir gemeinsam eine der zukunftsträchtigsten Branchen überhaupt. Denn als zweitgrößter deutscher Paketdienst sorgen wir mit unserem flächendeckenden Logistiknetz, neuester Technik und rund 5.500 Mitarbeiter*innen dafür, dass jeden Tag mehrere Millionen Pakete genau dort ankommen, wo sie bereits erwartet werden. Was dich erwartet: Du bist Teil eines hoch motivierten und kooperativen Teams aus Business Analysten, Data Scientists und Softwareentwicklern Du erstellst komplexe Datenanalysen, bereitest Daten auf und entwickelst Lösungen rund um den IT Service Business Intelligence & Analytics Du entwickelst und pflegst Analysen und Dashboards rund um Finanzkennzahlen und Controlling und machst betriebswirtschaftliche Zusammenhänge für die F",
-      "discovery_source": "Official career page",
-      "application_deadline": "2026-12-31",
-      "freshness": "live check",
-      "last_seen": "2026-11-02",
-      "id": "78063ddcbf48",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 55,
-      "matched_skills": [
-        "SQL",
-        "Data pipelines",
-        "Data visualization"
-      ],
-      "fit_reasons": [
-        "Role alignment: Business Analyst",
-        "Skill overlap: SQL, Data pipelines, Data visualization",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 65000,
-      "salary_mid": 72000,
-      "salary_max": 79000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "medium",
-      "map": {
-        "latitude": 53.54528,
-        "longitude": 10.00705,
-        "label": "Hamburg",
-        "precision": "city area"
-      }
-    },
-    {
       "title": "(Senior) Data Scientist (m/f/d) - Service Configuration Intelligence in Hamburg | XING Jobs",
       "company": "New Work SE",
       "location": "Hamburg area",
@@ -569,7 +527,10 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-08-17",
       "brave_query_date": "2026-08-17",
+      "last_seen": "2026-11-03",
+      "confirmed_by": "Brave Search API",
       "id": "3b8196ff9a6c",
+      "application_deadline": "",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
       "match_score": 54,
@@ -585,8 +546,6 @@
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
       "salary_confidence": "medium",
-      "last_seen": "2026-09-07",
-      "application_deadline": "",
       "map": {
         "latitude": 53.539079,
         "longitude": 9.993341,
@@ -596,8 +555,7 @@
         "source_url": "https://new-work.se/en/privacy-notice",
         "osm_url": "https://www.openstreetmap.org/relation/15812591",
         "location_note": "Employer office reference; the vacancy may use another worksite."
-      },
-      "confirmed_by": "Brave Search API"
+      }
     },
     {
       "title": "Data Analyst – Everyday Banking",
@@ -855,7 +813,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -969,6 +927,46 @@
         "source_url": "https://verbund.edeka/karriere/edeka-als-arbeitgeber/unternehmen-im-%C3%BCberblick/edeka-zentrale/",
         "osm_url": "https://www.openstreetmap.org/node/2465877319",
         "location_note": "Employer office reference; the vacancy may use another worksite."
+      }
+    },
+    {
+      "title": "Business Analyst (m/w/d) Business Intelligence",
+      "company": "Hermes Germany",
+      "location": "Hamburg, Hamburg, DE",
+      "work_mode": "",
+      "level": "experienced",
+      "url": "https://www.hermesworld.com/de/karriere/jobs/Business-Analyst-mwd-Business-Intelligence-de-j6672.html",
+      "date_posted": "2026-11-02",
+      "valid_through": "2026-12-31",
+      "description": "In unserer IT stimmt die Chemie: mehr als 300 Spezialist*innen arbeiten daran, unsere Logistiklösungen noch smarter und innovativer zu machen. So entwickeln wir gemeinsam eine der zukunftsträchtigsten Branchen überhaupt. Denn als zweitgrößter deutscher Paketdienst sorgen wir mit unserem flächendeckenden Logistiknetz, neuester Technik und rund 5.500 Mitarbeiter*innen dafür, dass jeden Tag mehrere Millionen Pakete genau dort ankommen, wo sie bereits erwartet werden. Was dich erwartet: Du bist Teil eines hoch motivierten und kooperativen Teams aus Business Analysten, Data Scientists und Softwareentwicklern Du erstellst komplexe Datenanalysen, bereitest Daten auf und entwickelst Lösungen rund um den IT Service Business Intelligence & Analytics Du entwickelst und pflegst Analysen und Dashboards rund um Finanzkennzahlen und Controlling und machst betriebswirtschaftliche Zusammenhänge für die F",
+      "discovery_source": "Official career page",
+      "application_deadline": "2026-12-31",
+      "freshness": "live check",
+      "last_seen": "2026-11-02",
+      "id": "78063ddcbf48",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 45,
+      "matched_skills": [
+        "Data visualization"
+      ],
+      "fit_reasons": [
+        "Role alignment: Business Analyst",
+        "Skill overlap: Data visualization",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 65000,
+      "salary_mid": 72000,
+      "salary_max": 79000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "medium",
+      "map": {
+        "latitude": 53.54528,
+        "longitude": 10.00705,
+        "label": "Hamburg",
+        "precision": "city area"
       }
     },
     {
@@ -1114,7 +1112,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-02",
+      "last_seen": "2026-11-03",
       "id": "ef0b466b5fdd",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
