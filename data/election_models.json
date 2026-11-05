@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-04T12:07:17+00:00",
-    "dawum_updated_at": "2026-11-03T19:01:08+01:00",
+    "generated_at": "2026-11-05T12:19:16+00:00",
+    "dawum_updated_at": "2026-11-04T18:45:29+01:00",
     "method_version": "1.0",
     "license": {
       "Name": "ODC Open Database License",
@@ -475,7 +475,7 @@
             "party": "Linke",
             "color": "#a44d8c",
             "vote": 9.4,
-            "low": 7.9,
+            "low": 8.0,
             "high": 11.0,
             "seats": 20,
             "threshold_probability": 100
@@ -639,7 +639,7 @@
             "party": "SPD",
             "color": "#d64b4b",
             "vote": 16.7,
-            "low": 14.5,
+            "low": 14.6,
             "high": 18.8,
             "seats": 35,
             "threshold_probability": 100
