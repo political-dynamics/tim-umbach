@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-06T12:06:06+00:00",
-    "dawum_updated_at": "2026-11-05T18:57:42+01:00",
+    "generated_at": "2026-11-07T11:03:18+00:00",
+    "dawum_updated_at": "2026-11-06T22:28:08+01:00",
     "method_version": "1.0",
     "license": {
       "Name": "ODC Open Database License",
@@ -494,7 +494,7 @@
             "color": "#e9bf35",
             "vote": 3.9,
             "low": 2.5,
-            "high": 5.5,
+            "high": 5.4,
             "seats": 2,
             "threshold_probability": 16
           }
@@ -538,7 +538,7 @@
               "CDU",
               "Grüne"
             ],
-            "majority_probability": 9,
+            "majority_probability": 8,
             "seat_share": 47.3,
             "formation_prior": 90,
             "formation_probability": 8,
@@ -554,7 +554,7 @@
               "Grüne",
               "Linke"
             ],
-            "majority_probability": 4,
+            "majority_probability": 3,
             "seat_share": 46.5,
             "formation_prior": 26,
             "formation_probability": 1,
@@ -696,7 +696,7 @@
               "CDU",
               "Grüne"
             ],
-            "majority_probability": 15,
+            "majority_probability": 14,
             "seat_share": 47.9,
             "formation_prior": 90,
             "formation_probability": 13,
