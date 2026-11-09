@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T11:17:39+00:00",
+    "generated_at": "2026-11-09T12:53:00+00:00",
     "mode": "daily live refresh + rolling fallback",
     "job_count": 25,
     "archived_job_count": 22,
@@ -20,7 +20,7 @@
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
     "brave_search_status": "Brave daily budget: success (10/10 requests used, 2 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (0 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (1 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -179,9 +179,9 @@
       "date_posted": "2026-08-19",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-07",
-      "experimentation_query_date": "2026-11-07",
-      "last_seen": "2026-11-07",
+      "freshness": "Experimentation Jobs refresh 2026-11-09",
+      "experimentation_query_date": "2026-11-09",
+      "last_seen": "2026-11-09",
       "id": "0aa3558d65c8",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -258,7 +258,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-06",
       "brave_query_date": "2026-11-06",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "confirmed_by": "Brave Search API",
       "id": "824575981a81",
       "application_deadline": "",
@@ -385,7 +385,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-08-17",
       "brave_query_date": "2026-08-17",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "confirmed_by": "Brave Search API",
       "id": "3b8196ff9a6c",
       "application_deadline": "",
@@ -538,7 +538,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -754,7 +754,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-08",
+      "last_seen": "2026-11-09",
       "id": "ef0b466b5fdd",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -1109,7 +1109,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "Senior Business Analyst",
@@ -1157,7 +1157,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -1205,7 +1205,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -1251,7 +1251,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1299,7 +1299,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -1344,7 +1344,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "Media Technology & Data Strategy Lead (all genders)",
@@ -1391,7 +1391,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1436,7 +1436,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1480,7 +1480,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1522,7 +1522,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "Business Analyst – Digitales Marketing (m/w/d)",
@@ -1571,7 +1571,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-08"
+      "archived_at": "2026-11-09"
     },
     {
       "title": "Data Scientist Customer Analytics (w/m/d)",
