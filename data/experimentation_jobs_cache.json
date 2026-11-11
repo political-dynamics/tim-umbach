@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-10T12:39:45+00:00",
+  "updated_at": "2026-11-11T11:53:54+00:00",
   "jobs": [
     {
       "title": "Staff AI Product Analyst, Product Management",
@@ -81,9 +81,9 @@
       "date_posted": "2026-08-19",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-10",
-      "experimentation_query_date": "2026-11-10",
-      "last_seen": "2026-11-10"
+      "freshness": "Experimentation Jobs refresh 2026-11-11",
+      "experimentation_query_date": "2026-11-11",
+      "last_seen": "2026-11-11"
     },
     {
       "title": "Frontend Entwickler*in CRO & Experimentation (m/w/d) – Remote",
@@ -165,9 +165,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-10",
-      "experimentation_query_date": "2026-11-10",
-      "last_seen": "2026-11-10"
+      "freshness": "Experimentation Jobs refresh 2026-11-11",
+      "experimentation_query_date": "2026-11-11",
+      "last_seen": "2026-11-11"
     },
     {
       "title": "Senior Product Analyst",
@@ -179,9 +179,37 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-10",
-      "experimentation_query_date": "2026-11-10",
-      "last_seen": "2026-11-10"
+      "freshness": "Experimentation Jobs refresh 2026-11-11",
+      "experimentation_query_date": "2026-11-11",
+      "last_seen": "2026-11-11"
+    },
+    {
+      "title": "Senior Conversion Rate Optimization Manager",
+      "company": "Your Closet",
+      "location": "Germany (Remote)",
+      "work_mode": "Remote",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/your-closet-senior-conversion-rate-optimization-manager-germany-remote/",
+      "date_posted": "2026-11-10",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-11-11",
+      "experimentation_query_date": "2026-11-11",
+      "last_seen": "2026-11-11"
+    },
+    {
+      "title": "CRO Manager",
+      "company": "Edubini",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/edubini-cro-manager-hamburg-germany/",
+      "date_posted": "2026-11-09",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-11-11",
+      "experimentation_query_date": "2026-11-11",
+      "last_seen": "2026-11-11"
     }
   ]
 }
