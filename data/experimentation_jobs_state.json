@@ -1,9 +1,9 @@
 {
-  "request_date_utc": "2026-11-11",
+  "request_date_utc": "2026-11-12",
   "request_count": 1,
-  "query": "Experimentation",
+  "query": "Data Scientist",
   "status": "success",
-  "updated_at": "2026-11-11T11:53:54+00:00",
-  "listing_count": 50,
-  "accepted_results": 5
+  "updated_at": "2026-11-12T12:43:55+00:00",
+  "listing_count": 6,
+  "accepted_results": 0
 }

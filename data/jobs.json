@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-11-11T11:54:03+00:00",
+    "generated_at": "2026-11-12T12:44:01+00:00",
     "mode": "daily live refresh + rolling fallback",
-    "job_count": 30,
+    "job_count": 31,
     "archived_job_count": 22,
     "location": "Hamburg",
-    "employer_office_mapped_job_count": 19,
+    "employer_office_mapped_job_count": 20,
     "city_area_mapped_job_count": 3,
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2025",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987?alter=3&region=5",
@@ -20,7 +20,7 @@
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
     "brave_search_status": "Brave daily budget: success (10/10 requests used, 2 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (5 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (0 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -291,7 +291,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-06",
       "brave_query_date": "2026-11-06",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
       "confirmed_by": "Brave Search API",
       "id": "824575981a81",
       "application_deadline": "",
@@ -418,7 +418,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-08-17",
       "brave_query_date": "2026-08-17",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
       "confirmed_by": "Brave Search API",
       "id": "3b8196ff9a6c",
       "application_deadline": "",
@@ -604,7 +604,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -853,7 +853,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-11",
+      "last_seen": "2026-11-12",
       "id": "ef0b466b5fdd",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -886,7 +886,7 @@
       }
     },
     {
-      "title": "Brand Health Consultant - Consumer Insights (all genders)",
+      "title": "Global Brand Health Consultant - Consumer Insights (all genders)",
       "company": "Beiersdorf",
       "location": "Hamburg, Germany",
       "work_mode": "",
@@ -894,12 +894,12 @@
       "url": "https://www.beiersdorf.com/career/jobs/2b8063518ba2ed44126d9ce9136d4f66",
       "date_posted": "",
       "valid_through": "",
-      "description": "Brand Health Consultant - Consumer Insights (all genders) Apply now Job Details Contract Type: Unlimited / Full-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks Great brands are built on great insights. If you are passionate about understanding consumers, uncovering what drives brand growth, and influencing business decisions at the highest level, this is an opportunity to make a real impact. We are seeking a seasoned insights expert with extensive experience in Brand Health Tracking and Consumer Panel/Penetration data, who can confidently advise senior stakeholders from day one. You will transform complex data into clear strategic direction, shape key growth initiatives, and serve as a trusted partner to leadership teams across markets and functions. In this position you will: Translate Brand Health Tracking and Consumer ",
+      "description": "Global Brand Health Consultant - Consumer Insights (all genders) Apply now Job Details Contract Type: Unlimited / Full-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks Great brands are built on great insights. If you are passionate about understanding consumers, uncovering what drives brand growth, and influencing business decisions at the highest level, this is an opportunity to make a real impact. We are seeking a seasoned insights expert with extensive experience in Brand Health Tracking and Consumer Panel/Penetration data, who can confidently advise senior stakeholders from day one. You will transform complex data into clear strategic direction, shape key growth initiatives, and serve as a trusted partner to leadership teams across markets and functions. In this position you will: Translate Brand Health Tracking and Co",
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-11",
-      "id": "3a6bd6e83bf9",
+      "last_seen": "2026-11-12",
+      "id": "f55964b7eb18",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
       "match_score": 41,
@@ -1206,6 +1206,50 @@
       }
     },
     {
+      "title": "Brand Health Consultant - Consumer Insights (all genders)",
+      "company": "Beiersdorf",
+      "location": "Hamburg, Germany",
+      "work_mode": "",
+      "level": "intern",
+      "url": "https://www.beiersdorf.com/career/jobs/2b8063518ba2ed44126d9ce9136d4f66",
+      "date_posted": "",
+      "valid_through": "",
+      "description": "Brand Health Consultant - Consumer Insights (all genders) Apply now Job Details Contract Type: Unlimited / Full-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks Great brands are built on great insights. If you are passionate about understanding consumers, uncovering what drives brand growth, and influencing business decisions at the highest level, this is an opportunity to make a real impact. We are seeking a seasoned insights expert with extensive experience in Brand Health Tracking and Consumer Panel/Penetration data, who can confidently advise senior stakeholders from day one. You will transform complex data into clear strategic direction, shape key growth initiatives, and serve as a trusted partner to leadership teams across markets and functions. In this position you will: Translate Brand Health Tracking and Consumer",
+      "discovery_source": "Official career page",
+      "application_deadline": "",
+      "freshness": "live check",
+      "last_seen": "2026-11-11",
+      "id": "3a6bd6e83bf9",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 27,
+      "matched_skills": [
+        "Stakeholder consulting"
+      ],
+      "fit_reasons": [
+        "Role alignment: Customer Insights",
+        "Skill overlap: Stakeholder consulting",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 29000,
+      "salary_mid": 32000,
+      "salary_max": 35000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "medium",
+      "map": {
+        "latitude": 53.583019,
+        "longitude": 9.958834,
+        "label": "Beiersdorf · Hamburg office",
+        "precision": "verified employer office",
+        "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
+        "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
+        "osm_url": "https://www.openstreetmap.org/way/1187653917",
+        "location_note": "Employer office reference; the vacancy may use another worksite."
+      }
+    },
+    {
       "title": "Working Student Global Consumer & Market Insights (all genders)",
       "company": "Beiersdorf",
       "location": "Hamburg, Germany",
@@ -1295,7 +1339,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "Senior Business Analyst",
@@ -1343,7 +1387,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -1391,7 +1435,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -1437,7 +1481,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1485,7 +1529,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -1530,7 +1574,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "Media Technology & Data Strategy Lead (all genders)",
@@ -1577,7 +1621,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1622,7 +1666,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1666,7 +1710,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1708,7 +1752,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "Business Analyst – Digitales Marketing (m/w/d)",
@@ -1757,7 +1801,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-11"
+      "archived_at": "2026-11-12"
     },
     {
       "title": "Data Scientist Customer Analytics (w/m/d)",
