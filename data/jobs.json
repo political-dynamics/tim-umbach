@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-11-13T12:13:54+00:00",
+    "generated_at": "2026-11-14T11:29:29+00:00",
     "mode": "daily live refresh + rolling fallback",
-    "job_count": 32,
-    "archived_job_count": 22,
+    "job_count": 31,
+    "archived_job_count": 23,
     "location": "Hamburg",
-    "employer_office_mapped_job_count": 21,
+    "employer_office_mapped_job_count": 20,
     "city_area_mapped_job_count": 3,
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2025",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987?alter=3&region=5",
@@ -179,9 +179,9 @@
       "date_posted": "2026-08-19",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-13",
-      "experimentation_query_date": "2026-11-13",
-      "last_seen": "2026-11-13",
+      "freshness": "Experimentation Jobs refresh 2026-11-14",
+      "experimentation_query_date": "2026-11-14",
+      "last_seen": "2026-11-14",
       "id": "0aa3558d65c8",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -223,9 +223,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-13",
-      "experimentation_query_date": "2026-11-13",
-      "last_seen": "2026-11-13",
+      "freshness": "Experimentation Jobs refresh 2026-11-14",
+      "experimentation_query_date": "2026-11-14",
+      "last_seen": "2026-11-14",
       "id": "0467258972f0",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -258,7 +258,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-13",
       "brave_query_date": "2026-11-13",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "id": "e4fab0035ec9",
       "application_deadline": "",
       "work_mode_fit": "unclear",
@@ -289,7 +289,8 @@
         "source_url": "https://corporate.aboutyou.de/en/legal-notice",
         "osm_url": "https://www.openstreetmap.org/way/45851583",
         "location_note": "Employer office reference; the vacancy may use another worksite."
-      }
+      },
+      "confirmed_by": "Brave Search API"
     },
     {
       "title": "Staff AI Product Analyst, Product Management",
@@ -336,7 +337,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-06",
       "brave_query_date": "2026-11-06",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "confirmed_by": "Brave Search API",
       "id": "824575981a81",
       "application_deadline": "",
@@ -463,7 +464,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-08-17",
       "brave_query_date": "2026-08-17",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "confirmed_by": "Brave Search API",
       "id": "3b8196ff9a6c",
       "application_deadline": "",
@@ -580,9 +581,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-13",
-      "experimentation_query_date": "2026-11-13",
-      "last_seen": "2026-11-13",
+      "freshness": "Experimentation Jobs refresh 2026-11-14",
+      "experimentation_query_date": "2026-11-14",
+      "last_seen": "2026-11-14",
       "id": "61790db608d3",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -649,7 +650,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -898,7 +899,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "id": "ef0b466b5fdd",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -943,7 +944,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-13",
+      "last_seen": "2026-11-14",
       "id": "f55964b7eb18",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -1206,51 +1207,6 @@
       }
     },
     {
-      "title": "Working Student Method & Data Standardization (all genders)",
-      "company": "Beiersdorf",
-      "location": "Hamburg, Germany",
-      "work_mode": "On-site",
-      "level": "student",
-      "url": "https://www.beiersdorf.com/career/jobs/ac8155ad2b02c691845765a05fa631ed",
-      "date_posted": "",
-      "valid_through": "",
-      "description": "Working Student Method & Data Standardization (all genders) Apply now Job Details Contract Type: Limited, 6 Months / Part-Time Job Start Date: 1/1/2027 Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Research & Development Your Tasks Support the execution of tasks and work packages within ongoing projects Analyze, prepare, and visualize relevant data and insights using Microsoft Power BI Maintain, structure, and ensure the quality of data repositories Contribute to the development and optimization of data-driven processes and standards Collaborate cross-functionally with different departments on analytics solutions and data-related topics Your Profile Currently enrolled in a Bachelor's or Master's degree program in a natural science discipline (e.g., Chemistry, Food Chemistry, Food Technology, Cosmetic Science, Pharmacy, Pharmaceutical Engineering, Chemical Enginee",
-      "discovery_source": "Official career page",
-      "application_deadline": "",
-      "freshness": "live check",
-      "last_seen": "2026-09-14",
-      "id": "d3c17f41814c",
-      "work_mode_fit": "mismatch",
-      "work_mode_note": "Appears to require regular on-site work",
-      "match_score": 28,
-      "matched_skills": [
-        "Stakeholder consulting",
-        "Data visualization"
-      ],
-      "fit_reasons": [
-        "Role alignment: Data Scientist",
-        "Skill overlap: Stakeholder consulting, Data visualization",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 29000,
-      "salary_mid": 32000,
-      "salary_max": 35000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "low",
-      "map": {
-        "latitude": 53.583019,
-        "longitude": 9.958834,
-        "label": "Beiersdorf · Hamburg office",
-        "precision": "verified employer office",
-        "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
-        "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
-        "osm_url": "https://www.openstreetmap.org/way/1187653917",
-        "location_note": "Employer office reference; the vacancy may use another worksite."
-      }
-    },
-    {
       "title": "Brand Health Consultant - Consumer Insights (all genders)",
       "company": "Beiersdorf",
       "location": "Hamburg, Germany",
@@ -1384,7 +1340,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "Senior Business Analyst",
@@ -1432,7 +1388,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -1480,7 +1436,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -1526,7 +1482,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1574,7 +1530,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -1619,7 +1575,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "Media Technology & Data Strategy Lead (all genders)",
@@ -1666,7 +1622,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1711,7 +1667,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1755,7 +1711,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1797,7 +1753,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
     },
     {
       "title": "Business Analyst – Digitales Marketing (m/w/d)",
@@ -1846,7 +1802,54 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-13"
+      "archived_at": "2026-11-14"
+    },
+    {
+      "title": "Working Student Method & Data Standardization (all genders)",
+      "company": "Beiersdorf",
+      "location": "Hamburg, Germany",
+      "work_mode": "On-site",
+      "level": "student",
+      "url": "https://www.beiersdorf.com/career/jobs/ac8155ad2b02c691845765a05fa631ed",
+      "date_posted": "",
+      "valid_through": "",
+      "description": "Working Student Method & Data Standardization (all genders) Apply now Job Details Contract Type: Limited, 6 Months / Part-Time Job Start Date: 1/1/2027 Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Research & Development Your Tasks Support the execution of tasks and work packages within ongoing projects Analyze, prepare, and visualize relevant data and insights using Microsoft Power BI Maintain, structure, and ensure the quality of data repositories Contribute to the development and optimization of data-driven processes and standards Collaborate cross-functionally with different departments on analytics solutions and data-related topics Your Profile Currently enrolled in a Bachelor's or Master's degree program in a natural science discipline (e.g., Chemistry, Food Chemistry, Food Technology, Cosmetic Science, Pharmacy, Pharmaceutical Engineering, Chemical Enginee",
+      "discovery_source": "Official career page",
+      "application_deadline": "",
+      "freshness": "live check",
+      "last_seen": "2026-09-14",
+      "id": "d3c17f41814c",
+      "work_mode_fit": "mismatch",
+      "work_mode_note": "Appears to require regular on-site work",
+      "match_score": 28,
+      "matched_skills": [
+        "Stakeholder consulting",
+        "Data visualization"
+      ],
+      "fit_reasons": [
+        "Role alignment: Data Scientist",
+        "Skill overlap: Stakeholder consulting, Data visualization",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 29000,
+      "salary_mid": 32000,
+      "salary_max": 35000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "low",
+      "map": {
+        "latitude": 53.583019,
+        "longitude": 9.958834,
+        "label": "Beiersdorf · Hamburg office",
+        "precision": "verified employer office",
+        "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
+        "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
+        "osm_url": "https://www.openstreetmap.org/way/1187653917",
+        "location_note": "Employer office reference; the vacancy may use another worksite."
+      },
+      "archive_reason": "Not rediscovered since 2026-09-14",
+      "archived_at": "2026-11-14"
     },
     {
       "title": "Data Scientist Customer Analytics (w/m/d)",
