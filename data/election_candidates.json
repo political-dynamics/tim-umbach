@@ -1,31 +1,31 @@
 {
   "meta": {
     "status": "success",
-    "last_attempted_at": "2026-11-08T11:16:01+00:00",
+    "last_attempted_at": "2026-11-15T11:56:26+00:00",
     "requests_used": 4,
-    "last_successful_at": "2026-11-08T11:16:01+00:00",
-    "verified_candidates": 13,
+    "last_successful_at": "2026-11-15T11:56:26+00:00",
+    "verified_candidates": 12,
     "shared_daily_limit": 10
   },
   "elections": {
     "bundestag": {
       "query": "Federal election Bundestag 2029 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU/CSU SPD AfD Grüne Linke",
-      "checked_at": "2026-11-08T11:16:01+00:00",
+      "checked_at": "2026-11-15T11:56:26+00:00",
       "status": "success",
       "candidates": {
         "CDU/CSU": {
           "name": "Friedrich Merz",
           "status": "brave_verified",
-          "source_url": "https://bundestagwahlumfrage.de/ratgeber/wahlen/bundestagswahl-2029/",
-          "source_title": "Bundestagswahl 2029: Termin, mögliche Kandidaten & erste Prognose",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "source_url": "https://www.merkur.de/politik/bundestagswahl-ere754863/",
+          "source_title": "News zur Bundestagswahl 2029: Alle Nachrichten zu Kanzlerkandidaten, Parteien, Wahlprogrammen",
+          "checked_at": "2026-11-15T11:56:26+00:00"
         },
         "AfD": {
           "name": "Alice Weidel",
           "status": "brave_verified",
           "source_url": "https://www.deutschland.de/de/topic/politik/deutschland-bundestagswahl-spitzenkandidaten",
           "source_title": "Deutschland Bundestagswahl: das sind die Spitzenkandidaten",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "checked_at": "2026-11-15T11:56:26+00:00"
         }
       }
     },
@@ -136,7 +136,7 @@
     },
     "nordrhein-westfalen": {
       "query": "Landtag election North Rhine-Westphalia Spring 2027 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU SPD Grüne AfD",
-      "checked_at": "2026-11-08T11:16:01+00:00",
+      "checked_at": "2026-11-15T11:56:26+00:00",
       "status": "success",
       "candidates": {
         "CDU": {
@@ -144,84 +144,84 @@
           "status": "brave_verified",
           "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
           "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "checked_at": "2026-11-15T11:56:26+00:00"
         },
         "SPD": {
           "name": "Jochen Ott",
           "status": "brave_verified",
           "source_url": "https://www.nrwspd.de/2026/01/23/landtagswahl-2027-nrwspd-vorstand-nominiert-jochen-ott-als-spitzenkandidaten/",
           "source_title": "Landtagswahl 2027: NRWSPD-Vorstand nominiert Jochen Ott als Spitzenkandidaten › NRWSPD",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "checked_at": "2026-11-15T11:56:26+00:00"
         },
         "AfD": {
           "name": "Martin Vincentz",
           "status": "brave_verified",
-          "source_url": "https://www.noz.de/deutschland-welt/nordrhein-westfalen/artikel/nrw-afd-waehlt-spitzenkandidaten-fuer-landtagswahl-2027-50903189",
-          "source_title": "NRW-AfD wählt Spitzenkandidaten für Landtagswahl 2027",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "source_url": "https://www.ruhrnachrichten.de/service/landtagswahl-2027-nrw-termine-25-april-ablauf-wahlalter-stimmzettel-briefwahl-parteien-kandidaten-w1264888-2002277751/",
+          "source_title": "Landtagswahl 2027 in NRW: Termine, Wahlalter, Briefwahl, Wahlkreise & mehr",
+          "checked_at": "2026-11-15T11:56:26+00:00"
         },
         "Grüne": {
           "name": "Mona Neubaur",
           "status": "brave_verified",
-          "source_url": "https://gruene-nrw.de/2026/10/gruene-nrw-stellen-sich-fuer-die-landtagswahl-auf/",
-          "source_title": "Grüne NRW stellen sich für die Landtagswahl auf | GRÜNE NRW",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "source_url": "https://gruene-nrw.de/2026/11/gruene-nrw-waehlen-mona-neubaur-zur-spitzenkandidatin-fuer-die-landtagswahl-2027/",
+          "source_title": "Grüne NRW wählen Mona Neubaur zur Spitzenkandidatin für die Landtagswahl 2027 | GRÜNE NRW",
+          "checked_at": "2026-11-15T11:56:26+00:00"
         }
       }
     },
     "schleswig-holstein": {
       "query": "Landtag election Schleswig-Holstein 2027 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler CDU SPD Grüne",
-      "checked_at": "2026-11-08T11:16:01+00:00",
+      "checked_at": "2026-11-15T11:56:26+00:00",
       "status": "success",
       "candidates": {
         "CDU": {
           "name": "Daniel Günther",
           "status": "brave_verified",
-          "source_url": "https://www.kn-online.de/politik/regional/schleswig-holstein-diese-spitzenkandidaten-treten-zur-landtagswahl-2027-an-XSB54ISLXJDTJLKVPOQYZ3D5OY.html",
-          "source_title": "Schleswig-Holstein: Diese Spitzenkandidaten treten zur Landtagswahl 2027 an",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "source_url": "https://www.welt.de/politik/deutschland/article6af87ab39849eea0701e2d64/schleswig-holstein-guenther-will-cdu-bei-wahl-2027-wieder-ueber-40-prozent-fuehren.html",
+          "source_title": "Schleswig-Holstein: Günther will CDU bei Wahl 2027 wieder über 40 Prozent führen - WELT",
+          "checked_at": "2026-11-15T11:56:26+00:00"
         },
         "SPD": {
           "name": "Ulf Kämpfer",
           "status": "brave_verified",
-          "source_url": "https://www.kn-online.de/politik/regional/schleswig-holstein-diese-spitzenkandidaten-treten-zur-landtagswahl-2027-an-XSB54ISLXJDTJLKVPOQYZ3D5OY.html",
-          "source_title": "Schleswig-Holstein: Diese Spitzenkandidaten treten zur Landtagswahl 2027 an",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "source_url": "https://bundestagswahl-2029.com/landtagswahlen/schleswig-holstein-2027/",
+          "source_title": "Landtagswahl in Schleswig-Holstein 2027 – Bundestagswahl 2029",
+          "checked_at": "2026-11-15T11:56:26+00:00"
         },
         "Grüne": {
           "name": "Lasse Petersdotter",
           "status": "brave_verified",
           "source_url": "https://taz.de/Landtagswahl-Schleswig-Holstein-2027-Aminata-Toure-laeutet-Wahlkampf-ein/!6182248/",
           "source_title": "Landtagswahl Schleswig-Holstein 2027: Aminata Touré läutet Wahlkampf ein | taz.de",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "checked_at": "2026-11-15T11:56:26+00:00"
         }
       }
     },
     "hamburg": {
       "query": "Bürgerschaft election Hamburg 2030 Spitzenkandidaten Kandidaten Ministerpräsident Bürgermeister Kanzler SPD CDU Grüne Linke",
-      "checked_at": "2026-11-08T11:16:01+00:00",
+      "checked_at": "2026-11-15T11:56:26+00:00",
       "status": "success",
       "candidates": {
         "SPD": {
           "name": "Peter Tschentscher",
           "status": "brave_verified",
-          "source_url": "https://www.politikcheck-deutschland.de/termine/buergerschaftswahl-hamburg",
-          "source_title": "Bürgerschaftswahl Hamburg 2030: Termin & Umfragen · PolitikCheck",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
+          "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
+          "checked_at": "2026-11-15T11:56:26+00:00"
         },
         "CDU": {
           "name": "Dennis Thering",
           "status": "brave_verified",
-          "source_url": "https://www.bpb.de/kurz-knapp/hintergrund-aktuell/559820/buergerschaftswahl-in-hamburg/",
-          "source_title": "Bürgerschaftswahl in Hamburg | Hintergrund aktuell | bpb.de",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "source_url": "https://www.sueddeutsche.de/politik/buergerschaftswahl-drei-buergermeisterkandidaten-fuer-hamburg-dpa.urn-newsml-dpa-com-20090101-250226-930-387132",
+          "source_title": "Bürgerschaftswahl - Drei Bürgermeisterkandidaten für Hamburg - Politik - SZ.de",
+          "checked_at": "2026-11-15T11:56:26+00:00"
         },
         "Grüne": {
           "name": "Katharina Fegebank",
           "status": "brave_verified",
           "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
           "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-          "checked_at": "2026-11-08T11:16:01+00:00"
+          "checked_at": "2026-11-15T11:56:26+00:00"
         },
         "Linke": {
           "name": "Cansu Özdemir",

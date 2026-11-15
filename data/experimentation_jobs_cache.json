@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T11:29:20+00:00",
+  "updated_at": "2026-11-15T11:58:16+00:00",
   "jobs": [
     {
       "title": "Staff AI Product Analyst, Product Management",
@@ -165,9 +165,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-14",
-      "experimentation_query_date": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "freshness": "Experimentation Jobs refresh 2026-11-15",
+      "experimentation_query_date": "2026-11-15",
+      "last_seen": "2026-11-15"
     },
     {
       "title": "Senior Product Analyst",
@@ -179,9 +179,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-14",
-      "experimentation_query_date": "2026-11-14",
-      "last_seen": "2026-11-14"
+      "freshness": "Experimentation Jobs refresh 2026-11-15",
+      "experimentation_query_date": "2026-11-15",
+      "last_seen": "2026-11-15"
     },
     {
       "title": "Senior Conversion Rate Optimization Manager",
@@ -193,9 +193,9 @@
       "date_posted": "2026-11-10",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-11",
-      "experimentation_query_date": "2026-11-11",
-      "last_seen": "2026-11-11"
+      "freshness": "Experimentation Jobs refresh 2026-11-15",
+      "experimentation_query_date": "2026-11-15",
+      "last_seen": "2026-11-15"
     },
     {
       "title": "CRO Manager",
@@ -207,9 +207,23 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-11",
-      "experimentation_query_date": "2026-11-11",
-      "last_seen": "2026-11-11"
+      "freshness": "Experimentation Jobs refresh 2026-11-15",
+      "experimentation_query_date": "2026-11-15",
+      "last_seen": "2026-11-15"
+    },
+    {
+      "title": "Senior Data Analyst, ML & Experimentation",
+      "company": "Adjoe",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid",
+      "level": "",
+      "url": "https://experimentationjobs.com/job/adjoe-senior-data-analyst-ml-and-experimentation-hamburg-germany/",
+      "date_posted": "2026-11-13",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-11-15",
+      "experimentation_query_date": "2026-11-15",
+      "last_seen": "2026-11-15"
     }
   ]
 }
