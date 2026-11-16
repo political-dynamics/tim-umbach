@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-15T11:58:22+00:00",
+    "generated_at": "2026-11-16T12:45:59+00:00",
     "mode": "daily live refresh + rolling fallback",
     "job_count": 32,
     "archived_job_count": 23,
@@ -19,8 +19,8 @@
     "market_salary_reference_eur": 77184,
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 3 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (5 accepted)",
+    "brave_search_status": "Brave daily budget: success (10/10 requests used, 1 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (0 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -381,7 +381,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-06",
       "brave_query_date": "2026-11-06",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "confirmed_by": "Brave Search API",
       "id": "824575981a81",
       "application_deadline": "",
@@ -694,7 +694,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -943,7 +943,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "id": "ef0b466b5fdd",
       "work_mode_fit": "fit",
       "work_mode_note": "Hybrid work in the Hamburg area is stated",
@@ -988,7 +988,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-16",
       "id": "f55964b7eb18",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -1384,7 +1384,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "Senior Business Analyst",
@@ -1432,7 +1432,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -1480,7 +1480,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -1526,7 +1526,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1574,7 +1574,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -1619,7 +1619,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "Media Technology & Data Strategy Lead (all genders)",
@@ -1666,7 +1666,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1711,7 +1711,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1755,7 +1755,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1797,7 +1797,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "Business Analyst – Digitales Marketing (m/w/d)",
@@ -1846,7 +1846,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-15"
+      "archived_at": "2026-11-16"
     },
     {
       "title": "Working Student Method & Data Standardization (all genders)",

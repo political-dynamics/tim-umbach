@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-15T11:56:31+00:00",
-    "dawum_updated_at": "2026-11-13T08:17:08+01:00",
+    "generated_at": "2026-11-16T12:44:13+00:00",
+    "dawum_updated_at": "2026-11-15T14:35:19+01:00",
     "method_version": "1.0",
     "license": {
       "Name": "ODC Open Database License",
@@ -22,7 +22,7 @@
       "last_successful_at": "2026-11-15T11:56:26+00:00",
       "verified_candidates": 12,
       "shared_daily_limit": 10,
-      "message": "Brave candidate search: success (4/7 weekly requests, 12 names verified)"
+      "message": "Brave candidate search: weekly refresh not due; cached evidence used"
     },
     "sources": [
       {
@@ -57,16 +57,16 @@
       "head_title": "Chancellor",
       "seat_count": 630,
       "poll_count": 12,
-      "latest_poll": "2026-11-13",
+      "latest_poll": "2026-11-14",
       "poll_only": {
         "parties": [
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 27.3,
+            "vote": 27.2,
             "low": 25.5,
-            "high": 29.1,
-            "seats": 196,
+            "high": 29.0,
+            "seats": 195,
             "threshold_probability": 100
           },
           {
@@ -81,7 +81,7 @@
           {
             "party": "Grüne",
             "color": "#62a654",
-            "vote": 15.1,
+            "vote": 15.2,
             "low": 13.6,
             "high": 16.8,
             "seats": 109,
@@ -99,7 +99,7 @@
           {
             "party": "Linke",
             "color": "#a44d8c",
-            "vote": 10.2,
+            "vote": 10.1,
             "low": 8.8,
             "high": 11.5,
             "seats": 73,
@@ -110,18 +110,18 @@
             "color": "#aaa19b",
             "vote": 6.6,
             "low": 4.4,
-            "high": 9.2,
+            "high": 9.1,
             "seats": 0,
             "threshold_probability": 80
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
-            "vote": 4.4,
-            "low": 3.0,
-            "high": 6.1,
-            "seats": 12,
-            "threshold_probability": 29
+            "vote": 4.5,
+            "low": 3.1,
+            "high": 6.2,
+            "seats": 13,
+            "threshold_probability": 31
           },
           {
             "party": "BSW",
@@ -158,7 +158,7 @@
               "SPD"
             ],
             "majority_probability": 0,
-            "seat_share": 37.7,
+            "seat_share": 37.6,
             "formation_prior": 92,
             "formation_probability": 0,
             "party_colors": [
@@ -189,7 +189,7 @@
               "FDP"
             ],
             "majority_probability": 0,
-            "seat_share": 34.4,
+            "seat_share": 34.6,
             "formation_prior": 24,
             "formation_probability": 0,
             "party_colors": [
@@ -245,17 +245,17 @@
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 27.4,
+            "vote": 27.3,
             "low": 25.5,
-            "high": 29.3,
-            "seats": 196,
+            "high": 29.2,
+            "seats": 195,
             "threshold_probability": 100
           },
           {
             "party": "CDU/CSU",
             "color": "#282828",
             "vote": 20.0,
-            "low": 18.4,
+            "low": 18.3,
             "high": 21.7,
             "seats": 143,
             "threshold_probability": 100
@@ -263,7 +263,7 @@
           {
             "party": "Grüne",
             "color": "#62a654",
-            "vote": 15.1,
+            "vote": 15.2,
             "low": 13.6,
             "high": 16.7,
             "seats": 108,
@@ -272,7 +272,7 @@
           {
             "party": "SPD",
             "color": "#d64b4b",
-            "vote": 13.6,
+            "vote": 13.7,
             "low": 12.3,
             "high": 15.1,
             "seats": 98,
@@ -290,20 +290,20 @@
           {
             "party": "Sonstige",
             "color": "#aaa19b",
-            "vote": 6.4,
+            "vote": 6.3,
             "low": 3.9,
-            "high": 8.7,
+            "high": 8.6,
             "seats": 0,
             "threshold_probability": 77
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
-            "vote": 4.2,
-            "low": 2.6,
-            "high": 5.8,
+            "vote": 4.3,
+            "low": 2.7,
+            "high": 5.9,
             "seats": 11,
-            "threshold_probability": 26
+            "threshold_probability": 29
           },
           {
             "party": "BSW",
@@ -323,7 +323,7 @@
               "SPD",
               "Grüne"
             ],
-            "majority_probability": 98,
+            "majority_probability": 99,
             "seat_share": 55.4,
             "formation_prior": 68,
             "formation_probability": 65,
@@ -371,7 +371,7 @@
               "FDP"
             ],
             "majority_probability": 0,
-            "seat_share": 34.4,
+            "seat_share": 34.5,
             "formation_prior": 24,
             "formation_probability": 0,
             "party_colors": [
@@ -431,248 +431,99 @@
       "election_date_iso": "2027-06-30",
       "head_title": "Minister-President",
       "seat_count": 195,
-      "poll_count": 2,
-      "latest_poll": "2026-10-16",
+      "poll_count": 3,
+      "latest_poll": "2026-11-15",
       "poll_only": {
         "parties": [
           {
             "party": "CDU",
             "color": "#282828",
-            "vote": 26.9,
-            "low": 25.2,
-            "high": 28.5,
-            "seats": 57,
+            "vote": 28.6,
+            "low": 26.4,
+            "high": 30.8,
+            "seats": 63,
             "threshold_probability": 100
           },
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 21.2,
-            "low": 19.8,
-            "high": 22.7,
-            "seats": 45,
-            "threshold_probability": 100
-          },
-          {
-            "party": "SPD",
-            "color": "#d64b4b",
-            "vote": 16.7,
-            "low": 14.8,
-            "high": 18.6,
-            "seats": 36,
+            "vote": 18.8,
+            "low": 16.7,
+            "high": 20.9,
+            "seats": 41,
             "threshold_probability": 100
           },
           {
             "party": "Grüne",
             "color": "#62a654",
-            "vote": 16.6,
-            "low": 15.1,
-            "high": 18.0,
+            "vote": 16.7,
+            "low": 15.2,
+            "high": 18.1,
+            "seats": 37,
+            "threshold_probability": 100
+          },
+          {
+            "party": "SPD",
+            "color": "#d64b4b",
+            "vote": 16.0,
+            "low": 14.3,
+            "high": 17.8,
             "seats": 35,
             "threshold_probability": 100
           },
           {
             "party": "Linke",
             "color": "#a44d8c",
-            "vote": 9.4,
-            "low": 8.0,
-            "high": 10.9,
-            "seats": 20,
-            "threshold_probability": 100
+            "vote": 7.8,
+            "low": 6.0,
+            "high": 9.7,
+            "seats": 17,
+            "threshold_probability": 98
           },
           {
             "party": "Sonstige",
             "color": "#aaa19b",
-            "vote": 5.4,
-            "low": 4.0,
-            "high": 6.9,
+            "vote": 5.8,
+            "low": 4.5,
+            "high": 7.2,
             "seats": 0,
-            "threshold_probability": 60
+            "threshold_probability": 75
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
-            "vote": 3.9,
-            "low": 2.5,
-            "high": 5.5,
-            "seats": 2,
-            "threshold_probability": 16
-          }
-        ],
-        "coalitions": [
-          {
-            "name": "Black–red–green",
-            "parties": [
-              "CDU",
-              "SPD",
-              "Grüne"
-            ],
-            "majority_probability": 100,
-            "seat_share": 65.6,
-            "formation_prior": 48,
-            "formation_probability": 48,
-            "party_colors": [
-              "#282828",
-              "#d64b4b",
-              "#62a654"
-            ]
-          },
-          {
-            "name": "Black–green",
-            "parties": [
-              "CDU",
-              "Grüne"
-            ],
-            "majority_probability": 8,
-            "seat_share": 47.4,
-            "formation_prior": 90,
-            "formation_probability": 8,
-            "party_colors": [
-              "#282828",
-              "#62a654"
-            ]
-          },
-          {
-            "name": "Grand coalition",
-            "parties": [
-              "CDU",
-              "SPD"
-            ],
-            "majority_probability": 10,
-            "seat_share": 47.5,
-            "formation_prior": 72,
-            "formation_probability": 8,
-            "party_colors": [
-              "#282828",
-              "#d64b4b"
-            ]
-          },
-          {
-            "name": "Red–green–left",
-            "parties": [
-              "SPD",
-              "Grüne",
-              "Linke"
-            ],
-            "majority_probability": 3,
-            "seat_share": 46.5,
-            "formation_prior": 26,
-            "formation_probability": 1,
-            "party_colors": [
-              "#d64b4b",
-              "#62a654",
-              "#a44d8c"
-            ]
-          },
-          {
-            "name": "Traffic light",
-            "parties": [
-              "SPD",
-              "Grüne",
-              "FDP"
-            ],
-            "majority_probability": 0,
-            "seat_share": 37.3,
-            "formation_prior": 40,
-            "formation_probability": 0,
-            "party_colors": [
-              "#d64b4b",
-              "#62a654",
-              "#e9bf35"
-            ]
-          }
-        ],
-        "candidates": [
-          {
-            "name": "Hendrik Wüst",
-            "party": "CDU",
-            "probability": 64,
-            "color": "#282828",
-            "source_status": "brave_verified",
-            "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
-            "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
-          },
-          {
-            "name": "Jochen Ott",
-            "party": "SPD",
-            "probability": 1,
-            "color": "#d64b4b",
-            "source_status": "brave_verified",
-            "source_url": "https://www.nrwspd.de/2026/01/23/landtagswahl-2027-nrwspd-vorstand-nominiert-jochen-ott-als-spitzenkandidaten/",
-            "source_title": "Landtagswahl 2027: NRWSPD-Vorstand nominiert Jochen Ott als Spitzenkandidaten › NRWSPD",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
-          }
-        ],
-        "unresolved_probability": 35
-      },
-      "economy": {
-        "parties": [
-          {
-            "party": "CDU",
-            "color": "#282828",
-            "vote": 27.2,
-            "low": 25.4,
-            "high": 29.0,
-            "seats": 58,
-            "threshold_probability": 100
-          },
-          {
-            "party": "AfD",
-            "color": "#4d91c6",
-            "vote": 21.2,
-            "low": 19.7,
-            "high": 22.7,
-            "seats": 45,
-            "threshold_probability": 100
-          },
-          {
-            "party": "Grüne",
-            "color": "#62a654",
-            "vote": 16.8,
-            "low": 15.3,
-            "high": 18.3,
-            "seats": 36,
-            "threshold_probability": 100
-          },
-          {
-            "party": "SPD",
-            "color": "#d64b4b",
-            "vote": 16.7,
-            "low": 14.8,
-            "high": 18.6,
-            "seats": 35,
-            "threshold_probability": 100
-          },
-          {
-            "party": "Linke",
-            "color": "#a44d8c",
-            "vote": 9.3,
-            "low": 7.8,
-            "high": 10.7,
-            "seats": 20,
-            "threshold_probability": 100
-          },
-          {
-            "party": "Sonstige",
-            "color": "#aaa19b",
-            "vote": 5.3,
-            "low": 3.8,
-            "high": 6.7,
-            "seats": 0,
-            "threshold_probability": 61
-          },
-          {
-            "party": "FDP",
-            "color": "#e9bf35",
-            "vote": 3.6,
-            "low": 2.2,
-            "high": 5.1,
+            "vote": 3.3,
+            "low": 2.0,
+            "high": 4.9,
             "seats": 1,
-            "threshold_probability": 12
+            "threshold_probability": 9
+          },
+          {
+            "party": "BSW",
+            "color": "#7d365f",
+            "vote": 3.1,
+            "low": 1.8,
+            "high": 4.7,
+            "seats": 1,
+            "threshold_probability": 7
           }
         ],
         "coalitions": [
+          {
+            "name": "Black–green",
+            "parties": [
+              "CDU",
+              "Grüne"
+            ],
+            "majority_probability": 68,
+            "seat_share": 51.0,
+            "formation_prior": 90,
+            "formation_probability": 34,
+            "party_colors": [
+              "#282828",
+              "#62a654"
+            ]
+          },
           {
             "name": "Black–red–green",
             "parties": [
@@ -681,27 +532,12 @@
               "Grüne"
             ],
             "majority_probability": 100,
-            "seat_share": 66.1,
+            "seat_share": 69.1,
             "formation_prior": 48,
-            "formation_probability": 45,
+            "formation_probability": 24,
             "party_colors": [
               "#282828",
               "#d64b4b",
-              "#62a654"
-            ]
-          },
-          {
-            "name": "Black–green",
-            "parties": [
-              "CDU",
-              "Grüne"
-            ],
-            "majority_probability": 13,
-            "seat_share": 47.9,
-            "formation_prior": 90,
-            "formation_probability": 13,
-            "party_colors": [
-              "#282828",
               "#62a654"
             ]
           },
@@ -711,30 +547,13 @@
               "CDU",
               "SPD"
             ],
-            "majority_probability": 12,
-            "seat_share": 47.8,
+            "majority_probability": 57,
+            "seat_share": 50.3,
             "formation_prior": 72,
-            "formation_probability": 9,
+            "formation_probability": 23,
             "party_colors": [
               "#282828",
               "#d64b4b"
-            ]
-          },
-          {
-            "name": "Red–green–left",
-            "parties": [
-              "SPD",
-              "Grüne",
-              "Linke"
-            ],
-            "majority_probability": 3,
-            "seat_share": 46.6,
-            "formation_prior": 26,
-            "formation_probability": 1,
-            "party_colors": [
-              "#d64b4b",
-              "#62a654",
-              "#a44d8c"
             ]
           },
           {
@@ -745,7 +564,7 @@
               "FDP"
             ],
             "majority_probability": 0,
-            "seat_share": 37.2,
+            "seat_share": 37.5,
             "formation_prior": 40,
             "formation_probability": 0,
             "party_colors": [
@@ -753,13 +572,30 @@
               "#62a654",
               "#e9bf35"
             ]
+          },
+          {
+            "name": "Red–green–left",
+            "parties": [
+              "SPD",
+              "Grüne",
+              "Linke"
+            ],
+            "majority_probability": 2,
+            "seat_share": 45.5,
+            "formation_prior": 26,
+            "formation_probability": 0,
+            "party_colors": [
+              "#d64b4b",
+              "#62a654",
+              "#a44d8c"
+            ]
           }
         ],
         "candidates": [
           {
             "name": "Hendrik Wüst",
             "party": "CDU",
-            "probability": 67,
+            "probability": 81,
             "color": "#282828",
             "source_status": "brave_verified",
             "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
@@ -769,7 +605,7 @@
           {
             "name": "Mona Neubaur",
             "party": "Grüne",
-            "probability": 1,
+            "probability": 0,
             "color": "#62a654",
             "source_status": "brave_verified",
             "source_url": "https://gruene-nrw.de/2026/11/gruene-nrw-waehlen-mona-neubaur-zur-spitzenkandidatin-fuer-die-landtagswahl-2027/",
@@ -777,7 +613,189 @@
             "source_checked_at": "2026-11-15T11:56:26+00:00"
           }
         ],
-        "unresolved_probability": 32
+        "unresolved_probability": 19
+      },
+      "economy": {
+        "parties": [
+          {
+            "party": "CDU",
+            "color": "#282828",
+            "vote": 29.0,
+            "low": 26.8,
+            "high": 31.3,
+            "seats": 64,
+            "threshold_probability": 100
+          },
+          {
+            "party": "AfD",
+            "color": "#4d91c6",
+            "vote": 18.7,
+            "low": 16.6,
+            "high": 20.9,
+            "seats": 41,
+            "threshold_probability": 100
+          },
+          {
+            "party": "Grüne",
+            "color": "#62a654",
+            "vote": 16.9,
+            "low": 15.4,
+            "high": 18.4,
+            "seats": 37,
+            "threshold_probability": 100
+          },
+          {
+            "party": "SPD",
+            "color": "#d64b4b",
+            "vote": 16.0,
+            "low": 14.2,
+            "high": 17.7,
+            "seats": 35,
+            "threshold_probability": 100
+          },
+          {
+            "party": "Linke",
+            "color": "#a44d8c",
+            "vote": 7.6,
+            "low": 5.6,
+            "high": 9.5,
+            "seats": 16,
+            "threshold_probability": 96
+          },
+          {
+            "party": "Sonstige",
+            "color": "#aaa19b",
+            "vote": 5.7,
+            "low": 4.3,
+            "high": 7.1,
+            "seats": 0,
+            "threshold_probability": 73
+          },
+          {
+            "party": "FDP",
+            "color": "#e9bf35",
+            "vote": 3.1,
+            "low": 1.7,
+            "high": 4.6,
+            "seats": 1,
+            "threshold_probability": 5
+          },
+          {
+            "party": "BSW",
+            "color": "#7d365f",
+            "vote": 2.9,
+            "low": 1.4,
+            "high": 4.4,
+            "seats": 0,
+            "threshold_probability": 4
+          }
+        ],
+        "coalitions": [
+          {
+            "name": "Black–green",
+            "parties": [
+              "CDU",
+              "Grüne"
+            ],
+            "majority_probability": 79,
+            "seat_share": 51.9,
+            "formation_prior": 90,
+            "formation_probability": 37,
+            "party_colors": [
+              "#282828",
+              "#62a654"
+            ]
+          },
+          {
+            "name": "Grand coalition",
+            "parties": [
+              "CDU",
+              "SPD"
+            ],
+            "majority_probability": 64,
+            "seat_share": 50.8,
+            "formation_prior": 72,
+            "formation_probability": 24,
+            "party_colors": [
+              "#282828",
+              "#d64b4b"
+            ]
+          },
+          {
+            "name": "Black–red–green",
+            "parties": [
+              "CDU",
+              "SPD",
+              "Grüne"
+            ],
+            "majority_probability": 100,
+            "seat_share": 69.9,
+            "formation_prior": 48,
+            "formation_probability": 22,
+            "party_colors": [
+              "#282828",
+              "#d64b4b",
+              "#62a654"
+            ]
+          },
+          {
+            "name": "Traffic light",
+            "parties": [
+              "SPD",
+              "Grüne",
+              "FDP"
+            ],
+            "majority_probability": 0,
+            "seat_share": 37.4,
+            "formation_prior": 40,
+            "formation_probability": 0,
+            "party_colors": [
+              "#d64b4b",
+              "#62a654",
+              "#e9bf35"
+            ]
+          },
+          {
+            "name": "Red–green–left",
+            "parties": [
+              "SPD",
+              "Grüne",
+              "Linke"
+            ],
+            "majority_probability": 2,
+            "seat_share": 45.5,
+            "formation_prior": 26,
+            "formation_probability": 0,
+            "party_colors": [
+              "#d64b4b",
+              "#62a654",
+              "#a44d8c"
+            ]
+          }
+        ],
+        "candidates": [
+          {
+            "name": "Hendrik Wüst",
+            "party": "CDU",
+            "probability": 83,
+            "color": "#282828",
+            "source_status": "brave_verified",
+            "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
+            "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
+            "source_checked_at": "2026-11-15T11:56:26+00:00"
+          },
+          {
+            "name": "Mona Neubaur",
+            "party": "Grüne",
+            "probability": 0,
+            "color": "#62a654",
+            "source_status": "brave_verified",
+            "source_url": "https://gruene-nrw.de/2026/11/gruene-nrw-waehlen-mona-neubaur-zur-spitzenkandidatin-fuer-die-landtagswahl-2027/",
+            "source_title": "Grüne NRW wählen Mona Neubaur zur Spitzenkandidatin für die Landtagswahl 2027 | GRÜNE NRW",
+            "source_checked_at": "2026-11-15T11:56:26+00:00"
+          }
+        ],
+        "unresolved_probability": 17
       }
     },
     "hamburg": {
