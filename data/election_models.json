@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-16T12:44:13+00:00",
-    "dawum_updated_at": "2026-11-15T14:35:19+01:00",
+    "generated_at": "2026-11-17T13:24:24+00:00",
+    "dawum_updated_at": "2026-11-17T07:25:03+01:00",
     "method_version": "1.0",
     "license": {
       "Name": "ODC Open Database License",
@@ -57,71 +57,71 @@
       "head_title": "Chancellor",
       "seat_count": 630,
       "poll_count": 12,
-      "latest_poll": "2026-11-14",
+      "latest_poll": "2026-11-17",
       "poll_only": {
         "parties": [
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 27.2,
-            "low": 25.5,
-            "high": 29.0,
-            "seats": 195,
+            "vote": 27.4,
+            "low": 25.6,
+            "high": 29.2,
+            "seats": 196,
             "threshold_probability": 100
           },
           {
             "party": "CDU/CSU",
             "color": "#282828",
-            "vote": 19.6,
-            "low": 18.1,
-            "high": 21.2,
-            "seats": 141,
+            "vote": 19.4,
+            "low": 17.9,
+            "high": 21.0,
+            "seats": 139,
             "threshold_probability": 100
           },
           {
             "party": "Grüne",
             "color": "#62a654",
-            "vote": 15.2,
+            "vote": 15.1,
             "low": 13.6,
-            "high": 16.8,
-            "seats": 109,
+            "high": 16.6,
+            "seats": 108,
             "threshold_probability": 100
           },
           {
             "party": "SPD",
             "color": "#d64b4b",
-            "vote": 13.4,
-            "low": 12.0,
-            "high": 14.8,
-            "seats": 96,
+            "vote": 13.6,
+            "low": 12.2,
+            "high": 15.0,
+            "seats": 98,
             "threshold_probability": 100
           },
           {
             "party": "Linke",
             "color": "#a44d8c",
             "vote": 10.1,
-            "low": 8.8,
+            "low": 8.7,
             "high": 11.5,
-            "seats": 73,
+            "seats": 72,
             "threshold_probability": 100
           },
           {
             "party": "Sonstige",
             "color": "#aaa19b",
-            "vote": 6.6,
+            "vote": 6.5,
             "low": 4.4,
-            "high": 9.1,
+            "high": 9.0,
             "seats": 0,
             "threshold_probability": 80
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
-            "vote": 4.5,
+            "vote": 4.6,
             "low": 3.1,
             "high": 6.2,
-            "seats": 13,
-            "threshold_probability": 31
+            "seats": 14,
+            "threshold_probability": 33
           },
           {
             "party": "BSW",
@@ -141,8 +141,8 @@
               "SPD",
               "Grüne"
             ],
-            "majority_probability": 97,
-            "seat_share": 54.9,
+            "majority_probability": 96,
+            "seat_share": 54.7,
             "formation_prior": 68,
             "formation_probability": 65,
             "party_colors": [
@@ -173,7 +173,7 @@
               "Grüne"
             ],
             "majority_probability": 0,
-            "seat_share": 39.6,
+            "seat_share": 39.2,
             "formation_prior": 55,
             "formation_probability": 0,
             "party_colors": [
@@ -189,7 +189,7 @@
               "FDP"
             ],
             "majority_probability": 0,
-            "seat_share": 34.6,
+            "seat_share": 34.8,
             "formation_prior": 24,
             "formation_probability": 0,
             "party_colors": [
@@ -245,46 +245,46 @@
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 27.3,
-            "low": 25.5,
-            "high": 29.2,
-            "seats": 195,
+            "vote": 27.5,
+            "low": 25.6,
+            "high": 29.4,
+            "seats": 196,
             "threshold_probability": 100
           },
           {
             "party": "CDU/CSU",
             "color": "#282828",
-            "vote": 20.0,
-            "low": 18.3,
-            "high": 21.7,
-            "seats": 143,
+            "vote": 19.8,
+            "low": 18.2,
+            "high": 21.5,
+            "seats": 141,
             "threshold_probability": 100
           },
           {
             "party": "Grüne",
             "color": "#62a654",
-            "vote": 15.2,
+            "vote": 15.1,
             "low": 13.6,
-            "high": 16.7,
+            "high": 16.6,
             "seats": 108,
             "threshold_probability": 100
           },
           {
             "party": "SPD",
             "color": "#d64b4b",
-            "vote": 13.7,
-            "low": 12.3,
-            "high": 15.1,
-            "seats": 98,
+            "vote": 13.9,
+            "low": 12.5,
+            "high": 15.3,
+            "seats": 99,
             "threshold_probability": 100
           },
           {
             "party": "Linke",
             "color": "#a44d8c",
-            "vote": 10.2,
-            "low": 8.8,
-            "high": 11.5,
-            "seats": 73,
+            "vote": 10.1,
+            "low": 8.7,
+            "high": 11.4,
+            "seats": 72,
             "threshold_probability": 100
           },
           {
@@ -292,18 +292,18 @@
             "color": "#aaa19b",
             "vote": 6.3,
             "low": 3.9,
-            "high": 8.6,
+            "high": 8.5,
             "seats": 0,
             "threshold_probability": 77
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
-            "vote": 4.3,
-            "low": 2.7,
+            "vote": 4.4,
+            "low": 2.8,
             "high": 5.9,
-            "seats": 11,
-            "threshold_probability": 29
+            "seats": 13,
+            "threshold_probability": 32
           },
           {
             "party": "BSW",
@@ -323,8 +323,8 @@
               "SPD",
               "Grüne"
             ],
-            "majority_probability": 99,
-            "seat_share": 55.4,
+            "majority_probability": 98,
+            "seat_share": 55.2,
             "formation_prior": 68,
             "formation_probability": 65,
             "party_colors": [
@@ -340,7 +340,7 @@
               "SPD"
             ],
             "majority_probability": 0,
-            "seat_share": 38.2,
+            "seat_share": 38.1,
             "formation_prior": 92,
             "formation_probability": 0,
             "party_colors": [
@@ -355,7 +355,7 @@
               "Grüne"
             ],
             "majority_probability": 0,
-            "seat_share": 39.9,
+            "seat_share": 39.5,
             "formation_prior": 55,
             "formation_probability": 0,
             "party_colors": [
@@ -371,7 +371,7 @@
               "FDP"
             ],
             "majority_probability": 0,
-            "seat_share": 34.5,
+            "seat_share": 34.8,
             "formation_prior": 24,
             "formation_probability": 0,
             "party_colors": [
