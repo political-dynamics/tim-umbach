@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-17T13:26:24+00:00",
+    "generated_at": "2026-11-18T13:03:20+00:00",
     "mode": "daily live refresh + rolling fallback",
     "job_count": 32,
     "archived_job_count": 23,
@@ -18,9 +18,9 @@
     "published_salary_uplift_applied": false,
     "market_salary_reference_eur": 77184,
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
-    "preference_excluded_count": 10,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 1 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (3 accepted)",
+    "preference_excluded_count": 9,
+    "brave_search_status": "Brave daily budget: success (10/10 requests used, 2 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: error (0 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -377,11 +377,11 @@
       "level": "senior",
       "url": "https://corporate.aboutyou.de/de/jobs/senior-data-scientist-m-f-d-business-intelligence-application",
       "date_posted": "",
-      "description": "Senior Data Analyst (m/f/d) – Shop Analytics – onsite in Hamburg or Berlin Data & Analytics | Hamburg oder Berlin (hybrid)",
+      "description": "Senior Data Analyst (m/w/d) – Recommendation – onsite in Hamburg or Berlin Data & Analytics | Hamburg oder Berlin (hybrid)",
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-06",
       "brave_query_date": "2026-11-06",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "confirmed_by": "Brave Search API",
       "id": "824575981a81",
       "application_deadline": "",
@@ -508,7 +508,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-08-17",
       "brave_query_date": "2026-08-17",
-      "last_seen": "2026-11-15",
+      "last_seen": "2026-11-18",
       "confirmed_by": "Brave Search API",
       "id": "3b8196ff9a6c",
       "application_deadline": "",
@@ -661,7 +661,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "id": "f55964b7eb18",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -742,7 +742,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-17",
+      "last_seen": "2026-11-18",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -979,51 +979,6 @@
       "salary_confidence": "low"
     },
     {
-      "title": "(Senior) Manager Business Analytics (w/m/d)",
-      "company": "Freenet Group",
-      "location": "Hamburg, Germany",
-      "work_mode": "Hybrid / mobile work",
-      "level": "lead",
-      "url": "https://karriere.freenet-group.de/?page=home&action=view&id=txjsey3qi11xiv03m87bct63iqn64bg&mandator_template_id=1",
-      "date_posted": "",
-      "valid_through": "",
-      "description": "(Senior) Manager Business Analytics (w/m/d) Das erwartet dich Als Manager Business Analytics bist Du mitten im Herzstück unserer strategischen Entscheidungsprozesse. Du modellierst Geschäftsentwicklungen und sorgst mit Deinen Analysen und Reportings für eine konsolidierte Datenbasis, die als Grundlage für wichtige Steuerungsentscheidungen dient. Neue Geschäftsmodelle analysierst Du auf Wirtschaftlichkeit und bereitest Verhandlungen mit unseren Partnern vor. Deine Arbeit bei uns im Team ist geprägt von spannenden Business Cases, strategischen Entscheidungsprozessen, einem hohen Maß an Verantwortung und der Möglichkeit, Dich beruflich sowie persönlich kontinuierlich weiterzuentwickeln. Deine Aufgaben Geschäftsentwicklung: Du erstellst und pflegst Forecast-Modelle zur Geschäftsentwicklung und sorgst dafür, dass Entscheidungen immer auf Basis der letzten Prognosen erfolgen Wirtschaftlichkeit",
-      "discovery_source": "Official career page",
-      "application_deadline": "",
-      "freshness": "live check",
-      "last_seen": "2026-11-17",
-      "id": "ef0b466b5fdd",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 42,
-      "matched_skills": [
-        "Stakeholder consulting",
-        "Data visualization"
-      ],
-      "fit_reasons": [
-        "Role alignment: Business Analyst",
-        "Skill overlap: Stakeholder consulting, Data visualization",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 76000,
-      "salary_mid": 84000,
-      "salary_max": 92000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "low",
-      "map": {
-        "latitude": 53.60138,
-        "longitude": 9.989452,
-        "label": "Freenet Group · Hamburg office",
-        "precision": "verified employer office",
-        "address": "Deelbögenkamp 4, 22297 Hamburg, Germany",
-        "source_url": "https://www.freenet.ag/binaries/_ts_1743426272688/content/assets/freenetgroup/pdf/ir-englisch/hauptversammlung/2025/agm_2025_invitation-agenda.pdf",
-        "osm_url": "https://www.openstreetmap.org/node/3451511483",
-        "location_note": "Employer office reference; the vacancy may use another worksite."
-      }
-    },
-    {
       "title": "E-Commerce Consultant / CRO & Datenanalyst:in (m/w/d)",
       "company": "tante-e",
       "location": "Germany (Remote)",
@@ -1128,6 +1083,47 @@
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
       "salary_confidence": "low"
+    },
+    {
+      "title": "(Senior) Manager Business Analytics (w/m/d)",
+      "company": "Freenet Group",
+      "location": "Hamburg, Germany",
+      "work_mode": "Hybrid / mobile work",
+      "level": "lead",
+      "url": "https://karriere.freenet-group.de/?page=home&action=view&id=txjsey3qi11xiv03m87bct63iqn64bg&mandator_template_id=1",
+      "date_posted": "",
+      "valid_through": "",
+      "description": "(Senior) Manager Business Analytics (w/m/d) Das erwartet dich Als Manager Business Analytics bist Du mitten im Herzstück unserer strategischen Entscheidungsprozesse. Du modellierst Geschäftsentwicklungen und sorgst mit Deinen Analysen und Reportings für eine konsolidierte Datenbasis, die als Grundlage für wichtige Steuerungsentscheidungen dient. Neue Geschäftsmodelle analysierst Du auf Wirtschaftlichkeit und bereitest Verhandlungen mit unseren Partnern vor. Deine Arbeit bei uns im Team ist geprägt von spannenden Business Cases, strategischen Entscheidungsprozessen, einem hohen Maß an Verantwortung und der Möglichkeit, Dich beruflich sowie persönlich kontinuierlich weiterzuentwickeln. Deine Aufgaben Geschäftsentwicklung: Du erstellst und pflegst Forecast-Modelle zur Geschäftsentwicklung und sorgst dafür, dass Entscheidungen immer auf Basis der letzten Prognosen erfolgen Wirtschaftlichkeit",
+      "discovery_source": "Official career page",
+      "application_deadline": "",
+      "freshness": "live check",
+      "last_seen": "2026-11-17",
+      "id": "ef0b466b5fdd",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 34,
+      "matched_skills": [],
+      "fit_reasons": [
+        "Role alignment: Business Analyst",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 76000,
+      "salary_mid": 84000,
+      "salary_max": 92000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "low",
+      "map": {
+        "latitude": 53.60138,
+        "longitude": 9.989452,
+        "label": "Freenet Group · Hamburg office",
+        "precision": "verified employer office",
+        "address": "Deelbögenkamp 4, 22297 Hamburg, Germany",
+        "source_url": "https://www.freenet.ag/binaries/_ts_1743426272688/content/assets/freenetgroup/pdf/ir-englisch/hauptversammlung/2025/agm_2025_invitation-agenda.pdf",
+        "osm_url": "https://www.openstreetmap.org/node/3451511483",
+        "location_note": "Employer office reference; the vacancy may use another worksite."
+      }
     },
     {
       "title": "(Senior) Web Analytics Specialist (w/m/d)",
@@ -1384,7 +1380,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "Senior Business Analyst",
@@ -1432,7 +1428,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -1480,7 +1476,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -1526,7 +1522,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1574,7 +1570,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -1619,7 +1615,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "Media Technology & Data Strategy Lead (all genders)",
@@ -1666,7 +1662,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1711,7 +1707,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1755,7 +1751,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1797,7 +1793,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "Business Analyst – Digitales Marketing (m/w/d)",
@@ -1846,7 +1842,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-17"
+      "archived_at": "2026-11-18"
     },
     {
       "title": "Working Student Method & Data Standardization (all genders)",
