@@ -1,8 +1,8 @@
 {
-  "request_date_utc": "2026-11-18",
+  "request_date_utc": "2026-11-19",
   "request_count": 1,
-  "query": "Product Analyst",
+  "query": "Experimentation",
   "status": "error",
-  "updated_at": "2026-11-18T13:03:12+00:00",
+  "updated_at": "2026-11-19T13:05:58+00:00",
   "error_type": "HTTPError"
 }
