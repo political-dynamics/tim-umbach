@@ -1,8 +1,9 @@
 {
-  "request_date_utc": "2026-11-19",
+  "request_date_utc": "2026-11-20",
   "request_count": 1,
-  "query": "Experimentation",
-  "status": "error",
-  "updated_at": "2026-11-19T13:05:58+00:00",
-  "error_type": "HTTPError"
+  "query": "Data Scientist",
+  "status": "success",
+  "updated_at": "2026-11-20T12:54:23+00:00",
+  "listing_count": 5,
+  "accepted_results": 0
 }

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-11-19T13:06:04+00:00",
+    "generated_at": "2026-11-20T12:54:32+00:00",
     "mode": "daily live refresh + rolling fallback",
-    "job_count": 32,
-    "archived_job_count": 23,
+    "job_count": 29,
+    "archived_job_count": 26,
     "location": "Hamburg",
-    "employer_office_mapped_job_count": 21,
+    "employer_office_mapped_job_count": 19,
     "city_area_mapped_job_count": 3,
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2025",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987?alter=3&region=5",
@@ -20,7 +20,7 @@
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
     "brave_search_status": "Brave daily budget: success (10/10 requests used, 2 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: error (0 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (0 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -381,7 +381,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-06",
       "brave_query_date": "2026-11-06",
-      "last_seen": "2026-11-19",
+      "last_seen": "2026-11-20",
       "confirmed_by": "Brave Search API",
       "id": "824575981a81",
       "application_deadline": "",
@@ -508,7 +508,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-08-17",
       "brave_query_date": "2026-08-17",
-      "last_seen": "2026-11-19",
+      "last_seen": "2026-11-20",
       "confirmed_by": "Brave Search API",
       "id": "3b8196ff9a6c",
       "application_deadline": "",
@@ -649,39 +649,6 @@
       "salary_confidence": "medium"
     },
     {
-      "title": "Frontend Entwickler*in CRO & Experimentation (m/w/d) – Remote",
-      "company": "Naturtreu",
-      "location": "Germany (Remote)",
-      "work_mode": "Remote",
-      "level": "experienced",
-      "url": "https://experimentationjobs.com/job/naturtreu-frontend-entwicklerin-cro-experimentation-germany-remote/",
-      "date_posted": "2026-08-18",
-      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
-      "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-09-20",
-      "experimentation_query_date": "2026-09-20",
-      "last_seen": "2026-09-20",
-      "id": "92963b6ad33a",
-      "application_deadline": "",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Remote eligibility appears compatible with Hamburg",
-      "match_score": 50,
-      "matched_skills": [
-        "Experimentation"
-      ],
-      "fit_reasons": [
-        "Role alignment: Experimentation Scientist",
-        "Skill overlap: Experimentation"
-      ],
-      "skill_gaps": [],
-      "salary_min": 63000,
-      "salary_mid": 70000,
-      "salary_max": 77000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "low"
-    },
-    {
       "title": "Financial Analyst (w/m/d) / Controlling",
       "company": "Fielmann",
       "location": "Hamburg, Hamburg, DE",
@@ -694,7 +661,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-19",
+      "last_seen": "2026-11-20",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -811,50 +778,6 @@
       }
     },
     {
-      "title": "Junior Technology Analyst (w/m/d)",
-      "company": "Fielmann",
-      "location": "Hamburg, Hamburg, DE",
-      "work_mode": "Hybrid / mobile work",
-      "level": "lead",
-      "url": "https://jobs.fielmann.com/en/job-offers/detail/64767-junior-technology-analyst-wmd",
-      "date_posted": "",
-      "valid_through": "",
-      "description": "Das Technology-Team der Fielmann Ventures GmbH identifiziert, testet und bewertet neue Produkte sowie Hardware- und Softwarelösungen in den Bereichen Augenoptik, Hörakustik, Augengesundheit und angrenzende Gesundheitslösungen. In unserem Head Office in Hamburg trägst dazu bei, technologische Entwicklungen strukturiert einzuordnen und fundierte Handlungsempfehlungen für interne Stakeholder abzuleiten. Das erwartet dich bei uns. Deine Aufgaben. Du recherchierst neue Produkte, Hardware- und Softwarelösungen sowie relevante Technologietrends. Du baust durch kontinuierliche Marktbeobachtung, den Austausch mit Herstellern, Start-ups und Partnern sowie die Teilnahme an Fachmessen und Kongressen fundiertes Markt- und Technologiewissen auf. Du testest neue Produkte und Technologien praktisch und bewertest ihre Funktionalität, ihren Reifegrad, ihre Benutzerfreundlichkeit und technische Eignung. Du",
-      "discovery_source": "Official career page",
-      "application_deadline": "",
-      "freshness": "live check",
-      "last_seen": "2026-09-20",
-      "id": "1dce7931c646",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 44,
-      "matched_skills": [
-        "Stakeholder consulting"
-      ],
-      "fit_reasons": [
-        "Role alignment: Product Analyst",
-        "Skill overlap: Stakeholder consulting",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 76000,
-      "salary_mid": 84000,
-      "salary_max": 92000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "low",
-      "map": {
-        "latitude": 53.580257,
-        "longitude": 10.030299,
-        "label": "Fielmann · Hamburg office",
-        "precision": "verified employer office",
-        "address": "Weidestraße 118a, 22083 Hamburg, Germany",
-        "source_url": "https://www.fielmann-group.com/fileadmin/fielmann/Dokumente/Hauptversammlung/2025/DE/Hinweise_zum_Datenschutz.pdf",
-        "osm_url": "https://www.openstreetmap.org/node/1214564522",
-        "location_note": "Employer office reference; the vacancy may use another worksite."
-      }
-    },
-    {
       "title": "(Junior) Data Analyst Campaigning (w/m/d)",
       "company": "Freenet Group",
       "location": "Hamburg, Germany",
@@ -943,7 +866,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-19",
+      "last_seen": "2026-11-20",
       "id": "f55964b7eb18",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -1289,47 +1212,6 @@
         "osm_url": "https://www.openstreetmap.org/way/1187653917",
         "location_note": "Employer office reference; the vacancy may use another worksite."
       }
-    },
-    {
-      "title": "Working Student Global Consumer & Market Insights (all genders)",
-      "company": "Beiersdorf",
-      "location": "Hamburg, Germany",
-      "work_mode": "On-site",
-      "level": "student",
-      "url": "https://www.beiersdorf.com/career/jobs/cd3e9b381c969a09837727d8f4b63717",
-      "date_posted": "",
-      "valid_through": "",
-      "description": "Working Student Global Consumer & Market Insights (all genders) Apply now Job Details Contract Type: Limited, 1 Year / Part-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks As a Working Student in the Global Consumer & Market Insights team, you will be an integral part of a global function that helps shape business decisions through consumer understanding, data, and insights. You will support key strategic initiatives across consumer research, insight activation, knowledge management, and AI-powered ways of working. Coordinate and improve the Beiersdorf Consumer Academy and the internal insights platform. Support a global Category Usage & Attitude study through workshops, data synthesis, insight generation, and actionable recommendations. Use Copilot and other AI tools to scale consumer insights and advance AI-enabled ways",
-      "discovery_source": "Official career page",
-      "application_deadline": "",
-      "freshness": "live check",
-      "last_seen": "2026-09-20",
-      "id": "fc7929085f06",
-      "work_mode_fit": "mismatch",
-      "work_mode_note": "Appears to require regular on-site work",
-      "match_score": 17,
-      "matched_skills": [],
-      "fit_reasons": [
-        "Role alignment: Customer Insights",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 32000,
-      "salary_mid": 35000,
-      "salary_max": 38000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "medium",
-      "map": {
-        "latitude": 53.583019,
-        "longitude": 9.958834,
-        "label": "Beiersdorf · Hamburg office",
-        "precision": "verified employer office",
-        "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
-        "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
-        "osm_url": "https://www.openstreetmap.org/way/1187653917",
-        "location_note": "Employer office reference; the vacancy may use another worksite."
-      }
     }
   ],
   "archived_jobs": [
@@ -1380,7 +1262,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "Senior Business Analyst",
@@ -1428,7 +1310,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -1476,7 +1358,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -1522,7 +1404,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1570,7 +1452,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -1615,7 +1497,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "Media Technology & Data Strategy Lead (all genders)",
@@ -1662,7 +1544,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1707,7 +1589,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1751,7 +1633,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1793,7 +1675,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
     },
     {
       "title": "Business Analyst – Digitales Marketing (m/w/d)",
@@ -1842,7 +1724,131 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-19"
+      "archived_at": "2026-11-20"
+    },
+    {
+      "title": "Frontend Entwickler*in CRO & Experimentation (m/w/d) – Remote",
+      "company": "Naturtreu",
+      "location": "Germany (Remote)",
+      "work_mode": "Remote",
+      "level": "experienced",
+      "url": "https://experimentationjobs.com/job/naturtreu-frontend-entwicklerin-cro-experimentation-germany-remote/",
+      "date_posted": "2026-08-18",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-09-20",
+      "experimentation_query_date": "2026-09-20",
+      "last_seen": "2026-09-20",
+      "id": "92963b6ad33a",
+      "application_deadline": "",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Remote eligibility appears compatible with Hamburg",
+      "match_score": 50,
+      "matched_skills": [
+        "Experimentation"
+      ],
+      "fit_reasons": [
+        "Role alignment: Experimentation Scientist",
+        "Skill overlap: Experimentation"
+      ],
+      "skill_gaps": [],
+      "salary_min": 63000,
+      "salary_mid": 70000,
+      "salary_max": 77000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "low",
+      "archive_reason": "Not rediscovered since 2026-09-20",
+      "archived_at": "2026-11-20"
+    },
+    {
+      "title": "Junior Technology Analyst (w/m/d)",
+      "company": "Fielmann",
+      "location": "Hamburg, Hamburg, DE",
+      "work_mode": "Hybrid / mobile work",
+      "level": "lead",
+      "url": "https://jobs.fielmann.com/en/job-offers/detail/64767-junior-technology-analyst-wmd",
+      "date_posted": "",
+      "valid_through": "",
+      "description": "Das Technology-Team der Fielmann Ventures GmbH identifiziert, testet und bewertet neue Produkte sowie Hardware- und Softwarelösungen in den Bereichen Augenoptik, Hörakustik, Augengesundheit und angrenzende Gesundheitslösungen. In unserem Head Office in Hamburg trägst dazu bei, technologische Entwicklungen strukturiert einzuordnen und fundierte Handlungsempfehlungen für interne Stakeholder abzuleiten. Das erwartet dich bei uns. Deine Aufgaben. Du recherchierst neue Produkte, Hardware- und Softwarelösungen sowie relevante Technologietrends. Du baust durch kontinuierliche Marktbeobachtung, den Austausch mit Herstellern, Start-ups und Partnern sowie die Teilnahme an Fachmessen und Kongressen fundiertes Markt- und Technologiewissen auf. Du testest neue Produkte und Technologien praktisch und bewertest ihre Funktionalität, ihren Reifegrad, ihre Benutzerfreundlichkeit und technische Eignung. Du",
+      "discovery_source": "Official career page",
+      "application_deadline": "",
+      "freshness": "live check",
+      "last_seen": "2026-09-20",
+      "id": "1dce7931c646",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 44,
+      "matched_skills": [
+        "Stakeholder consulting"
+      ],
+      "fit_reasons": [
+        "Role alignment: Product Analyst",
+        "Skill overlap: Stakeholder consulting",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 76000,
+      "salary_mid": 84000,
+      "salary_max": 92000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "low",
+      "map": {
+        "latitude": 53.580257,
+        "longitude": 10.030299,
+        "label": "Fielmann · Hamburg office",
+        "precision": "verified employer office",
+        "address": "Weidestraße 118a, 22083 Hamburg, Germany",
+        "source_url": "https://www.fielmann-group.com/fileadmin/fielmann/Dokumente/Hauptversammlung/2025/DE/Hinweise_zum_Datenschutz.pdf",
+        "osm_url": "https://www.openstreetmap.org/node/1214564522",
+        "location_note": "Employer office reference; the vacancy may use another worksite."
+      },
+      "archive_reason": "Not rediscovered since 2026-09-20",
+      "archived_at": "2026-11-20"
+    },
+    {
+      "title": "Working Student Global Consumer & Market Insights (all genders)",
+      "company": "Beiersdorf",
+      "location": "Hamburg, Germany",
+      "work_mode": "On-site",
+      "level": "student",
+      "url": "https://www.beiersdorf.com/career/jobs/cd3e9b381c969a09837727d8f4b63717",
+      "date_posted": "",
+      "valid_through": "",
+      "description": "Working Student Global Consumer & Market Insights (all genders) Apply now Job Details Contract Type: Limited, 1 Year / Part-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks As a Working Student in the Global Consumer & Market Insights team, you will be an integral part of a global function that helps shape business decisions through consumer understanding, data, and insights. You will support key strategic initiatives across consumer research, insight activation, knowledge management, and AI-powered ways of working. Coordinate and improve the Beiersdorf Consumer Academy and the internal insights platform. Support a global Category Usage & Attitude study through workshops, data synthesis, insight generation, and actionable recommendations. Use Copilot and other AI tools to scale consumer insights and advance AI-enabled ways",
+      "discovery_source": "Official career page",
+      "application_deadline": "",
+      "freshness": "live check",
+      "last_seen": "2026-09-20",
+      "id": "fc7929085f06",
+      "work_mode_fit": "mismatch",
+      "work_mode_note": "Appears to require regular on-site work",
+      "match_score": 17,
+      "matched_skills": [],
+      "fit_reasons": [
+        "Role alignment: Customer Insights",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 32000,
+      "salary_mid": 35000,
+      "salary_max": 38000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "medium",
+      "map": {
+        "latitude": 53.583019,
+        "longitude": 9.958834,
+        "label": "Beiersdorf · Hamburg office",
+        "precision": "verified employer office",
+        "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
+        "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
+        "osm_url": "https://www.openstreetmap.org/way/1187653917",
+        "location_note": "Employer office reference; the vacancy may use another worksite."
+      },
+      "archive_reason": "Not rediscovered since 2026-09-20",
+      "archived_at": "2026-11-20"
     },
     {
       "title": "Working Student Method & Data Standardization (all genders)",
