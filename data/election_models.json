@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-11-21T12:38:25+00:00",
-    "dawum_updated_at": "2026-11-21T11:09:48+01:00",
+    "generated_at": "2026-11-22T12:34:47+00:00",
+    "dawum_updated_at": "2026-11-21T18:49:22+01:00",
     "method_version": "1.0",
     "license": {
       "Name": "ODC Open Database License",
@@ -17,12 +17,12 @@
     },
     "candidate_search": {
       "status": "success",
-      "last_attempted_at": "2026-11-15T11:56:26+00:00",
+      "last_attempted_at": "2026-11-22T12:34:42+00:00",
       "requests_used": 4,
-      "last_successful_at": "2026-11-15T11:56:26+00:00",
+      "last_successful_at": "2026-11-22T12:34:42+00:00",
       "verified_candidates": 12,
       "shared_daily_limit": 10,
-      "message": "Brave candidate search: weekly refresh not due; cached evidence used"
+      "message": "Brave candidate search: success (4/7 weekly requests, 12 names verified)"
     },
     "sources": [
       {
@@ -57,15 +57,15 @@
       "head_title": "Chancellor",
       "seat_count": 630,
       "poll_count": 12,
-      "latest_poll": "2026-11-20",
+      "latest_poll": "2026-11-21",
       "poll_only": {
         "parties": [
           {
             "party": "AfD",
             "color": "#4d91c6",
-            "vote": 27.2,
-            "low": 25.5,
-            "high": 28.9,
+            "vote": 27.3,
+            "low": 25.6,
+            "high": 29.0,
             "seats": 196,
             "threshold_probability": 100
           },
@@ -73,7 +73,7 @@
             "party": "CDU/CSU",
             "color": "#282828",
             "vote": 19.5,
-            "low": 18.0,
+            "low": 17.9,
             "high": 21.1,
             "seats": 140,
             "threshold_probability": 100
@@ -81,8 +81,8 @@
           {
             "party": "Grüne",
             "color": "#62a654",
-            "vote": 15.1,
-            "low": 13.7,
+            "vote": 15.0,
+            "low": 13.5,
             "high": 16.5,
             "seats": 108,
             "threshold_probability": 100
@@ -90,10 +90,10 @@
           {
             "party": "SPD",
             "color": "#d64b4b",
-            "vote": 13.5,
-            "low": 12.1,
-            "high": 14.9,
-            "seats": 97,
+            "vote": 13.6,
+            "low": 12.2,
+            "high": 15.0,
+            "seats": 98,
             "threshold_probability": 100
           },
           {
@@ -108,11 +108,11 @@
           {
             "party": "Sonstige",
             "color": "#aaa19b",
-            "vote": 6.8,
-            "low": 4.7,
+            "vote": 7.0,
+            "low": 5.0,
             "high": 9.2,
             "seats": 0,
-            "threshold_probability": 86
+            "threshold_probability": 90
           },
           {
             "party": "FDP",
@@ -120,7 +120,7 @@
             "vote": 4.5,
             "low": 3.1,
             "high": 6.1,
-            "seats": 12,
+            "seats": 13,
             "threshold_probability": 30
           },
           {
@@ -130,7 +130,7 @@
             "low": 2.0,
             "high": 4.8,
             "seats": 3,
-            "threshold_probability": 9
+            "threshold_probability": 8
           }
         ],
         "coalitions": [
@@ -142,7 +142,7 @@
               "Grüne"
             ],
             "majority_probability": 97,
-            "seat_share": 54.9,
+            "seat_share": 54.8,
             "formation_prior": 68,
             "formation_probability": 65,
             "party_colors": [
@@ -173,7 +173,7 @@
               "Grüne"
             ],
             "majority_probability": 0,
-            "seat_share": 39.5,
+            "seat_share": 39.4,
             "formation_prior": 55,
             "formation_probability": 0,
             "party_colors": [
@@ -225,7 +225,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.merkur.de/politik/bundestagswahl-ere754863/",
             "source_title": "News zur Bundestagswahl 2029: Alle Nachrichten zu Kanzlerkandidaten, Parteien, Wahlprogrammen",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -254,19 +254,19 @@
           {
             "party": "CDU/CSU",
             "color": "#282828",
-            "vote": 19.9,
+            "vote": 19.8,
             "low": 18.2,
-            "high": 21.6,
-            "seats": 143,
+            "high": 21.5,
+            "seats": 142,
             "threshold_probability": 100
           },
           {
             "party": "Grüne",
             "color": "#62a654",
             "vote": 15.0,
-            "low": 13.6,
+            "low": 13.5,
             "high": 16.4,
-            "seats": 108,
+            "seats": 107,
             "threshold_probability": 100
           },
           {
@@ -290,29 +290,29 @@
           {
             "party": "Sonstige",
             "color": "#aaa19b",
-            "vote": 6.6,
-            "low": 4.3,
-            "high": 8.7,
+            "vote": 6.8,
+            "low": 4.6,
+            "high": 8.8,
             "seats": 0,
-            "threshold_probability": 83
+            "threshold_probability": 86
           },
           {
             "party": "FDP",
             "color": "#e9bf35",
             "vote": 4.3,
-            "low": 2.7,
+            "low": 2.8,
             "high": 5.8,
             "seats": 11,
-            "threshold_probability": 27
+            "threshold_probability": 28
           },
           {
             "party": "BSW",
             "color": "#7d365f",
             "vote": 3.1,
-            "low": 1.7,
-            "high": 4.6,
+            "low": 1.6,
+            "high": 4.5,
             "seats": 2,
-            "threshold_probability": 5
+            "threshold_probability": 4
           }
         ],
         "coalitions": [
@@ -323,8 +323,8 @@
               "SPD",
               "Grüne"
             ],
-            "majority_probability": 99,
-            "seat_share": 55.5,
+            "majority_probability": 98,
+            "seat_share": 55.4,
             "formation_prior": 68,
             "formation_probability": 65,
             "party_colors": [
@@ -355,7 +355,7 @@
               "Grüne"
             ],
             "majority_probability": 0,
-            "seat_share": 39.8,
+            "seat_share": 39.6,
             "formation_prior": 55,
             "formation_probability": 0,
             "party_colors": [
@@ -407,7 +407,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.merkur.de/politik/bundestagswahl-ere754863/",
             "source_title": "News zur Bundestagswahl 2029: Alle Nachrichten zu Kanzlerkandidaten, Parteien, Wahlprogrammen",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           },
           {
             "name": "Franziska Brantner",
@@ -598,9 +598,9 @@
             "probability": 81,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
-            "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_url": "https://www.ruhrnachrichten.de/service/landtagswahl-2027-nrw-termine-25-april-ablauf-wahlalter-stimmzettel-briefwahl-parteien-kandidaten-w1264888-2002277751/",
+            "source_title": "Landtagswahl 2027 in NRW: Termine, Wahlalter, Briefwahl, Wahlkreise & mehr",
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           },
           {
             "name": "Mona Neubaur",
@@ -610,7 +610,7 @@
             "source_status": "brave_verified",
             "source_url": "https://gruene-nrw.de/2026/11/gruene-nrw-waehlen-mona-neubaur-zur-spitzenkandidatin-fuer-die-landtagswahl-2027/",
             "source_title": "Grüne NRW wählen Mona Neubaur zur Spitzenkandidatin für die Landtagswahl 2027 | GRÜNE NRW",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           }
         ],
         "unresolved_probability": 19
@@ -780,9 +780,9 @@
             "probability": 83,
             "color": "#282828",
             "source_status": "brave_verified",
-            "source_url": "https://table.media/berlin/talk-of-the-town/landtagswahl-2027-die-nrw-spd-und-die-schwierige-suche-nach-dem-wuest-herausforderer",
-            "source_title": "Landtagswahl 2027: Die NRW-SPD und die schwierige Suche nach dem Wüst-Herausforderer • Table.Briefings",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_url": "https://www.ruhrnachrichten.de/service/landtagswahl-2027-nrw-termine-25-april-ablauf-wahlalter-stimmzettel-briefwahl-parteien-kandidaten-w1264888-2002277751/",
+            "source_title": "Landtagswahl 2027 in NRW: Termine, Wahlalter, Briefwahl, Wahlkreise & mehr",
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           },
           {
             "name": "Mona Neubaur",
@@ -792,7 +792,7 @@
             "source_status": "brave_verified",
             "source_url": "https://gruene-nrw.de/2026/11/gruene-nrw-waehlen-mona-neubaur-zur-spitzenkandidatin-fuer-die-landtagswahl-2027/",
             "source_title": "Grüne NRW wählen Mona Neubaur zur Spitzenkandidatin für die Landtagswahl 2027 | GRÜNE NRW",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           }
         ],
         "unresolved_probability": 17
@@ -984,7 +984,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -994,7 +994,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           }
         ],
         "unresolved_probability": 14
@@ -1175,7 +1175,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           },
           {
             "name": "Katharina Fegebank",
@@ -1185,7 +1185,7 @@
             "source_status": "brave_verified",
             "source_url": "https://www.stern.de/politik/deutschland/hamburger-buergerschaftswahl--alle-spitzenkandidaten-im-ueberblick-35510790.html",
             "source_title": "Hamburger Bürgerschaftswahl: Alle Spitzenkandidaten im Überblick | STERN.de",
-            "source_checked_at": "2026-11-15T11:56:26+00:00"
+            "source_checked_at": "2026-11-22T12:34:42+00:00"
           }
         ],
         "unresolved_probability": 13
