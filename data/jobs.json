@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-22T12:36:18+00:00",
+    "generated_at": "2026-11-23T14:38:58+00:00",
     "mode": "daily live refresh + rolling fallback",
     "job_count": 29,
     "archived_job_count": 26,
@@ -19,8 +19,8 @@
     "market_salary_reference_eur": 77184,
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
-    "brave_search_status": "Brave daily budget: success (10/10 requests used, 2 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (2 accepted)",
+    "brave_search_status": "Brave daily budget: success (10/10 requests used, 1 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (5 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -223,9 +223,9 @@
       "date_posted": "2026-11-13",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-21",
-      "experimentation_query_date": "2026-11-21",
-      "last_seen": "2026-11-21",
+      "freshness": "Experimentation Jobs refresh 2026-11-23",
+      "experimentation_query_date": "2026-11-23",
+      "last_seen": "2026-11-23",
       "id": "68b07250813f",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -267,9 +267,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-22",
-      "experimentation_query_date": "2026-11-22",
-      "last_seen": "2026-11-22",
+      "freshness": "Experimentation Jobs refresh 2026-11-23",
+      "experimentation_query_date": "2026-11-23",
+      "last_seen": "2026-11-23",
       "id": "0467258972f0",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -381,7 +381,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-06",
       "brave_query_date": "2026-11-06",
-      "last_seen": "2026-11-22",
+      "last_seen": "2026-11-23",
       "confirmed_by": "Brave Search API",
       "id": "824575981a81",
       "application_deadline": "",
@@ -625,9 +625,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-22",
-      "experimentation_query_date": "2026-11-22",
-      "last_seen": "2026-11-22",
+      "freshness": "Experimentation Jobs refresh 2026-11-23",
+      "experimentation_query_date": "2026-11-23",
+      "last_seen": "2026-11-23",
       "id": "61790db608d3",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -661,7 +661,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-22",
+      "last_seen": "2026-11-23",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -830,9 +830,9 @@
       "date_posted": "2026-11-10",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-15",
-      "experimentation_query_date": "2026-11-15",
-      "last_seen": "2026-11-15",
+      "freshness": "Experimentation Jobs refresh 2026-11-23",
+      "experimentation_query_date": "2026-11-23",
+      "last_seen": "2026-11-23",
       "id": "3265de043115",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -852,54 +852,6 @@
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
       "salary_confidence": "low"
-    },
-    {
-      "title": "Global Brand Health Consultant - Consumer Insights (all genders)",
-      "company": "Beiersdorf",
-      "location": "Hamburg, Germany",
-      "work_mode": "",
-      "level": "intern",
-      "url": "https://www.beiersdorf.com/career/jobs/2b8063518ba2ed44126d9ce9136d4f66",
-      "date_posted": "",
-      "valid_through": "",
-      "description": "Global Brand Health Consultant - Consumer Insights (all genders) Apply now Job Details Contract Type: Unlimited / Full-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks Great brands are built on great insights. If you are passionate about understanding consumers, uncovering what drives brand growth, and influencing business decisions at the highest level, this is an opportunity to make a real impact. We are seeking a seasoned insights expert with extensive experience in Brand Health Tracking and Consumer Panel/Penetration data, who can confidently advise senior stakeholders from day one. You will transform complex data into clear strategic direction, shape key growth initiatives, and serve as a trusted partner to leadership teams across markets and functions. In this position you will: Translate Brand Health Tracking and Co",
-      "discovery_source": "Official career page",
-      "application_deadline": "",
-      "freshness": "live check",
-      "last_seen": "2026-11-22",
-      "id": "f55964b7eb18",
-      "work_mode_fit": "unclear",
-      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
-      "match_score": 41,
-      "matched_skills": [
-        "Product analytics",
-        "Stakeholder consulting",
-        "E-commerce",
-        "Data visualization"
-      ],
-      "fit_reasons": [
-        "Role alignment: Customer Insights",
-        "Skill overlap: Product analytics, Stakeholder consulting, E-commerce, Data visualization",
-        "Hamburg location",
-        "Relevant e-commerce / retail domain"
-      ],
-      "skill_gaps": [],
-      "salary_min": 29000,
-      "salary_mid": 32000,
-      "salary_max": 35000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "medium",
-      "map": {
-        "latitude": 53.583019,
-        "longitude": 9.958834,
-        "label": "Beiersdorf · Hamburg office",
-        "precision": "verified employer office",
-        "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
-        "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
-        "osm_url": "https://www.openstreetmap.org/way/1187653917",
-        "location_note": "Employer office reference; the vacancy may use another worksite."
-      }
     },
     {
       "title": "E-Commerce Consultant / CRO & Datenanalyst:in (m/w/d)",
@@ -1140,9 +1092,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-15",
-      "experimentation_query_date": "2026-11-15",
-      "last_seen": "2026-11-15",
+      "freshness": "Experimentation Jobs refresh 2026-11-23",
+      "experimentation_query_date": "2026-11-23",
+      "last_seen": "2026-11-23",
       "id": "a21171802bb1",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -1167,6 +1119,50 @@
         "longitude": 9.98341,
         "label": "Hamburg",
         "precision": "city area"
+      }
+    },
+    {
+      "title": "Global Brand Health Consultant - Consumer Insights (all genders)",
+      "company": "Beiersdorf",
+      "location": "Hamburg, Germany",
+      "work_mode": "",
+      "level": "intern",
+      "url": "https://www.beiersdorf.com/career/jobs/2b8063518ba2ed44126d9ce9136d4f66",
+      "date_posted": "",
+      "valid_through": "",
+      "description": "Global Brand Health Consultant - Consumer Insights (all genders) Apply now Job Details Contract Type: Unlimited / Full-Time Country / City: Germany / Hamburg Company: Beiersdorf AG Job Function: Marketing / Market Research Your Tasks Great brands are built on great insights. If you are passionate about understanding consumers, uncovering what drives brand growth, and influencing business decisions at the highest level, this is an opportunity to make a real impact. We are seeking a seasoned insights expert with extensive experience in Brand Health Tracking and Consumer Panel/Penetration data, who can confidently advise senior stakeholders from day one. You will transform complex data into clear strategic direction, shape key growth initiatives, and serve as a trusted partner to leadership teams across markets and functions. In this position you will: Translate Brand Health Tracking and Co",
+      "discovery_source": "Official career page",
+      "application_deadline": "",
+      "freshness": "live check",
+      "last_seen": "2026-11-22",
+      "id": "f55964b7eb18",
+      "work_mode_fit": "unclear",
+      "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
+      "match_score": 27,
+      "matched_skills": [
+        "Stakeholder consulting"
+      ],
+      "fit_reasons": [
+        "Role alignment: Customer Insights",
+        "Skill overlap: Stakeholder consulting",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 29000,
+      "salary_mid": 32000,
+      "salary_max": 35000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "medium",
+      "map": {
+        "latitude": 53.583019,
+        "longitude": 9.958834,
+        "label": "Beiersdorf · Hamburg office",
+        "precision": "verified employer office",
+        "address": "Beiersdorfstraße 1-9, 22529 Hamburg, Germany",
+        "source_url": "https://www.beiersdorf.com/career/locations/headquarters",
+        "osm_url": "https://www.openstreetmap.org/way/1187653917",
+        "location_note": "Employer office reference; the vacancy may use another worksite."
       }
     },
     {
@@ -1262,7 +1258,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "Senior Business Analyst",
@@ -1310,7 +1306,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -1358,7 +1354,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -1404,7 +1400,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1452,7 +1448,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -1497,7 +1493,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "Media Technology & Data Strategy Lead (all genders)",
@@ -1544,7 +1540,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1589,7 +1585,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1633,7 +1629,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1675,7 +1671,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "Business Analyst – Digitales Marketing (m/w/d)",
@@ -1724,7 +1720,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-22"
+      "archived_at": "2026-11-23"
     },
     {
       "title": "Frontend Entwickler*in CRO & Experimentation (m/w/d) – Remote",
