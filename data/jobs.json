@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T13:54:49+00:00",
+    "generated_at": "2026-11-27T13:52:25+00:00",
     "mode": "daily live refresh + rolling fallback",
-    "job_count": 30,
-    "archived_job_count": 26,
+    "job_count": 29,
+    "archived_job_count": 27,
     "location": "Hamburg",
-    "employer_office_mapped_job_count": 20,
+    "employer_office_mapped_job_count": 19,
     "city_area_mapped_job_count": 3,
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2025",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987?alter=3&region=5",
@@ -20,7 +20,7 @@
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
     "brave_search_status": "Brave daily budget: success (10/10 requests used, 2 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (2 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: success (5 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -223,9 +223,9 @@
       "date_posted": "2026-11-13",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-25",
-      "experimentation_query_date": "2026-11-25",
-      "last_seen": "2026-11-25",
+      "freshness": "Experimentation Jobs refresh 2026-11-27",
+      "experimentation_query_date": "2026-11-27",
+      "last_seen": "2026-11-27",
       "id": "68b07250813f",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -267,9 +267,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-26",
-      "experimentation_query_date": "2026-11-26",
-      "last_seen": "2026-11-26",
+      "freshness": "Experimentation Jobs refresh 2026-11-27",
+      "experimentation_query_date": "2026-11-27",
+      "last_seen": "2026-11-27",
       "id": "0467258972f0",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -381,7 +381,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-06",
       "brave_query_date": "2026-11-06",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "confirmed_by": "Brave Search API",
       "id": "824575981a81",
       "application_deadline": "",
@@ -397,50 +397,6 @@
       "salary_min": 77000,
       "salary_mid": 86000,
       "salary_max": 95000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "medium",
-      "map": {
-        "latitude": 53.549264,
-        "longitude": 9.995625,
-        "label": "ABOUT YOU · Hamburg office",
-        "precision": "verified employer office",
-        "address": "Domstraße 10, 20095 Hamburg, Germany",
-        "source_url": "https://corporate.aboutyou.de/en/legal-notice",
-        "osm_url": "https://www.openstreetmap.org/way/45851583",
-        "location_note": "Employer office reference; the vacancy may use another worksite."
-      }
-    },
-    {
-      "title": "Senior Product Analyst – Shop Analytics",
-      "company": "ABOUT YOU",
-      "location": "Hamburg or Berlin, Germany",
-      "work_mode": "On-Site",
-      "level": "senior",
-      "url": "https://experimentationjobs.com/job/about-you-senior-product-analyst-shop-analytics-hamburg-or-berlin-germany/",
-      "date_posted": "2026-07-22",
-      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
-      "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-09-27",
-      "experimentation_query_date": "2026-09-27",
-      "last_seen": "2026-09-27",
-      "id": "b6ad64d0684b",
-      "application_deadline": "",
-      "work_mode_fit": "mismatch",
-      "work_mode_note": "Appears to require regular on-site work",
-      "match_score": 56,
-      "matched_skills": [
-        "Experimentation"
-      ],
-      "fit_reasons": [
-        "Role alignment: Product Analyst",
-        "Skill overlap: Experimentation",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 78000,
-      "salary_mid": 87000,
-      "salary_max": 96000,
       "salary_currency": "EUR",
       "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
       "salary_confidence": "medium",
@@ -508,7 +464,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-08-17",
       "brave_query_date": "2026-08-17",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "confirmed_by": "Brave Search API",
       "id": "3b8196ff9a6c",
       "application_deadline": "",
@@ -625,9 +581,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-26",
-      "experimentation_query_date": "2026-11-26",
-      "last_seen": "2026-11-26",
+      "freshness": "Experimentation Jobs refresh 2026-11-27",
+      "experimentation_query_date": "2026-11-27",
+      "last_seen": "2026-11-27",
       "id": "61790db608d3",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -661,7 +617,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-26",
+      "last_seen": "2026-11-27",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -830,9 +786,9 @@
       "date_posted": "2026-11-10",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-23",
-      "experimentation_query_date": "2026-11-23",
-      "last_seen": "2026-11-23",
+      "freshness": "Experimentation Jobs refresh 2026-11-27",
+      "experimentation_query_date": "2026-11-27",
+      "last_seen": "2026-11-27",
       "id": "3265de043115",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -1092,9 +1048,9 @@
       "date_posted": "2026-11-09",
       "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
       "discovery_source": "Experimentation Jobs",
-      "freshness": "Experimentation Jobs refresh 2026-11-23",
-      "experimentation_query_date": "2026-11-23",
-      "last_seen": "2026-11-23",
+      "freshness": "Experimentation Jobs refresh 2026-11-27",
+      "experimentation_query_date": "2026-11-27",
+      "last_seen": "2026-11-27",
       "id": "a21171802bb1",
       "application_deadline": "",
       "work_mode_fit": "fit",
@@ -1302,7 +1258,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "Senior Business Analyst",
@@ -1350,7 +1306,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -1398,7 +1354,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -1444,7 +1400,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1492,7 +1448,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -1537,7 +1493,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "Media Technology & Data Strategy Lead (all genders)",
@@ -1584,7 +1540,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1629,7 +1585,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1673,7 +1629,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1715,7 +1671,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
     },
     {
       "title": "Business Analyst – Digitales Marketing (m/w/d)",
@@ -1764,7 +1720,53 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-26"
+      "archived_at": "2026-11-27"
+    },
+    {
+      "title": "Senior Product Analyst – Shop Analytics",
+      "company": "ABOUT YOU",
+      "location": "Hamburg or Berlin, Germany",
+      "work_mode": "On-Site",
+      "level": "senior",
+      "url": "https://experimentationjobs.com/job/about-you-senior-product-analyst-shop-analytics-hamburg-or-berlin-germany/",
+      "date_posted": "2026-07-22",
+      "description": "Experimentation or product-analytics role discovered on Experimentation Jobs. Open the original listing to validate the full requirements and remote-work eligibility.",
+      "discovery_source": "Experimentation Jobs",
+      "freshness": "Experimentation Jobs refresh 2026-09-27",
+      "experimentation_query_date": "2026-09-27",
+      "last_seen": "2026-09-27",
+      "id": "b6ad64d0684b",
+      "application_deadline": "",
+      "work_mode_fit": "mismatch",
+      "work_mode_note": "Appears to require regular on-site work",
+      "match_score": 56,
+      "matched_skills": [
+        "Experimentation"
+      ],
+      "fit_reasons": [
+        "Role alignment: Product Analyst",
+        "Skill overlap: Experimentation",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 78000,
+      "salary_mid": 87000,
+      "salary_max": 96000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "medium",
+      "map": {
+        "latitude": 53.549264,
+        "longitude": 9.995625,
+        "label": "ABOUT YOU · Hamburg office",
+        "precision": "verified employer office",
+        "address": "Domstraße 10, 20095 Hamburg, Germany",
+        "source_url": "https://corporate.aboutyou.de/en/legal-notice",
+        "osm_url": "https://www.openstreetmap.org/way/45851583",
+        "location_note": "Employer office reference; the vacancy may use another worksite."
+      },
+      "archive_reason": "Not rediscovered since 2026-09-27",
+      "archived_at": "2026-11-27"
     },
     {
       "title": "Frontend Entwickler*in CRO & Experimentation (m/w/d) – Remote",
