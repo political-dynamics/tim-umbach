@@ -1,11 +1,11 @@
 {
   "meta": {
-    "generated_at": "2026-11-27T13:52:25+00:00",
+    "generated_at": "2026-11-28T13:00:54+00:00",
     "mode": "daily live refresh + rolling fallback",
-    "job_count": 29,
-    "archived_job_count": 27,
+    "job_count": 28,
+    "archived_job_count": 28,
     "location": "Hamburg",
-    "employer_office_mapped_job_count": 19,
+    "employer_office_mapped_job_count": 18,
     "city_area_mapped_job_count": 3,
     "salary_benchmark": "Bundesagentur für Arbeit Entgeltatlas 2025",
     "salary_benchmark_url": "https://web.arbeitsagentur.de/entgeltatlas/beruf/129987?alter=3&region=5",
@@ -20,7 +20,7 @@
     "market_salary_reference_source": "Entgeltatlas 2025 annualised median floor",
     "preference_excluded_count": 9,
     "brave_search_status": "Brave daily budget: success (10/10 requests used, 2 accepted)",
-    "experimentation_jobs_status": "Experimentation Jobs refresh: success (5 accepted)",
+    "experimentation_jobs_status": "Experimentation Jobs refresh: error (0 accepted)",
     "ba_jobs_status": "BA API refresh: error (0 detailed)",
     "errors": [
       "applike group: PermissionError: robots.txt does not allow collection: https://applike-group.com/jobs/"
@@ -381,7 +381,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-11-06",
       "brave_query_date": "2026-11-06",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "confirmed_by": "Brave Search API",
       "id": "824575981a81",
       "application_deadline": "",
@@ -464,7 +464,7 @@
       "discovery_source": "Brave Search API — daily request budget",
       "freshness": "Brave query 2026-08-17",
       "brave_query_date": "2026-08-17",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "confirmed_by": "Brave Search API",
       "id": "3b8196ff9a6c",
       "application_deadline": "",
@@ -617,7 +617,7 @@
       "discovery_source": "Official career page",
       "application_deadline": "",
       "freshness": "live check",
-      "last_seen": "2026-11-27",
+      "last_seen": "2026-11-28",
       "id": "c140527c9cc9",
       "work_mode_fit": "unclear",
       "work_mode_note": "Hybrid or remote policy is not stated; verify on the job page",
@@ -998,47 +998,6 @@
       }
     },
     {
-      "title": "(Senior) Digital Analytics Specialist (w/m/d)",
-      "company": "Fielmann",
-      "location": "Hamburg, Hamburg, DE",
-      "work_mode": "Hybrid / mobile work",
-      "level": "manager",
-      "url": "https://jobs.fielmann.com/en/job-offers/detail/63249-senior-digital-analytics-specialist-wmd",
-      "date_posted": "",
-      "valid_through": "",
-      "description": "Als (Senior) Digital Analytics Specialist stärkst du unser Insights Team als zentrale fachliche Expert*in für digitales Tracking, Consent Management, Datenqualität und Digital Analytics. Du entwickelst unsere Tracking- und Measurement-Strukturen weiter, sorgst für verlässliche Daten entlang digitaler Customer Journeys und übersetzt fachliche Anforderungen aus Produkt-, UX-, Marketing- und Business-Teams in saubere Messkonzepte. Dabei arbeitest du an der Schnittstelle zwischen Business, Produkt, Engineering, Datenschutz, BI/Data Platform und externen Dienstleistern. Dein Ziel ist es, eine belastbare Datenbasis für bessere digitale Produktentscheidungen zu schaffen: durch klare Tracking-Standards, hohe Datenqualität, transparente Dokumentation und aussagekräftige Analysen. Das erwartet dich bei uns. Deine Aufgaben. Du konzipierst, implementierst und entwickelst skalierbare Tracking-Lösunge",
-      "discovery_source": "Official career page",
-      "application_deadline": "",
-      "freshness": "live check",
-      "last_seen": "2026-09-28",
-      "id": "de1538cd754a",
-      "work_mode_fit": "fit",
-      "work_mode_note": "Hybrid work in the Hamburg area is stated",
-      "match_score": 34,
-      "matched_skills": [],
-      "fit_reasons": [
-        "Role alignment: Senior Data Analyst",
-        "Hamburg location"
-      ],
-      "skill_gaps": [],
-      "salary_min": 75000,
-      "salary_mid": 83000,
-      "salary_max": 91000,
-      "salary_currency": "EUR",
-      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
-      "salary_confidence": "low",
-      "map": {
-        "latitude": 53.580257,
-        "longitude": 10.030299,
-        "label": "Fielmann · Hamburg office",
-        "precision": "verified employer office",
-        "address": "Weidestraße 118a, 22083 Hamburg, Germany",
-        "source_url": "https://www.fielmann-group.com/fileadmin/fielmann/Dokumente/Hauptversammlung/2025/DE/Hinweise_zum_Datenschutz.pdf",
-        "osm_url": "https://www.openstreetmap.org/node/1214564522",
-        "location_note": "Employer office reference; the vacancy may use another worksite."
-      }
-    },
-    {
       "title": "CRO Manager",
       "company": "Edubini",
       "location": "Hamburg, Germany",
@@ -1258,7 +1217,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "Senior Business Analyst",
@@ -1306,7 +1265,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "ESG Data & AI Manager (m/w/d)",
@@ -1354,7 +1313,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "HR Manager Data Analytics and Systems (m/w/d)",
@@ -1400,7 +1359,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "(Junior) Business Intelligence Developer – Data Warehouse (m/f/d)",
@@ -1448,7 +1407,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "Senior Analytics Business Partner (m/w/d)",
@@ -1493,7 +1452,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "Media Technology & Data Strategy Lead (all genders)",
@@ -1540,7 +1499,7 @@
         "location_note": "Selected Hamburg office from a Publicis Groupe agency; the vacancy may use another group worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "Werkstudent Data, Analytics & AI (m/w/d)",
@@ -1585,7 +1544,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "Global Category Merchandise Manager (f/m/d)",
@@ -1629,7 +1588,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "Werkstudent Change Management & Transformation | Data & AI (w/m/d)",
@@ -1671,7 +1630,7 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
     },
     {
       "title": "Business Analyst – Digitales Marketing (m/w/d)",
@@ -1720,7 +1679,50 @@
         "location_note": "Employer office reference; the vacancy may use another worksite."
       },
       "archive_reason": "Not rediscovered since 2026-07-20",
-      "archived_at": "2026-11-27"
+      "archived_at": "2026-11-28"
+    },
+    {
+      "title": "(Senior) Digital Analytics Specialist (w/m/d)",
+      "company": "Fielmann",
+      "location": "Hamburg, Hamburg, DE",
+      "work_mode": "Hybrid / mobile work",
+      "level": "manager",
+      "url": "https://jobs.fielmann.com/en/job-offers/detail/63249-senior-digital-analytics-specialist-wmd",
+      "date_posted": "",
+      "valid_through": "",
+      "description": "Als (Senior) Digital Analytics Specialist stärkst du unser Insights Team als zentrale fachliche Expert*in für digitales Tracking, Consent Management, Datenqualität und Digital Analytics. Du entwickelst unsere Tracking- und Measurement-Strukturen weiter, sorgst für verlässliche Daten entlang digitaler Customer Journeys und übersetzt fachliche Anforderungen aus Produkt-, UX-, Marketing- und Business-Teams in saubere Messkonzepte. Dabei arbeitest du an der Schnittstelle zwischen Business, Produkt, Engineering, Datenschutz, BI/Data Platform und externen Dienstleistern. Dein Ziel ist es, eine belastbare Datenbasis für bessere digitale Produktentscheidungen zu schaffen: durch klare Tracking-Standards, hohe Datenqualität, transparente Dokumentation und aussagekräftige Analysen. Das erwartet dich bei uns. Deine Aufgaben. Du konzipierst, implementierst und entwickelst skalierbare Tracking-Lösunge",
+      "discovery_source": "Official career page",
+      "application_deadline": "",
+      "freshness": "live check",
+      "last_seen": "2026-09-28",
+      "id": "de1538cd754a",
+      "work_mode_fit": "fit",
+      "work_mode_note": "Hybrid work in the Hamburg area is stated",
+      "match_score": 34,
+      "matched_skills": [],
+      "fit_reasons": [
+        "Role alignment: Senior Data Analyst",
+        "Hamburg location"
+      ],
+      "skill_gaps": [],
+      "salary_min": 75000,
+      "salary_mid": 83000,
+      "salary_max": 91000,
+      "salary_currency": "EUR",
+      "salary_source": "Estimate: BA Entgeltatlas 2025 + role/level/fit adjustment",
+      "salary_confidence": "low",
+      "map": {
+        "latitude": 53.580257,
+        "longitude": 10.030299,
+        "label": "Fielmann · Hamburg office",
+        "precision": "verified employer office",
+        "address": "Weidestraße 118a, 22083 Hamburg, Germany",
+        "source_url": "https://www.fielmann-group.com/fileadmin/fielmann/Dokumente/Hauptversammlung/2025/DE/Hinweise_zum_Datenschutz.pdf",
+        "osm_url": "https://www.openstreetmap.org/node/1214564522",
+        "location_note": "Employer office reference; the vacancy may use another worksite."
+      },
+      "archive_reason": "Not rediscovered since 2026-09-28",
+      "archived_at": "2026-11-28"
     },
     {
       "title": "Senior Product Analyst – Shop Analytics",
